@@ -1,1 +1,26 @@
+# Raw dataset (too large for git)
 Dataset/jan to may police violation_anonymized791b166.csv
+
+# Generated data files (large, reproducible)
+Dataset/violations_clean.pkl
+Dataset/bengaluru_roads.graphml
+
+# Model files
+models/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Node (dashboard)
+dashboard/node_modules/
+dashboard/dist/
+
+cache/
+outputs/cascade_data.json
+outputs/spillover_data.json

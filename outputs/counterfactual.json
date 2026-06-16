@@ -1,0 +1,1654 @@
+[
+  {
+    "scenario": "enforcement_rate_50pct",
+    "target_enforcement_rate": 0.5,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3998371.0,
+    "reduction_pct": 5.8,
+    "baseline_violations": 297591,
+    "simulated_violations": 168528,
+    "violation_reduction": 129062,
+    "hours_saved_monthly": 7170.0,
+    "delivery_hours_saved_monthly": 215.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 147.8,
+        "reduction_pct": 28.4,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 32.4,
+        "reduction_pct": 19.5,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 26.4,
+        "reduction_pct": 15.2,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 26.4,
+        "reduction_pct": 10.4,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 235.2,
+        "reduction_pct": -0.3,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 133.7,
+        "reduction_pct": -5.7,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 27.2,
+        "reduction_pct": -15.4,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 57.5,
+        "reduction_pct": -16.8,
+        "original_enforcement": 0.4762
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 36.4,
+        "reduction_pct": -18.9,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 135.9,
+        "reduction_pct": -41.4,
+        "original_enforcement": 0.2963
+      },
+      {
+        "zone_id": "tdr1km",
+        "baseline": 84.5,
+        "simulated": 126.8,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.4474
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 66.6,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.2308
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 58.2,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.2381
+      },
+      {
+        "zone_id": "tdr4jr",
+        "baseline": 12139.4,
+        "simulated": 18209.1,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.4423
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_55pct",
+    "target_enforcement_rate": 0.55,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3996685.0,
+    "reduction_pct": 5.9,
+    "baseline_violations": 297591,
+    "simulated_violations": 168235,
+    "violation_reduction": 129355,
+    "hours_saved_monthly": 7186.0,
+    "delivery_hours_saved_monthly": 216.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 139.5,
+        "reduction_pct": 32.4,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 2327.8,
+        "reduction_pct": 28.3,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 30.2,
+        "reduction_pct": 24.8,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 49897.2,
+        "reduction_pct": 24.0,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 25.0,
+        "reduction_pct": 19.6,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 24.7,
+        "reduction_pct": 16.4,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 220.2,
+        "reduction_pct": 6.1,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 89.5,
+        "reduction_pct": 4.6,
+        "original_enforcement": 0.5088
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 125.7,
+        "reduction_pct": 0.6,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 24.5,
+        "reduction_pct": -3.6,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 31.9,
+        "reduction_pct": -4.4,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 53.3,
+        "reduction_pct": -8.3,
+        "original_enforcement": 0.4762
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 125.1,
+        "reduction_pct": -30.2,
+        "original_enforcement": 0.2963
+      },
+      {
+        "zone_id": "tdr1pn",
+        "baseline": 4661.5,
+        "simulated": 6118.7,
+        "reduction_pct": -31.3,
+        "original_enforcement": 0.5163
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 63.2,
+        "reduction_pct": -42.4,
+        "original_enforcement": 0.2308
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 198.2,
+        "reduction_pct": -47.7,
+        "original_enforcement": 0.5128
+      },
+      {
+        "zone_id": "tdr1km",
+        "baseline": 84.5,
+        "simulated": 126.8,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.4474
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 50.2,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr46c",
+        "baseline": 242.2,
+        "simulated": 363.3,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.5301
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 58.2,
+        "reduction_pct": -50.0,
+        "original_enforcement": 0.2381
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_60pct",
+    "target_enforcement_rate": 0.6,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3991097.0,
+    "reduction_pct": 6.0,
+    "baseline_violations": 297591,
+    "simulated_violations": 166638,
+    "violation_reduction": 130952,
+    "hours_saved_monthly": 7275.0,
+    "delivery_hours_saved_monthly": 218.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 18.0,
+        "reduction_pct": 55.3,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 93.9,
+        "reduction_pct": 54.5,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 53.5,
+        "reduction_pct": 42.4,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 1913.8,
+        "reduction_pct": 41.1,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 17.4,
+        "reduction_pct": 41.0,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 18.5,
+        "reduction_pct": 40.5,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 18.2,
+        "reduction_pct": 40.5,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 118.8,
+        "reduction_pct": 39.2,
+        "original_enforcement": 0.5606
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 148.7,
+        "reduction_pct": 36.6,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 87.6,
+        "reduction_pct": 34.8,
+        "original_enforcement": 0.5128
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 22.6,
+        "reduction_pct": 32.6,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 16.5,
+        "reduction_pct": 30.1,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 88.7,
+        "reduction_pct": 29.9,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 46796.5,
+        "reduction_pct": 28.7,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 36.0,
+        "reduction_pct": 26.9,
+        "original_enforcement": 0.4762
+      },
+      {
+        "zone_id": "tdr4jk",
+        "baseline": 68.8,
+        "simulated": 52.2,
+        "reduction_pct": 24.1,
+        "original_enforcement": 0.5952
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 75.2,
+        "reduction_pct": 21.8,
+        "original_enforcement": 0.2963
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 73.9,
+        "reduction_pct": 21.2,
+        "original_enforcement": 0.5088
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 41.2,
+        "reduction_pct": 7.2,
+        "original_enforcement": 0.2308
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 39.6,
+        "reduction_pct": -2.0,
+        "original_enforcement": 0.2381
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_65pct",
+    "target_enforcement_rate": 0.65,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3992163.0,
+    "reduction_pct": 6.0,
+    "baseline_violations": 297591,
+    "simulated_violations": 166684,
+    "violation_reduction": 130906,
+    "hours_saved_monthly": 7273.0,
+    "delivery_hours_saved_monthly": 218.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 17.0,
+        "reduction_pct": 57.7,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 93.7,
+        "reduction_pct": 54.6,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 18.3,
+        "reduction_pct": 45.5,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 50.5,
+        "reduction_pct": 45.5,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 1912.4,
+        "reduction_pct": 41.1,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 115.3,
+        "reduction_pct": 40.9,
+        "original_enforcement": 0.5606
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 18.7,
+        "reduction_pct": 39.9,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 17.8,
+        "reduction_pct": 39.8,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 18.5,
+        "reduction_pct": 39.5,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 144.0,
+        "reduction_pct": 38.6,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 85.8,
+        "reduction_pct": 36.0,
+        "original_enforcement": 0.5128
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 16.3,
+        "reduction_pct": 31.1,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4qf",
+        "baseline": 63.2,
+        "simulated": 43.8,
+        "reduction_pct": 30.7,
+        "original_enforcement": 0.6111
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 46572.5,
+        "reduction_pct": 29.0,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr4jk",
+        "baseline": 68.8,
+        "simulated": 49.8,
+        "reduction_pct": 27.6,
+        "original_enforcement": 0.5952
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 91.7,
+        "reduction_pct": 27.5,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 36.8,
+        "reduction_pct": 25.2,
+        "original_enforcement": 0.4762
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 73.2,
+        "reduction_pct": 22.0,
+        "original_enforcement": 0.5088
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 77.3,
+        "reduction_pct": 19.6,
+        "original_enforcement": 0.2963
+      },
+      {
+        "zone_id": "tdr1pp",
+        "baseline": 6141.2,
+        "simulated": 5351.5,
+        "reduction_pct": 12.9,
+        "original_enforcement": 0.6235
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_70pct",
+    "target_enforcement_rate": 0.7,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3991337.0,
+    "reduction_pct": 6.0,
+    "baseline_violations": 297591,
+    "simulated_violations": 166563,
+    "violation_reduction": 131027,
+    "hours_saved_monthly": 7279.0,
+    "delivery_hours_saved_monthly": 218.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 17.0,
+        "reduction_pct": 57.7,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 92.4,
+        "reduction_pct": 55.2,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 17.0,
+        "reduction_pct": 49.4,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 50.5,
+        "reduction_pct": 45.5,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 17.3,
+        "reduction_pct": 43.5,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 112.4,
+        "reduction_pct": 42.4,
+        "original_enforcement": 0.5606
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 17.9,
+        "reduction_pct": 42.3,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 1876.5,
+        "reduction_pct": 42.2,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 17.5,
+        "reduction_pct": 40.7,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 141.4,
+        "reduction_pct": 39.7,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 82.6,
+        "reduction_pct": 38.5,
+        "original_enforcement": 0.5128
+      },
+      {
+        "zone_id": "tdr4kc",
+        "baseline": 54.0,
+        "simulated": 33.9,
+        "reduction_pct": 37.3,
+        "original_enforcement": 0.6667
+      },
+      {
+        "zone_id": "tdr1t8",
+        "baseline": 199.2,
+        "simulated": 128.4,
+        "reduction_pct": 35.5,
+        "original_enforcement": 0.6542
+      },
+      {
+        "zone_id": "tdr4jm",
+        "baseline": 155.8,
+        "simulated": 102.8,
+        "reduction_pct": 34.0,
+        "original_enforcement": 0.6695
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 16.3,
+        "reduction_pct": 31.1,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4qf",
+        "baseline": 63.2,
+        "simulated": 43.8,
+        "reduction_pct": 30.7,
+        "original_enforcement": 0.6111
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 46337.2,
+        "reduction_pct": 29.4,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 90.6,
+        "reduction_pct": 28.4,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr4jk",
+        "baseline": 68.8,
+        "simulated": 49.8,
+        "reduction_pct": 27.6,
+        "original_enforcement": 0.5952
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 36.2,
+        "reduction_pct": 26.4,
+        "original_enforcement": 0.4762
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_75pct",
+    "target_enforcement_rate": 0.75,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3993031.0,
+    "reduction_pct": 6.0,
+    "baseline_violations": 297591,
+    "simulated_violations": 166731,
+    "violation_reduction": 130859,
+    "hours_saved_monthly": 7270.0,
+    "delivery_hours_saved_monthly": 218.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 16.9,
+        "reduction_pct": 57.8,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 96.8,
+        "reduction_pct": 53.1,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 3957.0,
+        "reduction_pct": 51.0,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 18.3,
+        "reduction_pct": 45.3,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 51.6,
+        "reduction_pct": 44.4,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 111.9,
+        "reduction_pct": 42.7,
+        "original_enforcement": 0.5606
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 17.9,
+        "reduction_pct": 41.7,
+        "original_enforcement": 0.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 1922.0,
+        "reduction_pct": 40.8,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 17.5,
+        "reduction_pct": 40.8,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 18.7,
+        "reduction_pct": 39.8,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 144.1,
+        "reduction_pct": 38.6,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr4kc",
+        "baseline": 54.0,
+        "simulated": 33.7,
+        "reduction_pct": 37.7,
+        "original_enforcement": 0.6667
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 86.0,
+        "reduction_pct": 35.9,
+        "original_enforcement": 0.5128
+      },
+      {
+        "zone_id": "tdr1t8",
+        "baseline": 199.2,
+        "simulated": 128.0,
+        "reduction_pct": 35.7,
+        "original_enforcement": 0.6542
+      },
+      {
+        "zone_id": "tdr4jm",
+        "baseline": 155.8,
+        "simulated": 106.3,
+        "reduction_pct": 31.8,
+        "original_enforcement": 0.6695
+      },
+      {
+        "zone_id": "tdr4qf",
+        "baseline": 63.2,
+        "simulated": 43.7,
+        "reduction_pct": 30.9,
+        "original_enforcement": 0.6111
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 16.6,
+        "reduction_pct": 29.7,
+        "original_enforcement": 0.2727
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 46635.5,
+        "reduction_pct": 28.9,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 90.4,
+        "reduction_pct": 28.5,
+        "original_enforcement": 0.1831
+      },
+      {
+        "zone_id": "tdr4jk",
+        "baseline": 68.8,
+        "simulated": 49.6,
+        "reduction_pct": 27.9,
+        "original_enforcement": 0.5952
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_80pct",
+    "target_enforcement_rate": 0.8,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 4000139.0,
+    "reduction_pct": 5.8,
+    "baseline_violations": 297591,
+    "simulated_violations": 167530,
+    "violation_reduction": 130060,
+    "hours_saved_monthly": 7226.0,
+    "delivery_hours_saved_monthly": 217.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 17.1,
+        "reduction_pct": 57.4,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 102.1,
+        "reduction_pct": 50.5,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 4070.3,
+        "reduction_pct": 49.6,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr384",
+        "baseline": 369.2,
+        "simulated": 186.1,
+        "reduction_pct": 49.6,
+        "original_enforcement": 0.7927
+      },
+      {
+        "zone_id": "tdr4nq",
+        "baseline": 212.1,
+        "simulated": 122.6,
+        "reduction_pct": 42.2,
+        "original_enforcement": 0.7589
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 54.1,
+        "reduction_pct": 41.7,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 115.5,
+        "reduction_pct": 40.8,
+        "original_enforcement": 0.5606
+      },
+      {
+        "zone_id": "tdr1s7",
+        "baseline": 194.9,
+        "simulated": 116.6,
+        "reduction_pct": 40.2,
+        "original_enforcement": 0.7639
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 1990.5,
+        "reduction_pct": 38.7,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 6200.9,
+        "simulated": 3798.4,
+        "reduction_pct": 38.7,
+        "original_enforcement": 0.794
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 18.1,
+        "reduction_pct": 38.6,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 150.9,
+        "reduction_pct": 35.7,
+        "original_enforcement": 0.1429
+      },
+      {
+        "zone_id": "tdr3ch",
+        "baseline": 52.8,
+        "simulated": 34.1,
+        "reduction_pct": 35.5,
+        "original_enforcement": 0.7857
+      },
+      {
+        "zone_id": "tdr1t8",
+        "baseline": 199.2,
+        "simulated": 129.3,
+        "reduction_pct": 35.1,
+        "original_enforcement": 0.6542
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 21.7,
+        "reduction_pct": 35.1,
+        "original_enforcement": 0.5
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 20.3,
+        "reduction_pct": 34.7,
+        "original_enforcement": 0.45
+      },
+      {
+        "zone_id": "tdr4m4",
+        "baseline": 48.8,
+        "simulated": 32.1,
+        "reduction_pct": 34.2,
+        "original_enforcement": 0.7692
+      },
+      {
+        "zone_id": "tdr4hm",
+        "baseline": 47.2,
+        "simulated": 32.1,
+        "reduction_pct": 31.9,
+        "original_enforcement": 0.7667
+      },
+      {
+        "zone_id": "tdr4kc",
+        "baseline": 54.0,
+        "simulated": 37.2,
+        "reduction_pct": 31.2,
+        "original_enforcement": 0.6667
+      },
+      {
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 21.2,
+        "reduction_pct": 30.7,
+        "original_enforcement": 0.0
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_85pct",
+    "target_enforcement_rate": 0.85,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 4047607.0,
+    "reduction_pct": 4.7,
+    "baseline_violations": 297591,
+    "simulated_violations": 172846,
+    "violation_reduction": 124744,
+    "hours_saved_monthly": 6930.0,
+    "delivery_hours_saved_monthly": 208.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 22.0,
+        "reduction_pct": 89.3,
+        "original_enforcement": 0.8252
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 3984.1,
+        "reduction_pct": 50.7,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 21.6,
+        "reduction_pct": 46.4,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 35192.0,
+        "simulated": 19169.6,
+        "reduction_pct": 45.5,
+        "original_enforcement": 0.8239
+      },
+      {
+        "zone_id": "tdr384",
+        "baseline": 369.2,
+        "simulated": 216.5,
+        "reduction_pct": 41.4,
+        "original_enforcement": 0.7927
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 122.1,
+        "reduction_pct": 40.8,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 6200.9,
+        "simulated": 4132.3,
+        "reduction_pct": 33.4,
+        "original_enforcement": 0.794
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 3247.5,
+        "simulated": 2197.1,
+        "reduction_pct": 32.3,
+        "original_enforcement": 0.5043
+      },
+      {
+        "zone_id": "tdr1vn",
+        "baseline": 43647.7,
+        "simulated": 30463.8,
+        "reduction_pct": 30.2,
+        "original_enforcement": 0.8462
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 163.2,
+        "reduction_pct": 29.9,
+        "original_enforcement": 0.8095
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 65.8,
+        "reduction_pct": 29.1,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 21.4,
+        "reduction_pct": 27.4,
+        "original_enforcement": 0.4167
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 65613.4,
+        "simulated": 48068.0,
+        "reduction_pct": 26.7,
+        "original_enforcement": 0.5314
+      },
+      {
+        "zone_id": "tdr1qy",
+        "baseline": 2910.3,
+        "simulated": 2186.8,
+        "reduction_pct": 24.9,
+        "original_enforcement": 0.8363
+      },
+      {
+        "zone_id": "tdr4nq",
+        "baseline": 212.1,
+        "simulated": 161.1,
+        "reduction_pct": 24.0,
+        "original_enforcement": 0.7589
+      },
+      {
+        "zone_id": "tdr1s7",
+        "baseline": 194.9,
+        "simulated": 148.2,
+        "reduction_pct": 23.9,
+        "original_enforcement": 0.7639
+      },
+      {
+        "zone_id": "tdr1hj",
+        "baseline": 98.4,
+        "simulated": 75.1,
+        "reduction_pct": 23.7,
+        "original_enforcement": 0.8182
+      },
+      {
+        "zone_id": "tdr1yh",
+        "baseline": 4838.1,
+        "simulated": 3723.9,
+        "reduction_pct": 23.0,
+        "original_enforcement": 0.8275
+      },
+      {
+        "zone_id": "tdr1yc",
+        "baseline": 25863.7,
+        "simulated": 20013.9,
+        "reduction_pct": 22.6,
+        "original_enforcement": 0.846
+      },
+      {
+        "zone_id": "tdr1nc",
+        "baseline": 47197.4,
+        "simulated": 36768.7,
+        "reduction_pct": 22.1,
+        "original_enforcement": 0.7939
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_90pct",
+    "target_enforcement_rate": 0.9,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3595224.0,
+    "reduction_pct": 15.3,
+    "baseline_violations": 297591,
+    "simulated_violations": 156893,
+    "violation_reduction": 140697,
+    "hours_saved_monthly": 7817.0,
+    "delivery_hours_saved_monthly": 234.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 20.5,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8252
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 23.3,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8095
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 6200.9,
+        "simulated": 620.1,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.794
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 34.2,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.867
+      },
+      {
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 55.0,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8315
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 13674.1,
+        "simulated": 1367.4,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8861
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 35192.0,
+        "simulated": 4416.0,
+        "reduction_pct": 87.5,
+        "original_enforcement": 0.8239
+      },
+      {
+        "zone_id": "tdr1xg",
+        "baseline": 7133.1,
+        "simulated": 2113.9,
+        "reduction_pct": 70.4,
+        "original_enforcement": 0.8867
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 3223.8,
+        "reduction_pct": 60.1,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 16.9,
+        "reduction_pct": 57.9,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 100.2,
+        "reduction_pct": 51.5,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr1v0",
+        "baseline": 38483.7,
+        "simulated": 19103.4,
+        "reduction_pct": 50.4,
+        "original_enforcement": 0.8416
+      },
+      {
+        "zone_id": "tdr384",
+        "baseline": 369.2,
+        "simulated": 183.4,
+        "reduction_pct": 50.3,
+        "original_enforcement": 0.7927
+      },
+      {
+        "zone_id": "tdr1uv",
+        "baseline": 39174.1,
+        "simulated": 19801.5,
+        "reduction_pct": 49.5,
+        "original_enforcement": 0.8943
+      },
+      {
+        "zone_id": "tdr1v6",
+        "baseline": 420295.4,
+        "simulated": 213619.9,
+        "reduction_pct": 49.2,
+        "original_enforcement": 0.8528
+      },
+      {
+        "zone_id": "tdr4h8",
+        "baseline": 37536.9,
+        "simulated": 19359.0,
+        "reduction_pct": 48.4,
+        "original_enforcement": 0.7932
+      },
+      {
+        "zone_id": "tdr1hj",
+        "baseline": 98.4,
+        "simulated": 53.0,
+        "reduction_pct": 46.1,
+        "original_enforcement": 0.8182
+      },
+      {
+        "zone_id": "tdr1qy",
+        "baseline": 2910.3,
+        "simulated": 1595.3,
+        "reduction_pct": 45.2,
+        "original_enforcement": 0.8363
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 51.9,
+        "reduction_pct": 44.1,
+        "original_enforcement": 0.5833
+      },
+      {
+        "zone_id": "tdr1zz",
+        "baseline": 25313.9,
+        "simulated": 14225.6,
+        "reduction_pct": 43.8,
+        "original_enforcement": 0.8113
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_95pct",
+    "target_enforcement_rate": 0.95,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3580904.0,
+    "reduction_pct": 15.7,
+    "baseline_violations": 297591,
+    "simulated_violations": 157490,
+    "violation_reduction": 140100,
+    "hours_saved_monthly": 7783.0,
+    "delivery_hours_saved_monthly": 234.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 20.5,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8252
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 23.3,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8095
+      },
+      {
+        "zone_id": "tdr1us",
+        "baseline": 14692.8,
+        "simulated": 1469.3,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.9419
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 6200.9,
+        "simulated": 620.1,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.794
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 34.2,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.867
+      },
+      {
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 55.0,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8315
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 13674.1,
+        "simulated": 1367.4,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8861
+      },
+      {
+        "zone_id": "tdr638",
+        "baseline": 255.0,
+        "simulated": 25.5,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.9444
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 35192.0,
+        "simulated": 4732.0,
+        "reduction_pct": 86.6,
+        "original_enforcement": 0.8239
+      },
+      {
+        "zone_id": "tdr4tb",
+        "baseline": 14339.0,
+        "simulated": 3625.7,
+        "reduction_pct": 74.7,
+        "original_enforcement": 0.933
+      },
+      {
+        "zone_id": "tdr1xg",
+        "baseline": 7133.1,
+        "simulated": 2433.5,
+        "reduction_pct": 65.9,
+        "original_enforcement": 0.8867
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 3064.3,
+        "reduction_pct": 62.0,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr39p",
+        "baseline": 94.5,
+        "simulated": 40.2,
+        "reduction_pct": 57.5,
+        "original_enforcement": 0.9348
+      },
+      {
+        "zone_id": "tdr45v",
+        "baseline": 7708.6,
+        "simulated": 3305.1,
+        "reduction_pct": 57.1,
+        "original_enforcement": 0.9299
+      },
+      {
+        "zone_id": "tdr1me",
+        "baseline": 35.0,
+        "simulated": 15.1,
+        "reduction_pct": 56.9,
+        "original_enforcement": 0.9167
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 17.6,
+        "reduction_pct": 56.3,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr1qt",
+        "baseline": 24870.1,
+        "simulated": 11500.7,
+        "reduction_pct": 53.8,
+        "original_enforcement": 0.9051
+      },
+      {
+        "zone_id": "tdr1wz",
+        "baseline": 25094.2,
+        "simulated": 11907.1,
+        "reduction_pct": 52.6,
+        "original_enforcement": 0.9338
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 101.3,
+        "reduction_pct": 50.9,
+        "original_enforcement": 0.4463
+      },
+      {
+        "zone_id": "tdr384",
+        "baseline": 369.2,
+        "simulated": 182.6,
+        "reduction_pct": 50.5,
+        "original_enforcement": 0.7927
+      }
+    ]
+  },
+  {
+    "scenario": "enforcement_rate_100pct",
+    "target_enforcement_rate": 1.0,
+    "baseline_congestiq": 4246223.0,
+    "simulated_congestiq": 3544445.0,
+    "reduction_pct": 16.5,
+    "baseline_violations": 297591,
+    "simulated_violations": 153316,
+    "violation_reduction": 144274,
+    "hours_saved_monthly": 8015.0,
+    "delivery_hours_saved_monthly": 240.0,
+    "top_zones_impacted": [
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 20.5,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8252
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 23.3,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8095
+      },
+      {
+        "zone_id": "tdr1us",
+        "baseline": 14692.8,
+        "simulated": 1469.3,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.9419
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 6200.9,
+        "simulated": 620.1,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.794
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 34.2,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.867
+      },
+      {
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 55.0,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8315
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 13674.1,
+        "simulated": 1367.4,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.8861
+      },
+      {
+        "zone_id": "tdr638",
+        "baseline": 255.0,
+        "simulated": 25.5,
+        "reduction_pct": 90.0,
+        "original_enforcement": 0.9444
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 35192.0,
+        "simulated": 4740.7,
+        "reduction_pct": 86.5,
+        "original_enforcement": 0.8239
+      },
+      {
+        "zone_id": "tdr4tb",
+        "baseline": 14339.0,
+        "simulated": 3578.7,
+        "reduction_pct": 75.0,
+        "original_enforcement": 0.933
+      },
+      {
+        "zone_id": "tdr1me",
+        "baseline": 35.0,
+        "simulated": 10.7,
+        "reduction_pct": 69.5,
+        "original_enforcement": 0.9167
+      },
+      {
+        "zone_id": "tdr1xg",
+        "baseline": 7133.1,
+        "simulated": 2320.3,
+        "reduction_pct": 67.5,
+        "original_enforcement": 0.8867
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 8073.8,
+        "simulated": 2959.6,
+        "reduction_pct": 63.3,
+        "original_enforcement": 0.7184
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 15.7,
+        "reduction_pct": 60.9,
+        "original_enforcement": 0.4583
+      },
+      {
+        "zone_id": "tdr39p",
+        "baseline": 94.5,
+        "simulated": 40.2,
+        "reduction_pct": 57.5,
+        "original_enforcement": 0.9348
+      },
+      {
+        "zone_id": "tdr45v",
+        "baseline": 7708.6,
+        "simulated": 3305.1,
+        "reduction_pct": 57.1,
+        "original_enforcement": 0.9299
+      },
+      {
+        "zone_id": "tdr1qt",
+        "baseline": 24870.1,
+        "simulated": 11155.1,
+        "reduction_pct": 55.1,
+        "original_enforcement": 0.9051
+      },
+      {
+        "zone_id": "tdr4qc",
+        "baseline": 30.4,
+        "simulated": 13.7,
+        "reduction_pct": 55.1,
+        "original_enforcement": 0.95
+      },
+      {
+        "zone_id": "tdr1hj",
+        "baseline": 98.4,
+        "simulated": 45.8,
+        "reduction_pct": 53.4,
+        "original_enforcement": 0.8182
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 96.7,
+        "reduction_pct": 53.2,
+        "original_enforcement": 0.4463
+      }
+    ]
+  }
+]
