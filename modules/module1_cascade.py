@@ -119,13 +119,15 @@ def find_nearest_node(tree, node_ids, lat, lng):
 def compute_ego_cascade(G, center_node, time_minutes, node_coords_map):
     """
     Compute the ego graph from center_node within time_minutes travel time.
-    Returns list of [lat, lng] for all nodes in the ego graph.
+    Returns (real_node_count, sampled_coords) — real count for scoring,
+    sampled coords for JSON output.
     """
     radius_seconds = time_minutes * 60
 
     try:
         ego = nx.ego_graph(G, center_node, radius=radius_seconds, distance="travel_time")
         nodes = list(ego.nodes())
+        real_count = len(nodes)
 
         # Extract coordinates
         coords = []
@@ -134,15 +136,15 @@ def compute_ego_cascade(G, center_node, time_minutes, node_coords_map):
                 lat, lng = node_coords_map[n]
                 coords.append([round(lat, 6), round(lng, 6)])
 
-        # Cap to keep JSON size manageable
+        # Sample down for JSON size, but keep real_count for scoring
         if len(coords) > MAX_NODES_PER_FRAME:
             indices = np.random.RandomState(42).choice(len(coords), MAX_NODES_PER_FRAME, replace=False)
             coords = [coords[i] for i in sorted(indices)]
 
-        return coords
+        return real_count, coords
     except Exception as e:
         # Node might be isolated or unreachable
-        return []
+        return 0, []
 
 
 def compute_zone_cascades(df: pd.DataFrame, G, top_n: int = TOP_N_ZONES):
@@ -182,12 +184,16 @@ def compute_zone_cascades(df: pd.DataFrame, G, top_n: int = TOP_N_ZONES):
 
         frames = []
         for t_min in TIME_FRAMES_MIN:
-            node_coords = compute_ego_cascade(G, center_node, t_min, node_coords_map)
+            real_count, node_coords = compute_ego_cascade(G, center_node, t_min, node_coords_map)
             frames.append({
                 "minutes": t_min,
-                "affected_nodes": len(node_coords),
+                "affected_nodes": real_count,
+                "sample_nodes": len(node_coords),
                 "nodes": node_coords,
             })
+
+        # cascade_reach = TRUE reachable nodes at 60min (not capped)
+        cascade_reach_60 = frames[-1]["affected_nodes"] if frames else 0
 
         cascade_data[zone_id] = {
             "zone_id": zone_id,
@@ -197,7 +203,7 @@ def compute_zone_cascades(df: pd.DataFrame, G, top_n: int = TOP_N_ZONES):
             "primary_violation": row["primary_violation"],
             "dominant_vehicle": row["dominant_vehicle"],
             "trigger_time": _peak_hour_for_zone(df, zone_id),
-            "cascade_reach": frames[-1]["affected_nodes"] if frames else 0,
+            "cascade_reach": cascade_reach_60,
             "frames": frames,
         }
 

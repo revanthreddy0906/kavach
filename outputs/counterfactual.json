@@ -2,1652 +2,2080 @@
   {
     "scenario": "enforcement_rate_50pct",
     "target_enforcement_rate": 0.5,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3998371.0,
-    "reduction_pct": 5.8,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7801708.0,
+    "reduction_pct": 0.0,
     "baseline_violations": 297591,
-    "simulated_violations": 168528,
-    "violation_reduction": 129062,
-    "hours_saved_monthly": 7170.0,
-    "delivery_hours_saved_monthly": 215.0,
+    "violation_reduction": 215,
+    "zones_affected": 14,
+    "hours_saved_monthly": 47.0,
+    "delivery_hours_saved_monthly": 1.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 147.8,
-        "reduction_pct": 28.4,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 32.4,
-        "reduction_pct": 19.5,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 26.4,
-        "reduction_pct": 15.2,
-        "original_enforcement": 0.45
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 26.4,
-        "reduction_pct": 10.4,
-        "original_enforcement": 0.4167
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 25.8,
+        "reduction_pct": 15.8,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.5,
+        "violations_saved": 29.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 235.2,
-        "reduction_pct": -0.3,
-        "original_enforcement": 0.1429
+        "simulated": 208.1,
+        "reduction_pct": 11.3,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.3571,
+        "violations_saved": 23.0
+      },
+      {
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 185.3,
+        "reduction_pct": 10.2,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.0537,
+        "violations_saved": 36.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 133.7,
-        "reduction_pct": -5.7,
-        "original_enforcement": 0.1831
-      },
-      {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 27.2,
-        "reduction_pct": -15.4,
-        "original_enforcement": 0.2727
-      },
-      {
-        "zone_id": "tdr4mg",
-        "baseline": 49.2,
-        "simulated": 57.5,
-        "reduction_pct": -16.8,
-        "original_enforcement": 0.4762
-      },
-      {
-        "zone_id": "tdr4q8",
-        "baseline": 30.6,
-        "simulated": 36.4,
-        "reduction_pct": -18.9,
-        "original_enforcement": 0.0
-      },
-      {
-        "zone_id": "tdr4q7",
-        "baseline": 96.1,
-        "simulated": 135.9,
-        "reduction_pct": -41.4,
-        "original_enforcement": 0.2963
-      },
-      {
-        "zone_id": "tdr1km",
-        "baseline": 84.5,
-        "simulated": 126.8,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.4474
+        "simulated": 113.8,
+        "reduction_pct": 10.0,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.3169,
+        "violations_saved": 25.0
       },
       {
         "zone_id": "tdr4jn",
         "baseline": 44.4,
-        "simulated": 66.6,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.2308
+        "simulated": 40.6,
+        "reduction_pct": 8.5,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.2692,
+        "violations_saved": 10.0
       },
       {
         "zone_id": "tdr4jq",
         "baseline": 38.8,
-        "simulated": 58.2,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.2381
+        "simulated": 35.6,
+        "reduction_pct": 8.3,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.2619,
+        "violations_saved": 7.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 21.9,
+        "reduction_pct": 7.2,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.2273,
+        "violations_saved": 12.0
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 37.3,
+        "reduction_pct": 7.2,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.0417,
+        "violations_saved": 16.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 89.9,
+        "reduction_pct": 6.4,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.2037,
+        "violations_saved": 9.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 29.2,
+        "reduction_pct": 6.1,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.05,
+        "violations_saved": 19.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 27.8,
+        "reduction_pct": 5.8,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.0833,
+        "violations_saved": 16.0
       },
       {
         "zone_id": "tdr4jr",
-        "baseline": 12139.4,
-        "simulated": 18209.1,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.4423
+        "baseline": 22556.7,
+        "simulated": 22145.5,
+        "reduction_pct": 1.8,
+        "original_enforcement": 0.4423,
+        "enforcement_gap": 0.0577,
+        "violations_saved": 9.0
+      },
+      {
+        "zone_id": "tdr1km",
+        "baseline": 84.5,
+        "simulated": 83.1,
+        "reduction_pct": 1.7,
+        "original_enforcement": 0.4474,
+        "enforcement_gap": 0.0526,
+        "violations_saved": 1.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 48.8,
+        "reduction_pct": 0.8,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.0238,
+        "violations_saved": 1.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_55pct",
     "target_enforcement_rate": 0.55,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3996685.0,
-    "reduction_pct": 5.9,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7791323.0,
+    "reduction_pct": 0.1,
     "baseline_violations": 297591,
-    "simulated_violations": 168235,
-    "violation_reduction": 129355,
-    "hours_saved_monthly": 7186.0,
-    "delivery_hours_saved_monthly": 216.0,
+    "violation_reduction": 530,
+    "zones_affected": 21,
+    "hours_saved_monthly": 114.0,
+    "delivery_hours_saved_monthly": 3.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 139.5,
-        "reduction_pct": 32.4,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 2327.8,
-        "reduction_pct": 28.3,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 30.2,
-        "reduction_pct": 24.8,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 49897.2,
-        "reduction_pct": 24.0,
-        "original_enforcement": 0.5314
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 25.0,
-        "reduction_pct": 19.6,
-        "original_enforcement": 0.45
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 24.7,
-        "reduction_pct": 16.4,
-        "original_enforcement": 0.4167
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 25.3,
+        "reduction_pct": 17.4,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.55,
+        "violations_saved": 32.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 220.2,
-        "reduction_pct": 6.1,
-        "original_enforcement": 0.1429
+        "simulated": 200.1,
+        "reduction_pct": 14.7,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.4071,
+        "violations_saved": 30.0
       },
       {
-        "zone_id": "tdr4nx",
-        "baseline": 93.8,
-        "simulated": 89.5,
-        "reduction_pct": 4.6,
-        "original_enforcement": 0.5088
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 179.6,
+        "reduction_pct": 13.0,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.1037,
+        "violations_saved": 46.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 125.7,
-        "reduction_pct": 0.6,
-        "original_enforcement": 0.1831
+        "simulated": 111.6,
+        "reduction_pct": 11.8,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.3669,
+        "violations_saved": 30.0
       },
       {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 24.5,
-        "reduction_pct": -3.6,
-        "original_enforcement": 0.2727
-      },
-      {
-        "zone_id": "tdr4q8",
-        "baseline": 30.6,
-        "simulated": 31.9,
-        "reduction_pct": -4.4,
-        "original_enforcement": 0.0
-      },
-      {
-        "zone_id": "tdr4mg",
-        "baseline": 49.2,
-        "simulated": 53.3,
-        "reduction_pct": -8.3,
-        "original_enforcement": 0.4762
-      },
-      {
-        "zone_id": "tdr4q7",
-        "baseline": 96.1,
-        "simulated": 125.1,
-        "reduction_pct": -30.2,
-        "original_enforcement": 0.2963
-      },
-      {
-        "zone_id": "tdr1pn",
-        "baseline": 4661.5,
-        "simulated": 6118.7,
-        "reduction_pct": -31.3,
-        "original_enforcement": 0.5163
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 36.0,
+        "reduction_pct": 10.3,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.0917,
+        "violations_saved": 23.0
       },
       {
         "zone_id": "tdr4jn",
         "baseline": 44.4,
-        "simulated": 63.2,
-        "reduction_pct": -42.4,
-        "original_enforcement": 0.2308
+        "simulated": 39.9,
+        "reduction_pct": 10.1,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.3192,
+        "violations_saved": 12.0
       },
       {
-        "zone_id": "tdr472",
-        "baseline": 134.2,
-        "simulated": 198.2,
-        "reduction_pct": -47.7,
-        "original_enforcement": 0.5128
-      },
-      {
-        "zone_id": "tdr1km",
-        "baseline": 84.5,
-        "simulated": 126.8,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.4474
-      },
-      {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 50.2,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.5
-      },
-      {
-        "zone_id": "tdr46c",
-        "baseline": 242.2,
-        "simulated": 363.3,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.5301
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 5326.2,
+        "reduction_pct": 9.9,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.0457,
+        "violations_saved": 67.0
       },
       {
         "zone_id": "tdr4jq",
         "baseline": 38.8,
-        "simulated": 58.2,
-        "reduction_pct": -50.0,
-        "original_enforcement": 0.2381
+        "simulated": 35.0,
+        "reduction_pct": 9.9,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.3119,
+        "violations_saved": 9.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 26.8,
+        "reduction_pct": 9.1,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.1333,
+        "violations_saved": 25.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 28.3,
+        "reduction_pct": 9.0,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.1,
+        "violations_saved": 28.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 21.5,
+        "reduction_pct": 8.8,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.2773,
+        "violations_saved": 15.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 88.4,
+        "reduction_pct": 8.0,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.2537,
+        "violations_saved": 12.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 110551.0,
+        "reduction_pct": 7.8,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.0186,
+        "violations_saved": 161.0
+      },
+      {
+        "zone_id": "tdr4jr",
+        "baseline": 22556.7,
+        "simulated": 21789.0,
+        "reduction_pct": 3.4,
+        "original_enforcement": 0.4423,
+        "enforcement_gap": 0.1077,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr1km",
+        "baseline": 84.5,
+        "simulated": 81.8,
+        "reduction_pct": 3.2,
+        "original_enforcement": 0.4474,
+        "enforcement_gap": 0.1026,
+        "violations_saved": 3.0
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 91.3,
+        "reduction_pct": 2.7,
+        "original_enforcement": 0.5088,
+        "enforcement_gap": 0.0412,
+        "violations_saved": 12.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 48.1,
+        "reduction_pct": 2.3,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.0738,
+        "violations_saved": 5.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 33.0,
+        "reduction_pct": 1.6,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.05,
+        "violations_saved": 1.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 132.6,
+        "reduction_pct": 1.2,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.0372,
+        "violations_saved": 1.0
+      },
+      {
+        "zone_id": "tdr1pn",
+        "baseline": 8437.0,
+        "simulated": 8347.0,
+        "reduction_pct": 1.1,
+        "original_enforcement": 0.5163,
+        "enforcement_gap": 0.0337,
+        "violations_saved": 2.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_60pct",
     "target_enforcement_rate": 0.6,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3991097.0,
-    "reduction_pct": 6.0,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7786758.0,
+    "reduction_pct": 0.2,
     "baseline_violations": 297591,
-    "simulated_violations": 166638,
-    "violation_reduction": 130952,
-    "hours_saved_monthly": 7275.0,
-    "delivery_hours_saved_monthly": 218.0,
+    "violation_reduction": 979,
+    "zones_affected": 26,
+    "hours_saved_monthly": 211.0,
+    "delivery_hours_saved_monthly": 6.0,
     "top_zones_impacted": [
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 18.0,
-        "reduction_pct": 55.3,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 93.9,
-        "reduction_pct": 54.5,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 53.5,
-        "reduction_pct": 42.4,
-        "original_enforcement": 0.5833
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 1913.8,
-        "reduction_pct": 41.1,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 17.4,
-        "reduction_pct": 41.0,
-        "original_enforcement": 0.4167
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 18.5,
-        "reduction_pct": 40.5,
-        "original_enforcement": 0.45
-      },
       {
         "zone_id": "tdr4q8",
         "baseline": 30.6,
-        "simulated": 18.2,
-        "reduction_pct": 40.5,
-        "original_enforcement": 0.0
-      },
-      {
-        "zone_id": "tdr1pr",
-        "baseline": 195.2,
-        "simulated": 118.8,
-        "reduction_pct": 39.2,
-        "original_enforcement": 0.5606
+        "simulated": 21.1,
+        "reduction_pct": 31.1,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.6,
+        "violations_saved": 58.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 148.7,
-        "reduction_pct": 36.6,
-        "original_enforcement": 0.1429
-      },
-      {
-        "zone_id": "tdr472",
-        "baseline": 134.2,
-        "simulated": 87.6,
-        "reduction_pct": 34.8,
-        "original_enforcement": 0.5128
-      },
-      {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 22.6,
-        "reduction_pct": 32.6,
-        "original_enforcement": 0.5
-      },
-      {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 16.5,
-        "reduction_pct": 30.1,
-        "original_enforcement": 0.2727
+        "simulated": 174.9,
+        "reduction_pct": 25.4,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.4571,
+        "violations_saved": 52.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 88.7,
-        "reduction_pct": 29.9,
-        "original_enforcement": 0.1831
+        "simulated": 98.5,
+        "reduction_pct": 22.1,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.4169,
+        "violations_saved": 56.0
       },
       {
-        "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 46796.5,
-        "reduction_pct": 28.7,
-        "original_enforcement": 0.5314
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 162.6,
+        "reduction_pct": 21.2,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.1537,
+        "violations_saved": 74.0
       },
       {
-        "zone_id": "tdr4mg",
-        "baseline": 49.2,
-        "simulated": 36.0,
-        "reduction_pct": 26.9,
-        "original_enforcement": 0.4762
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 31.7,
+        "reduction_pct": 21.1,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.1417,
+        "violations_saved": 47.0
       },
       {
-        "zone_id": "tdr4jk",
-        "baseline": 68.8,
-        "simulated": 52.2,
-        "reduction_pct": 24.1,
-        "original_enforcement": 0.5952
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 19.0,
+        "reduction_pct": 19.4,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.3273,
+        "violations_saved": 33.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 24.2,
+        "reduction_pct": 18.1,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.1833,
+        "violations_saved": 50.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 25.8,
+        "reduction_pct": 16.9,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.15,
+        "violations_saved": 52.0
       },
       {
         "zone_id": "tdr4q7",
         "baseline": 96.1,
-        "simulated": 75.2,
-        "reduction_pct": 21.8,
-        "original_enforcement": 0.2963
+        "simulated": 80.6,
+        "reduction_pct": 16.1,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.3037,
+        "violations_saved": 24.0
       },
       {
-        "zone_id": "tdr4nx",
-        "baseline": 93.8,
-        "simulated": 73.9,
-        "reduction_pct": 21.2,
-        "original_enforcement": 0.5088
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 5006.5,
+        "reduction_pct": 15.3,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.0957,
+        "violations_saved": 103.0
       },
       {
         "zone_id": "tdr4jn",
         "baseline": 44.4,
-        "simulated": 41.2,
-        "reduction_pct": 7.2,
-        "original_enforcement": 0.2308
+        "simulated": 38.3,
+        "reduction_pct": 13.8,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.3692,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 116.5,
+        "reduction_pct": 13.2,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.0872,
+        "violations_saved": 13.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 80.5,
+        "reduction_pct": 13.2,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.0167,
+        "violations_saved": 28.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 169.8,
+        "reduction_pct": 13.0,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.0394,
+        "violations_saved": 20.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 29.2,
+        "reduction_pct": 13.0,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.1,
+        "violations_saved": 8.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 43.3,
+        "reduction_pct": 12.0,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.1238,
+        "violations_saved": 23.0
       },
       {
         "zone_id": "tdr4jq",
         "baseline": 38.8,
-        "simulated": 39.6,
-        "reduction_pct": -2.0,
-        "original_enforcement": 0.2381
+        "simulated": 34.4,
+        "reduction_pct": 11.4,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.3619,
+        "violations_saved": 10.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 106957.1,
+        "reduction_pct": 10.8,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.0686,
+        "violations_saved": 223.0
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 85.1,
+        "reduction_pct": 9.2,
+        "original_enforcement": 0.5088,
+        "enforcement_gap": 0.0912,
+        "violations_saved": 41.0
+      },
+      {
+        "zone_id": "tdr4jk",
+        "baseline": 68.8,
+        "simulated": 63.7,
+        "reduction_pct": 7.4,
+        "original_enforcement": 0.5952,
+        "enforcement_gap": 0.0048,
+        "violations_saved": 11.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_65pct",
     "target_enforcement_rate": 0.65,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3992163.0,
-    "reduction_pct": 6.0,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7782446.0,
+    "reduction_pct": 0.3,
     "baseline_violations": 297591,
-    "simulated_violations": 166684,
-    "violation_reduction": 130906,
-    "hours_saved_monthly": 7273.0,
-    "delivery_hours_saved_monthly": 218.0,
+    "violation_reduction": 1172,
+    "zones_affected": 42,
+    "hours_saved_monthly": 253.0,
+    "delivery_hours_saved_monthly": 8.0,
     "top_zones_impacted": [
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 17.0,
-        "reduction_pct": 57.7,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 93.7,
-        "reduction_pct": 54.6,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 18.3,
-        "reduction_pct": 45.5,
-        "original_enforcement": 0.5
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 50.5,
-        "reduction_pct": 45.5,
-        "original_enforcement": 0.5833
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 1912.4,
-        "reduction_pct": 41.1,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr1pr",
-        "baseline": 195.2,
-        "simulated": 115.3,
-        "reduction_pct": 40.9,
-        "original_enforcement": 0.5606
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 18.7,
-        "reduction_pct": 39.9,
-        "original_enforcement": 0.45
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 17.8,
-        "reduction_pct": 39.8,
-        "original_enforcement": 0.4167
-      },
       {
         "zone_id": "tdr4q8",
         "baseline": 30.6,
-        "simulated": 18.5,
-        "reduction_pct": 39.5,
-        "original_enforcement": 0.0
+        "simulated": 20.7,
+        "reduction_pct": 32.4,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.65,
+        "violations_saved": 60.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 144.0,
-        "reduction_pct": 38.6,
-        "original_enforcement": 0.1429
-      },
-      {
-        "zone_id": "tdr472",
-        "baseline": 134.2,
-        "simulated": 85.8,
-        "reduction_pct": 36.0,
-        "original_enforcement": 0.5128
-      },
-      {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 16.3,
-        "reduction_pct": 31.1,
-        "original_enforcement": 0.2727
-      },
-      {
-        "zone_id": "tdr4qf",
-        "baseline": 63.2,
-        "simulated": 43.8,
-        "reduction_pct": 30.7,
-        "original_enforcement": 0.6111
-      },
-      {
-        "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 46572.5,
-        "reduction_pct": 29.0,
-        "original_enforcement": 0.5314
-      },
-      {
-        "zone_id": "tdr4jk",
-        "baseline": 68.8,
-        "simulated": 49.8,
+        "simulated": 169.8,
         "reduction_pct": 27.6,
-        "original_enforcement": 0.5952
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.5071,
+        "violations_saved": 57.0
+      },
+      {
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 30.8,
+        "reduction_pct": 23.4,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.1917,
+        "violations_saved": 52.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 91.7,
-        "reduction_pct": 27.5,
-        "original_enforcement": 0.1831
+        "simulated": 97.4,
+        "reduction_pct": 23.0,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.4669,
+        "violations_saved": 58.0
       },
       {
-        "zone_id": "tdr4mg",
-        "baseline": 49.2,
-        "simulated": 36.8,
-        "reduction_pct": 25.2,
-        "original_enforcement": 0.4762
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 159.3,
+        "reduction_pct": 22.8,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.2037,
+        "violations_saved": 80.0
       },
       {
-        "zone_id": "tdr4nx",
-        "baseline": 93.8,
-        "simulated": 73.2,
-        "reduction_pct": 22.0,
-        "original_enforcement": 0.5088
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 18.6,
+        "reduction_pct": 21.3,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.3773,
+        "violations_saved": 36.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 23.8,
+        "reduction_pct": 19.3,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.2333,
+        "violations_saved": 54.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 27.3,
+        "reduction_pct": 18.4,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.15,
+        "violations_saved": 11.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 25.4,
+        "reduction_pct": 18.3,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.2,
+        "violations_saved": 56.0
       },
       {
         "zone_id": "tdr4q7",
         "baseline": 96.1,
-        "simulated": 77.3,
-        "reduction_pct": 19.6,
-        "original_enforcement": 0.2963
+        "simulated": 79.7,
+        "reduction_pct": 17.1,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.3537,
+        "violations_saved": 25.0
       },
       {
-        "zone_id": "tdr1pp",
-        "baseline": 6141.2,
-        "simulated": 5351.5,
-        "reduction_pct": 12.9,
-        "original_enforcement": 0.6235
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4912.3,
+        "reduction_pct": 16.9,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.1457,
+        "violations_saved": 114.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 37.4,
+        "reduction_pct": 15.9,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.4192,
+        "violations_saved": 19.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 78.2,
+        "reduction_pct": 15.8,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.0667,
+        "violations_saved": 33.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 113.9,
+        "reduction_pct": 15.2,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.1372,
+        "violations_saved": 14.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 165.7,
+        "reduction_pct": 15.1,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.0894,
+        "violations_saved": 23.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 42.8,
+        "reduction_pct": 13.1,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.1738,
+        "violations_saved": 25.0
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 33.7,
+        "reduction_pct": 13.0,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.4119,
+        "violations_saved": 12.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 104939.8,
+        "reduction_pct": 12.5,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.1186,
+        "violations_saved": 258.0
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 83.4,
+        "reduction_pct": 11.1,
+        "original_enforcement": 0.5088,
+        "enforcement_gap": 0.1412,
+        "violations_saved": 49.0
+      },
+      {
+        "zone_id": "tdr4qf",
+        "baseline": 63.2,
+        "simulated": 56.6,
+        "reduction_pct": 10.4,
+        "original_enforcement": 0.6111,
+        "enforcement_gap": 0.0389,
+        "violations_saved": 12.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_70pct",
     "target_enforcement_rate": 0.7,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3991337.0,
-    "reduction_pct": 6.0,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7776520.0,
+    "reduction_pct": 0.3,
     "baseline_violations": 297591,
-    "simulated_violations": 166563,
-    "violation_reduction": 131027,
-    "hours_saved_monthly": 7279.0,
-    "delivery_hours_saved_monthly": 218.0,
+    "violation_reduction": 1463,
+    "zones_affected": 57,
+    "hours_saved_monthly": 316.0,
+    "delivery_hours_saved_monthly": 9.0,
     "top_zones_impacted": [
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 17.0,
-        "reduction_pct": 57.7,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 92.4,
-        "reduction_pct": 55.2,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 17.0,
-        "reduction_pct": 49.4,
-        "original_enforcement": 0.5
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 50.5,
-        "reduction_pct": 45.5,
-        "original_enforcement": 0.5833
-      },
       {
         "zone_id": "tdr4q8",
         "baseline": 30.6,
-        "simulated": 17.3,
-        "reduction_pct": 43.5,
-        "original_enforcement": 0.0
-      },
-      {
-        "zone_id": "tdr1pr",
-        "baseline": 195.2,
-        "simulated": 112.4,
-        "reduction_pct": 42.4,
-        "original_enforcement": 0.5606
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 17.9,
-        "reduction_pct": 42.3,
-        "original_enforcement": 0.45
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 1876.5,
-        "reduction_pct": 42.2,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 17.5,
-        "reduction_pct": 40.7,
-        "original_enforcement": 0.4167
+        "simulated": 19.8,
+        "reduction_pct": 35.2,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.7,
+        "violations_saved": 65.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 141.4,
-        "reduction_pct": 39.7,
-        "original_enforcement": 0.1429
+        "simulated": 165.3,
+        "reduction_pct": 29.5,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.5571,
+        "violations_saved": 61.0
       },
       {
-        "zone_id": "tdr472",
-        "baseline": 134.2,
-        "simulated": 82.6,
-        "reduction_pct": 38.5,
-        "original_enforcement": 0.5128
-      },
-      {
-        "zone_id": "tdr4kc",
-        "baseline": 54.0,
-        "simulated": 33.9,
-        "reduction_pct": 37.3,
-        "original_enforcement": 0.6667
-      },
-      {
-        "zone_id": "tdr1t8",
-        "baseline": 199.2,
-        "simulated": 128.4,
-        "reduction_pct": 35.5,
-        "original_enforcement": 0.6542
-      },
-      {
-        "zone_id": "tdr4jm",
-        "baseline": 155.8,
-        "simulated": 102.8,
-        "reduction_pct": 34.0,
-        "original_enforcement": 0.6695
-      },
-      {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 16.3,
-        "reduction_pct": 31.1,
-        "original_enforcement": 0.2727
-      },
-      {
-        "zone_id": "tdr4qf",
-        "baseline": 63.2,
-        "simulated": 43.8,
-        "reduction_pct": 30.7,
-        "original_enforcement": 0.6111
-      },
-      {
-        "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 46337.2,
-        "reduction_pct": 29.4,
-        "original_enforcement": 0.5314
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 30.2,
+        "reduction_pct": 24.9,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.2417,
+        "violations_saved": 55.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 90.6,
-        "reduction_pct": 28.4,
-        "original_enforcement": 0.1831
+        "simulated": 95.1,
+        "reduction_pct": 24.9,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.5169,
+        "violations_saved": 63.0
       },
       {
-        "zone_id": "tdr4jk",
-        "baseline": 68.8,
-        "simulated": 49.8,
-        "reduction_pct": 27.6,
-        "original_enforcement": 0.5952
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 155.6,
+        "reduction_pct": 24.6,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.2537,
+        "violations_saved": 86.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 18.2,
+        "reduction_pct": 22.8,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.4273,
+        "violations_saved": 39.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 23.3,
+        "reduction_pct": 21.2,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.2833,
+        "violations_saved": 59.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 26.4,
+        "reduction_pct": 21.1,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.2,
+        "violations_saved": 12.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 24.7,
+        "reduction_pct": 20.6,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.25,
+        "violations_saved": 64.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 76.7,
+        "reduction_pct": 20.2,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.4037,
+        "violations_saved": 30.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4799.3,
+        "reduction_pct": 18.9,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.1957,
+        "violations_saved": 127.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 110.8,
+        "reduction_pct": 17.5,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.1872,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 76.7,
+        "reduction_pct": 17.4,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.1167,
+        "violations_saved": 36.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 36.7,
+        "reduction_pct": 17.4,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.4692,
+        "violations_saved": 21.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 161.7,
+        "reduction_pct": 17.1,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.1394,
+        "violations_saved": 26.0
       },
       {
         "zone_id": "tdr4mg",
         "baseline": 49.2,
-        "simulated": 36.2,
-        "reduction_pct": 26.4,
-        "original_enforcement": 0.4762
+        "simulated": 41.8,
+        "reduction_pct": 15.0,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.2238,
+        "violations_saved": 29.0
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 33.1,
+        "reduction_pct": 14.6,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.4619,
+        "violations_saved": 13.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 102916.3,
+        "reduction_pct": 14.1,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.1686,
+        "violations_saved": 293.0
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 81.5,
+        "reduction_pct": 13.2,
+        "original_enforcement": 0.5088,
+        "enforcement_gap": 0.1912,
+        "violations_saved": 58.0
+      },
+      {
+        "zone_id": "tdr4kc",
+        "baseline": 54.0,
+        "simulated": 47.4,
+        "reduction_pct": 12.2,
+        "original_enforcement": 0.6667,
+        "enforcement_gap": 0.0333,
+        "violations_saved": 11.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_75pct",
     "target_enforcement_rate": 0.75,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3993031.0,
-    "reduction_pct": 6.0,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7766385.0,
+    "reduction_pct": 0.5,
     "baseline_violations": 297591,
-    "simulated_violations": 166731,
-    "violation_reduction": 130859,
-    "hours_saved_monthly": 7270.0,
-    "delivery_hours_saved_monthly": 218.0,
+    "violation_reduction": 1843,
+    "zones_affected": 71,
+    "hours_saved_monthly": 398.0,
+    "delivery_hours_saved_monthly": 12.0,
     "top_zones_impacted": [
-      {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 16.9,
-        "reduction_pct": 57.8,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 96.8,
-        "reduction_pct": 53.1,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 3957.0,
-        "reduction_pct": 51.0,
-        "original_enforcement": 0.7184
-      },
-      {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 18.3,
-        "reduction_pct": 45.3,
-        "original_enforcement": 0.5
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 51.6,
-        "reduction_pct": 44.4,
-        "original_enforcement": 0.5833
-      },
-      {
-        "zone_id": "tdr1pr",
-        "baseline": 195.2,
-        "simulated": 111.9,
-        "reduction_pct": 42.7,
-        "original_enforcement": 0.5606
-      },
       {
         "zone_id": "tdr4q8",
         "baseline": 30.6,
-        "simulated": 17.9,
-        "reduction_pct": 41.7,
-        "original_enforcement": 0.0
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 1922.0,
-        "reduction_pct": 40.8,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 17.5,
-        "reduction_pct": 40.8,
-        "original_enforcement": 0.4167
-      },
-      {
-        "zone_id": "tdr450",
-        "baseline": 31.1,
-        "simulated": 18.7,
-        "reduction_pct": 39.8,
-        "original_enforcement": 0.45
+        "simulated": 19.5,
+        "reduction_pct": 36.2,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.75,
+        "violations_saved": 67.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 144.1,
-        "reduction_pct": 38.6,
-        "original_enforcement": 0.1429
+        "simulated": 162.4,
+        "reduction_pct": 30.8,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.6071,
+        "violations_saved": 63.0
       },
       {
-        "zone_id": "tdr4kc",
-        "baseline": 54.0,
-        "simulated": 33.7,
-        "reduction_pct": 37.7,
-        "original_enforcement": 0.6667
-      },
-      {
-        "zone_id": "tdr472",
-        "baseline": 134.2,
-        "simulated": 86.0,
-        "reduction_pct": 35.9,
-        "original_enforcement": 0.5128
-      },
-      {
-        "zone_id": "tdr1t8",
-        "baseline": 199.2,
-        "simulated": 128.0,
-        "reduction_pct": 35.7,
-        "original_enforcement": 0.6542
-      },
-      {
-        "zone_id": "tdr4jm",
-        "baseline": 155.8,
-        "simulated": 106.3,
-        "reduction_pct": 31.8,
-        "original_enforcement": 0.6695
-      },
-      {
-        "zone_id": "tdr4qf",
-        "baseline": 63.2,
-        "simulated": 43.7,
-        "reduction_pct": 30.9,
-        "original_enforcement": 0.6111
-      },
-      {
-        "zone_id": "tdr1rz",
-        "baseline": 23.6,
-        "simulated": 16.6,
-        "reduction_pct": 29.7,
-        "original_enforcement": 0.2727
-      },
-      {
-        "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 46635.5,
-        "reduction_pct": 28.9,
-        "original_enforcement": 0.5314
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 29.5,
+        "reduction_pct": 26.6,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.2917,
+        "violations_saved": 59.0
       },
       {
         "zone_id": "tdr4r1",
         "baseline": 126.5,
-        "simulated": 90.4,
-        "reduction_pct": 28.5,
-        "original_enforcement": 0.1831
+        "simulated": 93.0,
+        "reduction_pct": 26.5,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.5669,
+        "violations_saved": 67.0
       },
       {
-        "zone_id": "tdr4jk",
-        "baseline": 68.8,
-        "simulated": 49.6,
-        "reduction_pct": 27.9,
-        "original_enforcement": 0.5952
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 153.7,
+        "reduction_pct": 25.5,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.3037,
+        "violations_saved": 89.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 17.9,
+        "reduction_pct": 24.0,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.4773,
+        "violations_saved": 41.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 22.8,
+        "reduction_pct": 22.8,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.3333,
+        "violations_saved": 63.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 26.3,
+        "reduction_pct": 21.5,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.25,
+        "violations_saved": 13.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 24.4,
+        "reduction_pct": 21.4,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.3,
+        "violations_saved": 66.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 76.7,
+        "reduction_pct": 20.2,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.4537,
+        "violations_saved": 30.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4730.6,
+        "reduction_pct": 20.0,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.2457,
+        "violations_saved": 134.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 35.9,
+        "reduction_pct": 19.1,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.5192,
+        "violations_saved": 23.0
+      },
+      {
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 158.5,
+        "reduction_pct": 18.8,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.1894,
+        "violations_saved": 29.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 75.5,
+        "reduction_pct": 18.6,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.1667,
+        "violations_saved": 39.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 109.7,
+        "reduction_pct": 18.3,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.2372,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 41.0,
+        "reduction_pct": 16.6,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.2738,
+        "violations_saved": 32.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 12443.6,
+        "reduction_pct": 16.3,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.0316,
+        "violations_saved": 127.0
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 32.5,
+        "reduction_pct": 16.2,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.5119,
+        "violations_saved": 14.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 101185.2,
+        "reduction_pct": 15.6,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.2186,
+        "violations_saved": 322.0
+      },
+      {
+        "zone_id": "tdr4nx",
+        "baseline": 93.8,
+        "simulated": 80.0,
+        "reduction_pct": 14.7,
+        "original_enforcement": 0.5088,
+        "enforcement_gap": 0.2412,
+        "violations_saved": 65.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_80pct",
     "target_enforcement_rate": 0.8,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 4000139.0,
-    "reduction_pct": 5.8,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7745049.0,
+    "reduction_pct": 0.7,
     "baseline_violations": 297591,
-    "simulated_violations": 167530,
-    "violation_reduction": 130060,
-    "hours_saved_monthly": 7226.0,
-    "delivery_hours_saved_monthly": 217.0,
+    "violation_reduction": 2445,
+    "zones_affected": 117,
+    "hours_saved_monthly": 528.0,
+    "delivery_hours_saved_monthly": 16.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr1sv",
-        "baseline": 40.2,
-        "simulated": 17.1,
-        "reduction_pct": 57.4,
-        "original_enforcement": 0.4583
-      },
-      {
-        "zone_id": "tdr1yr",
-        "baseline": 206.4,
-        "simulated": 102.1,
-        "reduction_pct": 50.5,
-        "original_enforcement": 0.4463
-      },
-      {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 4070.3,
-        "reduction_pct": 49.6,
-        "original_enforcement": 0.7184
-      },
-      {
-        "zone_id": "tdr384",
-        "baseline": 369.2,
-        "simulated": 186.1,
-        "reduction_pct": 49.6,
-        "original_enforcement": 0.7927
-      },
-      {
-        "zone_id": "tdr4nq",
-        "baseline": 212.1,
-        "simulated": 122.6,
-        "reduction_pct": 42.2,
-        "original_enforcement": 0.7589
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 54.1,
-        "reduction_pct": 41.7,
-        "original_enforcement": 0.5833
-      },
-      {
-        "zone_id": "tdr1pr",
-        "baseline": 195.2,
-        "simulated": 115.5,
-        "reduction_pct": 40.8,
-        "original_enforcement": 0.5606
-      },
-      {
-        "zone_id": "tdr1s7",
-        "baseline": 194.9,
-        "simulated": 116.6,
-        "reduction_pct": 40.2,
-        "original_enforcement": 0.7639
-      },
-      {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 1990.5,
-        "reduction_pct": 38.7,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr1zf",
-        "baseline": 6200.9,
-        "simulated": 3798.4,
-        "reduction_pct": 38.7,
-        "original_enforcement": 0.794
-      },
-      {
-        "zone_id": "tdr4r4",
-        "baseline": 29.5,
-        "simulated": 18.1,
-        "reduction_pct": 38.6,
-        "original_enforcement": 0.4167
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 20.0,
+        "reduction_pct": 34.5,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.8,
+        "violations_saved": 64.0
       },
       {
         "zone_id": "tdr470",
         "baseline": 234.6,
-        "simulated": 150.9,
-        "reduction_pct": 35.7,
-        "original_enforcement": 0.1429
+        "simulated": 160.8,
+        "reduction_pct": 31.5,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.6571,
+        "violations_saved": 65.0
       },
       {
-        "zone_id": "tdr3ch",
-        "baseline": 52.8,
-        "simulated": 34.1,
-        "reduction_pct": 35.5,
-        "original_enforcement": 0.7857
+        "zone_id": "tdr1sv",
+        "baseline": 40.2,
+        "simulated": 28.9,
+        "reduction_pct": 28.0,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.3417,
+        "violations_saved": 62.0
       },
       {
-        "zone_id": "tdr1t8",
-        "baseline": 199.2,
-        "simulated": 129.3,
-        "reduction_pct": 35.1,
-        "original_enforcement": 0.6542
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 91.9,
+        "reduction_pct": 27.3,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.6169,
+        "violations_saved": 69.0
       },
       {
-        "zone_id": "tdr46b",
-        "baseline": 33.5,
-        "simulated": 21.7,
-        "reduction_pct": 35.1,
-        "original_enforcement": 0.5
+        "zone_id": "tdr1yr",
+        "baseline": 206.4,
+        "simulated": 152.0,
+        "reduction_pct": 26.3,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.3537,
+        "violations_saved": 92.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 17.6,
+        "reduction_pct": 25.4,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.5273,
+        "violations_saved": 43.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 22.5,
+        "reduction_pct": 23.7,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.3833,
+        "violations_saved": 66.0
       },
       {
         "zone_id": "tdr450",
         "baseline": 31.1,
-        "simulated": 20.3,
-        "reduction_pct": 34.7,
-        "original_enforcement": 0.45
+        "simulated": 24.4,
+        "reduction_pct": 21.5,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.35,
+        "violations_saved": 66.0
       },
       {
-        "zone_id": "tdr4m4",
-        "baseline": 48.8,
-        "simulated": 32.1,
-        "reduction_pct": 34.2,
-        "original_enforcement": 0.7692
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4674.6,
+        "reduction_pct": 21.0,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.2957,
+        "violations_saved": 141.0
       },
       {
-        "zone_id": "tdr4hm",
-        "baseline": 47.2,
-        "simulated": 32.1,
-        "reduction_pct": 31.9,
-        "original_enforcement": 0.7667
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 26.8,
+        "reduction_pct": 20.0,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.3,
+        "violations_saved": 12.0
       },
       {
-        "zone_id": "tdr4kc",
-        "baseline": 54.0,
-        "simulated": 37.2,
-        "reduction_pct": 31.2,
-        "original_enforcement": 0.6667
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 156.5,
+        "reduction_pct": 19.8,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.2394,
+        "violations_saved": 30.0
       },
       {
-        "zone_id": "tdr4q8",
-        "baseline": 30.6,
-        "simulated": 21.2,
-        "reduction_pct": 30.7,
-        "original_enforcement": 0.0
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 35.7,
+        "reduction_pct": 19.6,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.5692,
+        "violations_saved": 24.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 74.8,
+        "reduction_pct": 19.4,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.2167,
+        "violations_saved": 40.0
+      },
+      {
+        "zone_id": "tdr472",
+        "baseline": 134.2,
+        "simulated": 110.1,
+        "reduction_pct": 18.0,
+        "original_enforcement": 0.5128,
+        "enforcement_gap": 0.2872,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 31.9,
+        "reduction_pct": 17.8,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.5619,
+        "violations_saved": 16.0
+      },
+      {
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 79.2,
+        "reduction_pct": 17.6,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.5037,
+        "violations_saved": 26.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 12271.3,
+        "reduction_pct": 17.5,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.0816,
+        "violations_saved": 136.0
+      },
+      {
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 40.7,
+        "reduction_pct": 17.3,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.3238,
+        "violations_saved": 34.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 99527.4,
+        "reduction_pct": 17.0,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.2686,
+        "violations_saved": 351.0
+      },
+      {
+        "zone_id": "tdr1t8",
+        "baseline": 199.2,
+        "simulated": 169.0,
+        "reduction_pct": 15.1,
+        "original_enforcement": 0.6542,
+        "enforcement_gap": 0.1458,
+        "violations_saved": 24.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_85pct",
     "target_enforcement_rate": 0.85,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 4047607.0,
-    "reduction_pct": 4.7,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7675165.0,
+    "reduction_pct": 1.6,
     "baseline_violations": 297591,
-    "simulated_violations": 172846,
-    "violation_reduction": 124744,
-    "hours_saved_monthly": 6930.0,
-    "delivery_hours_saved_monthly": 208.0,
+    "violation_reduction": 3521,
+    "zones_affected": 194,
+    "hours_saved_monthly": 760.0,
+    "delivery_hours_saved_monthly": 23.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr17n",
-        "baseline": 204.6,
-        "simulated": 22.0,
-        "reduction_pct": 89.3,
-        "original_enforcement": 0.8252
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 20.8,
+        "reduction_pct": 31.9,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.85,
+        "violations_saved": 59.0
       },
       {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 3984.1,
-        "reduction_pct": 50.7,
-        "original_enforcement": 0.7184
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 167.4,
+        "reduction_pct": 28.6,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.7071,
+        "violations_saved": 59.0
       },
       {
         "zone_id": "tdr1sv",
         "baseline": 40.2,
-        "simulated": 21.6,
-        "reduction_pct": 46.4,
-        "original_enforcement": 0.4583
+        "simulated": 29.6,
+        "reduction_pct": 26.3,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.3917,
+        "violations_saved": 58.0
       },
       {
-        "zone_id": "tdr1x9",
-        "baseline": 35192.0,
-        "simulated": 19169.6,
-        "reduction_pct": 45.5,
-        "original_enforcement": 0.8239
-      },
-      {
-        "zone_id": "tdr384",
-        "baseline": 369.2,
-        "simulated": 216.5,
-        "reduction_pct": 41.4,
-        "original_enforcement": 0.7927
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 94.4,
+        "reduction_pct": 25.4,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.6669,
+        "violations_saved": 64.0
       },
       {
         "zone_id": "tdr1yr",
         "baseline": 206.4,
-        "simulated": 122.1,
-        "reduction_pct": 40.8,
-        "original_enforcement": 0.4463
+        "simulated": 154.8,
+        "reduction_pct": 25.0,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.4037,
+        "violations_saved": 88.0
       },
       {
-        "zone_id": "tdr1zf",
-        "baseline": 6200.9,
-        "simulated": 4132.3,
-        "reduction_pct": 33.4,
-        "original_enforcement": 0.794
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 153.9,
+        "reduction_pct": 24.8,
+        "original_enforcement": 0.8252,
+        "enforcement_gap": 0.0248,
+        "violations_saved": 25.0
       },
       {
-        "zone_id": "tdr1mb",
-        "baseline": 3247.5,
-        "simulated": 2197.1,
-        "reduction_pct": 32.3,
-        "original_enforcement": 0.5043
-      },
-      {
-        "zone_id": "tdr1vn",
-        "baseline": 43647.7,
-        "simulated": 30463.8,
-        "reduction_pct": 30.2,
-        "original_enforcement": 0.8462
-      },
-      {
-        "zone_id": "tdr1mz",
-        "baseline": 232.7,
-        "simulated": 163.2,
-        "reduction_pct": 29.9,
-        "original_enforcement": 0.8095
-      },
-      {
-        "zone_id": "tdr4h5",
-        "baseline": 92.8,
-        "simulated": 65.8,
-        "reduction_pct": 29.1,
-        "original_enforcement": 0.5833
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 18.3,
+        "reduction_pct": 22.3,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.5773,
+        "violations_saved": 38.0
       },
       {
         "zone_id": "tdr4r4",
         "baseline": 29.5,
-        "simulated": 21.4,
-        "reduction_pct": 27.4,
-        "original_enforcement": 0.4167
+        "simulated": 23.0,
+        "reduction_pct": 21.9,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.4333,
+        "violations_saved": 61.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4694.0,
+        "reduction_pct": 20.6,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.3457,
+        "violations_saved": 139.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 35.7,
+        "reduction_pct": 19.6,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.6192,
+        "violations_saved": 24.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 11988.7,
+        "reduction_pct": 19.4,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.1316,
+        "violations_saved": 151.0
+      },
+      {
+        "zone_id": "tdr4jq",
+        "baseline": 38.8,
+        "simulated": 31.3,
+        "reduction_pct": 19.3,
+        "original_enforcement": 0.2381,
+        "enforcement_gap": 0.6119,
+        "violations_saved": 17.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 25.2,
+        "reduction_pct": 18.8,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.4,
+        "violations_saved": 58.0
       },
       {
         "zone_id": "tdr4me",
-        "baseline": 65613.4,
-        "simulated": 48068.0,
-        "reduction_pct": 26.7,
-        "original_enforcement": 0.5314
+        "baseline": 119870.3,
+        "simulated": 98181.3,
+        "reduction_pct": 18.1,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.3186,
+        "violations_saved": 374.0
       },
       {
-        "zone_id": "tdr1qy",
-        "baseline": 2910.3,
-        "simulated": 2186.8,
-        "reduction_pct": 24.9,
-        "original_enforcement": 0.8363
+        "zone_id": "tdr4q7",
+        "baseline": 96.1,
+        "simulated": 79.3,
+        "reduction_pct": 17.5,
+        "original_enforcement": 0.2963,
+        "enforcement_gap": 0.5537,
+        "violations_saved": 26.0
       },
       {
-        "zone_id": "tdr4nq",
-        "baseline": 212.1,
-        "simulated": 161.1,
-        "reduction_pct": 24.0,
-        "original_enforcement": 0.7589
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 76.9,
+        "reduction_pct": 17.2,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.2667,
+        "violations_saved": 36.0
       },
       {
-        "zone_id": "tdr1s7",
-        "baseline": 194.9,
-        "simulated": 148.2,
-        "reduction_pct": 23.9,
-        "original_enforcement": 0.7639
+        "zone_id": "tdr1pr",
+        "baseline": 195.2,
+        "simulated": 166.5,
+        "reduction_pct": 14.7,
+        "original_enforcement": 0.5606,
+        "enforcement_gap": 0.2894,
+        "violations_saved": 22.0
       },
       {
-        "zone_id": "tdr1hj",
-        "baseline": 98.4,
-        "simulated": 75.1,
-        "reduction_pct": 23.7,
-        "original_enforcement": 0.8182
+        "zone_id": "tdr1x9",
+        "baseline": 63845.2,
+        "simulated": 54598.3,
+        "reduction_pct": 14.5,
+        "original_enforcement": 0.8239,
+        "enforcement_gap": 0.0261,
+        "violations_saved": 113.0
       },
       {
-        "zone_id": "tdr1yh",
-        "baseline": 4838.1,
-        "simulated": 3723.9,
-        "reduction_pct": 23.0,
-        "original_enforcement": 0.8275
+        "zone_id": "tdr4mg",
+        "baseline": 49.2,
+        "simulated": 42.1,
+        "reduction_pct": 14.4,
+        "original_enforcement": 0.4762,
+        "enforcement_gap": 0.3738,
+        "violations_saved": 28.0
       },
       {
-        "zone_id": "tdr1yc",
-        "baseline": 25863.7,
-        "simulated": 20013.9,
-        "reduction_pct": 22.6,
-        "original_enforcement": 0.846
-      },
-      {
-        "zone_id": "tdr1nc",
-        "baseline": 47197.4,
-        "simulated": 36768.7,
-        "reduction_pct": 22.1,
-        "original_enforcement": 0.7939
+        "zone_id": "tdr384",
+        "baseline": 369.2,
+        "simulated": 316.7,
+        "reduction_pct": 14.2,
+        "original_enforcement": 0.7927,
+        "enforcement_gap": 0.0573,
+        "violations_saved": 45.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_90pct",
     "target_enforcement_rate": 0.9,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3595224.0,
-    "reduction_pct": 15.3,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7260788.0,
+    "reduction_pct": 6.9,
     "baseline_violations": 297591,
-    "simulated_violations": 156893,
-    "violation_reduction": 140697,
-    "hours_saved_monthly": 7817.0,
-    "delivery_hours_saved_monthly": 234.0,
+    "violation_reduction": 9796,
+    "zones_affected": 306,
+    "hours_saved_monthly": 2114.0,
+    "delivery_hours_saved_monthly": 63.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr17n",
-        "baseline": 204.6,
-        "simulated": 20.5,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8252
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 18.7,
+        "reduction_pct": 39.0,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.9,
+        "violations_saved": 72.0
       },
       {
-        "zone_id": "tdr1mz",
-        "baseline": 232.7,
-        "simulated": 23.3,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8095
-      },
-      {
-        "zone_id": "tdr1zf",
-        "baseline": 6200.9,
-        "simulated": 620.1,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.794
-      },
-      {
-        "zone_id": "tdr3b4",
-        "baseline": 342.4,
-        "simulated": 34.2,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.867
-      },
-      {
-        "zone_id": "tdr45r",
-        "baseline": 549.8,
-        "simulated": 55.0,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8315
-      },
-      {
-        "zone_id": "tdr4h6",
-        "baseline": 13674.1,
-        "simulated": 1367.4,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8861
-      },
-      {
-        "zone_id": "tdr1x9",
-        "baseline": 35192.0,
-        "simulated": 4416.0,
-        "reduction_pct": 87.5,
-        "original_enforcement": 0.8239
-      },
-      {
-        "zone_id": "tdr1xg",
-        "baseline": 7133.1,
-        "simulated": 2113.9,
-        "reduction_pct": 70.4,
-        "original_enforcement": 0.8867
-      },
-      {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 3223.8,
-        "reduction_pct": 60.1,
-        "original_enforcement": 0.7184
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 155.5,
+        "reduction_pct": 33.7,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.7571,
+        "violations_saved": 70.0
       },
       {
         "zone_id": "tdr1sv",
         "baseline": 40.2,
-        "simulated": 16.9,
-        "reduction_pct": 57.9,
-        "original_enforcement": 0.4583
+        "simulated": 27.6,
+        "reduction_pct": 31.3,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.4417,
+        "violations_saved": 70.0
+      },
+      {
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 87.8,
+        "reduction_pct": 30.6,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.7169,
+        "violations_saved": 77.0
       },
       {
         "zone_id": "tdr1yr",
         "baseline": 206.4,
-        "simulated": 100.2,
-        "reduction_pct": 51.5,
-        "original_enforcement": 0.4463
+        "simulated": 144.9,
+        "reduction_pct": 29.8,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.4537,
+        "violations_saved": 104.0
       },
       {
-        "zone_id": "tdr1v0",
-        "baseline": 38483.7,
-        "simulated": 19103.4,
-        "reduction_pct": 50.4,
-        "original_enforcement": 0.8416
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 17.2,
+        "reduction_pct": 27.3,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.6273,
+        "violations_saved": 46.0
       },
       {
-        "zone_id": "tdr384",
-        "baseline": 369.2,
-        "simulated": 183.4,
-        "reduction_pct": 50.3,
-        "original_enforcement": 0.7927
+        "zone_id": "tdr1zf",
+        "baseline": 11247.2,
+        "simulated": 8171.1,
+        "reduction_pct": 27.3,
+        "original_enforcement": 0.794,
+        "enforcement_gap": 0.106,
+        "violations_saved": 59.0
       },
       {
-        "zone_id": "tdr1uv",
-        "baseline": 39174.1,
-        "simulated": 19801.5,
-        "reduction_pct": 49.5,
-        "original_enforcement": 0.8943
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 170.2,
+        "reduction_pct": 26.9,
+        "original_enforcement": 0.8095,
+        "enforcement_gap": 0.0905,
+        "violations_saved": 46.0
       },
       {
-        "zone_id": "tdr1v6",
-        "baseline": 420295.4,
-        "simulated": 213619.9,
-        "reduction_pct": 49.2,
-        "original_enforcement": 0.8528
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 150.7,
+        "reduction_pct": 26.4,
+        "original_enforcement": 0.8252,
+        "enforcement_gap": 0.0748,
+        "violations_saved": 26.0
       },
       {
-        "zone_id": "tdr4h8",
-        "baseline": 37536.9,
-        "simulated": 19359.0,
-        "reduction_pct": 48.4,
-        "original_enforcement": 0.7932
+        "zone_id": "tdr1x9",
+        "baseline": 63845.2,
+        "simulated": 46986.7,
+        "reduction_pct": 26.4,
+        "original_enforcement": 0.8239,
+        "enforcement_gap": 0.0761,
+        "violations_saved": 206.0
       },
       {
-        "zone_id": "tdr1hj",
-        "baseline": 98.4,
-        "simulated": 53.0,
-        "reduction_pct": 46.1,
-        "original_enforcement": 0.8182
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 405.9,
+        "reduction_pct": 26.2,
+        "original_enforcement": 0.8315,
+        "enforcement_gap": 0.0685,
+        "violations_saved": 29.0
       },
       {
-        "zone_id": "tdr1qy",
-        "baseline": 2910.3,
-        "simulated": 1595.3,
-        "reduction_pct": 45.2,
-        "original_enforcement": 0.8363
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 21.8,
+        "reduction_pct": 25.9,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.4833,
+        "violations_saved": 72.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4416.9,
+        "reduction_pct": 25.3,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.3957,
+        "violations_saved": 170.0
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 256.7,
+        "reduction_pct": 25.0,
+        "original_enforcement": 0.867,
+        "enforcement_gap": 0.033,
+        "violations_saved": 44.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 23.4,
+        "reduction_pct": 24.8,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.45,
+        "violations_saved": 77.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 25.2,
+        "reduction_pct": 24.7,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.4,
+        "violations_saved": 15.0
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 25280.5,
+        "simulated": 19102.4,
+        "reduction_pct": 24.4,
+        "original_enforcement": 0.8861,
+        "enforcement_gap": 0.0139,
+        "violations_saved": 45.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 11333.8,
+        "reduction_pct": 23.8,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.1816,
+        "violations_saved": 185.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 34.0,
+        "reduction_pct": 23.4,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.6692,
+        "violations_saved": 28.0
       },
       {
         "zone_id": "tdr4h5",
         "baseline": 92.8,
-        "simulated": 51.9,
-        "reduction_pct": 44.1,
-        "original_enforcement": 0.5833
-      },
-      {
-        "zone_id": "tdr1zz",
-        "baseline": 25313.9,
-        "simulated": 14225.6,
-        "reduction_pct": 43.8,
-        "original_enforcement": 0.8113
+        "simulated": 71.2,
+        "reduction_pct": 23.2,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.3167,
+        "violations_saved": 48.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_95pct",
     "target_enforcement_rate": 0.95,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3580904.0,
-    "reduction_pct": 15.7,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 7061125.0,
+    "reduction_pct": 9.5,
     "baseline_violations": 297591,
-    "simulated_violations": 157490,
-    "violation_reduction": 140100,
-    "hours_saved_monthly": 7783.0,
-    "delivery_hours_saved_monthly": 234.0,
+    "violation_reduction": 13240,
+    "zones_affected": 455,
+    "hours_saved_monthly": 2858.0,
+    "delivery_hours_saved_monthly": 86.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr17n",
-        "baseline": 204.6,
-        "simulated": 20.5,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8252
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 18.5,
+        "reduction_pct": 39.7,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 0.95,
+        "violations_saved": 74.0
       },
       {
-        "zone_id": "tdr1mz",
-        "baseline": 232.7,
-        "simulated": 23.3,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8095
-      },
-      {
-        "zone_id": "tdr1us",
-        "baseline": 14692.8,
-        "simulated": 1469.3,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.9419
-      },
-      {
-        "zone_id": "tdr1zf",
-        "baseline": 6200.9,
-        "simulated": 620.1,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.794
-      },
-      {
-        "zone_id": "tdr3b4",
-        "baseline": 342.4,
-        "simulated": 34.2,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.867
-      },
-      {
-        "zone_id": "tdr45r",
-        "baseline": 549.8,
-        "simulated": 55.0,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8315
-      },
-      {
-        "zone_id": "tdr4h6",
-        "baseline": 13674.1,
-        "simulated": 1367.4,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8861
-      },
-      {
-        "zone_id": "tdr638",
-        "baseline": 255.0,
-        "simulated": 25.5,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.9444
-      },
-      {
-        "zone_id": "tdr1x9",
-        "baseline": 35192.0,
-        "simulated": 4732.0,
-        "reduction_pct": 86.6,
-        "original_enforcement": 0.8239
-      },
-      {
-        "zone_id": "tdr4tb",
-        "baseline": 14339.0,
-        "simulated": 3625.7,
-        "reduction_pct": 74.7,
-        "original_enforcement": 0.933
-      },
-      {
-        "zone_id": "tdr1xg",
-        "baseline": 7133.1,
-        "simulated": 2433.5,
-        "reduction_pct": 65.9,
-        "original_enforcement": 0.8867
-      },
-      {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 3064.3,
-        "reduction_pct": 62.0,
-        "original_enforcement": 0.7184
-      },
-      {
-        "zone_id": "tdr39p",
-        "baseline": 94.5,
-        "simulated": 40.2,
-        "reduction_pct": 57.5,
-        "original_enforcement": 0.9348
-      },
-      {
-        "zone_id": "tdr45v",
-        "baseline": 7708.6,
-        "simulated": 3305.1,
-        "reduction_pct": 57.1,
-        "original_enforcement": 0.9299
-      },
-      {
-        "zone_id": "tdr1me",
-        "baseline": 35.0,
-        "simulated": 15.1,
-        "reduction_pct": 56.9,
-        "original_enforcement": 0.9167
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 156.8,
+        "reduction_pct": 33.1,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.8071,
+        "violations_saved": 68.0
       },
       {
         "zone_id": "tdr1sv",
         "baseline": 40.2,
-        "simulated": 17.6,
-        "reduction_pct": 56.3,
-        "original_enforcement": 0.4583
+        "simulated": 27.2,
+        "reduction_pct": 32.4,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.4917,
+        "violations_saved": 72.0
       },
       {
-        "zone_id": "tdr1qt",
-        "baseline": 24870.1,
-        "simulated": 11500.7,
-        "reduction_pct": 53.8,
-        "original_enforcement": 0.9051
-      },
-      {
-        "zone_id": "tdr1wz",
-        "baseline": 25094.2,
-        "simulated": 11907.1,
-        "reduction_pct": 52.6,
-        "original_enforcement": 0.9338
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 85.9,
+        "reduction_pct": 32.1,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.7669,
+        "violations_saved": 81.0
       },
       {
         "zone_id": "tdr1yr",
         "baseline": 206.4,
-        "simulated": 101.3,
-        "reduction_pct": 50.9,
-        "original_enforcement": 0.4463
+        "simulated": 142.0,
+        "reduction_pct": 31.2,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.5037,
+        "violations_saved": 109.0
       },
       {
-        "zone_id": "tdr384",
-        "baseline": 369.2,
-        "simulated": 182.6,
-        "reduction_pct": 50.5,
-        "original_enforcement": 0.7927
+        "zone_id": "tdr1zf",
+        "baseline": 11247.2,
+        "simulated": 7993.4,
+        "reduction_pct": 28.9,
+        "original_enforcement": 0.794,
+        "enforcement_gap": 0.156,
+        "violations_saved": 62.0
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 166.5,
+        "reduction_pct": 28.4,
+        "original_enforcement": 0.8095,
+        "enforcement_gap": 0.1405,
+        "violations_saved": 48.0
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 63845.2,
+        "simulated": 45977.7,
+        "reduction_pct": 28.0,
+        "original_enforcement": 0.8239,
+        "enforcement_gap": 0.1261,
+        "violations_saved": 218.0
+      },
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 147.4,
+        "reduction_pct": 27.9,
+        "original_enforcement": 0.8252,
+        "enforcement_gap": 0.1248,
+        "violations_saved": 28.0
+      },
+      {
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 397.2,
+        "reduction_pct": 27.7,
+        "original_enforcement": 0.8315,
+        "enforcement_gap": 0.1185,
+        "violations_saved": 31.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4321.0,
+        "reduction_pct": 26.9,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.4457,
+        "violations_saved": 181.0
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 251.2,
+        "reduction_pct": 26.6,
+        "original_enforcement": 0.867,
+        "enforcement_gap": 0.083,
+        "violations_saved": 46.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 17.4,
+        "reduction_pct": 26.2,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.6773,
+        "violations_saved": 45.0
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 25280.5,
+        "simulated": 18702.9,
+        "reduction_pct": 26.0,
+        "original_enforcement": 0.8861,
+        "enforcement_gap": 0.0639,
+        "violations_saved": 48.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 11010.7,
+        "reduction_pct": 25.9,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.2316,
+        "violations_saved": 202.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 22.0,
+        "reduction_pct": 25.4,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.5333,
+        "violations_saved": 71.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 23.3,
+        "reduction_pct": 24.9,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.5,
+        "violations_saved": 77.0
+      },
+      {
+        "zone_id": "tdr1us",
+        "baseline": 27330.6,
+        "simulated": 20701.7,
+        "reduction_pct": 24.3,
+        "original_enforcement": 0.9419,
+        "enforcement_gap": 0.0081,
+        "violations_saved": 88.0
+      },
+      {
+        "zone_id": "tdr638",
+        "baseline": 255.0,
+        "simulated": 193.4,
+        "reduction_pct": 24.2,
+        "original_enforcement": 0.9444,
+        "enforcement_gap": 0.0056,
+        "violations_saved": 47.0
+      },
+      {
+        "zone_id": "tdr4me",
+        "baseline": 119870.3,
+        "simulated": 90980.1,
+        "reduction_pct": 24.1,
+        "original_enforcement": 0.5314,
+        "enforcement_gap": 0.4186,
+        "violations_saved": 498.0
       }
     ]
   },
   {
     "scenario": "enforcement_rate_100pct",
     "target_enforcement_rate": 1.0,
-    "baseline_congestiq": 4246223.0,
-    "simulated_congestiq": 3544445.0,
-    "reduction_pct": 16.5,
+    "baseline_congestiq": 7802207.0,
+    "simulated_congestiq": 6922969.0,
+    "reduction_pct": 11.3,
     "baseline_violations": 297591,
-    "simulated_violations": 153316,
-    "violation_reduction": 144274,
-    "hours_saved_monthly": 8015.0,
-    "delivery_hours_saved_monthly": 240.0,
+    "violation_reduction": 16893,
+    "zones_affected": 522,
+    "hours_saved_monthly": 3646.0,
+    "delivery_hours_saved_monthly": 109.0,
     "top_zones_impacted": [
       {
-        "zone_id": "tdr17n",
-        "baseline": 204.6,
-        "simulated": 20.5,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8252
+        "zone_id": "tdr4q8",
+        "baseline": 30.6,
+        "simulated": 17.5,
+        "reduction_pct": 42.9,
+        "original_enforcement": 0.0,
+        "enforcement_gap": 1.0,
+        "violations_saved": 79.0
       },
       {
-        "zone_id": "tdr1mz",
-        "baseline": 232.7,
-        "simulated": 23.3,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8095
-      },
-      {
-        "zone_id": "tdr1us",
-        "baseline": 14692.8,
-        "simulated": 1469.3,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.9419
-      },
-      {
-        "zone_id": "tdr1zf",
-        "baseline": 6200.9,
-        "simulated": 620.1,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.794
-      },
-      {
-        "zone_id": "tdr3b4",
-        "baseline": 342.4,
-        "simulated": 34.2,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.867
-      },
-      {
-        "zone_id": "tdr45r",
-        "baseline": 549.8,
-        "simulated": 55.0,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8315
-      },
-      {
-        "zone_id": "tdr4h6",
-        "baseline": 13674.1,
-        "simulated": 1367.4,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.8861
-      },
-      {
-        "zone_id": "tdr638",
-        "baseline": 255.0,
-        "simulated": 25.5,
-        "reduction_pct": 90.0,
-        "original_enforcement": 0.9444
-      },
-      {
-        "zone_id": "tdr1x9",
-        "baseline": 35192.0,
-        "simulated": 4740.7,
-        "reduction_pct": 86.5,
-        "original_enforcement": 0.8239
-      },
-      {
-        "zone_id": "tdr4tb",
-        "baseline": 14339.0,
-        "simulated": 3578.7,
-        "reduction_pct": 75.0,
-        "original_enforcement": 0.933
-      },
-      {
-        "zone_id": "tdr1me",
-        "baseline": 35.0,
-        "simulated": 10.7,
-        "reduction_pct": 69.5,
-        "original_enforcement": 0.9167
-      },
-      {
-        "zone_id": "tdr1xg",
-        "baseline": 7133.1,
-        "simulated": 2320.3,
-        "reduction_pct": 67.5,
-        "original_enforcement": 0.8867
-      },
-      {
-        "zone_id": "tdr1wd",
-        "baseline": 8073.8,
-        "simulated": 2959.6,
-        "reduction_pct": 63.3,
-        "original_enforcement": 0.7184
+        "zone_id": "tdr470",
+        "baseline": 234.6,
+        "simulated": 150.0,
+        "reduction_pct": 36.1,
+        "original_enforcement": 0.1429,
+        "enforcement_gap": 0.8571,
+        "violations_saved": 74.0
       },
       {
         "zone_id": "tdr1sv",
         "baseline": 40.2,
-        "simulated": 15.7,
-        "reduction_pct": 60.9,
-        "original_enforcement": 0.4583
+        "simulated": 26.0,
+        "reduction_pct": 35.4,
+        "original_enforcement": 0.4583,
+        "enforcement_gap": 0.5417,
+        "violations_saved": 79.0
       },
       {
-        "zone_id": "tdr39p",
-        "baseline": 94.5,
-        "simulated": 40.2,
-        "reduction_pct": 57.5,
-        "original_enforcement": 0.9348
-      },
-      {
-        "zone_id": "tdr45v",
-        "baseline": 7708.6,
-        "simulated": 3305.1,
-        "reduction_pct": 57.1,
-        "original_enforcement": 0.9299
-      },
-      {
-        "zone_id": "tdr1qt",
-        "baseline": 24870.1,
-        "simulated": 11155.1,
-        "reduction_pct": 55.1,
-        "original_enforcement": 0.9051
-      },
-      {
-        "zone_id": "tdr4qc",
-        "baseline": 30.4,
-        "simulated": 13.7,
-        "reduction_pct": 55.1,
-        "original_enforcement": 0.95
-      },
-      {
-        "zone_id": "tdr1hj",
-        "baseline": 98.4,
-        "simulated": 45.8,
-        "reduction_pct": 53.4,
-        "original_enforcement": 0.8182
+        "zone_id": "tdr4r1",
+        "baseline": 126.5,
+        "simulated": 81.9,
+        "reduction_pct": 35.3,
+        "original_enforcement": 0.1831,
+        "enforcement_gap": 0.8169,
+        "violations_saved": 89.0
       },
       {
         "zone_id": "tdr1yr",
         "baseline": 206.4,
-        "simulated": 96.7,
-        "reduction_pct": 53.2,
-        "original_enforcement": 0.4463
+        "simulated": 137.4,
+        "reduction_pct": 33.5,
+        "original_enforcement": 0.4463,
+        "enforcement_gap": 0.5537,
+        "violations_saved": 117.0
+      },
+      {
+        "zone_id": "tdr46b",
+        "baseline": 33.5,
+        "simulated": 23.0,
+        "reduction_pct": 31.2,
+        "original_enforcement": 0.5,
+        "enforcement_gap": 0.5,
+        "violations_saved": 18.0
+      },
+      {
+        "zone_id": "tdr1zf",
+        "baseline": 11247.2,
+        "simulated": 7815.6,
+        "reduction_pct": 30.5,
+        "original_enforcement": 0.794,
+        "enforcement_gap": 0.206,
+        "violations_saved": 66.0
+      },
+      {
+        "zone_id": "tdr1mz",
+        "baseline": 232.7,
+        "simulated": 162.8,
+        "reduction_pct": 30.0,
+        "original_enforcement": 0.8095,
+        "enforcement_gap": 0.1905,
+        "violations_saved": 51.0
+      },
+      {
+        "zone_id": "tdr1x9",
+        "baseline": 63845.2,
+        "simulated": 44968.6,
+        "reduction_pct": 29.6,
+        "original_enforcement": 0.8239,
+        "enforcement_gap": 0.1761,
+        "violations_saved": 230.0
+      },
+      {
+        "zone_id": "tdr17n",
+        "baseline": 204.6,
+        "simulated": 144.2,
+        "reduction_pct": 29.5,
+        "original_enforcement": 0.8252,
+        "enforcement_gap": 0.1748,
+        "violations_saved": 29.0
+      },
+      {
+        "zone_id": "tdr45r",
+        "baseline": 549.8,
+        "simulated": 388.6,
+        "reduction_pct": 29.3,
+        "original_enforcement": 0.8315,
+        "enforcement_gap": 0.1685,
+        "violations_saved": 33.0
+      },
+      {
+        "zone_id": "tdr1rz",
+        "baseline": 23.6,
+        "simulated": 16.8,
+        "reduction_pct": 28.6,
+        "original_enforcement": 0.2727,
+        "enforcement_gap": 0.7273,
+        "violations_saved": 49.0
+      },
+      {
+        "zone_id": "tdr1mb",
+        "baseline": 5914.1,
+        "simulated": 4245.0,
+        "reduction_pct": 28.2,
+        "original_enforcement": 0.5043,
+        "enforcement_gap": 0.4957,
+        "violations_saved": 190.0
+      },
+      {
+        "zone_id": "tdr3b4",
+        "baseline": 342.4,
+        "simulated": 245.8,
+        "reduction_pct": 28.2,
+        "original_enforcement": 0.867,
+        "enforcement_gap": 0.133,
+        "violations_saved": 49.0
+      },
+      {
+        "zone_id": "tdr1wd",
+        "baseline": 14866.1,
+        "simulated": 10717.9,
+        "reduction_pct": 27.9,
+        "original_enforcement": 0.7184,
+        "enforcement_gap": 0.2816,
+        "violations_saved": 218.0
+      },
+      {
+        "zone_id": "tdr4jn",
+        "baseline": 44.4,
+        "simulated": 32.1,
+        "reduction_pct": 27.7,
+        "original_enforcement": 0.2308,
+        "enforcement_gap": 0.7692,
+        "violations_saved": 33.0
+      },
+      {
+        "zone_id": "tdr4h6",
+        "baseline": 25280.5,
+        "simulated": 18303.3,
+        "reduction_pct": 27.6,
+        "original_enforcement": 0.8861,
+        "enforcement_gap": 0.1139,
+        "violations_saved": 51.0
+      },
+      {
+        "zone_id": "tdr4r4",
+        "baseline": 29.5,
+        "simulated": 21.4,
+        "reduction_pct": 27.6,
+        "original_enforcement": 0.4167,
+        "enforcement_gap": 0.5833,
+        "violations_saved": 77.0
+      },
+      {
+        "zone_id": "tdr4h5",
+        "baseline": 92.8,
+        "simulated": 67.6,
+        "reduction_pct": 27.2,
+        "original_enforcement": 0.5833,
+        "enforcement_gap": 0.4167,
+        "violations_saved": 57.0
+      },
+      {
+        "zone_id": "tdr450",
+        "baseline": 31.1,
+        "simulated": 22.7,
+        "reduction_pct": 27.1,
+        "original_enforcement": 0.45,
+        "enforcement_gap": 0.55,
+        "violations_saved": 84.0
       }
     ]
   }

@@ -85,16 +85,32 @@ def compute_congestiq(df: pd.DataFrame, cascade_data: dict) -> list:
         active_days=("date", "nunique"),
     ).reset_index()
 
-    # ── Cascade reach multiplier ──────────────────────────
-    zone_stats["cascade_reach"] = zone_stats["geohash"].map(
-        lambda z: cascade_data.get(z, {}).get("cascade_reach", 1)
-    )
+    # ── Multi-horizon cascade reach ─────────────────────────
+    # At 60min, the entire city is reachable (all zones ≈ 155K nodes).
+    # The 15min reach is the most discriminative (12K-68K range).
+    # Use a weighted combination: 50% × 15min + 35% × 30min + 15% × 60min
+    HORIZON_WEIGHTS = {15: 0.50, 30: 0.35, 60: 0.15}
+
+    def _get_weighted_cascade_reach(zone_id):
+        """Compute weighted cascade reach across all time horizons."""
+        zdata = cascade_data.get(zone_id, {})
+        frames = zdata.get("frames", [])
+        if not frames:
+            return 1
+        reach_by_min = {f["minutes"]: f["affected_nodes"] for f in frames}
+        weighted = sum(
+            reach_by_min.get(mins, 1) * weight
+            for mins, weight in HORIZON_WEIGHTS.items()
+        )
+        return max(1, weighted)
+
+    zone_stats["cascade_reach"] = zone_stats["geohash"].map(_get_weighted_cascade_reach)
 
     # Log-scaled cascade factor: log2(1 + reach) ensures:
-    #   reach=0 -> factor=0 (effectively 1 after +1 in formula)
-    #   reach=10 -> factor~3.5
-    #   reach=100 -> factor~6.7
-    #   reach=1000 -> factor~10
+    #   reach=1 -> factor=1
+    #   reach=10K -> factor~13.3
+    #   reach=50K -> factor~15.6
+    #   reach=100K -> factor~16.6
     zone_stats["cascade_factor"] = np.log2(1 + zone_stats["cascade_reach"])
 
     # ── Final CongestIQ ───────────────────────────────────
