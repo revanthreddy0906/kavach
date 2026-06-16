@@ -43,15 +43,15 @@ export default function EnforcementChart({ data }) {
             fontSize={11}
             tick={{ fill: 'var(--text-secondary)' }}
           />
-          <Tooltip content={<CustomTooltip />} cursor={{ fill: 'var(--glass)' }} />
+          <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
           <ReferenceLine
             x={avgRate}
-            stroke="var(--accent-primary)"
+            stroke="var(--accent)"
             strokeDasharray="5 5"
             label={{
               value: `Avg: ${(avgRate * 100).toFixed(1)}%`,
               position: 'top',
-              fill: 'var(--accent-primary)',
+              fill: 'var(--accent)',
               fontSize: 11,
             }}
           />

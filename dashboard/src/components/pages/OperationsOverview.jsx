@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PageHeader } from '../layout/TopBar';
 import StatCard from '../common/StatCard';
 import { fetchHeatmap } from '../../utils/api';
-import { MapPin, TrendingUp, AlertTriangle, Map } from 'lucide-react';
+import { MapPin, TrendingUp, AlertTriangle, Map, ArrowRight } from 'lucide-react';
 
 export default function OperationsOverview() {
   const [zones, setZones] = useState([]);
@@ -16,7 +16,22 @@ export default function OperationsOverview() {
   const totalZones = zones.length;
   const avgCIQ = totalZones ? Math.round(zones.reduce((s, z) => s + (z.congestiq_score || 0), 0) / totalZones) : 0;
   const criticalCount = zones.filter(z => z.congestiq_score > 700).length;
-  const topRisk = [...zones].sort((a, b) => (b.congestiq_score || 0) - (a.congestiq_score || 0)).slice(0, 10);
+  const moderateCount = zones.filter(z => z.congestiq_score > 300 && z.congestiq_score <= 700).length;
+  const topRisk = [...zones].sort((a, b) => (b.congestiq_score || 0) - (a.congestiq_score || 0)).slice(0, 8);
+
+  // Dominant violation type
+  const violationCounts = {};
+  zones.forEach(z => {
+    violationCounts[z.primary_violation] = (violationCounts[z.primary_violation] || 0) + 1;
+  });
+  const topViolation = Object.entries(violationCounts).sort((a, b) => b[1] - a[1])[0];
+
+  // Dominant vehicle
+  const vehicleCounts = {};
+  zones.forEach(z => {
+    vehicleCounts[z.dominant_vehicle] = (vehicleCounts[z.dominant_vehicle] || 0) + 1;
+  });
+  const topVehicle = Object.entries(vehicleCounts).sort((a, b) => b[1] - a[1])[0];
 
   return (
     <div>
@@ -28,8 +43,15 @@ export default function OperationsOverview() {
         <StatCard label="Critical Zones" value={criticalCount} icon={AlertTriangle} accent="var(--danger)" subtext="CIQ > 700" />
       </div>
 
+      {/* Operational insight */}
+      <div className="insight-card" style={{ marginBottom: 24 }}>
+        {criticalCount} zones are in critical status (CIQ &gt; 700) and {moderateCount} are moderate.
+        {topViolation && <> Most common violation: <strong>{topViolation[0]}</strong> ({topViolation[1]} zones).</>}
+        {topVehicle && <> Dominant vehicle type: <strong>{topVehicle[0]}</strong>.</>}
+      </div>
+
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
-        {/* Top alerts */}
+        {/* Top risk zones */}
         <div className="panel">
           <div className="panel-header">
             <h3>Highest Risk Zones</h3>
@@ -50,17 +72,28 @@ export default function OperationsOverview() {
           </div>
         </div>
 
-        {/* Quick action */}
-        <div className="panel" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', gap: 16 }}>
-          <div style={{ width: 56, height: 56, borderRadius: 14, background: 'var(--accent-subtle)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
-            <Map size={24} />
-          </div>
-          <h3 style={{ fontSize: 18 }}>Real-Time Map</h3>
-          <p style={{ fontSize: 13, color: 'var(--text-secondary)', maxWidth: 320 }}>
-            View the live congestion map with zone markers, cascade patterns, and patrol deployments.
-          </p>
-          <Link to="/operations/live-map" className="btn-primary">
-            Open Live Map
+        {/* Quick actions */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <Link to="/operations/live-map" className="quick-link-card" style={{ flex: 1 }}>
+            <div className="ql-icon"><Map size={18} /></div>
+            <div className="ql-text">
+              <h4>Open Live Map</h4>
+              <p>Real-time congestion map with zone markers, cascade patterns, and patrol deployments</p>
+            </div>
+          </Link>
+          <Link to="/operations/high-risk" className="quick-link-card" style={{ flex: 1 }}>
+            <div className="ql-icon"><AlertTriangle size={18} /></div>
+            <div className="ql-text">
+              <h4>High Risk Zones</h4>
+              <p>Searchable and sortable table of all {totalZones} zones ranked by severity</p>
+            </div>
+          </Link>
+          <Link to="/patrol/deployment" className="quick-link-card" style={{ flex: 1 }}>
+            <div className="ql-icon"><TrendingUp size={18} /></div>
+            <div className="ql-text">
+              <h4>Patrol Deployment</h4>
+              <p>24-hour patrol allocation across critical zones</p>
+            </div>
           </Link>
         </div>
       </div>

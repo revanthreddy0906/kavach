@@ -1,3 +1,5 @@
+import { X } from 'lucide-react';
+
 export default function ZoneInfoPanel({ zone, cascadeData, onClose }) {
   if (!zone) return null;
 
@@ -18,11 +20,11 @@ export default function ZoneInfoPanel({ zone, cascadeData, onClose }) {
             cursor: 'pointer', fontSize: 18, padding: 4
           }}
         >
-          ✕
+          <X size={16} />
         </button>
       </div>
 
-      <div className="zone-id gradient-text">{zone.zone_id}</div>
+      <div className="zone-id">{zone.zone_id}</div>
 
       <div className="zone-detail">
         <span className="detail-label">CongestIQ Score</span>
@@ -59,7 +61,7 @@ export default function ZoneInfoPanel({ zone, cascadeData, onClose }) {
           {cascadeData.frames.map((frame, i) => (
             <div key={i} className="zone-detail">
               <span className="detail-label">+{frame.minutes} min</span>
-              <span className="detail-value" style={{ color: 'var(--accent-purple)' }}>
+              <span className="detail-value" style={{ color: 'var(--accent)' }}>
                 {frame.affected_nodes} nodes
               </span>
             </div>

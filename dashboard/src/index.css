@@ -676,7 +676,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 16px;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 340px);
 }
 
 .map-layout.no-panel { grid-template-columns: 1fr; }
@@ -686,6 +686,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border: 1px solid var(--border);
   position: relative;
+  height: 100%;
 }
 
 .map-container .leaflet-container {
@@ -1079,14 +1080,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* Animated road network SVG visual */
+/* Animated city topology SVG visual */
+.city-topology-visual,
 .road-network-visual {
   width: 100%;
-  max-width: 480px;
-  aspect-ratio: 1;
+  max-width: 500px;
+  aspect-ratio: 1.1;
   position: relative;
 }
 
+.city-topology-visual svg,
 .road-network-visual svg {
   width: 100%;
   height: 100%;
@@ -1096,13 +1099,9 @@ h1, h2, h3, h4, h5, h6 {
   animation: nodePulse 3s ease-in-out infinite;
 }
 
-.road-node:nth-child(2n) { animation-delay: 0.5s; }
-.road-node:nth-child(3n) { animation-delay: 1s; }
-.road-node:nth-child(5n) { animation-delay: 1.5s; }
-
 @keyframes nodePulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
 }
 
 .road-line {
@@ -1115,10 +1114,25 @@ h1, h2, h3, h4, h5, h6 {
   to { stroke-dashoffset: 0; }
 }
 
+/* Brand mark */
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
 /* Landing sections */
 .landing-section {
   padding: 80px 60px;
   border-top: 1px solid var(--border);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .landing-section .section-eyebrow {
@@ -1157,10 +1171,13 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--bg-surface);
+  transition: border-color 0.2s ease;
 }
 
+.snapshot-card:hover { border-color: var(--border-hover); }
+
 .snapshot-card .snap-label {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1192,6 +1209,7 @@ h1, h2, h3, h4, h5, h6 {
 .capability-card:hover {
   border-color: var(--border-hover);
   background: var(--bg-surface);
+  transform: translateY(-2px);
 }
 
 .capability-card .cap-icon {
@@ -1218,52 +1236,113 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
-/* Mission section */
-.mission-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 32px;
+/* ── Transformation Flow (Before → With → Outcomes) ── */
+.transformation-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
-.mission-card {
-  padding: 28px;
+.transform-card {
+  width: 100%;
+  max-width: 640px;
+  padding: 28px 32px;
   border: 1px solid var(--border);
   border-radius: 16px;
+  background: var(--bg-surface);
 }
 
-.mission-card h4 {
-  font-size: 14px;
+.transform-label {
+  font-size: 12px;
   font-weight: 600;
-  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
 }
 
-.mission-card p, .mission-card li {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
+.transform-before .transform-label { color: var(--danger); }
+.transform-with .transform-label { color: var(--accent); }
+.transform-outcomes .transform-label { color: var(--success); }
 
-.mission-card ul {
+.transform-before { border-left: 3px solid var(--danger); }
+.transform-with { border-left: 3px solid var(--accent); }
+.transform-outcomes { border-left: 3px solid var(--success); }
+
+.transform-card ul {
   list-style: none;
   padding: 0;
 }
 
-.mission-card li {
-  padding: 4px 0;
-  padding-left: 16px;
+.transform-card li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding: 4px 0 4px 18px;
   position: relative;
 }
 
-.mission-card li::before {
+.transform-card li::before {
   content: '';
   position: absolute;
   left: 0;
   top: 12px;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: var(--text-muted);
+}
+
+.transform-before li::before { background: var(--danger); opacity: 0.5; }
+.transform-with li::before { background: var(--accent); opacity: 0.5; }
+
+.transform-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: var(--text-faint);
+}
+
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.outcome-item {
+  text-align: center;
+  padding: 16px 8px;
+  background: var(--bg-elevated);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.outcome-item .outcome-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--success);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.outcome-item .outcome-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Landing footer */
+.landing-footer {
+  padding: 40px 60px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.landing-footer p {
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 /* ── Quick Link Card ── */
@@ -1357,7 +1436,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   border: 1px solid var(--border);
   color: var(--text-muted);
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.15s ease;
 }
+
+.step-indicator:hover { border-color: var(--border-hover); }
 
 .step-indicator.active {
   background: var(--accent-subtle);
@@ -1398,7 +1483,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-visual { display: none; }
   .capabilities-grid { grid-template-columns: 1fr 1fr; }
   .snapshot-grid { grid-template-columns: 1fr 1fr; }
-  .mission-grid { grid-template-columns: 1fr; }
+  .outcomes-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1414,4 +1499,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-content h2 { font-size: 36px; }
   .capabilities-grid { grid-template-columns: 1fr; }
   .snapshot-grid { grid-template-columns: 1fr; }
+  .outcomes-grid { grid-template-columns: 1fr 1fr; }
+  .transformation-flow { padding: 0 10px; }
 }
+

@@ -53,11 +53,11 @@ export default function DeploymentGrid({ data }) {
             <tr key={hour} className={hour === currentHour ? 'current-hour' : ''}>
               <td className="hour-cell">
                 {String(hour).padStart(2, '0')}:00
-                {hour === currentHour && ' ◀'}
+                {hour === currentHour && ' NOW'}
               </td>
               {zoneIds.map(zoneId => {
                 const entry = gridMap[`${hour}-${zoneId}`];
-                if (!entry) return <td key={zoneId} style={{ background: 'var(--bg-tertiary)' }}>—</td>;
+                if (!entry) return <td key={zoneId} style={{ background: 'var(--bg-elevated)' }}>—</td>;
                 return (
                   <td
                     key={zoneId}

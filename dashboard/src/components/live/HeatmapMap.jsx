@@ -130,7 +130,7 @@ export default function HeatmapMap({ zones, patrolData, cascadeData, selectedZon
           >
             <Tooltip direction="top" offset={[0, -8]} opacity={0.95}>
               <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 11 }}>
-                🛡️ Patrol: {p.units_assigned} units<br />
+                Patrol: {p.units_assigned} units<br />
                 Priority: #{p.priority_rank}
               </div>
             </Tooltip>
