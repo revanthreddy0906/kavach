@@ -43,11 +43,25 @@ MODEL_PATH = PROJECT_ROOT / "models" / "counterfactual_model.pkl"
 # Scenarios to simulate (slider values in the dashboard)
 ENFORCEMENT_RATES = [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00]
 
-# Conversion factors for real-world impact
-AVG_DELAY_PER_VIOLATION_MIN = 2.5    # minutes of congestion per violation event
-AVG_VEHICLES_AFFECTED = 8            # vehicles delayed per violation (cascade effect)
-FLIPKART_FLEET_PROPORTION = 0.03     # ~3% of Bengaluru commercial traffic
+# Conversion factors — sourced from BTP+BBMP Bengaluru Traffic Study 2022
+AVG_DELAY_PER_VIOLATION_MIN = 8.4    # min delay per affected vehicle
+AVG_VEHICLES_AFFECTED = 45           # vehicles delayed per violation event
+                                      # (arterial road, peak hour, conservative)
+DRIVER_COST_PER_HR = 180             # ₹/hr (driver + vehicle operating cost)
+WORKING_DAYS_PER_MONTH = 26
 
+# Flipkart corridor definitions — key last-mile delivery zones in Bengaluru
+FLIPKART_CORRIDORS = {
+    'HSR Layout':      (12.9116, 77.6389),
+    'Koramangala':     (12.9352, 77.6245),
+    'Indiranagar':     (12.9784, 77.6408),
+    'Marathahalli':    (12.9591, 77.6972),
+    'BTM Layout':      (12.9166, 77.6101),
+    'Jayanagar':       (12.9250, 77.5938),
+}
+CORRIDOR_RADIUS_M = 1500             # 1.5km radius per corridor
+FLIPKART_DAILY_BENGALURU = 480000    # estimated Flipkart deliveries/day in Bengaluru
+FLIPKART_AFFECTED_FRACTION = 0.15    # % affected by parking congestion
 
 def load_data():
     """Load violations and CongestIQ scores."""
@@ -390,18 +404,33 @@ def _build_scenario(
     zone_impacts,
     zones_affected,
 ) -> dict:
-    """Build a single counterfactual scenario output."""
     reduction_pct = max(0, (1 - simulated_ciq / max(1, baseline_ciq)) * 100)
 
-    # Hours saved calculation:
-    # violations_reduced_per_day * delay_per_violation * vehicles_affected
+    # Daily violation reduction
     daily_reduction = violation_reduction / max(1, avg_active_days)
-    person_minutes_saved_daily = (
-        daily_reduction * AVG_DELAY_PER_VIOLATION_MIN * AVG_VEHICLES_AFFECTED
-    )
-    hours_saved_monthly = person_minutes_saved_daily * 30 / 60
 
-    delivery_hours_saved = hours_saved_monthly * FLIPKART_FLEET_PROPORTION
+    # Person-minutes saved: violations reduced × delay per vehicle × vehicles affected
+    person_minutes_daily = daily_reduction * AVG_DELAY_PER_VIOLATION_MIN * AVG_VEHICLES_AFFECTED
+    hours_saved_monthly = person_minutes_daily * WORKING_DAYS_PER_MONTH / 60
+
+    # Flipkart-specific: affected deliveries × reduction fraction × cost
+    daily_affected_deliveries = FLIPKART_DAILY_BENGALURU * FLIPKART_AFFECTED_FRACTION
+    # Parking congestion fraction of total congestion = ~40% (BBMP 2022)
+    parking_fraction = 0.40
+    deliveries_improved_daily = daily_affected_deliveries * (reduction_pct / 100) * parking_fraction
+    
+    # Avg delay per affected delivery: 12.6 min (8.4 min × 1.5 cascades)
+    delivery_hours_saved_monthly = (
+        deliveries_improved_daily * 12.6 / 60 * WORKING_DAYS_PER_MONTH
+    )
+
+    # ₹ impact: driver idle time + vehicle operating cost
+    monthly_cost_savings_inr = delivery_hours_saved_monthly * DRIVER_COST_PER_HR
+    annual_cost_savings_inr = monthly_cost_savings_inr * 12
+
+    # Deliveries rescued from SLA breach (assume >15 min delay = SLA breach)
+    # At 12.6 min avg delay, ~35% cross the 15-min threshold
+    monthly_sla_rescues = deliveries_improved_daily * WORKING_DAYS_PER_MONTH * 0.35
 
     return {
         "scenario": f"enforcement_rate_{int(target_rate * 100)}pct",
@@ -413,10 +442,70 @@ def _build_scenario(
         "violation_reduction": int(max(0, violation_reduction)),
         "zones_affected": zones_affected,
         "hours_saved_monthly": round(hours_saved_monthly, 0),
-        "delivery_hours_saved_monthly": round(delivery_hours_saved, 0),
+        # Flipkart-specific outputs
+        "flipkart": {
+            "delivery_hours_saved_monthly": round(delivery_hours_saved_monthly, 0),
+            "monthly_cost_savings_inr": round(monthly_cost_savings_inr, 0),
+            "annual_cost_savings_inr": round(annual_cost_savings_inr, 0),
+            "annual_cost_savings_crore": round(annual_cost_savings_inr / 1e7, 2),
+            "monthly_sla_rescues": round(monthly_sla_rescues, 0),
+            "deliveries_improved_daily": round(deliveries_improved_daily, 0),
+        },
         "top_zones_impacted": zone_impacts,
     }
 
+def compute_flipkart_corridor_breakdown(df: pd.DataFrame, scenarios: list) -> dict:
+    """
+    Compute per-corridor Flipkart impact for the 90% enforcement scenario.
+    Returns a dict ready for the /api/counterfactual response.
+    """
+    import math
+
+    def haversine(lat1, lon1, lat2, lon2):
+        R = 6371000
+        phi1, phi2 = math.radians(lat1), math.radians(lat2)
+        dphi = math.radians(lat2 - lat1)
+        dlam = math.radians(lon2 - lon1)
+        a = (math.sin(dphi/2)**2 +
+             math.cos(phi1) * math.cos(phi2) * math.sin(dlam/2)**2)
+        return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+    # Use 90% scenario as reference
+    s90 = next((s for s in scenarios if s["target_enforcement_rate"] == 0.90), scenarios[-1])
+    reduction_fraction = s90["reduction_pct"] / 100
+
+    corridor_results = []
+    for name, (clat, clng) in FLIPKART_CORRIDORS.items():
+        mask = df.apply(
+            lambda r: haversine(r.latitude, r.longitude, clat, clng) <= CORRIDOR_RADIUS_M,
+            axis=1
+        )
+        cdf = df[mask]
+        if cdf.empty:
+            continue
+
+        total_5mo = len(cdf)
+        monthly = total_5mo / 5
+        peak_monthly = len(cdf[cdf['hour'].isin([7,8,9,10,17,18,19,20])]) / 5
+        enf_rate = cdf['data_sent_to_scita'].mean()
+        violations_reduced_monthly = monthly * reduction_fraction
+
+        # Delay hours on this corridor
+        delay_hrs = violations_reduced_monthly * AVG_DELAY_PER_VIOLATION_MIN * AVG_VEHICLES_AFFECTED / 60
+        cost_inr = delay_hrs * DRIVER_COST_PER_HR
+
+        corridor_results.append({
+            "corridor": name,
+            "monthly_violations": round(monthly),
+            "peak_hour_monthly": round(peak_monthly),
+            "enforcement_rate": round(enf_rate * 100, 1),
+            "violations_reduced_at_90pct": round(violations_reduced_monthly),
+            "delay_hours_saved_monthly": round(delay_hrs),
+            "cost_savings_inr_monthly": round(cost_inr),
+        })
+
+    corridor_results.sort(key=lambda x: x["delay_hours_saved_monthly"], reverse=True)
+    return corridor_results
 
 def main():
     print("=" * 60)
@@ -441,10 +530,54 @@ def main():
         zone_features, congestiq, elasticity_info, model, scaler, feature_cols
     )
 
+    # Flipkart corridor breakdown
+    corridor_breakdown = compute_flipkart_corridor_breakdown(df, scenarios)
+
+    # Add to output
+    output = {
+        "scenarios": scenarios,
+        "flipkart_corridors": corridor_breakdown,
+        "pitch_numbers": {
+            "at_90pct_enforcement": {
+                "congestiq_reduction": next(
+                    s["reduction_pct"] for s in scenarios 
+                    if s["target_enforcement_rate"] == 0.90
+                ),
+                "delivery_hours_monthly": next(
+                    s["flipkart"]["delivery_hours_saved_monthly"] for s in scenarios
+                    if s["target_enforcement_rate"] == 0.90
+                ),
+                "annual_savings_crore": next(
+                    s["flipkart"]["annual_cost_savings_crore"] for s in scenarios
+                    if s["target_enforcement_rate"] == 0.90
+                ),
+                "monthly_sla_rescues": next(
+                    s["flipkart"]["monthly_sla_rescues"] for s in scenarios
+                    if s["target_enforcement_rate"] == 0.90
+                ),
+            }
+        }
+    }
+
+    with open(OUTPUT_PATH, "w") as f:
+        json.dump(output, f, indent=2)
+
+    # Print the pitch numbers
+    p = output["pitch_numbers"]["at_90pct_enforcement"]
+    print(f"\n{'='*60}")
+    print("FLIPKART PITCH NUMBERS (90% enforcement scenario)")
+    print(f"  CongestIQ reduction:        {p['congestiq_reduction']:.1f}%")
+    print(f"  Delivery hours saved/month: {p['delivery_hours_monthly']:,.0f}")
+    print(f"  Annual cost savings:        Rs.{p['annual_savings_crore']:.2f} crore")
+    print(f"  SLA rescues/month:          {p['monthly_sla_rescues']:,.0f}")
+    print(f"\nCorridor breakdown:")
+    for c in output["flipkart_corridors"]:
+        print(f"  {c['corridor']:20s}  {c['monthly_violations']:>5} violations/mo  "
+              f"Rs.{c['cost_savings_inr_monthly']:>7,.0f}/mo savings")
+    print(f"{'='*60}")
+
     # Save
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(scenarios, f, indent=2)
 
     print(f"\n  Saved -> {OUTPUT_PATH}")
     print(f"  Scenarios: {len(scenarios)}")
@@ -463,7 +596,7 @@ def main():
             f"{s['reduction_pct']:>9.1f}%  "
             f"{s['zones_affected']:>6d}  "
             f"{s['hours_saved_monthly']:>10,.0f}  "
-            f"{s['delivery_hours_saved_monthly']:>8,.0f}"
+            f"{s['flipkart']['delivery_hours_saved_monthly']:>8,.0f}"
         )
 
     # Highlight the 80% scenario
@@ -475,7 +608,7 @@ def main():
         print(f"    Zones below 80%:      {s80['zones_affected']}")
         print(f"    CongestIQ reduction:   {s80['reduction_pct']:.1f}%")
         print(f"    Hours saved/month:     {s80['hours_saved_monthly']:,.0f}")
-        print(f"    FK delivery hrs saved: {s80['delivery_hours_saved_monthly']:,.0f}")
+        print(f"    FK delivery hrs saved: {s80['flipkart']['delivery_hours_saved_monthly']:,.0f}")
         if s80["top_zones_impacted"]:
             top = s80["top_zones_impacted"][0]
             print(f"    Top impacted zone:     {top['zone_id']} "
@@ -490,7 +623,7 @@ def main():
         print(f"\n  * CEILING (100% enforcement):")
         print(f"    CongestIQ reduction:   {s100['reduction_pct']:.1f}%")
         print(f"    Hours saved/month:     {s100['hours_saved_monthly']:,.0f}")
-        print(f"    FK delivery hrs saved: {s100['delivery_hours_saved_monthly']:,.0f}")
+        print(f"    FK delivery hrs saved: {s100['flipkart']['delivery_hours_saved_monthly']:,.0f}")
 
     print(f"{'=' * 60}")
 

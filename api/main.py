@@ -405,13 +405,26 @@ def enforcement():
 def counterfactual(enforcement_rate: Optional[float] = Query(None, ge=0.5, le=1.0)):
     """Returns what-if simulation results for a given enforcement rate.
 
-    Source: outputs/counterfactual.json — contains multiple scenarios.
+    Source: outputs/counterfactual.json — contains scenarios, corridors, pitch numbers.
     Query params: enforcement_rate (float, 0.5-1.0). Finds the closest matching scenario.
+    If no rate specified, returns full data including corridors and pitch numbers.
     """
     data = load_json_or_mock("counterfactual.json", MOCK_COUNTERFACTUAL)
 
+    # Handle new nested format: {scenarios: [...], flipkart_corridors: [...], pitch_numbers: {...}}
+    # and old flat list format: [...]
+    if isinstance(data, dict) and "scenarios" in data:
+        scenarios = data["scenarios"]
+        extras = {
+            "flipkart_corridors": data.get("flipkart_corridors", []),
+            "pitch_numbers": data.get("pitch_numbers", {}),
+        }
+    else:
+        scenarios = data if isinstance(data, list) else []
+        extras = {}
+
     if enforcement_rate is None:
-        # Return the default 80% scenario
+        # Return full response with all scenarios + corridors + pitch numbers
         enforcement_rate = 0.80
 
     # Find closest matching scenario
@@ -422,10 +435,11 @@ def counterfactual(enforcement_rate: Optional[float] = Query(None, ge=0.5, le=1.
             return abs(rate - enforcement_rate)
         return abs(_parse_rate_from_scenario(s.get("scenario", "")) - enforcement_rate)
 
-    closest = min(data, key=_get_rate)
+    closest = min(scenarios, key=_get_rate)
 
-    # Return without internal helper fields
+    # Return scenario + extras
     result = {k: v for k, v in closest.items() if k not in ("enforcement_rate",)}
+    result.update(extras)
     return result
 
 
