@@ -1,0 +1,488 @@
+[
+  {
+    "police_station": "Kodigehalli",
+    "total_violations": 10916,
+    "enforcement_rate": 0.5474,
+    "approval_rate": 0.5859,
+    "anomaly_score": -0.1905,
+    "is_anomaly": true,
+    "rank": 1
+  },
+  {
+    "police_station": "Upparpet",
+    "total_violations": 34468,
+    "enforcement_rate": 0.859,
+    "approval_rate": 0.7624,
+    "anomaly_score": -0.1393,
+    "is_anomaly": true,
+    "rank": 2
+  },
+  {
+    "police_station": "No Police Station",
+    "total_violations": 338,
+    "enforcement_rate": 0.6213,
+    "approval_rate": 0.6081,
+    "anomaly_score": -0.1077,
+    "is_anomaly": true,
+    "rank": 3
+  },
+  {
+    "police_station": "Shivajinagar",
+    "total_violations": 28044,
+    "enforcement_rate": 0.9059,
+    "approval_rate": 0.6607,
+    "anomaly_score": -0.0783,
+    "is_anomaly": true,
+    "rank": 4
+  },
+  {
+    "police_station": "Hennuru",
+    "total_violations": 892,
+    "enforcement_rate": 0.6592,
+    "approval_rate": 0.6682,
+    "anomaly_score": -0.0573,
+    "is_anomaly": true,
+    "rank": 5
+  },
+  {
+    "police_station": "Malleshwaram",
+    "total_violations": 22200,
+    "enforcement_rate": 0.8504,
+    "approval_rate": 0.7333,
+    "anomaly_score": -0.0293,
+    "is_anomaly": true,
+    "rank": 6
+  },
+  {
+    "police_station": "Hebbala",
+    "total_violations": 3209,
+    "enforcement_rate": 0.717,
+    "approval_rate": 0.738,
+    "anomaly_score": -0.0232,
+    "is_anomaly": true,
+    "rank": 7
+  },
+  {
+    "police_station": "K.G. Halli",
+    "total_violations": 892,
+    "enforcement_rate": 0.8957,
+    "approval_rate": 0.5828,
+    "anomaly_score": -0.0155,
+    "is_anomaly": true,
+    "rank": 8
+  },
+  {
+    "police_station": "HAL Old Airport",
+    "total_violations": 20819,
+    "enforcement_rate": 0.8685,
+    "approval_rate": 0.6813,
+    "anomaly_score": 0.0008,
+    "is_anomaly": false,
+    "rank": 9
+  },
+  {
+    "police_station": "Jnanabharathi",
+    "total_violations": 1063,
+    "enforcement_rate": 0.9276,
+    "approval_rate": 0.7858,
+    "anomaly_score": 0.001,
+    "is_anomaly": false,
+    "rank": 10
+  },
+  {
+    "police_station": "Jeevanbheemanagar",
+    "total_violations": 6736,
+    "enforcement_rate": 0.8912,
+    "approval_rate": 0.7795,
+    "anomaly_score": 0.014,
+    "is_anomaly": false,
+    "rank": 11
+  },
+  {
+    "police_station": "Vijayanagara",
+    "total_violations": 14652,
+    "enforcement_rate": 0.92,
+    "approval_rate": 0.6754,
+    "anomaly_score": 0.0193,
+    "is_anomaly": false,
+    "rank": 12
+  },
+  {
+    "police_station": "Wilson Garden",
+    "total_violations": 3108,
+    "enforcement_rate": 0.8121,
+    "approval_rate": 0.7874,
+    "anomaly_score": 0.0226,
+    "is_anomaly": false,
+    "rank": 13
+  },
+  {
+    "police_station": "City Market",
+    "total_violations": 17646,
+    "enforcement_rate": 0.8623,
+    "approval_rate": 0.6753,
+    "anomaly_score": 0.0264,
+    "is_anomaly": false,
+    "rank": 14
+  },
+  {
+    "police_station": "Electronic City",
+    "total_violations": 4333,
+    "enforcement_rate": 0.8073,
+    "approval_rate": 0.626,
+    "anomaly_score": 0.0327,
+    "is_anomaly": false,
+    "rank": 15
+  },
+  {
+    "police_station": "Kengeri",
+    "total_violations": 464,
+    "enforcement_rate": 0.8987,
+    "approval_rate": 0.7692,
+    "anomaly_score": 0.0472,
+    "is_anomaly": false,
+    "rank": 16
+  },
+  {
+    "police_station": "Rajajinagar",
+    "total_violations": 10998,
+    "enforcement_rate": 0.8291,
+    "approval_rate": 0.6826,
+    "anomaly_score": 0.0473,
+    "is_anomaly": false,
+    "rank": 17
+  },
+  {
+    "police_station": "Byatarayanapura",
+    "total_violations": 4555,
+    "enforcement_rate": 0.9175,
+    "approval_rate": 0.621,
+    "anomaly_score": 0.0491,
+    "is_anomaly": false,
+    "rank": 18
+  },
+  {
+    "police_station": "Peenya",
+    "total_violations": 974,
+    "enforcement_rate": 0.8522,
+    "approval_rate": 0.6112,
+    "anomaly_score": 0.0505,
+    "is_anomaly": false,
+    "rank": 19
+  },
+  {
+    "police_station": "Chikkabanavara",
+    "total_violations": 785,
+    "enforcement_rate": 0.8318,
+    "approval_rate": 0.6335,
+    "anomaly_score": 0.0604,
+    "is_anomaly": false,
+    "rank": 20
+  },
+  {
+    "police_station": "Madiwala",
+    "total_violations": 1563,
+    "enforcement_rate": 0.8791,
+    "approval_rate": 0.6127,
+    "anomaly_score": 0.0673,
+    "is_anomaly": false,
+    "rank": 21
+  },
+  {
+    "police_station": "Cubbon Park",
+    "total_violations": 3255,
+    "enforcement_rate": 0.7877,
+    "approval_rate": 0.7507,
+    "anomaly_score": 0.0738,
+    "is_anomaly": false,
+    "rank": 22
+  },
+  {
+    "police_station": "R.T. Nagar",
+    "total_violations": 1736,
+    "enforcement_rate": 0.9355,
+    "approval_rate": 0.7225,
+    "anomaly_score": 0.0773,
+    "is_anomaly": false,
+    "rank": 23
+  },
+  {
+    "police_station": "Magadi Road",
+    "total_violations": 8558,
+    "enforcement_rate": 0.9094,
+    "approval_rate": 0.6596,
+    "anomaly_score": 0.0811,
+    "is_anomaly": false,
+    "rank": 24
+  },
+  {
+    "police_station": "Yelahanka",
+    "total_violations": 2440,
+    "enforcement_rate": 0.9336,
+    "approval_rate": 0.7003,
+    "anomaly_score": 0.0843,
+    "is_anomaly": false,
+    "rank": 25
+  },
+  {
+    "police_station": "Thalagattapura",
+    "total_violations": 870,
+    "enforcement_rate": 0.8425,
+    "approval_rate": 0.7673,
+    "anomaly_score": 0.0868,
+    "is_anomaly": false,
+    "rank": 26
+  },
+  {
+    "police_station": "K.R. Pura",
+    "total_violations": 6546,
+    "enforcement_rate": 0.8561,
+    "approval_rate": 0.6482,
+    "anomaly_score": 0.0874,
+    "is_anomaly": false,
+    "rank": 27
+  },
+  {
+    "police_station": "HSR Layout",
+    "total_violations": 5018,
+    "enforcement_rate": 0.8579,
+    "approval_rate": 0.6425,
+    "anomaly_score": 0.0905,
+    "is_anomaly": false,
+    "rank": 28
+  },
+  {
+    "police_station": "K.S. Layout",
+    "total_violations": 828,
+    "enforcement_rate": 0.8213,
+    "approval_rate": 0.7397,
+    "anomaly_score": 0.0986,
+    "is_anomaly": false,
+    "rank": 29
+  },
+  {
+    "police_station": "Whitefield",
+    "total_violations": 2303,
+    "enforcement_rate": 0.8975,
+    "approval_rate": 0.6429,
+    "anomaly_score": 0.0999,
+    "is_anomaly": false,
+    "rank": 30
+  },
+  {
+    "police_station": "Mico Layout",
+    "total_violations": 2588,
+    "enforcement_rate": 0.8694,
+    "approval_rate": 0.7703,
+    "anomaly_score": 0.1023,
+    "is_anomaly": false,
+    "rank": 31
+  },
+  {
+    "police_station": "Devanahalli Airport",
+    "total_violations": 773,
+    "enforcement_rate": 0.8978,
+    "approval_rate": 0.6608,
+    "anomaly_score": 0.1049,
+    "is_anomaly": false,
+    "rank": 32
+  },
+  {
+    "police_station": "Banashankari",
+    "total_violations": 1202,
+    "enforcement_rate": 0.822,
+    "approval_rate": 0.7443,
+    "anomaly_score": 0.1055,
+    "is_anomaly": false,
+    "rank": 33
+  },
+  {
+    "police_station": "High ground",
+    "total_violations": 4951,
+    "enforcement_rate": 0.8584,
+    "approval_rate": 0.758,
+    "anomaly_score": 0.1083,
+    "is_anomaly": false,
+    "rank": 34
+  },
+  {
+    "police_station": "Chikkajala",
+    "total_violations": 5834,
+    "enforcement_rate": 0.911,
+    "approval_rate": 0.689,
+    "anomaly_score": 0.1102,
+    "is_anomaly": false,
+    "rank": 35
+  },
+  {
+    "police_station": "Mahadevapura",
+    "total_violations": 6187,
+    "enforcement_rate": 0.8429,
+    "approval_rate": 0.6855,
+    "anomaly_score": 0.1123,
+    "is_anomaly": false,
+    "rank": 36
+  },
+  {
+    "police_station": "Basavanagudi",
+    "total_violations": 3604,
+    "enforcement_rate": 0.8241,
+    "approval_rate": 0.7523,
+    "anomaly_score": 0.1125,
+    "is_anomaly": false,
+    "rank": 37
+  },
+  {
+    "police_station": "Pulikeshinagar(F.Town)",
+    "total_violations": 4136,
+    "enforcement_rate": 0.9055,
+    "approval_rate": 0.6514,
+    "anomaly_score": 0.1125,
+    "is_anomaly": false,
+    "rank": 38
+  },
+  {
+    "police_station": "J.P. Nagar",
+    "total_violations": 1637,
+    "enforcement_rate": 0.912,
+    "approval_rate": 0.6606,
+    "anomaly_score": 0.1129,
+    "is_anomaly": false,
+    "rank": 39
+  },
+  {
+    "police_station": "Halasuru Gate",
+    "total_violations": 6294,
+    "enforcement_rate": 0.9012,
+    "approval_rate": 0.681,
+    "anomaly_score": 0.1135,
+    "is_anomaly": false,
+    "rank": 40
+  },
+  {
+    "police_station": "Jalahalli",
+    "total_violations": 1160,
+    "enforcement_rate": 0.9009,
+    "approval_rate": 0.6688,
+    "anomaly_score": 0.1169,
+    "is_anomaly": false,
+    "rank": 41
+  },
+  {
+    "police_station": "Bellandur",
+    "total_violations": 4964,
+    "enforcement_rate": 0.8473,
+    "approval_rate": 0.6929,
+    "anomaly_score": 0.1186,
+    "is_anomaly": false,
+    "rank": 42
+  },
+  {
+    "police_station": "Banaswadi",
+    "total_violations": 3759,
+    "enforcement_rate": 0.9021,
+    "approval_rate": 0.6977,
+    "anomaly_score": 0.1202,
+    "is_anomaly": false,
+    "rank": 43
+  },
+  {
+    "police_station": "Yeshwanthpura",
+    "total_violations": 2587,
+    "enforcement_rate": 0.913,
+    "approval_rate": 0.7283,
+    "anomaly_score": 0.1222,
+    "is_anomaly": false,
+    "rank": 44
+  },
+  {
+    "police_station": "Hulimavu",
+    "total_violations": 2395,
+    "enforcement_rate": 0.8447,
+    "approval_rate": 0.6957,
+    "anomaly_score": 0.1228,
+    "is_anomaly": false,
+    "rank": 45
+  },
+  {
+    "police_station": "Chamarajpet",
+    "total_violations": 3795,
+    "enforcement_rate": 0.8567,
+    "approval_rate": 0.674,
+    "anomaly_score": 0.1236,
+    "is_anomaly": false,
+    "rank": 46
+  },
+  {
+    "police_station": "V.V.Puram (C.Pet)",
+    "total_violations": 1556,
+    "enforcement_rate": 0.8927,
+    "approval_rate": 0.7232,
+    "anomaly_score": 0.1244,
+    "is_anomaly": false,
+    "rank": 47
+  },
+  {
+    "police_station": "Sadashivanagar",
+    "total_violations": 1445,
+    "enforcement_rate": 0.8325,
+    "approval_rate": 0.7356,
+    "anomaly_score": 0.1259,
+    "is_anomaly": false,
+    "rank": 48
+  },
+  {
+    "police_station": "Kamakshipalya",
+    "total_violations": 1431,
+    "enforcement_rate": 0.8777,
+    "approval_rate": 0.7264,
+    "anomaly_score": 0.1286,
+    "is_anomaly": false,
+    "rank": 49
+  },
+  {
+    "police_station": "Halasur",
+    "total_violations": 4011,
+    "enforcement_rate": 0.8716,
+    "approval_rate": 0.7449,
+    "anomaly_score": 0.1288,
+    "is_anomaly": false,
+    "rank": 50
+  },
+  {
+    "police_station": "Sheshadripuram",
+    "total_violations": 3090,
+    "enforcement_rate": 0.8861,
+    "approval_rate": 0.7386,
+    "anomaly_score": 0.1338,
+    "is_anomaly": false,
+    "rank": 51
+  },
+  {
+    "police_station": "Jayanagara",
+    "total_violations": 3813,
+    "enforcement_rate": 0.8523,
+    "approval_rate": 0.7299,
+    "anomaly_score": 0.1376,
+    "is_anomaly": false,
+    "rank": 52
+  },
+  {
+    "police_station": "Ashok Nagar",
+    "total_violations": 3524,
+    "enforcement_rate": 0.8448,
+    "approval_rate": 0.7411,
+    "anomaly_score": 0.1409,
+    "is_anomaly": false,
+    "rank": 53
+  },
+  {
+    "police_station": "Adugodi",
+    "total_violations": 3332,
+    "enforcement_rate": 0.8472,
+    "approval_rate": 0.7344,
+    "anomaly_score": 0.1442,
+    "is_anomaly": false,
+    "rank": 54
+  }
+]
