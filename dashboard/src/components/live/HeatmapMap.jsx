@@ -107,9 +107,10 @@ export default function HeatmapMap({ zones, patrolData, cascadeData, selectedZon
           >
             <Tooltip direction="top" offset={[0, -10]} opacity={0.95}>
               <div style={{ fontFamily: 'Inter, sans-serif', fontSize: 12 }}>
-                <strong>{zone.zone_id}</strong><br />
-                Score: {Number(zone.congestiq_score).toLocaleString()}<br />
-                {zone.primary_violation}
+               <strong>{zone.display_name || zone.zone_id}</strong><br />
+               <span style={{ opacity: 0.6, fontSize: 10 }}>{zone.zone_id}</span><br />
+               Score: {Number(zone.congestiq_score).toLocaleString()}<br />
+               {zone.primary_violation}
               </div>
             </Tooltip>
           </CircleMarker>

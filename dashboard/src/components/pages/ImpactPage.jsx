@@ -13,9 +13,9 @@ export default function ImpactPage() {
     fetchCounterfactual(0.9).then(d => { setResult(d); setLoading(false); }).catch(() => setLoading(false));
   }, []);
 
-  const reduction = useAnimatedCounter(result?.reduction_pct || 0, 1000, 1);
-  const hoursSaved = useAnimatedCounter(result?.hours_saved_monthly || 0, 1000, 0);
-  const deliveryHours = useAnimatedCounter(result?.delivery_hours_saved_monthly || 0, 1000, 0);
+const reduction = useAnimatedCounter(result?.scenario?.reduction_pct || 0, 1000, 1);
+const hoursSaved = useAnimatedCounter(result?.scenario?.hours_saved_monthly || 0, 1000, 0);
+const deliveryHours = useAnimatedCounter(result?.scenario?.flipkart?.delivery_hours_saved_monthly || 0, 1000, 0);
 
   if (!result && !loading) return <div>No data available.</div>;
 
@@ -26,10 +26,10 @@ export default function ImpactPage() {
       {result && (
         <>
           <div className="stat-cards-row">
-            <StatCard label="CongestionIQ Reduction" value={result.reduction_pct} decimals={1} suffix="%" icon={TrendingDown} accent="var(--success)" />
-            <StatCard label="Hours Saved / Month" value={result.hours_saved_monthly} icon={Clock} accent="var(--accent)" />
-            <StatCard label="Delivery Hours Saved" value={result.delivery_hours_saved_monthly} icon={Truck} accent="var(--accent)" />
-            <StatCard label="Zones Impacted" value={result.top_zones_impacted?.length || 0} icon={Target} accent="var(--warning)" />
+            <StatCard label="CongestionIQ Reduction" value={result.scenario.reduction_pct} decimals={1} suffix="%" icon={TrendingDown} accent="var(--success)" />
+            <StatCard label="Hours Saved / Month" value={result.scenario.hours_saved_monthly} icon={Clock} accent="var(--accent)" />
+            <StatCard label="Delivery Hours Saved" value={result.scenario.flipkart.delivery_hours_saved_monthly} icon={Truck} accent="var(--accent)" />
+            <StatCard label="Zones Impacted" value={result.scenario?.zones_affected || result.scenario?.top_zones_impacted?.length || 0} icon={Target} accent="var(--warning)" />
           </div>
 
           {/* Before / After comparison */}
@@ -37,7 +37,7 @@ export default function ImpactPage() {
             <div className="panel" style={{ textAlign: 'center' }}>
               <h3 style={{ marginBottom: 16 }}>Baseline CongestionIQ</h3>
               <div className="data-number" style={{ fontSize: 42, color: 'var(--danger)', letterSpacing: '-0.02em' }}>
-                {Number(result.baseline_congestiq).toLocaleString()}
+                {Number(result.scenario.baseline_congestiq).toLocaleString()}
               </div>
               <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 8 }}>Current aggregate score</p>
               <div style={{ height: 8, background: 'var(--danger-subtle)', borderRadius: 4, marginTop: 16 }}>
@@ -47,13 +47,13 @@ export default function ImpactPage() {
             <div className="panel" style={{ textAlign: 'center' }}>
               <h3 style={{ marginBottom: 16 }}>Simulated CongestionIQ</h3>
               <div className="data-number" style={{ fontSize: 42, color: 'var(--success)', letterSpacing: '-0.02em' }}>
-                {Number(result.simulated_congestiq).toLocaleString()}
+                {Number(result.scenario.simulated_congestiq).toLocaleString()}
               </div>
               <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 8 }}>At 90% enforcement rate</p>
               <div style={{ height: 8, background: 'var(--success-subtle)', borderRadius: 4, marginTop: 16 }}>
                 <div style={{
                   height: '100%', background: 'var(--success)', borderRadius: 4,
-                  width: `${(result.simulated_congestiq / result.baseline_congestiq * 100).toFixed(1)}%`,
+                  width: `${(result.scenario.simulated_congestiq / result.scenario.baseline_congestiq * 100).toFixed(1)}%`,
                   transition: 'width 0.5s ease'
                 }} />
               </div>
@@ -61,7 +61,7 @@ export default function ImpactPage() {
           </div>
 
           {/* Top impacted zones */}
-          {result.top_zones_impacted && result.top_zones_impacted.length > 0 && (
+          {result.scenario.top_zones_impacted && result.scenario.top_zones_impacted.length > 0 && (
             <div className="panel">
               <div className="panel-header">
                 <h3>Top Impacted Zones</h3>
@@ -76,7 +76,7 @@ export default function ImpactPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {result.top_zones_impacted.map((zone, i) => (
+                  {result.scenario.top_zones_impacted.map((zone, i) => (
                     <tr key={i}>
                       <td className="data-number" style={{ fontWeight: 600 }}>{zone.zone_id}</td>
                       <td className="data-number">{Number(zone.baseline).toLocaleString()}</td>

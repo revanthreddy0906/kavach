@@ -16,7 +16,8 @@
     "enforcement_rate": 0.8528,
     "predicted_score_6h": 31611.5,
     "severity": "critical",
-    "rank": 1
+    "rank": 1,
+    "display_name": "Elite Junction"
   },
   {
     "zone_id": "tdr1v2",
@@ -35,7 +36,8 @@
     "enforcement_rate": 0.8773,
     "predicted_score_6h": 19560.4,
     "severity": "critical",
-    "rank": 2
+    "rank": 2,
+    "display_name": "KR Market Junction"
   },
   {
     "zone_id": "tdr1y5",
@@ -54,7 +56,8 @@
     "enforcement_rate": 0.8881,
     "predicted_score_6h": 20935.4,
     "severity": "critical",
-    "rank": 3
+    "rank": 3,
+    "display_name": "Safina Plaza Junction"
   },
   {
     "zone_id": "tdr1vg",
@@ -73,7 +76,8 @@
     "enforcement_rate": 0.9259,
     "predicted_score_6h": 564.9,
     "severity": "critical",
-    "rank": 4
+    "rank": 4,
+    "display_name": "Central Street Junction"
   },
   {
     "zone_id": "tdr1tr",
@@ -92,7 +96,8 @@
     "enforcement_rate": 0.8671,
     "predicted_score_6h": 5884.0,
     "severity": "critical",
-    "rank": 5
+    "rank": 5,
+    "display_name": "KR Market Junction"
   },
   {
     "zone_id": "tdr1v3",
@@ -111,7 +116,8 @@
     "enforcement_rate": 0.8733,
     "predicted_score_6h": 2755.3,
     "severity": "critical",
-    "rank": 6
+    "rank": 6,
+    "display_name": "Sagar Theatre Junction"
   },
   {
     "zone_id": "tdr4hb",
@@ -130,7 +136,8 @@
     "enforcement_rate": 0.8298,
     "predicted_score_6h": 652.8,
     "severity": "critical",
-    "rank": 7
+    "rank": 7,
+    "display_name": "Subramanya Nagar 2nd Stage"
   },
   {
     "zone_id": "tdr5p8",
@@ -149,7 +156,8 @@
     "enforcement_rate": 0.906,
     "predicted_score_6h": 2444.9,
     "severity": "critical",
-    "rank": 8
+    "rank": 8,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr1xf",
@@ -168,7 +176,8 @@
     "enforcement_rate": 0.8273,
     "predicted_score_6h": 13598.5,
     "severity": "critical",
-    "rank": 9
+    "rank": 9,
+    "display_name": "Shivanasamudra Ward"
   },
   {
     "zone_id": "tdr1uw",
@@ -187,7 +196,8 @@
     "enforcement_rate": 0.8406,
     "predicted_score_6h": 4401.2,
     "severity": "critical",
-    "rank": 10
+    "rank": 10,
+    "display_name": "Modi Bridge Junction"
   },
   {
     "zone_id": "tdr1v4",
@@ -206,7 +216,8 @@
     "enforcement_rate": 0.8581,
     "predicted_score_6h": 4262.7,
     "severity": "critical",
-    "rank": 11
+    "rank": 11,
+    "display_name": "Shanthala Junction"
   },
   {
     "zone_id": "tdr1u9",
@@ -225,7 +236,8 @@
     "enforcement_rate": 0.9072,
     "predicted_score_6h": 7663.0,
     "severity": "critical",
-    "rank": 12
+    "rank": 12,
+    "display_name": "Hosahalli Metro Station"
   },
   {
     "zone_id": "tdr4me",
@@ -244,7 +256,8 @@
     "enforcement_rate": 0.5314,
     "predicted_score_6h": 7051.2,
     "severity": "critical",
-    "rank": 13
+    "rank": 13,
+    "display_name": "Byatarayanapura"
   },
   {
     "zone_id": "tdr600",
@@ -263,7 +276,8 @@
     "enforcement_rate": 0.8454,
     "predicted_score_6h": 1874.5,
     "severity": "critical",
-    "rank": 14
+    "rank": 14,
+    "display_name": "Shree Vinayaka Layout"
   },
   {
     "zone_id": "tdr4pb",
@@ -282,7 +296,8 @@
     "enforcement_rate": 0.8655,
     "predicted_score_6h": 454.4,
     "severity": "critical",
-    "rank": 15
+    "rank": 15,
+    "display_name": "Shree Vinayaka Layout"
   },
   {
     "zone_id": "tdr1nc",
@@ -301,7 +316,8 @@
     "enforcement_rate": 0.7939,
     "predicted_score_6h": 5594.3,
     "severity": "critical",
-    "rank": 16
+    "rank": 16,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr1zm",
@@ -320,7 +336,8 @@
     "enforcement_rate": 0.9293,
     "predicted_score_6h": 104.8,
     "severity": "critical",
-    "rank": 17
+    "rank": 17,
+    "display_name": "Pai Layout"
   },
   {
     "zone_id": "tdr1vn",
@@ -339,7 +356,8 @@
     "enforcement_rate": 0.8462,
     "predicted_score_6h": 5424.0,
     "severity": "critical",
-    "rank": 18
+    "rank": 18,
+    "display_name": "Malleswaram"
   },
   {
     "zone_id": "tdr1zw",
@@ -358,7 +376,8 @@
     "enforcement_rate": 0.8921,
     "predicted_score_6h": 9609.4,
     "severity": "critical",
-    "rank": 19
+    "rank": 19,
+    "display_name": "Udaya Nagar"
   },
   {
     "zone_id": "tdr1vp",
@@ -377,7 +396,8 @@
     "enforcement_rate": 0.8725,
     "predicted_score_6h": 668.4,
     "severity": "critical",
-    "rank": 20
+    "rank": 20,
+    "display_name": "Malleswaram"
   },
   {
     "zone_id": "tdr1u2",
@@ -396,7 +416,8 @@
     "enforcement_rate": 0.9441,
     "predicted_score_6h": 4667.7,
     "severity": "critical",
-    "rank": 21
+    "rank": 21,
+    "display_name": "5th Main Road, RPC Layout"
   },
   {
     "zone_id": "tdr1uv",
@@ -415,7 +436,8 @@
     "enforcement_rate": 0.8943,
     "predicted_score_6h": 2275.3,
     "severity": "critical",
-    "rank": 22
+    "rank": 22,
+    "display_name": "RR Kalyana Mantapa, Dr. Rajkumar Road"
   },
   {
     "zone_id": "tdr1v0",
@@ -434,7 +456,8 @@
     "enforcement_rate": 0.8416,
     "predicted_score_6h": 1617.2,
     "severity": "critical",
-    "rank": 23
+    "rank": 23,
+    "display_name": "AS Char Street, Mysore Road"
   },
   {
     "zone_id": "tdr4h8",
@@ -453,7 +476,8 @@
     "enforcement_rate": 0.7932,
     "predicted_score_6h": 49.9,
     "severity": "critical",
-    "rank": 24
+    "rank": 24,
+    "display_name": "Mahalaxmi Layout Entrance"
   },
   {
     "zone_id": "tdr385",
@@ -472,7 +496,8 @@
     "enforcement_rate": 0.9345,
     "predicted_score_6h": 1767.7,
     "severity": "critical",
-    "rank": 25
+    "rank": 25,
+    "display_name": "Kaverappa Layout"
   },
   {
     "zone_id": "tdr1x9",
@@ -491,7 +516,8 @@
     "enforcement_rate": 0.8239,
     "predicted_score_6h": 5362.9,
     "severity": "critical",
-    "rank": 26
+    "rank": 26,
+    "display_name": "Shivanasamudra Ward"
   },
   {
     "zone_id": "tdr1y1",
@@ -510,7 +536,8 @@
     "enforcement_rate": 0.8522,
     "predicted_score_6h": 4319.4,
     "severity": "critical",
-    "rank": 27
+    "rank": 27,
+    "display_name": "Craig Park Layout"
   },
   {
     "zone_id": "tdr38j",
@@ -529,7 +556,8 @@
     "enforcement_rate": 0.8711,
     "predicted_score_6h": 1643.0,
     "severity": "critical",
-    "rank": 28
+    "rank": 28,
+    "display_name": "MSR Layout"
   },
   {
     "zone_id": "tdr1vf",
@@ -548,7 +576,8 @@
     "enforcement_rate": 0.9077,
     "predicted_score_6h": 589.7,
     "severity": "critical",
-    "rank": 29
+    "rank": 29,
+    "display_name": "Safina Plaza Junction"
   },
   {
     "zone_id": "tdr1qw",
@@ -567,7 +596,8 @@
     "enforcement_rate": 0.8005,
     "predicted_score_6h": 3538.9,
     "severity": "critical",
-    "rank": 30
+    "rank": 30,
+    "display_name": "HSR Layout"
   },
   {
     "zone_id": "tdr1th",
@@ -586,7 +616,8 @@
     "enforcement_rate": 0.8404,
     "predicted_score_6h": 3679.3,
     "severity": "critical",
-    "rank": 31
+    "rank": 31,
+    "display_name": "Tagore Park Junction"
   },
   {
     "zone_id": "tdr4jt",
@@ -605,7 +636,8 @@
     "enforcement_rate": 0.6313,
     "predicted_score_6h": 3198.5,
     "severity": "critical",
-    "rank": 32
+    "rank": 32,
+    "display_name": "Anand Nagar Colony"
   },
   {
     "zone_id": "tdr1vc",
@@ -624,7 +656,8 @@
     "enforcement_rate": 0.8379,
     "predicted_score_6h": 2794.9,
     "severity": "critical",
-    "rank": 33
+    "rank": 33,
+    "display_name": "D'Souza Layout"
   },
   {
     "zone_id": "tdr1yj",
@@ -643,7 +676,8 @@
     "enforcement_rate": 0.9414,
     "predicted_score_6h": 2910.4,
     "severity": "critical",
-    "rank": 34
+    "rank": 34,
+    "display_name": "Sindhi Colony"
   },
   {
     "zone_id": "tdr1w4",
@@ -662,7 +696,8 @@
     "enforcement_rate": 0.896,
     "predicted_score_6h": 697.1,
     "severity": "critical",
-    "rank": 35
+    "rank": 35,
+    "display_name": "UCO Bank Junction"
   },
   {
     "zone_id": "tdr1yc",
@@ -681,7 +716,8 @@
     "enforcement_rate": 0.846,
     "predicted_score_6h": 2656.6,
     "severity": "critical",
-    "rank": 36
+    "rank": 36,
+    "display_name": "Old Thippasandra"
   },
   {
     "zone_id": "tdr1wz",
@@ -700,7 +736,8 @@
     "enforcement_rate": 0.9338,
     "predicted_score_6h": 2128.9,
     "severity": "critical",
-    "rank": 37
+    "rank": 37,
+    "display_name": "Corporation Colony"
   },
   {
     "zone_id": "tdr1zz",
@@ -719,7 +756,8 @@
     "enforcement_rate": 0.8113,
     "predicted_score_6h": 293.3,
     "severity": "critical",
-    "rank": 38
+    "rank": 38,
+    "display_name": "T.C Palya"
   },
   {
     "zone_id": "tdr1qt",
@@ -738,7 +776,8 @@
     "enforcement_rate": 0.9051,
     "predicted_score_6h": 3043.5,
     "severity": "critical",
-    "rank": 39
+    "rank": 39,
+    "display_name": "Mangamannapalya"
   },
   {
     "zone_id": "tdr1uf",
@@ -757,7 +796,8 @@
     "enforcement_rate": 0.9206,
     "predicted_score_6h": 2516.9,
     "severity": "critical",
-    "rank": 40
+    "rank": 40,
+    "display_name": "Gopalpura"
   },
   {
     "zone_id": "tdr1v7",
@@ -776,7 +816,8 @@
     "enforcement_rate": 0.8972,
     "predicted_score_6h": 1891.9,
     "severity": "critical",
-    "rank": 41
+    "rank": 41,
+    "display_name": "Anand Rao Junction"
   },
   {
     "zone_id": "tdr38n",
@@ -795,7 +836,8 @@
     "enforcement_rate": 0.9127,
     "predicted_score_6h": 1438.5,
     "severity": "critical",
-    "rank": 42
+    "rank": 42,
+    "display_name": "Ashwath Nagar"
   },
   {
     "zone_id": "tdr1ug",
@@ -814,7 +856,8 @@
     "enforcement_rate": 0.9079,
     "predicted_score_6h": 3097.6,
     "severity": "critical",
-    "rank": 43
+    "rank": 43,
+    "display_name": "Bhashyam Circle"
   },
   {
     "zone_id": "tdr5nc",
@@ -833,7 +876,8 @@
     "enforcement_rate": 0.8894,
     "predicted_score_6h": 1262.3,
     "severity": "critical",
-    "rank": 44
+    "rank": 44,
+    "display_name": "Minakunte Hosuru"
   },
   {
     "zone_id": "tdr1vt",
@@ -852,7 +896,8 @@
     "enforcement_rate": 0.8263,
     "predicted_score_6h": 1525.1,
     "severity": "critical",
-    "rank": 45
+    "rank": 45,
+    "display_name": "Windsor Circle"
   },
   {
     "zone_id": "tdr1xc",
@@ -871,7 +916,8 @@
     "enforcement_rate": 0.8009,
     "predicted_score_6h": 4797.7,
     "severity": "critical",
-    "rank": 46
+    "rank": 46,
+    "display_name": "Shivanasamudra Ward"
   },
   {
     "zone_id": "tdr1sw",
@@ -890,7 +936,8 @@
     "enforcement_rate": 0.939,
     "predicted_score_6h": 227.3,
     "severity": "critical",
-    "rank": 47
+    "rank": 47,
+    "display_name": "Satellite Bus Stand, Mysore Road"
   },
   {
     "zone_id": "tdr1y3",
@@ -909,7 +956,8 @@
     "enforcement_rate": 0.8831,
     "predicted_score_6h": 2641.3,
     "severity": "critical",
-    "rank": 48
+    "rank": 48,
+    "display_name": "Gowthamapura"
   },
   {
     "zone_id": "tdr4md",
@@ -928,7 +976,8 @@
     "enforcement_rate": 0.6502,
     "predicted_score_6h": 2116.4,
     "severity": "critical",
-    "rank": 49
+    "rank": 49,
+    "display_name": "Defence Layout"
   },
   {
     "zone_id": "tdr3b8",
@@ -947,7 +996,8 @@
     "enforcement_rate": 0.9329,
     "predicted_score_6h": 3795.8,
     "severity": "critical",
-    "rank": 50
+    "rank": 50,
+    "display_name": "AECS Layout B Block"
   },
   {
     "zone_id": "tdr1vj",
@@ -966,7 +1016,8 @@
     "enforcement_rate": 0.882,
     "predicted_score_6h": 543.2,
     "severity": "critical",
-    "rank": 51
+    "rank": 51,
+    "display_name": "Valluvarpuram"
   },
   {
     "zone_id": "tdr1vu",
@@ -985,7 +1036,8 @@
     "enforcement_rate": 0.905,
     "predicted_score_6h": 2166.4,
     "severity": "critical",
-    "rank": 52
+    "rank": 52,
+    "display_name": "Jayamahal"
   },
   {
     "zone_id": "tdr1y4",
@@ -1004,7 +1056,8 @@
     "enforcement_rate": 0.916,
     "predicted_score_6h": 37.6,
     "severity": "critical",
-    "rank": 53
+    "rank": 53,
+    "display_name": "Sivanchetti Gardens"
   },
   {
     "zone_id": "tdr1t3",
@@ -1023,7 +1076,8 @@
     "enforcement_rate": 0.8195,
     "predicted_score_6h": 1961.2,
     "severity": "critical",
-    "rank": 54
+    "rank": 54,
+    "display_name": "New Diagonal Road, Jayanagar"
   },
   {
     "zone_id": "tdr1sm",
@@ -1042,7 +1096,8 @@
     "enforcement_rate": 0.9512,
     "predicted_score_6h": 1106.0,
     "severity": "critical",
-    "rank": 55
+    "rank": 55,
+    "display_name": "Gali Anjaneya Temple"
   },
   {
     "zone_id": "tdr1uu",
@@ -1061,7 +1116,8 @@
     "enforcement_rate": 0.8363,
     "predicted_score_6h": 1412.7,
     "severity": "critical",
-    "rank": 56
+    "rank": 56,
+    "display_name": "ESI Hospital, Rajajinagar"
   },
   {
     "zone_id": "tdr1tq",
@@ -1080,7 +1136,8 @@
     "enforcement_rate": 0.882,
     "predicted_score_6h": 1086.3,
     "severity": "critical",
-    "rank": 57
+    "rank": 57,
+    "display_name": "JC Road Junction"
   },
   {
     "zone_id": "tdr1t7",
@@ -1099,7 +1156,8 @@
     "enforcement_rate": 0.7741,
     "predicted_score_6h": 1574.4,
     "severity": "critical",
-    "rank": 58
+    "rank": 58,
+    "display_name": "9th Cross, 4th Main, Jayanagar"
   },
   {
     "zone_id": "tdr4m9",
@@ -1118,7 +1176,8 @@
     "enforcement_rate": 0.6717,
     "predicted_score_6h": 1835.6,
     "severity": "critical",
-    "rank": 59
+    "rank": 59,
+    "display_name": "Sahakaranagara"
   },
   {
     "zone_id": "tdr1z1",
@@ -1137,7 +1196,8 @@
     "enforcement_rate": 0.9321,
     "predicted_score_6h": 1827.5,
     "severity": "critical",
-    "rank": 60
+    "rank": 60,
+    "display_name": "New Thippasandra"
   },
   {
     "zone_id": "tdr1yn",
@@ -1156,7 +1216,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 25.1,
     "severity": "critical",
-    "rank": 61
+    "rank": 61,
+    "display_name": "Sindhi Colony"
   },
   {
     "zone_id": "tdr3bj",
@@ -1175,7 +1236,8 @@
     "enforcement_rate": 0.7775,
     "predicted_score_6h": 1691.8,
     "severity": "critical",
-    "rank": 62
+    "rank": 62,
+    "display_name": "Garudachar Palya"
   },
   {
     "zone_id": "tdr1ud",
@@ -1194,7 +1256,8 @@
     "enforcement_rate": 0.9126,
     "predicted_score_6h": 2008.2,
     "severity": "critical",
-    "rank": 63
+    "rank": 63,
+    "display_name": "Veeresh Theatre Junction"
   },
   {
     "zone_id": "tdr3b3",
@@ -1213,7 +1276,8 @@
     "enforcement_rate": 0.8621,
     "predicted_score_6h": 929.1,
     "severity": "critical",
-    "rank": 64
+    "rank": 64,
+    "display_name": "Kundalahalli Colony"
   },
   {
     "zone_id": "tdr1us",
@@ -1232,7 +1296,8 @@
     "enforcement_rate": 0.9419,
     "predicted_score_6h": 1414.7,
     "severity": "critical",
-    "rank": 65
+    "rank": 65,
+    "display_name": "Dr. Bheem Rao Palace, Chord Road"
   },
   {
     "zone_id": "tdr1ux",
@@ -1251,7 +1316,8 @@
     "enforcement_rate": 0.8653,
     "predicted_score_6h": 1020.6,
     "severity": "critical",
-    "rank": 66
+    "rank": 66,
+    "display_name": "1st Block Junction, Rajajinagar"
   },
   {
     "zone_id": "tdr4js",
@@ -1270,7 +1336,8 @@
     "enforcement_rate": 0.6223,
     "predicted_score_6h": 150.0,
     "severity": "critical",
-    "rank": 67
+    "rank": 67,
+    "display_name": "Anand Nagar Colony"
   },
   {
     "zone_id": "tdr4tb",
@@ -1289,7 +1356,8 @@
     "enforcement_rate": 0.933,
     "predicted_score_6h": 235.7,
     "severity": "critical",
-    "rank": 68
+    "rank": 68,
+    "display_name": "Surabhi Layout"
   },
   {
     "zone_id": "tdr4j0",
@@ -1308,7 +1376,8 @@
     "enforcement_rate": 0.8878,
     "predicted_score_6h": 585.0,
     "severity": "critical",
-    "rank": 69
+    "rank": 69,
+    "display_name": "Sadashivanagar"
   },
   {
     "zone_id": "tdr1qc",
@@ -1327,7 +1396,8 @@
     "enforcement_rate": 0.8848,
     "predicted_score_6h": 1985.0,
     "severity": "critical",
-    "rank": 70
+    "rank": 70,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr4h6",
@@ -1346,7 +1416,8 @@
     "enforcement_rate": 0.8861,
     "predicted_score_6h": 1134.2,
     "severity": "critical",
-    "rank": 71
+    "rank": 71,
+    "display_name": "Dr. Puneeth Rajkumar Ward"
   },
   {
     "zone_id": "tdr1tw",
@@ -1365,7 +1436,8 @@
     "enforcement_rate": 0.8565,
     "predicted_score_6h": 1649.3,
     "severity": "critical",
-    "rank": 72
+    "rank": 72,
+    "display_name": "Urvashi Theater"
   },
   {
     "zone_id": "tdr1ez",
@@ -1384,7 +1456,8 @@
     "enforcement_rate": 0.9433,
     "predicted_score_6h": 1542.6,
     "severity": "critical",
-    "rank": 73
+    "rank": 73,
+    "display_name": "NGEF Layout"
   },
   {
     "zone_id": "tdr4zx",
@@ -1403,7 +1476,8 @@
     "enforcement_rate": 0.9412,
     "predicted_score_6h": 1426.4,
     "severity": "critical",
-    "rank": 74
+    "rank": 74,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr1yb",
@@ -1422,7 +1496,8 @@
     "enforcement_rate": 0.8511,
     "predicted_score_6h": 1339.1,
     "severity": "critical",
-    "rank": 75
+    "rank": 75,
+    "display_name": "HAL 2nd Stage"
   },
   {
     "zone_id": "tdr1uy",
@@ -1441,7 +1516,8 @@
     "enforcement_rate": 0.8249,
     "predicted_score_6h": 897.1,
     "severity": "critical",
-    "rank": 76
+    "rank": 76,
+    "display_name": "Navarang Theatre"
   },
   {
     "zone_id": "tdr1vh",
@@ -1460,7 +1536,8 @@
     "enforcement_rate": 0.8717,
     "predicted_score_6h": 1574.9,
     "severity": "critical",
-    "rank": 77
+    "rank": 77,
+    "display_name": "Nehru Nagar"
   },
   {
     "zone_id": "tdr4hk",
@@ -1479,7 +1556,8 @@
     "enforcement_rate": 0.8672,
     "predicted_score_6h": 952.7,
     "severity": "critical",
-    "rank": 78
+    "rank": 78,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr4h3",
@@ -1498,7 +1576,8 @@
     "enforcement_rate": 0.7959,
     "predicted_score_6h": 1431.4,
     "severity": "critical",
-    "rank": 79
+    "rank": 79,
+    "display_name": "Nandini Layout"
   },
   {
     "zone_id": "tdr4jr",
@@ -1517,7 +1596,8 @@
     "enforcement_rate": 0.4423,
     "predicted_score_6h": 806.6,
     "severity": "high",
-    "rank": 80
+    "rank": 80,
+    "display_name": "Papanna Layout"
   },
   {
     "zone_id": "tdr1qd",
@@ -1536,7 +1616,8 @@
     "enforcement_rate": 0.8857,
     "predicted_score_6h": 275.8,
     "severity": "high",
-    "rank": 81
+    "rank": 81,
+    "display_name": "GarvebhaviPalya"
   },
   {
     "zone_id": "tdr1vk",
@@ -1555,7 +1636,8 @@
     "enforcement_rate": 0.8478,
     "predicted_score_6h": 836.3,
     "severity": "high",
-    "rank": 82
+    "rank": 82,
+    "display_name": "Shivananda Circle"
   },
   {
     "zone_id": "tdr1v8",
@@ -1574,7 +1656,8 @@
     "enforcement_rate": 0.8565,
     "predicted_score_6h": 1839.6,
     "severity": "high",
-    "rank": 83
+    "rank": 83,
+    "display_name": "Hudson Circle"
   },
   {
     "zone_id": "tdr4j7",
@@ -1593,7 +1676,8 @@
     "enforcement_rate": 0.725,
     "predicted_score_6h": 1527.2,
     "severity": "high",
-    "rank": 84
+    "rank": 84,
+    "display_name": "RMV 2nd Stage 2nd Block"
   },
   {
     "zone_id": "tdr1uk",
@@ -1612,7 +1696,8 @@
     "enforcement_rate": 0.8366,
     "predicted_score_6h": 1410.0,
     "severity": "high",
-    "rank": 85
+    "rank": 85,
+    "display_name": "Havanur Circle"
   },
   {
     "zone_id": "tdr1w2",
@@ -1631,7 +1716,8 @@
     "enforcement_rate": 0.8428,
     "predicted_score_6h": 26.5,
     "severity": "high",
-    "rank": 86
+    "rank": 86,
+    "display_name": "Madiwala Traffic PS Junction"
   },
   {
     "zone_id": "tdr38r",
@@ -1650,7 +1736,8 @@
     "enforcement_rate": 0.8704,
     "predicted_score_6h": 2187.3,
     "severity": "high",
-    "rank": 87
+    "rank": 87,
+    "display_name": "Vaikuntam Layout"
   },
   {
     "zone_id": "tdr1u3",
@@ -1669,7 +1756,8 @@
     "enforcement_rate": 0.957,
     "predicted_score_6h": 1397.2,
     "severity": "high",
-    "rank": 88
+    "rank": 88,
+    "display_name": "Vijayanagar Bus Stand Junction"
   },
   {
     "zone_id": "tdr1tx",
@@ -1688,7 +1776,8 @@
     "enforcement_rate": 0.8247,
     "predicted_score_6h": 1706.5,
     "severity": "high",
-    "rank": 89
+    "rank": 89,
+    "display_name": "Blood Bank Circle, KH Road"
   },
   {
     "zone_id": "tdr1up",
@@ -1707,7 +1796,8 @@
     "enforcement_rate": 0.8491,
     "predicted_score_6h": 1273.6,
     "severity": "high",
-    "rank": 90
+    "rank": 90,
+    "display_name": "Kempegowda Layout"
   },
   {
     "zone_id": "tdr1rs",
@@ -1726,7 +1816,8 @@
     "enforcement_rate": 0.7479,
     "predicted_score_6h": 1102.0,
     "severity": "high",
-    "rank": 91
+    "rank": 91,
+    "display_name": "Kasavanahalli"
   },
   {
     "zone_id": "tdr1qq",
@@ -1745,7 +1836,8 @@
     "enforcement_rate": 0.9255,
     "predicted_score_6h": 985.4,
     "severity": "high",
-    "rank": 92
+    "rank": 92,
+    "display_name": "MCHS Colony"
   },
   {
     "zone_id": "tdr4nk",
@@ -1764,7 +1856,8 @@
     "enforcement_rate": 0.93,
     "predicted_score_6h": 1395.8,
     "severity": "high",
-    "rank": 93
+    "rank": 93,
+    "display_name": "Hennur"
   },
   {
     "zone_id": "tdr4j5",
@@ -1783,7 +1876,8 @@
     "enforcement_rate": 0.813,
     "predicted_score_6h": 1383.6,
     "severity": "high",
-    "rank": 94
+    "rank": 94,
+    "display_name": "RMV 2nd Stage 2nd Block"
   },
   {
     "zone_id": "tdr1ue",
@@ -1802,7 +1896,8 @@
     "enforcement_rate": 0.8493,
     "predicted_score_6h": 1087.9,
     "severity": "high",
-    "rank": 95
+    "rank": 95,
+    "display_name": "NPS, Vijayanagar"
   },
   {
     "zone_id": "tdr1tz",
@@ -1821,7 +1916,8 @@
     "enforcement_rate": 0.8046,
     "predicted_score_6h": 1143.1,
     "severity": "high",
-    "rank": 96
+    "rank": 96,
+    "display_name": "Nanjappa Circle"
   },
   {
     "zone_id": "tdr1zq",
@@ -1840,7 +1936,8 @@
     "enforcement_rate": 0.7126,
     "predicted_score_6h": 714.8,
     "severity": "high",
-    "rank": 97
+    "rank": 97,
+    "display_name": "Darga Mohalla"
   },
   {
     "zone_id": "tdr1vs",
@@ -1859,7 +1956,8 @@
     "enforcement_rate": 0.9293,
     "predicted_score_6h": 802.2,
     "severity": "high",
-    "rank": 98
+    "rank": 98,
+    "display_name": "Windsor Circle"
   },
   {
     "zone_id": "tdr1zv",
@@ -1878,7 +1976,8 @@
     "enforcement_rate": 0.8279,
     "predicted_score_6h": 181.9,
     "severity": "high",
-    "rank": 99
+    "rank": 99,
+    "display_name": "Garudachar Palya"
   },
   {
     "zone_id": "tdr1sp",
@@ -1897,7 +1996,8 @@
     "enforcement_rate": 0.8715,
     "predicted_score_6h": 1235.3,
     "severity": "high",
-    "rank": 100
+    "rank": 100,
+    "display_name": "Attigupe"
   },
   {
     "zone_id": "tdr1qe",
@@ -1916,7 +2016,8 @@
     "enforcement_rate": 0.913,
     "predicted_score_6h": 1223.5,
     "severity": "high",
-    "rank": 101
+    "rank": 101,
+    "display_name": "GarvebhaviPalya"
   },
   {
     "zone_id": "tdr1ub",
@@ -1935,7 +2036,8 @@
     "enforcement_rate": 0.8924,
     "predicted_score_6h": 193.8,
     "severity": "high",
-    "rank": 102
+    "rank": 102,
+    "display_name": "JJR Nagara"
   },
   {
     "zone_id": "tdr1vd",
@@ -1954,7 +2056,8 @@
     "enforcement_rate": 0.7053,
     "predicted_score_6h": 1066.4,
     "severity": "high",
-    "rank": 103
+    "rank": 103,
+    "display_name": "Gopal Gowda Circle"
   },
   {
     "zone_id": "tdr4hc",
@@ -1973,7 +2076,8 @@
     "enforcement_rate": 0.9246,
     "predicted_score_6h": 924.5,
     "severity": "high",
-    "rank": 104
+    "rank": 104,
+    "display_name": "Subedarpalya"
   },
   {
     "zone_id": "tdr38h",
@@ -1992,7 +2096,8 @@
     "enforcement_rate": 0.8913,
     "predicted_score_6h": 769.0,
     "severity": "high",
-    "rank": 105
+    "rank": 105,
+    "display_name": "Panathur"
   },
   {
     "zone_id": "tdr4ws",
@@ -2011,7 +2116,8 @@
     "enforcement_rate": 0.9769,
     "predicted_score_6h": 82.7,
     "severity": "high",
-    "rank": 106
+    "rank": 106,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr1w1",
@@ -2030,7 +2136,8 @@
     "enforcement_rate": 0.9293,
     "predicted_score_6h": 1028.9,
     "severity": "high",
-    "rank": 107
+    "rank": 107,
+    "display_name": "Jogi Colony"
   },
   {
     "zone_id": "tdr1sz",
@@ -2049,7 +2156,8 @@
     "enforcement_rate": 0.9043,
     "predicted_score_6h": 80.4,
     "severity": "high",
-    "rank": 108
+    "rank": 108,
+    "display_name": "Sirsi Circle"
   },
   {
     "zone_id": "tdr1zj",
@@ -2068,7 +2176,8 @@
     "enforcement_rate": 0.9203,
     "predicted_score_6h": 913.9,
     "severity": "high",
-    "rank": 109
+    "rank": 109,
+    "display_name": "Benniganahalli"
   },
   {
     "zone_id": "tdr1wd",
@@ -2087,7 +2196,8 @@
     "enforcement_rate": 0.7184,
     "predicted_score_6h": 627.5,
     "severity": "high",
-    "rank": 110
+    "rank": 110,
+    "display_name": "Green Leaf Layout"
   },
   {
     "zone_id": "tdr38t",
@@ -2106,7 +2216,8 @@
     "enforcement_rate": 0.8789,
     "predicted_score_6h": 173.7,
     "severity": "high",
-    "rank": 111
+    "rank": 111,
+    "display_name": "GJM Sai Garden Layout"
   },
   {
     "zone_id": "tdr1mp",
@@ -2125,7 +2236,8 @@
     "enforcement_rate": 0.8716,
     "predicted_score_6h": 260.6,
     "severity": "high",
-    "rank": 112
+    "rank": 112,
+    "display_name": "Sahasra Hospital, Jayanagar"
   },
   {
     "zone_id": "tdr1qm",
@@ -2144,7 +2256,8 @@
     "enforcement_rate": 0.9206,
     "predicted_score_6h": 899.2,
     "severity": "high",
-    "rank": 113
+    "rank": 113,
+    "display_name": "Bommanahalli"
   },
   {
     "zone_id": "tdr1y9",
@@ -2163,7 +2276,8 @@
     "enforcement_rate": 0.701,
     "predicted_score_6h": 1094.7,
     "severity": "high",
-    "rank": 114
+    "rank": 114,
+    "display_name": "Motappanapalya"
   },
   {
     "zone_id": "tdr45v",
@@ -2182,7 +2296,8 @@
     "enforcement_rate": 0.9299,
     "predicted_score_6h": 883.5,
     "severity": "high",
-    "rank": 115
+    "rank": 115,
+    "display_name": "Chokkasandra"
   },
   {
     "zone_id": "tdr1x2",
@@ -2201,7 +2316,8 @@
     "enforcement_rate": 0.9482,
     "predicted_score_6h": 899.2,
     "severity": "high",
-    "rank": 116
+    "rank": 116,
+    "display_name": "Iblur"
   },
   {
     "zone_id": "tdr1qb",
@@ -2220,7 +2336,8 @@
     "enforcement_rate": 0.8531,
     "predicted_score_6h": 209.1,
     "severity": "high",
-    "rank": 117
+    "rank": 117,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr1v5",
@@ -2239,7 +2356,8 @@
     "enforcement_rate": 0.8811,
     "predicted_score_6h": 381.9,
     "severity": "high",
-    "rank": 118
+    "rank": 118,
+    "display_name": "Anand Rao Junction"
   },
   {
     "zone_id": "tdr1ef",
@@ -2258,7 +2376,8 @@
     "enforcement_rate": 0.9307,
     "predicted_score_6h": 882.4,
     "severity": "high",
-    "rank": 119
+    "rank": 119,
+    "display_name": "Ideal Homes Layout"
   },
   {
     "zone_id": "tdr38q",
@@ -2277,7 +2396,8 @@
     "enforcement_rate": 0.9366,
     "predicted_score_6h": 477.6,
     "severity": "high",
-    "rank": 120
+    "rank": 120,
+    "display_name": "Vaikuntam Layout"
   },
   {
     "zone_id": "tdr1y6",
@@ -2296,7 +2416,8 @@
     "enforcement_rate": 0.9054,
     "predicted_score_6h": 125.0,
     "severity": "high",
-    "rank": 121
+    "rank": 121,
+    "display_name": "Dodakattappa"
   },
   {
     "zone_id": "tdr1xg",
@@ -2315,7 +2436,8 @@
     "enforcement_rate": 0.8867,
     "predicted_score_6h": 512.3,
     "severity": "high",
-    "rank": 122
+    "rank": 122,
+    "display_name": "Panathur"
   },
   {
     "zone_id": "tdr4h7",
@@ -2334,7 +2456,8 @@
     "enforcement_rate": 0.8873,
     "predicted_score_6h": 186.4,
     "severity": "high",
-    "rank": 123
+    "rank": 123,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr1u8",
@@ -2353,7 +2476,8 @@
     "enforcement_rate": 0.9423,
     "predicted_score_6h": 857.4,
     "severity": "high",
-    "rank": 124
+    "rank": 124,
+    "display_name": "Telecom Layout"
   },
   {
     "zone_id": "tdr1ts",
@@ -2372,7 +2496,8 @@
     "enforcement_rate": 0.794,
     "predicted_score_6h": 100.2,
     "severity": "high",
-    "rank": 125
+    "rank": 125,
+    "display_name": "10th Cross, Wilson Garden"
   },
   {
     "zone_id": "tdr4je",
@@ -2391,7 +2516,8 @@
     "enforcement_rate": 0.9245,
     "predicted_score_6h": 843.3,
     "severity": "high",
-    "rank": 126
+    "rank": 126,
+    "display_name": "Vasanthappa Block"
   },
   {
     "zone_id": "tdr1t9",
@@ -2410,7 +2536,8 @@
     "enforcement_rate": 0.8346,
     "predicted_score_6h": 208.4,
     "severity": "high",
-    "rank": 127
+    "rank": 127,
+    "display_name": "33rd Cross, 11th Main, Jayanagar"
   },
   {
     "zone_id": "tdr1ey",
@@ -2429,7 +2556,8 @@
     "enforcement_rate": 0.8847,
     "predicted_score_6h": 735.8,
     "severity": "high",
-    "rank": 128
+    "rank": 128,
+    "display_name": "Teacher's Colony"
   },
   {
     "zone_id": "tdr4jx",
@@ -2448,7 +2576,8 @@
     "enforcement_rate": 0.7814,
     "predicted_score_6h": 608.0,
     "severity": "high",
-    "rank": 129
+    "rank": 129,
+    "display_name": "Amruthnagar"
   },
   {
     "zone_id": "tdr1w3",
@@ -2467,7 +2596,8 @@
     "enforcement_rate": 0.8339,
     "predicted_score_6h": 292.2,
     "severity": "high",
-    "rank": 130
+    "rank": 130,
+    "display_name": "Koramangala 2nd Block"
   },
   {
     "zone_id": "tdr4j6",
@@ -2486,7 +2616,8 @@
     "enforcement_rate": 0.7315,
     "predicted_score_6h": 810.8,
     "severity": "high",
-    "rank": 131
+    "rank": 131,
+    "display_name": "Vasanthappa Block"
   },
   {
     "zone_id": "tdr1v1",
@@ -2505,7 +2636,8 @@
     "enforcement_rate": 0.9314,
     "predicted_score_6h": 50.2,
     "severity": "high",
-    "rank": 132
+    "rank": 132,
+    "display_name": "Upparpet Junction"
   },
   {
     "zone_id": "tdr1tm",
@@ -2524,7 +2656,8 @@
     "enforcement_rate": 0.7972,
     "predicted_score_6h": 866.9,
     "severity": "high",
-    "rank": 133
+    "rank": 133,
+    "display_name": "Lalbagh West Gate"
   },
   {
     "zone_id": "tdr3bu",
@@ -2543,7 +2676,8 @@
     "enforcement_rate": 0.7547,
     "predicted_score_6h": 625.0,
     "severity": "high",
-    "rank": 134
+    "rank": 134,
+    "display_name": "Pattanduru Agrahara"
   },
   {
     "zone_id": "tdr1zf",
@@ -2562,7 +2696,8 @@
     "enforcement_rate": 0.794,
     "predicted_score_6h": 1396.4,
     "severity": "high",
-    "rank": 135
+    "rank": 135,
+    "display_name": "Ferns Habitat"
   },
   {
     "zone_id": "tdr1gs",
@@ -2581,7 +2716,8 @@
     "enforcement_rate": 0.8568,
     "predicted_score_6h": 745.0,
     "severity": "high",
-    "rank": 136
+    "rank": 136,
+    "display_name": "Chandana Layout"
   },
   {
     "zone_id": "tdr1ve",
@@ -2600,7 +2736,8 @@
     "enforcement_rate": 0.7546,
     "predicted_score_6h": 688.7,
     "severity": "high",
-    "rank": 137
+    "rank": 137,
+    "display_name": "CID Carlton House Junction"
   },
   {
     "zone_id": "tdr1pp",
@@ -2619,7 +2756,8 @@
     "enforcement_rate": 0.6235,
     "predicted_score_6h": 794.4,
     "severity": "high",
-    "rank": 138
+    "rank": 138,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr1t5",
@@ -2638,7 +2776,8 @@
     "enforcement_rate": 0.8211,
     "predicted_score_6h": 1088.6,
     "severity": "high",
-    "rank": 139
+    "rank": 139,
+    "display_name": "NR Colony"
   },
   {
     "zone_id": "tdr1uz",
@@ -2657,7 +2796,8 @@
     "enforcement_rate": 0.9461,
     "predicted_score_6h": 426.7,
     "severity": "high",
-    "rank": 140
+    "rank": 140,
+    "display_name": "10th Cross, Dr. Rajkumar Road"
   },
   {
     "zone_id": "tdr1rw",
@@ -2676,7 +2816,8 @@
     "enforcement_rate": 0.908,
     "predicted_score_6h": 781.0,
     "severity": "high",
-    "rank": 141
+    "rank": 141,
+    "display_name": "Kasavanahalli"
   },
   {
     "zone_id": "tdr1p9",
@@ -2695,7 +2836,8 @@
     "enforcement_rate": 0.8141,
     "predicted_score_6h": 605.8,
     "severity": "high",
-    "rank": 142
+    "rank": 142,
+    "display_name": "Veerasandra"
   },
   {
     "zone_id": "tdr5p9",
@@ -2714,7 +2856,8 @@
     "enforcement_rate": 0.8791,
     "predicted_score_6h": 671.4,
     "severity": "high",
-    "rank": 143
+    "rank": 143,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr1tg",
@@ -2733,7 +2876,8 @@
     "enforcement_rate": 0.7877,
     "predicted_score_6h": 768.7,
     "severity": "high",
-    "rank": 144
+    "rank": 144,
+    "display_name": "Dairy Circle"
   },
   {
     "zone_id": "tdr4h0",
@@ -2752,7 +2896,8 @@
     "enforcement_rate": 0.886,
     "predicted_score_6h": 766.1,
     "severity": "high",
-    "rank": 145
+    "rank": 145,
+    "display_name": "Freedom Fighter Ward"
   },
   {
     "zone_id": "tdr1mq",
@@ -2771,7 +2916,8 @@
     "enforcement_rate": 0.9708,
     "predicted_score_6h": 73.1,
     "severity": "high",
-    "rank": 146
+    "rank": 146,
+    "display_name": "Sarakki Main Road"
   },
   {
     "zone_id": "tdr4nm",
@@ -2790,7 +2936,8 @@
     "enforcement_rate": 0.9224,
     "predicted_score_6h": 59.5,
     "severity": "high",
-    "rank": 147
+    "rank": 147,
+    "display_name": "Nagavara"
   },
   {
     "zone_id": "tdr32j",
@@ -2809,7 +2956,8 @@
     "enforcement_rate": 0.8946,
     "predicted_score_6h": 739.7,
     "severity": "high",
-    "rank": 148
+    "rank": 148,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr1my",
@@ -2828,7 +2976,8 @@
     "enforcement_rate": 0.9956,
     "predicted_score_6h": 855.0,
     "severity": "high",
-    "rank": 149
+    "rank": 149,
+    "display_name": "MICO Layout"
   },
   {
     "zone_id": "tdr1mv",
@@ -2847,7 +2996,8 @@
     "enforcement_rate": 0.9098,
     "predicted_score_6h": 1361.1,
     "severity": "high",
-    "rank": 150
+    "rank": 150,
+    "display_name": "GD Mara Junction"
   },
   {
     "zone_id": "tdr38p",
@@ -2866,7 +3016,8 @@
     "enforcement_rate": 0.9307,
     "predicted_score_6h": 729.5,
     "severity": "high",
-    "rank": 151
+    "rank": 151,
+    "display_name": "Chinnappanahalli"
   },
   {
     "zone_id": "tdr1mr",
@@ -2885,7 +3036,8 @@
     "enforcement_rate": 0.905,
     "predicted_score_6h": 380.5,
     "severity": "high",
-    "rank": 152
+    "rank": 152,
+    "display_name": "Rajalakshmi Kalyana Mantapa, JP Nagar"
   },
   {
     "zone_id": "tdr4he",
@@ -2904,7 +3056,8 @@
     "enforcement_rate": 0.9224,
     "predicted_score_6h": 898.3,
     "severity": "high",
-    "rank": 153
+    "rank": 153,
+    "display_name": "Goraguntepalya"
   },
   {
     "zone_id": "tdr1vm",
@@ -2923,7 +3076,8 @@
     "enforcement_rate": 0.9121,
     "predicted_score_6h": 758.5,
     "severity": "high",
-    "rank": 154
+    "rank": 154,
+    "display_name": "Windsor Circle"
   },
   {
     "zone_id": "tdr1tp",
@@ -2942,7 +3096,8 @@
     "enforcement_rate": 0.8291,
     "predicted_score_6h": 648.4,
     "severity": "high",
-    "rank": 155
+    "rank": 155,
+    "display_name": "Minto Junction"
   },
   {
     "zone_id": "tdr1w0",
@@ -2961,7 +3116,8 @@
     "enforcement_rate": 0.9075,
     "predicted_score_6h": 636.3,
     "severity": "high",
-    "rank": 156
+    "rank": 156,
+    "display_name": "Madiwala Traffic PS Junction"
   },
   {
     "zone_id": "tdr1s5",
@@ -2980,7 +3136,8 @@
     "enforcement_rate": 0.8899,
     "predicted_score_6h": 679.7,
     "severity": "high",
-    "rank": 157
+    "rank": 157,
+    "display_name": "Pantarapalya"
   },
   {
     "zone_id": "tdr1uq",
@@ -2999,7 +3156,8 @@
     "enforcement_rate": 0.916,
     "predicted_score_6h": 677.7,
     "severity": "high",
-    "rank": 158
+    "rank": 158,
+    "display_name": "Shankara Mutt Circle, Vijayanagar"
   },
   {
     "zone_id": "tdr1tv",
@@ -3018,7 +3176,8 @@
     "enforcement_rate": 0.836,
     "predicted_score_6h": 550.9,
     "severity": "high",
-    "rank": 159
+    "rank": 159,
+    "display_name": "10th Cross, Wilson Garden"
   },
   {
     "zone_id": "tdr1w7",
@@ -3037,7 +3196,8 @@
     "enforcement_rate": 0.8947,
     "predicted_score_6h": 565.7,
     "severity": "high",
-    "rank": 160
+    "rank": 160,
+    "display_name": "Koramangala 6th Block"
   },
   {
     "zone_id": "tdr1yh",
@@ -3056,7 +3216,8 @@
     "enforcement_rate": 0.8275,
     "predicted_score_6h": 601.6,
     "severity": "high",
-    "rank": 161
+    "rank": 161,
+    "display_name": "K Kamaraj Ward"
   },
   {
     "zone_id": "tdr1zy",
@@ -3075,7 +3236,8 @@
     "enforcement_rate": 0.8766,
     "predicted_score_6h": 392.4,
     "severity": "high",
-    "rank": 162
+    "rank": 162,
+    "display_name": "Devasandra"
   },
   {
     "zone_id": "tdr4hu",
@@ -3094,7 +3256,8 @@
     "enforcement_rate": 0.9653,
     "predicted_score_6h": 631.5,
     "severity": "high",
-    "rank": 163
+    "rank": 163,
+    "display_name": "Mathikere"
   },
   {
     "zone_id": "tdr1tn",
@@ -3113,7 +3276,8 @@
     "enforcement_rate": 0.8837,
     "predicted_score_6h": 659.1,
     "severity": "high",
-    "rank": 164
+    "rank": 164,
+    "display_name": "5th Main Chamrajpet  Junction"
   },
   {
     "zone_id": "tdr1yq",
@@ -3132,7 +3296,8 @@
     "enforcement_rate": 0.9513,
     "predicted_score_6h": 452.7,
     "severity": "high",
-    "rank": 165
+    "rank": 165,
+    "display_name": "Balaji Layout"
   },
   {
     "zone_id": "tdr1pn",
@@ -3151,7 +3316,8 @@
     "enforcement_rate": 0.5163,
     "predicted_score_6h": 602.6,
     "severity": "high",
-    "rank": 166
+    "rank": 166,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr1vx",
@@ -3170,7 +3336,8 @@
     "enforcement_rate": 0.9476,
     "predicted_score_6h": 120.2,
     "severity": "high",
-    "rank": 167
+    "rank": 167,
+    "display_name": "Chinnappa Garden"
   },
   {
     "zone_id": "tdr1wx",
@@ -3189,7 +3356,8 @@
     "enforcement_rate": 0.9458,
     "predicted_score_6h": 813.9,
     "severity": "high",
-    "rank": 168
+    "rank": 168,
+    "display_name": "Sri Hatti Maramma Circle, Domluru"
   },
   {
     "zone_id": "tdr4jd",
@@ -3208,7 +3376,8 @@
     "enforcement_rate": 0.9815,
     "predicted_score_6h": 374.7,
     "severity": "high",
-    "rank": 169
+    "rank": 169,
+    "display_name": "R.T Nagar"
   },
   {
     "zone_id": "tdr4hf",
@@ -3227,7 +3396,8 @@
     "enforcement_rate": 0.8956,
     "predicted_score_6h": 393.7,
     "severity": "high",
-    "rank": 170
+    "rank": 170,
+    "display_name": "Subedarpalya"
   },
   {
     "zone_id": "tdr1ut",
@@ -3246,7 +3416,8 @@
     "enforcement_rate": 0.9919,
     "predicted_score_6h": 153.5,
     "severity": "high",
-    "rank": 171
+    "rank": 171,
+    "display_name": "19th Main Junction, Rajajinagar"
   },
   {
     "zone_id": "tdr1v9",
@@ -3265,7 +3436,8 @@
     "enforcement_rate": 0.8339,
     "predicted_score_6h": 622.7,
     "severity": "high",
-    "rank": 172
+    "rank": 172,
+    "display_name": "Siddalingaiah Circle"
   },
   {
     "zone_id": "tdr1yd",
@@ -3284,7 +3456,8 @@
     "enforcement_rate": 0.8554,
     "predicted_score_6h": 564.3,
     "severity": "high",
-    "rank": 173
+    "rank": 173,
+    "display_name": "Indiranagar 1st Stage"
   },
   {
     "zone_id": "tdr1mw",
@@ -3303,7 +3476,8 @@
     "enforcement_rate": 0.9756,
     "predicted_score_6h": 453.4,
     "severity": "high",
-    "rank": 174
+    "rank": 174,
+    "display_name": "9th Cross, 24th Main, JP Nagar"
   },
   {
     "zone_id": "tdr1rr",
@@ -3322,7 +3496,8 @@
     "enforcement_rate": 0.8655,
     "predicted_score_6h": 469.7,
     "severity": "high",
-    "rank": 175
+    "rank": 175,
+    "display_name": "Ambalipura"
   },
   {
     "zone_id": "tdr4mx",
@@ -3341,7 +3516,8 @@
     "enforcement_rate": 0.8741,
     "predicted_score_6h": 625.0,
     "severity": "high",
-    "rank": 176
+    "rank": 176,
+    "display_name": "Sector A"
   },
   {
     "zone_id": "tdr1t6",
@@ -3360,7 +3536,8 @@
     "enforcement_rate": 0.9053,
     "predicted_score_6h": 498.0,
     "severity": "high",
-    "rank": 177
+    "rank": 177,
+    "display_name": "Canara Bank Junction"
   },
   {
     "zone_id": "tdr45w",
@@ -3379,7 +3556,8 @@
     "enforcement_rate": 0.877,
     "predicted_score_6h": 403.3,
     "severity": "high",
-    "rank": 178
+    "rank": 178,
+    "display_name": "Chokkasandra"
   },
   {
     "zone_id": "tdr1mn",
@@ -3398,7 +3576,8 @@
     "enforcement_rate": 0.8811,
     "predicted_score_6h": 26.7,
     "severity": "high",
-    "rank": 179
+    "rank": 179,
+    "display_name": "9th Cross, Kanakapura Road"
   },
   {
     "zone_id": "tdr4nd",
@@ -3417,7 +3596,8 @@
     "enforcement_rate": 0.8893,
     "predicted_score_6h": 424.6,
     "severity": "high",
-    "rank": 180
+    "rank": 180,
+    "display_name": "Kalyan Nagar"
   },
   {
     "zone_id": "tdr1vb",
@@ -3436,7 +3616,8 @@
     "enforcement_rate": 0.8843,
     "predicted_score_6h": 186.6,
     "severity": "high",
-    "rank": 181
+    "rank": 181,
+    "display_name": "Cash Pharmacy, Residency Road"
   },
   {
     "zone_id": "tdr5pb",
@@ -3455,7 +3636,8 @@
     "enforcement_rate": 0.9474,
     "predicted_score_6h": 278.7,
     "severity": "high",
-    "rank": 182
+    "rank": 182,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr1m8",
@@ -3474,7 +3656,8 @@
     "enforcement_rate": 0.815,
     "predicted_score_6h": 466.2,
     "severity": "high",
-    "rank": 183
+    "rank": 183,
+    "display_name": "Hulimavu"
   },
   {
     "zone_id": "tdr1vq",
@@ -3493,7 +3676,8 @@
     "enforcement_rate": 0.8441,
     "predicted_score_6h": 533.8,
     "severity": "high",
-    "rank": 184
+    "rank": 184,
+    "display_name": "RV Layout"
   },
   {
     "zone_id": "tdr1kf",
@@ -3512,7 +3696,8 @@
     "enforcement_rate": 0.844,
     "predicted_score_6h": 515.3,
     "severity": "high",
-    "rank": 185
+    "rank": 185,
+    "display_name": "Anjanapura"
   },
   {
     "zone_id": "tdr1tc",
@@ -3531,7 +3716,8 @@
     "enforcement_rate": 0.7233,
     "predicted_score_6h": 166.1,
     "severity": "high",
-    "rank": 186
+    "rank": 186,
+    "display_name": "Balaji Layout"
   },
   {
     "zone_id": "tdr1mx",
@@ -3550,7 +3736,8 @@
     "enforcement_rate": 0.843,
     "predicted_score_6h": 423.8,
     "severity": "high",
-    "rank": 187
+    "rank": 187,
+    "display_name": "9th Block, 28th Main, Jayanagar"
   },
   {
     "zone_id": "tdr1s9",
@@ -3569,7 +3756,8 @@
     "enforcement_rate": 0.6484,
     "predicted_score_6h": 487.0,
     "severity": "high",
-    "rank": 188
+    "rank": 188,
+    "display_name": "Katriguppe Junction"
   },
   {
     "zone_id": "tdr1yf",
@@ -3588,7 +3776,8 @@
     "enforcement_rate": 0.8661,
     "predicted_score_6h": 1122.0,
     "severity": "high",
-    "rank": 189
+    "rank": 189,
+    "display_name": "Subedar Garden"
   },
   {
     "zone_id": "tdr45x",
@@ -3607,7 +3796,8 @@
     "enforcement_rate": 0.8028,
     "predicted_score_6h": 514.8,
     "severity": "high",
-    "rank": 190
+    "rank": 190,
+    "display_name": "Manjunatha Nagar"
   },
   {
     "zone_id": "tdr1mb",
@@ -3626,7 +3816,8 @@
     "enforcement_rate": 0.5043,
     "predicted_score_6h": 537.6,
     "severity": "high",
-    "rank": 191
+    "rank": 191,
+    "display_name": "Hulimavu"
   },
   {
     "zone_id": "tdr1tf",
@@ -3645,7 +3836,8 @@
     "enforcement_rate": 0.677,
     "predicted_score_6h": 448.8,
     "severity": "high",
-    "rank": 192
+    "rank": 192,
+    "display_name": "S.G Palya"
   },
   {
     "zone_id": "tdr3b2",
@@ -3664,7 +3856,8 @@
     "enforcement_rate": 0.9843,
     "predicted_score_6h": 578.2,
     "severity": "high",
-    "rank": 193
+    "rank": 193,
+    "display_name": "AECS Layout B Block"
   },
   {
     "zone_id": "tdr1vr",
@@ -3683,7 +3876,8 @@
     "enforcement_rate": 0.8136,
     "predicted_score_6h": 382.8,
     "severity": "high",
-    "rank": 194
+    "rank": 194,
+    "display_name": "Upper Palace Orchard"
   },
   {
     "zone_id": "tdr1t2",
@@ -3702,7 +3896,8 @@
     "enforcement_rate": 0.8768,
     "predicted_score_6h": 931.8,
     "severity": "high",
-    "rank": 195
+    "rank": 195,
+    "display_name": "36th Cross, 4th Main, Jayanagar"
   },
   {
     "zone_id": "tdr1qy",
@@ -3721,7 +3916,8 @@
     "enforcement_rate": 0.8363,
     "predicted_score_6h": 443.6,
     "severity": "high",
-    "rank": 196
+    "rank": 196,
+    "display_name": "HSR Layout"
   },
   {
     "zone_id": "tdr0zv",
@@ -3740,7 +3936,8 @@
     "enforcement_rate": 0.9524,
     "predicted_score_6h": 392.4,
     "severity": "high",
-    "rank": 197
+    "rank": 197,
+    "display_name": "Bommasandra"
   },
   {
     "zone_id": "tdr4m8",
@@ -3759,7 +3956,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 24.9,
     "severity": "high",
-    "rank": 198
+    "rank": 198,
+    "display_name": "Sahakaranagara"
   },
   {
     "zone_id": "tdr4hp",
@@ -3778,7 +3976,8 @@
     "enforcement_rate": 0.9963,
     "predicted_score_6h": 428.9,
     "severity": "medium",
-    "rank": 199
+    "rank": 199,
+    "display_name": "Shettihalli"
   },
   {
     "zone_id": "tdr1s6",
@@ -3797,7 +3996,8 @@
     "enforcement_rate": 0.9919,
     "predicted_score_6h": 40.0,
     "severity": "medium",
-    "rank": 200
+    "rank": 200,
+    "display_name": "Hosakerehalli"
   },
   {
     "zone_id": "tdr1sj",
@@ -3816,7 +4016,8 @@
     "enforcement_rate": 0.9655,
     "predicted_score_6h": 14.0,
     "severity": "medium",
-    "rank": 201
+    "rank": 201,
+    "display_name": "Nagarbhavi"
   },
   {
     "zone_id": "tdr1nz",
@@ -3835,7 +4036,8 @@
     "enforcement_rate": 0.9324,
     "predicted_score_6h": 54.4,
     "severity": "medium",
-    "rank": 202
+    "rank": 202,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr4h9",
@@ -3854,7 +4056,8 @@
     "enforcement_rate": 0.8677,
     "predicted_score_6h": 49.5,
     "severity": "medium",
-    "rank": 203
+    "rank": 203,
+    "display_name": "Shankar Nagar"
   },
   {
     "zone_id": "tdr45r",
@@ -3873,7 +4076,8 @@
     "enforcement_rate": 0.8315,
     "predicted_score_6h": 14.8,
     "severity": "medium",
-    "rank": 204
+    "rank": 204,
+    "display_name": "Dodda Bidarakallu"
   },
   {
     "zone_id": "tdr1sh",
@@ -3892,7 +4096,8 @@
     "enforcement_rate": 0.9075,
     "predicted_score_6h": 2.4,
     "severity": "medium",
-    "rank": 205
+    "rank": 205,
+    "display_name": "Nayandahalli Junction"
   },
   {
     "zone_id": "tdr1kw",
@@ -3911,7 +4116,8 @@
     "enforcement_rate": 0.7826,
     "predicted_score_6h": 45.2,
     "severity": "medium",
-    "rank": 206
+    "rank": 206,
+    "display_name": "Seven Hills Layout"
   },
   {
     "zone_id": "tdr1kt",
@@ -3930,7 +4136,8 @@
     "enforcement_rate": 0.8861,
     "predicted_score_6h": 42.8,
     "severity": "medium",
-    "rank": 207
+    "rank": 207,
+    "display_name": "Uttarahalli"
   },
   {
     "zone_id": "tdr4wh",
@@ -3949,7 +4156,8 @@
     "enforcement_rate": 0.934,
     "predicted_score_6h": 1.6,
     "severity": "medium",
-    "rank": 208
+    "rank": 208,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr38x",
@@ -3968,7 +4176,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 47.2,
     "severity": "medium",
-    "rank": 209
+    "rank": 209,
+    "display_name": "Thubarahalli Palya"
   },
   {
     "zone_id": "tdr4y0",
@@ -3987,7 +4196,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 40.4,
     "severity": "medium",
-    "rank": 210
+    "rank": 210,
+    "display_name": "Bharathi Nagar"
   },
   {
     "zone_id": "tdr45y",
@@ -4006,7 +4216,8 @@
     "enforcement_rate": 0.7643,
     "predicted_score_6h": 31.2,
     "severity": "medium",
-    "rank": 211
+    "rank": 211,
+    "display_name": "Chokkasandra"
   },
   {
     "zone_id": "tdr1qf",
@@ -4025,7 +4236,8 @@
     "enforcement_rate": 0.9038,
     "predicted_score_6h": 31.1,
     "severity": "medium",
-    "rank": 212
+    "rank": 212,
+    "display_name": "Bandepalya"
   },
   {
     "zone_id": "tdr384",
@@ -4044,7 +4256,8 @@
     "enforcement_rate": 0.7927,
     "predicted_score_6h": 37.6,
     "severity": "medium",
-    "rank": 213
+    "rank": 213,
+    "display_name": "Kaverappa Layout"
   },
   {
     "zone_id": "tdr1qn",
@@ -4063,7 +4276,8 @@
     "enforcement_rate": 0.8818,
     "predicted_score_6h": 33.4,
     "severity": "medium",
-    "rank": 214
+    "rank": 214,
+    "display_name": "16th Main Road, BTM Layout"
   },
   {
     "zone_id": "tdr32e",
@@ -4082,7 +4296,8 @@
     "enforcement_rate": 0.8908,
     "predicted_score_6h": 30.0,
     "severity": "medium",
-    "rank": 215
+    "rank": 215,
+    "display_name": "Sulikunte"
   },
   {
     "zone_id": "tdr38y",
@@ -4101,7 +4316,8 @@
     "enforcement_rate": 0.9823,
     "predicted_score_6h": 3.2,
     "severity": "medium",
-    "rank": 216
+    "rank": 216,
+    "display_name": "Thubarahalli"
   },
   {
     "zone_id": "tdr3b4",
@@ -4120,7 +4336,8 @@
     "enforcement_rate": 0.867,
     "predicted_score_6h": 10.4,
     "severity": "medium",
-    "rank": 217
+    "rank": 217,
+    "display_name": "Dodda Nekkundi"
   },
   {
     "zone_id": "tdr4hx",
@@ -4139,7 +4356,8 @@
     "enforcement_rate": 0.8817,
     "predicted_score_6h": 11.6,
     "severity": "medium",
-    "rank": 218
+    "rank": 218,
+    "display_name": "BEL Colony"
   },
   {
     "zone_id": "tdr3b6",
@@ -4158,7 +4376,8 @@
     "enforcement_rate": 0.9105,
     "predicted_score_6h": 24.6,
     "severity": "medium",
-    "rank": 219
+    "rank": 219,
+    "display_name": "Channama Layout"
   },
   {
     "zone_id": "tdr61q",
@@ -4177,7 +4396,8 @@
     "enforcement_rate": 0.8929,
     "predicted_score_6h": 21.1,
     "severity": "medium",
-    "rank": 220
+    "rank": 220,
+    "display_name": "Konadasapura"
   },
   {
     "zone_id": "tdr1td",
@@ -4196,7 +4416,8 @@
     "enforcement_rate": 0.9848,
     "predicted_score_6h": 1.6,
     "severity": "medium",
-    "rank": 221
+    "rank": 221,
+    "display_name": "Canara Bank Junction"
   },
   {
     "zone_id": "tdr1xp",
@@ -4215,7 +4436,8 @@
     "enforcement_rate": 0.9186,
     "predicted_score_6h": 12.4,
     "severity": "medium",
-    "rank": 222
+    "rank": 222,
+    "display_name": "Sri Ram Nagar"
   },
   {
     "zone_id": "tdr1sk",
@@ -4234,7 +4456,8 @@
     "enforcement_rate": 0.9643,
     "predicted_score_6h": 19.2,
     "severity": "medium",
-    "rank": 223
+    "rank": 223,
+    "display_name": "Nayandahalli Junction"
   },
   {
     "zone_id": "tdr1mt",
@@ -4253,7 +4476,8 @@
     "enforcement_rate": 0.9305,
     "predicted_score_6h": 30.0,
     "severity": "medium",
-    "rank": 224
+    "rank": 224,
+    "display_name": "15th Cross, 24th Main, JP Nagar"
   },
   {
     "zone_id": "tdr39n",
@@ -4272,7 +4496,8 @@
     "enforcement_rate": 0.9452,
     "predicted_score_6h": 12.5,
     "severity": "medium",
-    "rank": 225
+    "rank": 225,
+    "display_name": "Varthur Kodi"
   },
   {
     "zone_id": "tdr1qs",
@@ -4291,7 +4516,8 @@
     "enforcement_rate": 0.9619,
     "predicted_score_6h": 29.4,
     "severity": "medium",
-    "rank": 226
+    "rank": 226,
+    "display_name": "Bandepalya"
   },
   {
     "zone_id": "tdr1w9",
@@ -4310,7 +4536,8 @@
     "enforcement_rate": 0.8306,
     "predicted_score_6h": 20.9,
     "severity": "medium",
-    "rank": 227
+    "rank": 227,
+    "display_name": "Koramangala 1st Block"
   },
   {
     "zone_id": "tdr4m3",
@@ -4329,7 +4556,8 @@
     "enforcement_rate": 0.6099,
     "predicted_score_6h": 22.3,
     "severity": "medium",
-    "rank": 228
+    "rank": 228,
+    "display_name": "Byatarayanapura"
   },
   {
     "zone_id": "tdr1um",
@@ -4348,7 +4576,8 @@
     "enforcement_rate": 0.8907,
     "predicted_score_6h": 20.0,
     "severity": "medium",
-    "rank": 229
+    "rank": 229,
+    "display_name": "8th Main Road Basaveshwara Nagar"
   },
   {
     "zone_id": "tdr1w6",
@@ -4367,7 +4596,8 @@
     "enforcement_rate": 0.7516,
     "predicted_score_6h": 19.9,
     "severity": "medium",
-    "rank": 230
+    "rank": 230,
+    "display_name": "A Adugodi"
   },
   {
     "zone_id": "tdr1tt",
@@ -4386,7 +4616,8 @@
     "enforcement_rate": 0.8962,
     "predicted_score_6h": 12.5,
     "severity": "medium",
-    "rank": 231
+    "rank": 231,
+    "display_name": "KH Circle"
   },
   {
     "zone_id": "tdr1qr",
@@ -4405,7 +4636,8 @@
     "enforcement_rate": 0.8073,
     "predicted_score_6h": 17.1,
     "severity": "medium",
-    "rank": 232
+    "rank": 232,
+    "display_name": "Madiwala Traffic PS Junction"
   },
   {
     "zone_id": "tdr39h",
@@ -4424,7 +4656,8 @@
     "enforcement_rate": 0.9216,
     "predicted_score_6h": 18.1,
     "severity": "medium",
-    "rank": 233
+    "rank": 233,
+    "display_name": "Gandhi Circle"
   },
   {
     "zone_id": "tdr1ms",
@@ -4443,7 +4676,8 @@
     "enforcement_rate": 0.9549,
     "predicted_score_6h": 9.6,
     "severity": "medium",
-    "rank": 234
+    "rank": 234,
+    "display_name": "Dollars Colony"
   },
   {
     "zone_id": "tdr1un",
@@ -4462,7 +4696,8 @@
     "enforcement_rate": 0.7727,
     "predicted_score_6h": 29.9,
     "severity": "medium",
-    "rank": 235
+    "rank": 235,
+    "display_name": "Chowdeshwari Nagar"
   },
   {
     "zone_id": "tdr1tu",
@@ -4481,7 +4716,8 @@
     "enforcement_rate": 0.9474,
     "predicted_score_6h": 10.4,
     "severity": "medium",
-    "rank": 236
+    "rank": 236,
+    "display_name": "10th Cross, Wilson Garden"
   },
   {
     "zone_id": "tdr1yg",
@@ -4500,7 +4736,8 @@
     "enforcement_rate": 0.9013,
     "predicted_score_6h": 19.1,
     "severity": "medium",
-    "rank": 237
+    "rank": 237,
+    "display_name": "Hutting Colony"
   },
   {
     "zone_id": "tdr1w8",
@@ -4519,7 +4756,8 @@
     "enforcement_rate": 0.8621,
     "predicted_score_6h": 8.8,
     "severity": "medium",
-    "rank": 238
+    "rank": 238,
+    "display_name": "Venkatpura"
   },
   {
     "zone_id": "tdr1wy",
@@ -4538,7 +4776,8 @@
     "enforcement_rate": 0.9667,
     "predicted_score_6h": 26.5,
     "severity": "medium",
-    "rank": 239
+    "rank": 239,
+    "display_name": "Amarjyothi Layout"
   },
   {
     "zone_id": "tdr1qx",
@@ -4557,7 +4796,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 13.3,
     "severity": "medium",
-    "rank": 240
+    "rank": 240,
+    "display_name": "Teacher's Colony"
   },
   {
     "zone_id": "tdr38z",
@@ -4576,7 +4816,8 @@
     "enforcement_rate": 0.9462,
     "predicted_score_6h": 22.0,
     "severity": "medium",
-    "rank": 241
+    "rank": 241,
+    "display_name": "Kundalahalli"
   },
   {
     "zone_id": "tdr1nf",
@@ -4595,7 +4836,8 @@
     "enforcement_rate": 0.9151,
     "predicted_score_6h": 18.8,
     "severity": "medium",
-    "rank": 242
+    "rank": 242,
+    "display_name": "Vittasandra"
   },
   {
     "zone_id": "tdr1w5",
@@ -4614,7 +4856,8 @@
     "enforcement_rate": 0.8779,
     "predicted_score_6h": 9.6,
     "severity": "medium",
-    "rank": 243
+    "rank": 243,
+    "display_name": "Koramangala 7th Block"
   },
   {
     "zone_id": "tdr3cr",
@@ -4633,7 +4876,8 @@
     "enforcement_rate": 0.9103,
     "predicted_score_6h": 8.8,
     "severity": "medium",
-    "rank": 244
+    "rank": 244,
+    "display_name": "Belathur"
   },
   {
     "zone_id": "tdr1vv",
@@ -4652,7 +4896,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 9.6,
     "severity": "medium",
-    "rank": 245
+    "rank": 245,
+    "display_name": "S.K Garden"
   },
   {
     "zone_id": "tdr1x8",
@@ -4671,7 +4916,8 @@
     "enforcement_rate": 0.8731,
     "predicted_score_6h": 19.9,
     "severity": "medium",
-    "rank": 246
+    "rank": 246,
+    "display_name": "Bellanduru"
   },
   {
     "zone_id": "tdr638",
@@ -4690,7 +4936,8 @@
     "enforcement_rate": 0.9444,
     "predicted_score_6h": 18.2,
     "severity": "medium",
-    "rank": 247
+    "rank": 247,
+    "display_name": "Kattamanallur"
   },
   {
     "zone_id": "tdr1gc",
@@ -4709,7 +4956,8 @@
     "enforcement_rate": 0.8991,
     "predicted_score_6h": 41.2,
     "severity": "medium",
-    "rank": 248
+    "rank": 248,
+    "display_name": "Nagarabhavi"
   },
   {
     "zone_id": "tdr3bp",
@@ -4728,7 +4976,8 @@
     "enforcement_rate": 0.9318,
     "predicted_score_6h": 3.2,
     "severity": "medium",
-    "rank": 249
+    "rank": 249,
+    "display_name": "Justice Bheemiah Layout"
   },
   {
     "zone_id": "tdr1u6",
@@ -4747,7 +4996,8 @@
     "enforcement_rate": 0.9669,
     "predicted_score_6h": 21.0,
     "severity": "medium",
-    "rank": 250
+    "rank": 250,
+    "display_name": "5th Main Chamrajpet  Junction"
   },
   {
     "zone_id": "tdr4k8",
@@ -4766,7 +5016,8 @@
     "enforcement_rate": 0.7973,
     "predicted_score_6h": 18.0,
     "severity": "medium",
-    "rank": 251
+    "rank": 251,
+    "display_name": "Kuvempunagara"
   },
   {
     "zone_id": "tdr38w",
@@ -4785,7 +5036,8 @@
     "enforcement_rate": 0.8269,
     "predicted_score_6h": 9.2,
     "severity": "medium",
-    "rank": 252
+    "rank": 252,
+    "display_name": "Thubarahalli"
   },
   {
     "zone_id": "tdr1mg",
@@ -4804,7 +5056,8 @@
     "enforcement_rate": 0.9254,
     "predicted_score_6h": 15.0,
     "severity": "medium",
-    "rank": 253
+    "rank": 253,
+    "display_name": "Vijaya Bank Layout"
   },
   {
     "zone_id": "tdr1z0",
@@ -4823,7 +5076,8 @@
     "enforcement_rate": 0.9375,
     "predicted_score_6h": 2.4,
     "severity": "medium",
-    "rank": 254
+    "rank": 254,
+    "display_name": "LIC Colony"
   },
   {
     "zone_id": "tdr1gu",
@@ -4842,7 +5096,8 @@
     "enforcement_rate": 0.9438,
     "predicted_score_6h": 17.4,
     "severity": "medium",
-    "rank": 255
+    "rank": 255,
+    "display_name": "Kottegepalya"
   },
   {
     "zone_id": "tdr3bk",
@@ -4861,7 +5116,8 @@
     "enforcement_rate": 0.7526,
     "predicted_score_6h": 17.4,
     "severity": "medium",
-    "rank": 256
+    "rank": 256,
+    "display_name": "Hoodi"
   },
   {
     "zone_id": "tdr46c",
@@ -4880,7 +5136,8 @@
     "enforcement_rate": 0.5301,
     "predicted_score_6h": 17.3,
     "severity": "medium",
-    "rank": 257
+    "rank": 257,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr4wk",
@@ -4899,7 +5156,8 @@
     "enforcement_rate": 0.977,
     "predicted_score_6h": 40.0,
     "severity": "medium",
-    "rank": 258
+    "rank": 258,
+    "display_name": "Dwaraka Nagar"
   },
   {
     "zone_id": "tdr470",
@@ -4918,7 +5176,8 @@
     "enforcement_rate": 0.1429,
     "predicted_score_6h": 33.5,
     "severity": "medium",
-    "rank": 259
+    "rank": 259,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr1mz",
@@ -4937,7 +5196,8 @@
     "enforcement_rate": 0.8095,
     "predicted_score_6h": 16.6,
     "severity": "medium",
-    "rank": 260
+    "rank": 260,
+    "display_name": "East End Main Road, Jayanagar"
   },
   {
     "zone_id": "tdr4j2",
@@ -4956,7 +5216,8 @@
     "enforcement_rate": 0.681,
     "predicted_score_6h": 16.6,
     "severity": "medium",
-    "rank": 261
+    "rank": 261,
+    "display_name": "Upper Palace Orchard"
   },
   {
     "zone_id": "tdr478",
@@ -4975,7 +5236,8 @@
     "enforcement_rate": 0.9435,
     "predicted_score_6h": 20.9,
     "severity": "medium",
-    "rank": 262
+    "rank": 262,
+    "display_name": "Bagalagunte"
   },
   {
     "zone_id": "tdr1sy",
@@ -4994,7 +5256,8 @@
     "enforcement_rate": 0.875,
     "predicted_score_6h": 17.7,
     "severity": "medium",
-    "rank": 263
+    "rank": 263,
+    "display_name": "Toll Gate, Mysore Road"
   },
   {
     "zone_id": "tdr1ye",
@@ -5013,7 +5276,8 @@
     "enforcement_rate": 0.9565,
     "predicted_score_6h": 24.4,
     "severity": "medium",
-    "rank": 264
+    "rank": 264,
+    "display_name": "Corporation Colony"
   },
   {
     "zone_id": "tdr4t2",
@@ -5032,7 +5296,8 @@
     "enforcement_rate": 0.9415,
     "predicted_score_6h": 9.2,
     "severity": "medium",
-    "rank": 265
+    "rank": 265,
+    "display_name": "Sector B"
   },
   {
     "zone_id": "tdr4jp",
@@ -5051,7 +5316,8 @@
     "enforcement_rate": 0.7364,
     "predicted_score_6h": 4.0,
     "severity": "medium",
-    "rank": 266
+    "rank": 266,
+    "display_name": "Kodigehalli"
   },
   {
     "zone_id": "tdr3b7",
@@ -5070,7 +5336,8 @@
     "enforcement_rate": 0.8632,
     "predicted_score_6h": 16.0,
     "severity": "medium",
-    "rank": 267
+    "rank": 267,
+    "display_name": "Channama Layout"
   },
   {
     "zone_id": "tdr1xr",
@@ -5089,7 +5356,8 @@
     "enforcement_rate": 0.9,
     "predicted_score_6h": 11.6,
     "severity": "medium",
-    "rank": 268
+    "rank": 268,
+    "display_name": "Jagadish Nagar"
   },
   {
     "zone_id": "tdr1k8",
@@ -5108,7 +5376,8 @@
     "enforcement_rate": 0.7576,
     "predicted_score_6h": 15.3,
     "severity": "medium",
-    "rank": 269
+    "rank": 269,
+    "display_name": "Talagattapura"
   },
   {
     "zone_id": "tdr1g9",
@@ -5127,7 +5396,8 @@
     "enforcement_rate": 0.8516,
     "predicted_score_6h": 16.4,
     "severity": "medium",
-    "rank": 270
+    "rank": 270,
+    "display_name": "Annapoorneshwari Nagara"
   },
   {
     "zone_id": "tdr4nq",
@@ -5146,7 +5416,8 @@
     "enforcement_rate": 0.7589,
     "predicted_score_6h": 17.7,
     "severity": "medium",
-    "rank": 271
+    "rank": 271,
+    "display_name": "Kempapura"
   },
   {
     "zone_id": "tdr4hw",
@@ -5165,7 +5436,8 @@
     "enforcement_rate": 0.9692,
     "predicted_score_6h": 19.3,
     "severity": "medium",
-    "rank": 272
+    "rank": 272,
+    "display_name": "Jalahalli"
   },
   {
     "zone_id": "tdr1m9",
@@ -5184,7 +5456,8 @@
     "enforcement_rate": 0.7273,
     "predicted_score_6h": 16.3,
     "severity": "medium",
-    "rank": 273
+    "rank": 273,
+    "display_name": "Doresanipalya"
   },
   {
     "zone_id": "tdr1rp",
@@ -5203,7 +5476,8 @@
     "enforcement_rate": 0.8983,
     "predicted_score_6h": 17.4,
     "severity": "medium",
-    "rank": 274
+    "rank": 274,
+    "display_name": "Agara"
   },
   {
     "zone_id": "tdr1m5",
@@ -5222,7 +5496,8 @@
     "enforcement_rate": 0.9175,
     "predicted_score_6h": 14.9,
     "severity": "medium",
-    "rank": 275
+    "rank": 275,
+    "display_name": "Jaraganahalli"
   },
   {
     "zone_id": "tdr458",
@@ -5241,7 +5516,8 @@
     "enforcement_rate": 0.7917,
     "predicted_score_6h": 14.9,
     "severity": "medium",
-    "rank": 276
+    "rank": 276,
+    "display_name": "Shivapura"
   },
   {
     "zone_id": "tdr3b0",
@@ -5260,7 +5536,8 @@
     "enforcement_rate": 0.8796,
     "predicted_score_6h": 14.8,
     "severity": "medium",
-    "rank": 277
+    "rank": 277,
+    "display_name": "Ananda Nagara"
   },
   {
     "zone_id": "tdr1yr",
@@ -5279,7 +5556,8 @@
     "enforcement_rate": 0.4463,
     "predicted_score_6h": 18.8,
     "severity": "medium",
-    "rank": 278
+    "rank": 278,
+    "display_name": "St. Thomas Town"
   },
   {
     "zone_id": "tdr17n",
@@ -5298,7 +5576,8 @@
     "enforcement_rate": 0.8252,
     "predicted_score_6h": 12.8,
     "severity": "medium",
-    "rank": 279
+    "rank": 279,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr4t8",
@@ -5317,7 +5596,8 @@
     "enforcement_rate": 0.973,
     "predicted_score_6h": 15.7,
     "severity": "medium",
-    "rank": 280
+    "rank": 280,
+    "display_name": "Sector A"
   },
   {
     "zone_id": "tdr4jh",
@@ -5336,7 +5616,8 @@
     "enforcement_rate": 0.7767,
     "predicted_score_6h": 14.8,
     "severity": "medium",
-    "rank": 281
+    "rank": 281,
+    "display_name": "ITI Colony"
   },
   {
     "zone_id": "tdr1vy",
@@ -5355,7 +5636,8 @@
     "enforcement_rate": 0.9815,
     "predicted_score_6h": 4.0,
     "severity": "medium",
-    "rank": 282
+    "rank": 282,
+    "display_name": "Williams Town"
   },
   {
     "zone_id": "tdr1t8",
@@ -5374,7 +5656,8 @@
     "enforcement_rate": 0.6542,
     "predicted_score_6h": 3.8,
     "severity": "medium",
-    "rank": 283
+    "rank": 283,
+    "display_name": "33rd Cross, 11th Main, Jayanagar"
   },
   {
     "zone_id": "tdr1pk",
@@ -5393,7 +5676,8 @@
     "enforcement_rate": 0.8222,
     "predicted_score_6h": 14.1,
     "severity": "medium",
-    "rank": 284
+    "rank": 284,
+    "display_name": "Konappana Agrahara"
   },
   {
     "zone_id": "tdr4qe",
@@ -5412,7 +5696,8 @@
     "enforcement_rate": 0.7522,
     "predicted_score_6h": 14.0,
     "severity": "medium",
-    "rank": 285
+    "rank": 285,
+    "display_name": "Shabarinagara"
   },
   {
     "zone_id": "tdr1pr",
@@ -5431,7 +5716,8 @@
     "enforcement_rate": 0.5606,
     "predicted_score_6h": 19.5,
     "severity": "medium",
-    "rank": 286
+    "rank": 286,
+    "display_name": "Naganathapura"
   },
   {
     "zone_id": "tdr1s7",
@@ -5450,7 +5736,8 @@
     "enforcement_rate": 0.7639,
     "predicted_score_6h": 17.7,
     "severity": "medium",
-    "rank": 287
+    "rank": 287,
+    "display_name": "Pantarapalya"
   },
   {
     "zone_id": "tdr61n",
@@ -5469,7 +5756,8 @@
     "enforcement_rate": 0.8451,
     "predicted_score_6h": 14.9,
     "severity": "medium",
-    "rank": 288
+    "rank": 288,
+    "display_name": "Bandapura"
   },
   {
     "zone_id": "tdr1qv",
@@ -5488,7 +5776,8 @@
     "enforcement_rate": 0.973,
     "predicted_score_6h": 24.0,
     "severity": "medium",
-    "rank": 289
+    "rank": 289,
+    "display_name": "HSR Layout"
   },
   {
     "zone_id": "tdr4j9",
@@ -5507,7 +5796,8 @@
     "enforcement_rate": 0.9286,
     "predicted_score_6h": 25.6,
     "severity": "medium",
-    "rank": 290
+    "rank": 290,
+    "display_name": "MLA Layout"
   },
   {
     "zone_id": "tdr4m6",
@@ -5526,7 +5816,8 @@
     "enforcement_rate": 0.6,
     "predicted_score_6h": 14.2,
     "severity": "medium",
-    "rank": 291
+    "rank": 291,
+    "display_name": "CQAL Layout"
   },
   {
     "zone_id": "tdr4jw",
@@ -5545,7 +5836,8 @@
     "enforcement_rate": 0.9151,
     "predicted_score_6h": 0.8,
     "severity": "medium",
-    "rank": 292
+    "rank": 292,
+    "display_name": "Bhoopasandra"
   },
   {
     "zone_id": "tdr4h1",
@@ -5564,7 +5856,8 @@
     "enforcement_rate": 0.9444,
     "predicted_score_6h": 36.9,
     "severity": "medium",
-    "rank": 293
+    "rank": 293,
+    "display_name": "Lakshmi Devi Nagar"
   },
   {
     "zone_id": "tdr1yk",
@@ -5583,7 +5876,8 @@
     "enforcement_rate": 0.7586,
     "predicted_score_6h": 13.0,
     "severity": "medium",
-    "rank": 294
+    "rank": 294,
+    "display_name": "Kothandram Layout"
   },
   {
     "zone_id": "tdr1tj",
@@ -5602,7 +5896,8 @@
     "enforcement_rate": 0.9032,
     "predicted_score_6h": 8.0,
     "severity": "medium",
-    "rank": 295
+    "rank": 295,
+    "display_name": "National College Junction"
   },
   {
     "zone_id": "tdr1hr",
@@ -5621,7 +5916,8 @@
     "enforcement_rate": 0.9259,
     "predicted_score_6h": 13.9,
     "severity": "medium",
-    "rank": 296
+    "rank": 296,
+    "display_name": "Thalaghattapura"
   },
   {
     "zone_id": "tdr4h2",
@@ -5640,7 +5936,8 @@
     "enforcement_rate": 0.58,
     "predicted_score_6h": 22.3,
     "severity": "medium",
-    "rank": 297
+    "rank": 297,
+    "display_name": "Jai Maruthi Nagar"
   },
   {
     "zone_id": "tdr1qu",
@@ -5659,7 +5956,8 @@
     "enforcement_rate": 0.7759,
     "predicted_score_6h": 19.8,
     "severity": "medium",
-    "rank": 298
+    "rank": 298,
+    "display_name": "Agara"
   },
   {
     "zone_id": "tdr1te",
@@ -5678,7 +5976,8 @@
     "enforcement_rate": 0.8774,
     "predicted_score_6h": 19.5,
     "severity": "medium",
-    "rank": 299
+    "rank": 299,
+    "display_name": "BHEL Ward"
   },
   {
     "zone_id": "tdr1u5",
@@ -5697,7 +5996,8 @@
     "enforcement_rate": 0.77,
     "predicted_score_6h": 15.9,
     "severity": "medium",
-    "rank": 300
+    "rank": 300,
+    "display_name": "Kaveripura"
   },
   {
     "zone_id": "tdr1x0",
@@ -5716,7 +6016,8 @@
     "enforcement_rate": 0.9174,
     "predicted_score_6h": 14.6,
     "severity": "medium",
-    "rank": 301
+    "rank": 301,
+    "display_name": "HSR Layout"
   },
   {
     "zone_id": "tdr1mj",
@@ -5735,7 +6036,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 1.6,
     "severity": "medium",
-    "rank": 302
+    "rank": 302,
+    "display_name": "JP Nagar Metro, ORR"
   },
   {
     "zone_id": "tdr1y2",
@@ -5754,7 +6056,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 24.8,
     "severity": "medium",
-    "rank": 303
+    "rank": 303,
+    "display_name": "ASC Junction"
   },
   {
     "zone_id": "tdr1wk",
@@ -5773,7 +6076,8 @@
     "enforcement_rate": 0.8407,
     "predicted_score_6h": 14.4,
     "severity": "medium",
-    "rank": 304
+    "rank": 304,
+    "display_name": "Rajendranagar"
   },
   {
     "zone_id": "tdr4hz",
@@ -5792,7 +6096,8 @@
     "enforcement_rate": 0.9156,
     "predicted_score_6h": 15.2,
     "severity": "medium",
-    "rank": 305
+    "rank": 305,
+    "display_name": "BEL Colony"
   },
   {
     "zone_id": "tdr60e",
@@ -5811,7 +6116,8 @@
     "enforcement_rate": 0.9623,
     "predicted_score_6h": 12.2,
     "severity": "medium",
-    "rank": 306
+    "rank": 306,
+    "display_name": "TC Palya"
   },
   {
     "zone_id": "tdr3bm",
@@ -5830,7 +6136,8 @@
     "enforcement_rate": 0.7179,
     "predicted_score_6h": 20.0,
     "severity": "medium",
-    "rank": 307
+    "rank": 307,
+    "display_name": "Hoodi"
   },
   {
     "zone_id": "tdr1ry",
@@ -5849,7 +6156,8 @@
     "enforcement_rate": 0.9551,
     "predicted_score_6h": 12.8,
     "severity": "medium",
-    "rank": 308
+    "rank": 308,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr1p5",
@@ -5868,7 +6176,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 41.2,
     "severity": "medium",
-    "rank": 309
+    "rank": 309,
+    "display_name": "Doddathoguru"
   },
   {
     "zone_id": "tdr1xq",
@@ -5887,7 +6196,8 @@
     "enforcement_rate": 0.958,
     "predicted_score_6h": 14.9,
     "severity": "medium",
-    "rank": 310
+    "rank": 310,
+    "display_name": "Vibhootipura"
   },
   {
     "zone_id": "tdr1z4",
@@ -5906,7 +6216,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 23.3,
     "severity": "medium",
-    "rank": 311
+    "rank": 311,
+    "display_name": "Sudgunte Palya"
   },
   {
     "zone_id": "tdr333",
@@ -5925,7 +6236,8 @@
     "enforcement_rate": 0.6038,
     "predicted_score_6h": 2.8,
     "severity": "medium",
-    "rank": 312
+    "rank": 312,
+    "display_name": "Dommasandra"
   },
   {
     "zone_id": "tdr1js",
@@ -5944,7 +6256,8 @@
     "enforcement_rate": 0.9143,
     "predicted_score_6h": 11.4,
     "severity": "medium",
-    "rank": 313
+    "rank": 313,
+    "display_name": "Doddakammanahalli"
   },
   {
     "zone_id": "tdr4jj",
@@ -5963,7 +6276,8 @@
     "enforcement_rate": 0.5934,
     "predicted_score_6h": 14.4,
     "severity": "medium",
-    "rank": 314
+    "rank": 314,
+    "display_name": "Dollars Colony"
   },
   {
     "zone_id": "tdr1vw",
@@ -5982,7 +6296,8 @@
     "enforcement_rate": 0.9524,
     "predicted_score_6h": 2.4,
     "severity": "medium",
-    "rank": 315
+    "rank": 315,
+    "display_name": "Jayamahal Extension"
   },
   {
     "zone_id": "tdr4qt",
@@ -6001,7 +6316,8 @@
     "enforcement_rate": 0.7011,
     "predicted_score_6h": 17.4,
     "severity": "medium",
-    "rank": 316
+    "rank": 316,
+    "display_name": "Bhartiya City"
   },
   {
     "zone_id": "tdr4hd",
@@ -6020,7 +6336,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 13.0,
     "severity": "medium",
-    "rank": 317
+    "rank": 317,
+    "display_name": "Nalwadi Krishnaraja Wadiyar Ward"
   },
   {
     "zone_id": "tdr4jm",
@@ -6039,7 +6356,8 @@
     "enforcement_rate": 0.6695,
     "predicted_score_6h": 14.2,
     "severity": "medium",
-    "rank": 318
+    "rank": 318,
+    "display_name": "NGEF Layout"
   },
   {
     "zone_id": "tdr1u7",
@@ -6058,7 +6376,8 @@
     "enforcement_rate": 0.8072,
     "predicted_score_6h": 21.6,
     "severity": "medium",
-    "rank": 319
+    "rank": 319,
+    "display_name": "KHB Colony"
   },
   {
     "zone_id": "tdr1wj",
@@ -6077,7 +6396,8 @@
     "enforcement_rate": 0.9437,
     "predicted_score_6h": 15.1,
     "severity": "medium",
-    "rank": 320
+    "rank": 320,
+    "display_name": "Anepalya Junction"
   },
   {
     "zone_id": "tdr1tk",
@@ -6096,7 +6416,8 @@
     "enforcement_rate": 0.8427,
     "predicted_score_6h": 11.6,
     "severity": "medium",
-    "rank": 321
+    "rank": 321,
+    "display_name": "RV Teachers College"
   },
   {
     "zone_id": "tdr32k",
@@ -6115,7 +6436,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 12.8,
     "severity": "medium",
-    "rank": 322
+    "rank": 322,
+    "display_name": "Mulluru"
   },
   {
     "zone_id": "tdr3bx",
@@ -6134,7 +6456,8 @@
     "enforcement_rate": 0.8954,
     "predicted_score_6h": 2.4,
     "severity": "medium",
-    "rank": 323
+    "rank": 323,
+    "display_name": "Alfa Gardens"
   },
   {
     "zone_id": "tdr453",
@@ -6153,7 +6476,8 @@
     "enforcement_rate": 0.9846,
     "predicted_score_6h": 16.4,
     "severity": "medium",
-    "rank": 324
+    "rank": 324,
+    "display_name": "Andrahalli"
   },
   {
     "zone_id": "tdr1hq",
@@ -6172,7 +6496,8 @@
     "enforcement_rate": 0.6462,
     "predicted_score_6h": 12.3,
     "severity": "medium",
-    "rank": 325
+    "rank": 325,
+    "display_name": "Ganigarapalya"
   },
   {
     "zone_id": "tdr1rt",
@@ -6191,7 +6516,8 @@
     "enforcement_rate": 0.8026,
     "predicted_score_6h": 10.5,
     "severity": "medium",
-    "rank": 326
+    "rank": 326,
+    "display_name": "KPC Layout"
   },
   {
     "zone_id": "tdr3c7",
@@ -6210,7 +6536,8 @@
     "enforcement_rate": 0.8919,
     "predicted_score_6h": 2.5,
     "severity": "medium",
-    "rank": 327
+    "rank": 327,
+    "display_name": "Prashanth Extension"
   },
   {
     "zone_id": "tdr3bt",
@@ -6229,7 +6556,8 @@
     "enforcement_rate": 0.7797,
     "predicted_score_6h": 12.1,
     "severity": "medium",
-    "rank": 328
+    "rank": 328,
+    "display_name": "Hoody Garden"
   },
   {
     "zone_id": "tdr1q9",
@@ -6248,7 +6576,8 @@
     "enforcement_rate": 0.9574,
     "predicted_score_6h": 20.7,
     "severity": "medium",
-    "rank": 329
+    "rank": 329,
+    "display_name": "Singasandra"
   },
   {
     "zone_id": "tdr3c0",
@@ -6267,7 +6596,8 @@
     "enforcement_rate": 0.7045,
     "predicted_score_6h": 5.0,
     "severity": "medium",
-    "rank": 330
+    "rank": 330,
+    "display_name": "Whitefield"
   },
   {
     "zone_id": "tdr4p4",
@@ -6286,7 +6616,8 @@
     "enforcement_rate": 0.6835,
     "predicted_score_6h": 11.1,
     "severity": "medium",
-    "rank": 331
+    "rank": 331,
+    "display_name": "Post & Telegraph Layout"
   },
   {
     "zone_id": "tdr1eg",
@@ -6305,7 +6636,8 @@
     "enforcement_rate": 0.9104,
     "predicted_score_6h": 13.0,
     "severity": "medium",
-    "rank": 332
+    "rank": 332,
+    "display_name": "Nayanda Halli"
   },
   {
     "zone_id": "tdr4k2",
@@ -6324,7 +6656,8 @@
     "enforcement_rate": 0.9342,
     "predicted_score_6h": 14.3,
     "severity": "medium",
-    "rank": 333
+    "rank": 333,
+    "display_name": "Shettihalli"
   },
   {
     "zone_id": "tdr4k5",
@@ -6343,7 +6676,8 @@
     "enforcement_rate": 0.9857,
     "predicted_score_6h": 14.2,
     "severity": "medium",
-    "rank": 334
+    "rank": 334,
+    "display_name": "Vishweshwaraiah Enclave"
   },
   {
     "zone_id": "tdr60v",
@@ -6362,7 +6696,8 @@
     "enforcement_rate": 0.942,
     "predicted_score_6h": 10.6,
     "severity": "medium",
-    "rank": 335
+    "rank": 335,
+    "display_name": "Virgonagar"
   },
   {
     "zone_id": "tdr1rn",
@@ -6381,7 +6716,8 @@
     "enforcement_rate": 0.7765,
     "predicted_score_6h": 12.5,
     "severity": "medium",
-    "rank": 336
+    "rank": 336,
+    "display_name": "Parangipalya"
   },
   {
     "zone_id": "tdr1wm",
@@ -6400,7 +6736,8 @@
     "enforcement_rate": 0.9851,
     "predicted_score_6h": 2.4,
     "severity": "medium",
-    "rank": 337
+    "rank": 337,
+    "display_name": "Munniswamy Garden"
   },
   {
     "zone_id": "tdr395",
@@ -6419,7 +6756,8 @@
     "enforcement_rate": 0.8929,
     "predicted_score_6h": 3.0,
     "severity": "medium",
-    "rank": 338
+    "rank": 338,
+    "display_name": "Gandhi Circle"
   },
   {
     "zone_id": "tdr1p8",
@@ -6438,7 +6776,8 @@
     "enforcement_rate": 0.9818,
     "predicted_score_6h": 15.1,
     "severity": "medium",
-    "rank": 339
+    "rank": 339,
+    "display_name": "Hebbagodi"
   },
   {
     "zone_id": "tdr472",
@@ -6457,7 +6796,8 @@
     "enforcement_rate": 0.5128,
     "predicted_score_6h": 16.8,
     "severity": "medium",
-    "rank": 340
+    "rank": 340,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr1m4",
@@ -6476,7 +6816,8 @@
     "enforcement_rate": 0.873,
     "predicted_score_6h": 10.3,
     "severity": "medium",
-    "rank": 341
+    "rank": 341,
+    "display_name": "Konanakunte"
   },
   {
     "zone_id": "tdr1y0",
@@ -6495,7 +6836,8 @@
     "enforcement_rate": 0.9565,
     "predicted_score_6h": 20.8,
     "severity": "medium",
-    "rank": 342
+    "rank": 342,
+    "display_name": "Arab Lines"
   },
   {
     "zone_id": "tdr1qz",
@@ -6514,7 +6856,8 @@
     "enforcement_rate": 0.9394,
     "predicted_score_6h": 13.2,
     "severity": "medium",
-    "rank": 343
+    "rank": 343,
+    "display_name": "HSR Layout"
   },
   {
     "zone_id": "tdr4k9",
@@ -6533,7 +6876,8 @@
     "enforcement_rate": 0.8434,
     "predicted_score_6h": 10.9,
     "severity": "medium",
-    "rank": 344
+    "rank": 344,
+    "display_name": "Kuvempunagara"
   },
   {
     "zone_id": "tdr4mz",
@@ -6552,7 +6896,8 @@
     "enforcement_rate": 0.9565,
     "predicted_score_6h": 16.4,
     "severity": "medium",
-    "rank": 345
+    "rank": 345,
+    "display_name": "Surabhi Layout"
   },
   {
     "zone_id": "tdr1g5",
@@ -6571,7 +6916,8 @@
     "enforcement_rate": 0.9206,
     "predicted_score_6h": 14.4,
     "severity": "medium",
-    "rank": 346
+    "rank": 346,
+    "display_name": "Nada prabhu Kempegowda Nagara"
   },
   {
     "zone_id": "tdr1hx",
@@ -6590,7 +6936,8 @@
     "enforcement_rate": 0.86,
     "predicted_score_6h": 10.7,
     "severity": "medium",
-    "rank": 347
+    "rank": 347,
+    "display_name": "Ganigarapalya"
   },
   {
     "zone_id": "tdr4r1",
@@ -6609,7 +6956,8 @@
     "enforcement_rate": 0.1831,
     "predicted_score_6h": 10.5,
     "severity": "medium",
-    "rank": 348
+    "rank": 348,
+    "display_name": "Byrathi"
   },
   {
     "zone_id": "tdr1jx",
@@ -6628,7 +6976,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 8.9,
     "severity": "medium",
-    "rank": 349
+    "rank": 349,
+    "display_name": "Hulimavu"
   },
   {
     "zone_id": "tdr1xb",
@@ -6647,7 +6996,8 @@
     "enforcement_rate": 0.86,
     "predicted_score_6h": 13.9,
     "severity": "medium",
-    "rank": 350
+    "rank": 350,
+    "display_name": "Shivanasamudra Ward"
   },
   {
     "zone_id": "tdr1r5",
@@ -6666,7 +7016,8 @@
     "enforcement_rate": 0.7733,
     "predicted_score_6h": 6.4,
     "severity": "medium",
-    "rank": 351
+    "rank": 351,
+    "display_name": "Ambalipura"
   },
   {
     "zone_id": "tdr4tc",
@@ -6685,7 +7036,8 @@
     "enforcement_rate": 0.9259,
     "predicted_score_6h": 17.7,
     "severity": "medium",
-    "rank": 352
+    "rank": 352,
+    "display_name": "Venkatala"
   },
   {
     "zone_id": "tdr704",
@@ -6704,7 +7056,8 @@
     "enforcement_rate": 0.9143,
     "predicted_score_6h": 11.2,
     "severity": "medium",
-    "rank": 353
+    "rank": 353,
+    "display_name": "Anneshvara"
   },
   {
     "zone_id": "tdr1y8",
@@ -6723,7 +7076,8 @@
     "enforcement_rate": 0.8378,
     "predicted_score_6h": 15.2,
     "severity": "medium",
-    "rank": 354
+    "rank": 354,
+    "display_name": "Doopanahalli"
   },
   {
     "zone_id": "tdr4hg",
@@ -6742,7 +7096,8 @@
     "enforcement_rate": 0.9592,
     "predicted_score_6h": 9.3,
     "severity": "medium",
-    "rank": 355
+    "rank": 355,
+    "display_name": "Sadashivanagar"
   },
   {
     "zone_id": "tdr4n2",
@@ -6761,7 +7116,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 6.0,
     "severity": "medium",
-    "rank": 356
+    "rank": 356,
+    "display_name": "Kariyannanapalya"
   },
   {
     "zone_id": "tdr1ss",
@@ -6780,7 +7136,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 17.1,
     "severity": "medium",
-    "rank": 357
+    "rank": 357,
+    "display_name": "Avalahalli"
   },
   {
     "zone_id": "tdr1yp",
@@ -6799,7 +7156,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 9.2,
     "severity": "medium",
-    "rank": 358
+    "rank": 358,
+    "display_name": "Sagayapura"
   },
   {
     "zone_id": "tdr1sg",
@@ -6818,7 +7176,8 @@
     "enforcement_rate": 0.8515,
     "predicted_score_6h": 9.2,
     "severity": "medium",
-    "rank": 359
+    "rank": 359,
+    "display_name": "Ashoka Nagara"
   },
   {
     "zone_id": "tdr4hn",
@@ -6837,7 +7196,8 @@
     "enforcement_rate": 0.9184,
     "predicted_score_6h": 8.5,
     "severity": "medium",
-    "rank": 360
+    "rank": 360,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr1gf",
@@ -6856,7 +7216,8 @@
     "enforcement_rate": 0.9423,
     "predicted_score_6h": 9.9,
     "severity": "medium",
-    "rank": 361
+    "rank": 361,
+    "display_name": "Nagarabhavi"
   },
   {
     "zone_id": "tdr4hj",
@@ -6875,7 +7236,8 @@
     "enforcement_rate": 0.8929,
     "predicted_score_6h": 0.8,
     "severity": "medium",
-    "rank": 362
+    "rank": 362,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr4nf",
@@ -6894,7 +7256,8 @@
     "enforcement_rate": 0.8462,
     "predicted_score_6h": 8.2,
     "severity": "medium",
-    "rank": 363
+    "rank": 363,
+    "display_name": "Kalyanagar"
   },
   {
     "zone_id": "tdr1y7",
@@ -6913,7 +7276,8 @@
     "enforcement_rate": 0.9683,
     "predicted_score_6h": 9.5,
     "severity": "medium",
-    "rank": 364
+    "rank": 364,
+    "display_name": "Jayaraj Nagar"
   },
   {
     "zone_id": "tdr1sn",
@@ -6932,7 +7296,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "medium",
-    "rank": 365
+    "rank": 365,
+    "display_name": "Chandra Layout"
   },
   {
     "zone_id": "tdr1qp",
@@ -6951,7 +7316,8 @@
     "enforcement_rate": 0.7778,
     "predicted_score_6h": 9.4,
     "severity": "medium",
-    "rank": 366
+    "rank": 366,
+    "display_name": "29th Main Road, BTM Layout"
   },
   {
     "zone_id": "tdr1wb",
@@ -6970,7 +7336,8 @@
     "enforcement_rate": 0.9241,
     "predicted_score_6h": 25.2,
     "severity": "medium",
-    "rank": 367
+    "rank": 367,
+    "display_name": "Agara"
   },
   {
     "zone_id": "tdr1wp",
@@ -6989,7 +7356,8 @@
     "enforcement_rate": 0.9787,
     "predicted_score_6h": 18.5,
     "severity": "medium",
-    "rank": 368
+    "rank": 368,
+    "display_name": "Lower Agram Road Junction"
   },
   {
     "zone_id": "tdr4nn",
@@ -7008,7 +7376,8 @@
     "enforcement_rate": 0.9032,
     "predicted_score_6h": 10.0,
     "severity": "medium",
-    "rank": 369
+    "rank": 369,
+    "display_name": "Virannapalya"
   },
   {
     "zone_id": "tdr1zu",
@@ -7027,7 +7396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 21.8,
     "severity": "medium",
-    "rank": 370
+    "rank": 370,
+    "display_name": "Shivaganga Layout"
   },
   {
     "zone_id": "tdr5pd",
@@ -7046,7 +7416,8 @@
     "enforcement_rate": 0.9773,
     "predicted_score_6h": 9.9,
     "severity": "medium",
-    "rank": 371
+    "rank": 371,
+    "display_name": "Yartiganahalli"
   },
   {
     "zone_id": "tdr4n4",
@@ -7065,7 +7436,8 @@
     "enforcement_rate": 0.9737,
     "predicted_score_6h": 2.5,
     "severity": "medium",
-    "rank": 372
+    "rank": 372,
+    "display_name": "Samadhana Nagar"
   },
   {
     "zone_id": "tdr1rh",
@@ -7084,7 +7456,8 @@
     "enforcement_rate": 0.9444,
     "predicted_score_6h": 9.0,
     "severity": "medium",
-    "rank": 373
+    "rank": 373,
+    "display_name": "Royal Placid Layout"
   },
   {
     "zone_id": "tdr1mc",
@@ -7103,7 +7476,8 @@
     "enforcement_rate": 0.8649,
     "predicted_score_6h": 1.6,
     "severity": "medium",
-    "rank": 374
+    "rank": 374,
+    "display_name": "Arakere"
   },
   {
     "zone_id": "tdr1kx",
@@ -7122,7 +7496,8 @@
     "enforcement_rate": 0.6923,
     "predicted_score_6h": 20.9,
     "severity": "medium",
-    "rank": 375
+    "rank": 375,
+    "display_name": "Ittamadu"
   },
   {
     "zone_id": "tdr4kt",
@@ -7141,7 +7516,8 @@
     "enforcement_rate": 0.8113,
     "predicted_score_6h": 6.4,
     "severity": "medium",
-    "rank": 376
+    "rank": 376,
+    "display_name": "Vinayaka Nagara"
   },
   {
     "zone_id": "tdr3b1",
@@ -7160,7 +7536,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 2.5,
     "severity": "medium",
-    "rank": 377
+    "rank": 377,
+    "display_name": "Bharath Aikya Ward"
   },
   {
     "zone_id": "tdr3br",
@@ -7179,7 +7556,8 @@
     "enforcement_rate": 0.9219,
     "predicted_score_6h": 7.4,
     "severity": "medium",
-    "rank": 378
+    "rank": 378,
+    "display_name": "Muneshwara Nagar"
   },
   {
     "zone_id": "tdr4h4",
@@ -7198,7 +7576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.1,
     "severity": "medium",
-    "rank": 379
+    "rank": 379,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr1hj",
@@ -7217,7 +7596,8 @@
     "enforcement_rate": 0.8182,
     "predicted_score_6h": 19.7,
     "severity": "medium",
-    "rank": 380
+    "rank": 380,
+    "display_name": "Ganigarapalya"
   },
   {
     "zone_id": "tdr1mm",
@@ -7236,7 +7616,8 @@
     "enforcement_rate": 0.8983,
     "predicted_score_6h": 8.9,
     "severity": "medium",
-    "rank": 381
+    "rank": 381,
+    "display_name": "15th Cross, 33rd Main, JP Nagar"
   },
   {
     "zone_id": "tdr1uh",
@@ -7255,7 +7636,8 @@
     "enforcement_rate": 0.9577,
     "predicted_score_6h": 12.0,
     "severity": "medium",
-    "rank": 382
+    "rank": 382,
+    "display_name": "Vinayaka Nagar"
   },
   {
     "zone_id": "tdr606",
@@ -7274,7 +7656,8 @@
     "enforcement_rate": 0.9216,
     "predicted_score_6h": 7.5,
     "severity": "medium",
-    "rank": 383
+    "rank": 383,
+    "display_name": "Medahalli"
   },
   {
     "zone_id": "tdr4q7",
@@ -7293,7 +7676,8 @@
     "enforcement_rate": 0.2963,
     "predicted_score_6h": 9.6,
     "severity": "medium",
-    "rank": 384
+    "rank": 384,
+    "display_name": "Arkavathy Layout 4th Block"
   },
   {
     "zone_id": "tdr1gq",
@@ -7312,7 +7696,8 @@
     "enforcement_rate": 0.9677,
     "predicted_score_6h": 16.0,
     "severity": "medium",
-    "rank": 385
+    "rank": 385,
+    "display_name": "Syndicate Bank Layout"
   },
   {
     "zone_id": "tdr3c6",
@@ -7331,7 +7716,8 @@
     "enforcement_rate": 0.8727,
     "predicted_score_6h": 9.6,
     "severity": "medium",
-    "rank": 386
+    "rank": 386,
+    "display_name": "Ambedkar Nagar"
   },
   {
     "zone_id": "tdr1gb",
@@ -7350,7 +7736,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 11.8,
     "severity": "medium",
-    "rank": 387
+    "rank": 387,
+    "display_name": "Vinayaka Layout"
   },
   {
     "zone_id": "tdr39p",
@@ -7369,7 +7756,8 @@
     "enforcement_rate": 0.9348,
     "predicted_score_6h": 8.6,
     "severity": "medium",
-    "rank": 388
+    "rank": 388,
+    "display_name": "Whitefield"
   },
   {
     "zone_id": "tdr0zx",
@@ -7388,7 +7776,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 15.7,
     "severity": "medium",
-    "rank": 389
+    "rank": 389,
+    "display_name": "Hebbagodi"
   },
   {
     "zone_id": "tdr3c5",
@@ -7407,7 +7796,8 @@
     "enforcement_rate": 0.9143,
     "predicted_score_6h": 13.4,
     "severity": "medium",
-    "rank": 390
+    "rank": 390,
+    "display_name": "Prashanth Extension"
   },
   {
     "zone_id": "tdr4nx",
@@ -7426,7 +7816,8 @@
     "enforcement_rate": 0.5088,
     "predicted_score_6h": 13.4,
     "severity": "medium",
-    "rank": 391
+    "rank": 391,
+    "display_name": "Thanisandra"
   },
   {
     "zone_id": "tdr4h5",
@@ -7445,7 +7836,8 @@
     "enforcement_rate": 0.5833,
     "predicted_score_6h": 24.8,
     "severity": "medium",
-    "rank": 392
+    "rank": 392,
+    "display_name": "Parvathi Nagar"
   },
   {
     "zone_id": "tdr1je",
@@ -7464,7 +7856,8 @@
     "enforcement_rate": 0.9565,
     "predicted_score_6h": 9.1,
     "severity": "medium",
-    "rank": 393
+    "rank": 393,
+    "display_name": "Gottigere"
   },
   {
     "zone_id": "tdr0zy",
@@ -7483,7 +7876,8 @@
     "enforcement_rate": 0.9118,
     "predicted_score_6h": 10.0,
     "severity": "medium",
-    "rank": 394
+    "rank": 394,
+    "display_name": "Bommasandra"
   },
   {
     "zone_id": "tdr1ex",
@@ -7502,7 +7896,8 @@
     "enforcement_rate": 0.9722,
     "predicted_score_6h": 8.7,
     "severity": "medium",
-    "rank": 395
+    "rank": 395,
+    "display_name": "Mallathahalli"
   },
   {
     "zone_id": "tdr45g",
@@ -7521,7 +7916,8 @@
     "enforcement_rate": 0.9189,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 396
+    "rank": 396,
+    "display_name": "Peenya 2nd Stage"
   },
   {
     "zone_id": "tdr4n7",
@@ -7540,7 +7936,8 @@
     "enforcement_rate": 0.6129,
     "predicted_score_6h": 7.8,
     "severity": "low",
-    "rank": 397
+    "rank": 397,
+    "display_name": "HBR Layout"
   },
   {
     "zone_id": "tdr1k9",
@@ -7559,7 +7956,8 @@
     "enforcement_rate": 0.898,
     "predicted_score_6h": 10.4,
     "severity": "low",
-    "rank": 398
+    "rank": 398,
+    "display_name": "Anjanapura"
   },
   {
     "zone_id": "tdr1km",
@@ -7578,7 +7976,8 @@
     "enforcement_rate": 0.4474,
     "predicted_score_6h": 8.5,
     "severity": "low",
-    "rank": 399
+    "rank": 399,
+    "display_name": "Subramanyapura"
   },
   {
     "zone_id": "tdr4t0",
@@ -7597,7 +7996,8 @@
     "enforcement_rate": 0.9844,
     "predicted_score_6h": 8.4,
     "severity": "low",
-    "rank": 400
+    "rank": 400,
+    "display_name": "Attur Layout"
   },
   {
     "zone_id": "tdr1q0",
@@ -7616,7 +8016,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.6,
     "severity": "low",
-    "rank": 401
+    "rank": 401,
+    "display_name": "Akshaynagar Layout"
   },
   {
     "zone_id": "tdr4hy",
@@ -7635,7 +8036,8 @@
     "enforcement_rate": 0.65,
     "predicted_score_6h": 7.6,
     "severity": "low",
-    "rank": 402
+    "rank": 402,
+    "display_name": "BEL Colony"
   },
   {
     "zone_id": "tdr4m2",
@@ -7654,7 +8056,8 @@
     "enforcement_rate": 0.8788,
     "predicted_score_6h": 9.2,
     "severity": "low",
-    "rank": 403
+    "rank": 403,
+    "display_name": "Rajiv Gandhi Nagar"
   },
   {
     "zone_id": "tdr1xn",
@@ -7673,7 +8076,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.0,
     "severity": "low",
-    "rank": 404
+    "rank": 404,
+    "display_name": "Thimmah Reddy Colony"
   },
   {
     "zone_id": "tdr1t0",
@@ -7692,7 +8096,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 6.2,
     "severity": "low",
-    "rank": 405
+    "rank": 405,
+    "display_name": "KR Road Junction, Near JSS"
   },
   {
     "zone_id": "tdr1zg",
@@ -7711,7 +8116,8 @@
     "enforcement_rate": 0.6176,
     "predicted_score_6h": 8.0,
     "severity": "low",
-    "rank": 406
+    "rank": 406,
+    "display_name": "Ferns Habitat"
   },
   {
     "zone_id": "tdr1e7",
@@ -7730,7 +8136,8 @@
     "enforcement_rate": 0.9683,
     "predicted_score_6h": 10.0,
     "severity": "low",
-    "rank": 407
+    "rank": 407,
+    "display_name": "Nagadevanahalli"
   },
   {
     "zone_id": "tdr1rx",
@@ -7749,7 +8156,8 @@
     "enforcement_rate": 0.9111,
     "predicted_score_6h": 6.6,
     "severity": "low",
-    "rank": 408
+    "rank": 408,
+    "display_name": "Haralur"
   },
   {
     "zone_id": "tdr4ne",
@@ -7768,7 +8176,8 @@
     "enforcement_rate": 0.8605,
     "predicted_score_6h": 6.5,
     "severity": "low",
-    "rank": 409
+    "rank": 409,
+    "display_name": "Kacharakanahalli"
   },
   {
     "zone_id": "tdr1yu",
@@ -7787,7 +8196,8 @@
     "enforcement_rate": 0.76,
     "predicted_score_6h": 7.0,
     "severity": "low",
-    "rank": 410
+    "rank": 410,
+    "display_name": "Baiyyappanahalli"
   },
   {
     "zone_id": "tdr1sr",
@@ -7806,7 +8216,8 @@
     "enforcement_rate": 0.9667,
     "predicted_score_6h": 10.0,
     "severity": "low",
-    "rank": 411
+    "rank": 411,
+    "display_name": "Attiguppe Circle"
   },
   {
     "zone_id": "tdr1xy",
@@ -7825,7 +8236,8 @@
     "enforcement_rate": 0.9286,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 412
+    "rank": 412,
+    "display_name": "Marathahalli"
   },
   {
     "zone_id": "tdr1p1",
@@ -7844,7 +8256,8 @@
     "enforcement_rate": 0.9032,
     "predicted_score_6h": 12.2,
     "severity": "low",
-    "rank": 413
+    "rank": 413,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr1wh",
@@ -7863,7 +8276,8 @@
     "enforcement_rate": 0.9459,
     "predicted_score_6h": 8.0,
     "severity": "low",
-    "rank": 414
+    "rank": 414,
+    "display_name": "Adugodi Junction"
   },
   {
     "zone_id": "tdr1ze",
@@ -7882,7 +8296,8 @@
     "enforcement_rate": 0.8182,
     "predicted_score_6h": 7.1,
     "severity": "low",
-    "rank": 415
+    "rank": 415,
+    "display_name": "Kaggadasapura"
   },
   {
     "zone_id": "tdr1sb",
@@ -7901,7 +8316,8 @@
     "enforcement_rate": 0.7353,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 416
+    "rank": 416,
+    "display_name": "Devegowda Petrol Bunk"
   },
   {
     "zone_id": "tdr1zr",
@@ -7920,7 +8336,8 @@
     "enforcement_rate": 0.9865,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 417
+    "rank": 417,
+    "display_name": "Kasturi Nagar 2nd Stage"
   },
   {
     "zone_id": "tdr4t7",
@@ -7939,7 +8356,8 @@
     "enforcement_rate": 0.9796,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 418
+    "rank": 418,
+    "display_name": "Isaac Layout"
   },
   {
     "zone_id": "tdr1nx",
@@ -7958,7 +8376,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 17.5,
     "severity": "low",
-    "rank": 419
+    "rank": 419,
+    "display_name": "Vishwapriya Nagara"
   },
   {
     "zone_id": "tdr1qk",
@@ -7977,7 +8396,8 @@
     "enforcement_rate": 0.9423,
     "predicted_score_6h": 8.7,
     "severity": "low",
-    "rank": 420
+    "rank": 420,
+    "display_name": "Hongasandra"
   },
   {
     "zone_id": "tdr4jk",
@@ -7996,7 +8416,8 @@
     "enforcement_rate": 0.5952,
     "predicted_score_6h": 9.8,
     "severity": "low",
-    "rank": 421
+    "rank": 421,
+    "display_name": "KEB Layout"
   },
   {
     "zone_id": "tdr32h",
@@ -8015,7 +8436,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 13.7,
     "severity": "low",
-    "rank": 422
+    "rank": 422,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr1xv",
@@ -8034,7 +8456,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 423
+    "rank": 423,
+    "display_name": "Yamalur"
   },
   {
     "zone_id": "tdr1tb",
@@ -8053,7 +8476,8 @@
     "enforcement_rate": 0.9556,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 424
+    "rank": 424,
+    "display_name": "Gorappanapalya Junction"
   },
   {
     "zone_id": "tdr612",
@@ -8072,7 +8496,8 @@
     "enforcement_rate": 0.9796,
     "predicted_score_6h": 5.4,
     "severity": "low",
-    "rank": 425
+    "rank": 425,
+    "display_name": "Seegehalli"
   },
   {
     "zone_id": "tdr4j8",
@@ -8091,7 +8516,8 @@
     "enforcement_rate": 0.8958,
     "predicted_score_6h": 6.1,
     "severity": "low",
-    "rank": 426
+    "rank": 426,
+    "display_name": "Jaya Chamarajendra Nagara"
   },
   {
     "zone_id": "tdr1fu",
@@ -8110,7 +8536,8 @@
     "enforcement_rate": 0.8438,
     "predicted_score_6h": 7.2,
     "severity": "low",
-    "rank": 427
+    "rank": 427,
+    "display_name": "Nada prabhu Kempegowda Nagara"
   },
   {
     "zone_id": "tdr469",
@@ -8129,7 +8556,8 @@
     "enforcement_rate": 0.6923,
     "predicted_score_6h": 8.2,
     "severity": "low",
-    "rank": 428
+    "rank": 428,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr4m7",
@@ -8148,7 +8576,8 @@
     "enforcement_rate": 0.807,
     "predicted_score_6h": 7.2,
     "severity": "low",
-    "rank": 429
+    "rank": 429,
+    "display_name": "Rajiv Gandhi Nagar"
   },
   {
     "zone_id": "tdr1kz",
@@ -8167,7 +8596,8 @@
     "enforcement_rate": 0.9259,
     "predicted_score_6h": 10.8,
     "severity": "low",
-    "rank": 430
+    "rank": 430,
+    "display_name": "Devegowda Petrol Bunk"
   },
   {
     "zone_id": "tdr4tf",
@@ -8186,7 +8616,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 12.9,
     "severity": "low",
-    "rank": 431
+    "rank": 431,
+    "display_name": "Venkatala"
   },
   {
     "zone_id": "tdr1zh",
@@ -8205,7 +8636,8 @@
     "enforcement_rate": 0.9524,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 432
+    "rank": 432,
+    "display_name": "Rahat Bagh"
   },
   {
     "zone_id": "tdr4p0",
@@ -8224,7 +8656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.1,
     "severity": "low",
-    "rank": 433
+    "rank": 433,
+    "display_name": "B Channasandra"
   },
   {
     "zone_id": "tdr467",
@@ -8243,7 +8676,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 9.1,
     "severity": "low",
-    "rank": 434
+    "rank": 434,
+    "display_name": "Adakamaranahalli"
   },
   {
     "zone_id": "tdr1re",
@@ -8262,7 +8696,8 @@
     "enforcement_rate": 0.963,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 435
+    "rank": 435,
+    "display_name": "Kasavanahalli"
   },
   {
     "zone_id": "tdr1ek",
@@ -8281,7 +8716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.1,
     "severity": "low",
-    "rank": 436
+    "rank": 436,
+    "display_name": "Bhuvaneshwari Nagara 2nd Stage"
   },
   {
     "zone_id": "tdr1we",
@@ -8300,7 +8736,8 @@
     "enforcement_rate": 0.8261,
     "predicted_score_6h": 7.9,
     "severity": "low",
-    "rank": 437
+    "rank": 437,
+    "display_name": "Chandra Reddy Layout"
   },
   {
     "zone_id": "tdr32p",
@@ -8319,7 +8756,8 @@
     "enforcement_rate": 0.8276,
     "predicted_score_6h": 7.9,
     "severity": "low",
-    "rank": 438
+    "rank": 438,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr4qf",
@@ -8338,7 +8776,8 @@
     "enforcement_rate": 0.6111,
     "predicted_score_6h": 7.9,
     "severity": "low",
-    "rank": 439
+    "rank": 439,
+    "display_name": "K Narayanapura"
   },
   {
     "zone_id": "tdr4y7",
@@ -8357,7 +8796,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.8,
     "severity": "low",
-    "rank": 440
+    "rank": 440,
+    "display_name": "Vidyanagar"
   },
   {
     "zone_id": "tdr1sx",
@@ -8376,7 +8816,8 @@
     "enforcement_rate": 0.6216,
     "predicted_score_6h": 7.7,
     "severity": "low",
-    "rank": 441
+    "rank": 441,
+    "display_name": "Toll Gate, Mysore Road"
   },
   {
     "zone_id": "tdr61r",
@@ -8395,7 +8836,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.7,
     "severity": "low",
-    "rank": 442
+    "rank": 442,
+    "display_name": "Konadasapura"
   },
   {
     "zone_id": "tdr39j",
@@ -8414,7 +8856,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 30.5,
     "severity": "low",
-    "rank": 443
+    "rank": 443,
+    "display_name": "Varthur Kodi"
   },
   {
     "zone_id": "tdr601",
@@ -8433,7 +8876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.7,
     "severity": "low",
-    "rank": 444
+    "rank": 444,
+    "display_name": "Medahalli"
   },
   {
     "zone_id": "tdr2b5",
@@ -8452,7 +8896,8 @@
     "enforcement_rate": 0.9762,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 445
+    "rank": 445,
+    "display_name": "Kittaganahalli"
   },
   {
     "zone_id": "tdr1yw",
@@ -8471,7 +8916,8 @@
     "enforcement_rate": 0.9273,
     "predicted_score_6h": 5.9,
     "severity": "low",
-    "rank": 446
+    "rank": 446,
+    "display_name": "N Thyagaraju Layout"
   },
   {
     "zone_id": "tdr1q8",
@@ -8490,7 +8936,8 @@
     "enforcement_rate": 0.9412,
     "predicted_score_6h": 11.6,
     "severity": "low",
-    "rank": 447
+    "rank": 447,
+    "display_name": "Wellington Paradise Layout"
   },
   {
     "zone_id": "tdr1zx",
@@ -8509,7 +8956,8 @@
     "enforcement_rate": 0.8485,
     "predicted_score_6h": 8.1,
     "severity": "low",
-    "rank": 448
+    "rank": 448,
+    "display_name": "Kotthur"
   },
   {
     "zone_id": "tdr619",
@@ -8528,7 +8976,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.1,
     "severity": "low",
-    "rank": 449
+    "rank": 449,
+    "display_name": "Seegehalli"
   },
   {
     "zone_id": "tdr1g8",
@@ -8547,7 +8996,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 450
+    "rank": 450,
+    "display_name": "ITI Layout"
   },
   {
     "zone_id": "tdr466",
@@ -8566,7 +9016,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 8.0,
     "severity": "low",
-    "rank": 451
+    "rank": 451,
+    "display_name": "Adakamaranahalli"
   },
   {
     "zone_id": "tdr1uj",
@@ -8585,7 +9036,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 13.8,
     "severity": "low",
-    "rank": 452
+    "rank": 452,
+    "display_name": "Vrishabha Nagar"
   },
   {
     "zone_id": "tdr4qb",
@@ -8604,7 +9056,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 6.1,
     "severity": "low",
-    "rank": 453
+    "rank": 453,
+    "display_name": "Horamavu"
   },
   {
     "zone_id": "tdr60u",
@@ -8623,7 +9076,8 @@
     "enforcement_rate": 0.9744,
     "predicted_score_6h": 9.1,
     "severity": "low",
-    "rank": 454
+    "rank": 454,
+    "display_name": "Virgonagar"
   },
   {
     "zone_id": "tdr1sf",
@@ -8642,7 +9096,8 @@
     "enforcement_rate": 0.8182,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 455
+    "rank": 455,
+    "display_name": "Thyagarajnagar"
   },
   {
     "zone_id": "tdr3bb",
@@ -8661,7 +9116,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 7.7,
     "severity": "low",
-    "rank": 456
+    "rank": 456,
+    "display_name": "Whitefield"
   },
   {
     "zone_id": "tdr4kc",
@@ -8680,7 +9136,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 13.5,
     "severity": "low",
-    "rank": 457
+    "rank": 457,
+    "display_name": "BEL Colony"
   },
   {
     "zone_id": "tdr3cm",
@@ -8699,7 +9156,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.0,
     "severity": "low",
-    "rank": 458
+    "rank": 458,
+    "display_name": "Belathur"
   },
   {
     "zone_id": "tdr1uc",
@@ -8718,7 +9176,8 @@
     "enforcement_rate": 0.7812,
     "predicted_score_6h": 8.9,
     "severity": "low",
-    "rank": 459
+    "rank": 459,
+    "display_name": "Leprosy Hospital Junction"
   },
   {
     "zone_id": "tdr4n0",
@@ -8737,7 +9196,8 @@
     "enforcement_rate": 0.9643,
     "predicted_score_6h": 5.3,
     "severity": "low",
-    "rank": 460
+    "rank": 460,
+    "display_name": "Periyar Nagar"
   },
   {
     "zone_id": "tdr3ch",
@@ -8756,7 +9216,8 @@
     "enforcement_rate": 0.7857,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 461
+    "rank": 461,
+    "display_name": "Belathur"
   },
   {
     "zone_id": "tdr3c1",
@@ -8775,7 +9236,8 @@
     "enforcement_rate": 0.9697,
     "predicted_score_6h": 8.8,
     "severity": "low",
-    "rank": 462
+    "rank": 462,
+    "display_name": "Sai Layout"
   },
   {
     "zone_id": "tdr604",
@@ -8794,7 +9256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.5,
     "severity": "low",
-    "rank": 463
+    "rank": 463,
+    "display_name": "Anandapura"
   },
   {
     "zone_id": "tdr706",
@@ -8813,7 +9276,8 @@
     "enforcement_rate": 0.963,
     "predicted_score_6h": 4.2,
     "severity": "low",
-    "rank": 464
+    "rank": 464,
+    "display_name": "Anneshvara"
   },
   {
     "zone_id": "tdr4ns",
@@ -8832,7 +9296,8 @@
     "enforcement_rate": 0.76,
     "predicted_score_6h": 5.1,
     "severity": "low",
-    "rank": 465
+    "rank": 465,
+    "display_name": "Grace Town"
   },
   {
     "zone_id": "tdr1gk",
@@ -8851,7 +9316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.6,
     "severity": "low",
-    "rank": 466
+    "rank": 466,
+    "display_name": "Herohalli"
   },
   {
     "zone_id": "tdr4pd",
@@ -8870,7 +9336,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 4.5,
     "severity": "low",
-    "rank": 467
+    "rank": 467,
+    "display_name": "Muneshwara Layout"
   },
   {
     "zone_id": "tdr4hh",
@@ -8889,7 +9356,8 @@
     "enforcement_rate": 0.7692,
     "predicted_score_6h": 8.3,
     "severity": "low",
-    "rank": 468
+    "rank": 468,
+    "display_name": "Peenya"
   },
   {
     "zone_id": "tdr3be",
@@ -8908,7 +9376,8 @@
     "enforcement_rate": 0.9643,
     "predicted_score_6h": 16.4,
     "severity": "low",
-    "rank": 469
+    "rank": 469,
+    "display_name": "Kaveri Nagara"
   },
   {
     "zone_id": "tdr4mg",
@@ -8927,7 +9396,8 @@
     "enforcement_rate": 0.4762,
     "predicted_score_6h": 7.0,
     "severity": "low",
-    "rank": 470
+    "rank": 470,
+    "display_name": "MCHS Layout"
   },
   {
     "zone_id": "tdr4m4",
@@ -8946,7 +9416,8 @@
     "enforcement_rate": 0.7692,
     "predicted_score_6h": 7.0,
     "severity": "low",
-    "rank": 471
+    "rank": 471,
+    "display_name": "Thindlu"
   },
   {
     "zone_id": "tdr1kp",
@@ -8965,7 +9436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 472
+    "rank": 472,
+    "display_name": "BEML Layout 3rd Stage"
   },
   {
     "zone_id": "tdr4hm",
@@ -8984,7 +9456,8 @@
     "enforcement_rate": 0.7667,
     "predicted_score_6h": 6.7,
     "severity": "low",
-    "rank": 473
+    "rank": 473,
+    "display_name": "HMT Ward"
   },
   {
     "zone_id": "tdr4kv",
@@ -9003,7 +9476,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 6.6,
     "severity": "low",
-    "rank": 474
+    "rank": 474,
+    "display_name": "Narasipura Layout"
   },
   {
     "zone_id": "tdr1wt",
@@ -9022,7 +9496,8 @@
     "enforcement_rate": 0.8636,
     "predicted_score_6h": 5.7,
     "severity": "low",
-    "rank": 475
+    "rank": 475,
+    "display_name": "Yamalur"
   },
   {
     "zone_id": "tdr4qd",
@@ -9041,7 +9516,8 @@
     "enforcement_rate": 0.6429,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 476
+    "rank": 476,
+    "display_name": "Arkavathy Layout 4th Block"
   },
   {
     "zone_id": "tdr4r0",
@@ -9060,7 +9536,8 @@
     "enforcement_rate": 0.9474,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 477
+    "rank": 477,
+    "display_name": "Byrathi"
   },
   {
     "zone_id": "tdr4jn",
@@ -9079,7 +9556,8 @@
     "enforcement_rate": 0.2308,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 478
+    "rank": 478,
+    "display_name": "Dollars Colony"
   },
   {
     "zone_id": "tdr1u4",
@@ -9098,7 +9576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.3,
     "severity": "low",
-    "rank": 479
+    "rank": 479,
+    "display_name": "Sampige Layout"
   },
   {
     "zone_id": "tdr4n3",
@@ -9117,7 +9596,8 @@
     "enforcement_rate": 0.9048,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 480
+    "rank": 480,
+    "display_name": "Kariyannanapalya"
   },
   {
     "zone_id": "tdr1q7",
@@ -9136,7 +9616,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.2,
     "severity": "low",
-    "rank": 481
+    "rank": 481,
+    "display_name": "Hongasandra"
   },
   {
     "zone_id": "tdr479",
@@ -9155,7 +9636,8 @@
     "enforcement_rate": 0.8077,
     "predicted_score_6h": 3.9,
     "severity": "low",
-    "rank": 482
+    "rank": 482,
+    "display_name": "MEI Layout"
   },
   {
     "zone_id": "tdr1rv",
@@ -9174,7 +9656,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 4.3,
     "severity": "low",
-    "rank": 483
+    "rank": 483,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr4tj",
@@ -9193,7 +9676,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 21.2,
     "severity": "low",
-    "rank": 484
+    "rank": 484,
+    "display_name": "Raja Kempegowda Ward"
   },
   {
     "zone_id": "tdr3cq",
@@ -9212,7 +9696,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 5.9,
     "severity": "low",
-    "rank": 485
+    "rank": 485,
+    "display_name": "Belathur"
   },
   {
     "zone_id": "tdr4j3",
@@ -9231,7 +9716,8 @@
     "enforcement_rate": 0.85,
     "predicted_score_6h": 4.1,
     "severity": "low",
-    "rank": 486
+    "rank": 486,
+    "display_name": "Mekhri Circle"
   },
   {
     "zone_id": "tdr17x",
@@ -9250,7 +9736,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 13.5,
     "severity": "low",
-    "rank": 487
+    "rank": 487,
+    "display_name": "Mylasandra"
   },
   {
     "zone_id": "tdr1jp",
@@ -9269,7 +9756,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 8.1,
     "severity": "low",
-    "rank": 488
+    "rank": 488,
+    "display_name": "Konanakunte"
   },
   {
     "zone_id": "tdr1sv",
@@ -9288,7 +9776,8 @@
     "enforcement_rate": 0.4583,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 489
+    "rank": 489,
+    "display_name": "Kempambudhi Ward"
   },
   {
     "zone_id": "tdr1kc",
@@ -9307,7 +9796,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 4.5,
     "severity": "low",
-    "rank": 490
+    "rank": 490,
+    "display_name": "Narayana Nagara"
   },
   {
     "zone_id": "tdr1yx",
@@ -9326,7 +9816,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.7,
     "severity": "low",
-    "rank": 491
+    "rank": 491,
+    "display_name": "Kammanahalli"
   },
   {
     "zone_id": "tdr1r6",
@@ -9345,7 +9836,8 @@
     "enforcement_rate": 0.7857,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 492
+    "rank": 492,
+    "display_name": "Kudlu"
   },
   {
     "zone_id": "tdr1se",
@@ -9364,7 +9856,8 @@
     "enforcement_rate": 0.85,
     "predicted_score_6h": 7.9,
     "severity": "low",
-    "rank": 493
+    "rank": 493,
+    "display_name": "Hosakerehalli Layout"
   },
   {
     "zone_id": "tdr603",
@@ -9383,7 +9876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.9,
     "severity": "low",
-    "rank": 494
+    "rank": 494,
+    "display_name": "Medahalli"
   },
   {
     "zone_id": "tdr4jq",
@@ -9402,7 +9896,8 @@
     "enforcement_rate": 0.2381,
     "predicted_score_6h": 6.5,
     "severity": "low",
-    "rank": 495
+    "rank": 495,
+    "display_name": "Central Excise Layout"
   },
   {
     "zone_id": "tdr1m1",
@@ -9421,7 +9916,8 @@
     "enforcement_rate": 0.9474,
     "predicted_score_6h": 5.5,
     "severity": "low",
-    "rank": 496
+    "rank": 496,
+    "display_name": "Konanakunte"
   },
   {
     "zone_id": "tdr1et",
@@ -9440,7 +9936,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 12.8,
     "severity": "low",
-    "rank": 497
+    "rank": 497,
+    "display_name": "Jnana Bharathi"
   },
   {
     "zone_id": "tdr4n6",
@@ -9459,7 +9956,8 @@
     "enforcement_rate": 0.8636,
     "predicted_score_6h": 5.4,
     "severity": "low",
-    "rank": 498
+    "rank": 498,
+    "display_name": "Samadhana Nagar"
   },
   {
     "zone_id": "tdr3ce",
@@ -9478,7 +9976,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 5.4,
     "severity": "low",
-    "rank": 499
+    "rank": 499,
+    "display_name": "Channasandra"
   },
   {
     "zone_id": "tdr4ve",
@@ -9497,7 +9996,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 7.4,
     "severity": "low",
-    "rank": 500
+    "rank": 500,
+    "display_name": "Kuduregere"
   },
   {
     "zone_id": "tdr4kg",
@@ -9516,7 +10016,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 9.2,
     "severity": "low",
-    "rank": 501
+    "rank": 501,
+    "display_name": "Nanjappa Layout"
   },
   {
     "zone_id": "tdr3bd",
@@ -9535,7 +10036,8 @@
     "enforcement_rate": 0.8636,
     "predicted_score_6h": 9.2,
     "severity": "low",
-    "rank": 502
+    "rank": 502,
+    "display_name": "EPIP Zone"
   },
   {
     "zone_id": "tdr0zw",
@@ -9554,7 +10056,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 9.2,
     "severity": "low",
-    "rank": 503
+    "rank": 503,
+    "display_name": "Bommasandra"
   },
   {
     "zone_id": "tdr1g3",
@@ -9573,7 +10076,8 @@
     "enforcement_rate": 0.6154,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 504
+    "rank": 504,
+    "display_name": "Further Extension"
   },
   {
     "zone_id": "tdr4jf",
@@ -9592,7 +10096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 505
+    "rank": 505,
+    "display_name": "Varalakshmi Nagar"
   },
   {
     "zone_id": "tdr4wp",
@@ -9611,7 +10116,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 9.0,
     "severity": "low",
-    "rank": 506
+    "rank": 506,
+    "display_name": "Bharathi Nagar"
   },
   {
     "zone_id": "tdr38e",
@@ -9630,7 +10136,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 5.9,
     "severity": "low",
-    "rank": 507
+    "rank": 507,
+    "display_name": "Balagere"
   },
   {
     "zone_id": "tdr47e",
@@ -9649,7 +10156,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 5.9,
     "severity": "low",
-    "rank": 508
+    "rank": 508,
+    "display_name": "Geleyara Balaga Layout"
   },
   {
     "zone_id": "tdr45z",
@@ -9668,7 +10176,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.8,
     "severity": "low",
-    "rank": 509
+    "rank": 509,
+    "display_name": "Dasarahalli"
   },
   {
     "zone_id": "tdr1mf",
@@ -9687,7 +10196,8 @@
     "enforcement_rate": 0.9474,
     "predicted_score_6h": 3.9,
     "severity": "low",
-    "rank": 510
+    "rank": 510,
+    "display_name": "Arakere"
   },
   {
     "zone_id": "tdr1me",
@@ -9706,7 +10216,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 4.4,
     "severity": "low",
-    "rank": 511
+    "rank": 511,
+    "display_name": "Bank of Baroda Colony"
   },
   {
     "zone_id": "tdr32f",
@@ -9725,7 +10236,8 @@
     "enforcement_rate": 0.7895,
     "predicted_score_6h": 4.4,
     "severity": "low",
-    "rank": 512
+    "rank": 512,
+    "display_name": "Dommasandra"
   },
   {
     "zone_id": "tdr4k6",
@@ -9744,7 +10256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 11.5,
     "severity": "low",
-    "rank": 513
+    "rank": 513,
+    "display_name": "Vishweshwaraiah Enclave"
   },
   {
     "zone_id": "tdr4qw",
@@ -9763,7 +10276,8 @@
     "enforcement_rate": 0.88,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 514
+    "rank": 514,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr1ec",
@@ -9782,7 +10296,8 @@
     "enforcement_rate": 0.875,
     "predicted_score_6h": 4.3,
     "severity": "low",
-    "rank": 515
+    "rank": 515,
+    "display_name": "Kenchenahalli"
   },
   {
     "zone_id": "tdr17q",
@@ -9801,7 +10316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.7,
     "severity": "low",
-    "rank": 516
+    "rank": 516,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr46b",
@@ -9820,7 +10336,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 4.2,
     "severity": "low",
-    "rank": 517
+    "rank": 517,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr4ku",
@@ -9839,7 +10356,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.1,
     "severity": "low",
-    "rank": 518
+    "rank": 518,
+    "display_name": "Narasipura Layout"
   },
   {
     "zone_id": "tdr47t",
@@ -9858,7 +10376,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.2,
     "severity": "low",
-    "rank": 519
+    "rank": 519,
+    "display_name": "Chikka Banavara"
   },
   {
     "zone_id": "tdr1mh",
@@ -9877,7 +10396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.4,
     "severity": "low",
-    "rank": 520
+    "rank": 520,
+    "display_name": "Yelachenahalli"
   },
   {
     "zone_id": "tdr386",
@@ -9896,7 +10416,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 10.7,
     "severity": "low",
-    "rank": 521
+    "rank": 521,
+    "display_name": "JCR Layout"
   },
   {
     "zone_id": "tdr1m6",
@@ -9915,7 +10436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.4,
     "severity": "low",
-    "rank": 522
+    "rank": 522,
+    "display_name": "Nataraja Layout"
   },
   {
     "zone_id": "tdr1t1",
@@ -9934,7 +10456,8 @@
     "enforcement_rate": 0.7586,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 523
+    "rank": 523,
+    "display_name": "Ganesh Mandira Ward"
   },
   {
     "zone_id": "tdr38b",
@@ -9953,7 +10476,8 @@
     "enforcement_rate": 0.6316,
     "predicted_score_6h": 3.9,
     "severity": "low",
-    "rank": 524
+    "rank": 524,
+    "display_name": "Gunjur"
   },
   {
     "zone_id": "tdr1em",
@@ -9972,7 +10496,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.2,
     "severity": "low",
-    "rank": 525
+    "rank": 525,
+    "display_name": "Further Extension"
   },
   {
     "zone_id": "tdr450",
@@ -9991,7 +10516,8 @@
     "enforcement_rate": 0.45,
     "predicted_score_6h": 15.5,
     "severity": "low",
-    "rank": 526
+    "rank": 526,
+    "display_name": "Andrahalli"
   },
   {
     "zone_id": "tdr1st",
@@ -10010,7 +10536,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 527
+    "rank": 527,
+    "display_name": "Gali Anjaneya Temple"
   },
   {
     "zone_id": "tdr1e6",
@@ -10029,7 +10556,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 5.1,
     "severity": "low",
-    "rank": 528
+    "rank": 528,
+    "display_name": "Nagadevanahalli"
   },
   {
     "zone_id": "tdr17y",
@@ -10048,7 +10576,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 10.3,
     "severity": "low",
-    "rank": 529
+    "rank": 529,
+    "display_name": "BHEL Layout"
   },
   {
     "zone_id": "tdr4y6",
@@ -10067,7 +10596,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.7,
     "severity": "low",
-    "rank": 530
+    "rank": 530,
+    "display_name": "Hunasamaranahalli"
   },
   {
     "zone_id": "tdr4q8",
@@ -10086,7 +10616,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 531
+    "rank": 531,
+    "display_name": "Thanisandra"
   },
   {
     "zone_id": "tdr4qc",
@@ -10105,7 +10636,8 @@
     "enforcement_rate": 0.95,
     "predicted_score_6h": 4.3,
     "severity": "low",
-    "rank": 532
+    "rank": 532,
+    "display_name": "Evergreen Layout"
   },
   {
     "zone_id": "tdr4yw",
@@ -10124,7 +10656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 14.8,
     "severity": "low",
-    "rank": 533
+    "rank": 533,
+    "display_name": "Chikkajala"
   },
   {
     "zone_id": "tdr4r4",
@@ -10143,7 +10676,8 @@
     "enforcement_rate": 0.4167,
     "predicted_score_6h": 9.8,
     "severity": "low",
-    "rank": 534
+    "rank": 534,
+    "display_name": "K Narayanapura"
   },
   {
     "zone_id": "tdr17p",
@@ -10162,7 +10696,8 @@
     "enforcement_rate": 0.84,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 535
+    "rank": 535,
+    "display_name": "Kengal Hanumanthaiah West"
   },
   {
     "zone_id": "tdr1np",
@@ -10181,7 +10716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 536
+    "rank": 536,
+    "display_name": "Yelenahalli"
   },
   {
     "zone_id": "tdr4n9",
@@ -10200,7 +10736,8 @@
     "enforcement_rate": 0.875,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 537
+    "rank": 537,
+    "display_name": "Kalyan Nagar"
   },
   {
     "zone_id": "tdr3bg",
@@ -10219,7 +10756,8 @@
     "enforcement_rate": 0.8235,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 538
+    "rank": 538,
+    "display_name": "Hoodi"
   },
   {
     "zone_id": "tdr1z5",
@@ -10238,7 +10776,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.7,
     "severity": "low",
-    "rank": 539
+    "rank": 539,
+    "display_name": "Bhoomi Reddy Colony"
   },
   {
     "zone_id": "tdr1p4",
@@ -10257,7 +10796,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 14.2,
     "severity": "low",
-    "rank": 540
+    "rank": 540,
+    "display_name": "Doddathoguru"
   },
   {
     "zone_id": "tdr1pf",
@@ -10276,7 +10816,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.3,
     "severity": "low",
-    "rank": 541
+    "rank": 541,
+    "display_name": "Gattahalli"
   },
   {
     "zone_id": "tdr38m",
@@ -10295,7 +10836,8 @@
     "enforcement_rate": 0.8824,
     "predicted_score_6h": 3.1,
     "severity": "low",
-    "rank": 542
+    "rank": 542,
+    "display_name": "GJM Sai Garden Layout"
   },
   {
     "zone_id": "tdr1zk",
@@ -10314,7 +10856,8 @@
     "enforcement_rate": 0.9615,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 543
+    "rank": 543,
+    "display_name": "Nagavarapalaya"
   },
   {
     "zone_id": "tdr1gg",
@@ -10333,7 +10876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 13.6,
     "severity": "low",
-    "rank": 544
+    "rank": 544,
+    "display_name": "Malagala"
   },
   {
     "zone_id": "tdr61d",
@@ -10352,7 +10896,8 @@
     "enforcement_rate": 0.9167,
     "predicted_score_6h": 4.5,
     "severity": "low",
-    "rank": 545
+    "rank": 545,
+    "display_name": "Seegehalli"
   },
   {
     "zone_id": "tdr631",
@@ -10371,7 +10916,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.6,
     "severity": "low",
-    "rank": 546
+    "rank": 546,
+    "display_name": "Mandur"
   },
   {
     "zone_id": "tdr1jt",
@@ -10390,7 +10936,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.6,
     "severity": "low",
-    "rank": 547
+    "rank": 547,
+    "display_name": "Kalena Agrahara"
   },
   {
     "zone_id": "tdr1ph",
@@ -10409,7 +10956,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 548
+    "rank": 548,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr1rq",
@@ -10428,7 +10976,8 @@
     "enforcement_rate": 0.96,
     "predicted_score_6h": 3.5,
     "severity": "low",
-    "rank": 549
+    "rank": 549,
+    "display_name": "Ambalipura"
   },
   {
     "zone_id": "tdr1xx",
@@ -10447,7 +10996,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.9,
     "severity": "low",
-    "rank": 550
+    "rank": 550,
+    "display_name": "Ramesh Nagar"
   },
   {
     "zone_id": "tdr5nb",
@@ -10466,7 +11016,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.0,
     "severity": "low",
-    "rank": 551
+    "rank": 551,
+    "display_name": "Minakunte Hosuru"
   },
   {
     "zone_id": "tdr4p7",
@@ -10485,7 +11036,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 552
+    "rank": 552,
+    "display_name": "Kalkere"
   },
   {
     "zone_id": "tdr45s",
@@ -10504,7 +11056,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.0,
     "severity": "low",
-    "rank": 553
+    "rank": 553,
+    "display_name": "HMT Layout"
   },
   {
     "zone_id": "tdr1wq",
@@ -10523,7 +11076,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 554
+    "rank": 554,
+    "display_name": "Viveknagar"
   },
   {
     "zone_id": "tdr1gt",
@@ -10542,7 +11096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 11.9,
     "severity": "low",
-    "rank": 555
+    "rank": 555,
+    "display_name": "Srigandada Kaval"
   },
   {
     "zone_id": "tdr1rz",
@@ -10561,7 +11116,8 @@
     "enforcement_rate": 0.2727,
     "predicted_score_6h": 5.9,
     "severity": "low",
-    "rank": 556
+    "rank": 556,
+    "display_name": "Doddakannalli"
   },
   {
     "zone_id": "tdr1ym",
@@ -10580,7 +11136,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.7,
     "severity": "low",
-    "rank": 557
+    "rank": 557,
+    "display_name": "Doddigunta"
   },
   {
     "zone_id": "tdr1p3",
@@ -10599,7 +11156,8 @@
     "enforcement_rate": 0.9375,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 558
+    "rank": 558,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr4n5",
@@ -10618,7 +11176,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 7.6,
     "severity": "low",
-    "rank": 559
+    "rank": 559,
+    "display_name": "Shampura"
   },
   {
     "zone_id": "tdr1kg",
@@ -10637,7 +11196,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 5.6,
     "severity": "low",
-    "rank": 560
+    "rank": 560,
+    "display_name": "Vasanthapura"
   },
   {
     "zone_id": "tdr701",
@@ -10656,7 +11216,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 561
+    "rank": 561,
+    "display_name": "Mylanahalli"
   },
   {
     "zone_id": "tdr4p1",
@@ -10675,7 +11236,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 562
+    "rank": 562,
+    "display_name": "Vijaya Bank Colony"
   },
   {
     "zone_id": "tdr4y3",
@@ -10694,7 +11256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.3,
     "severity": "low",
-    "rank": 563
+    "rank": 563,
+    "display_name": "Hunasamaranahalli"
   },
   {
     "zone_id": "tdr3ck",
@@ -10713,7 +11276,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 10.8,
     "severity": "low",
-    "rank": 564
+    "rank": 564,
+    "display_name": "Maithri Layout"
   },
   {
     "zone_id": "tdr4q3",
@@ -10732,7 +11296,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.1,
     "severity": "low",
-    "rank": 565
+    "rank": 565,
+    "display_name": "Arkavathy Layout 11th Block"
   },
   {
     "zone_id": "tdr1vz",
@@ -10751,7 +11316,8 @@
     "enforcement_rate": 0.9,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 566
+    "rank": 566,
+    "display_name": "Jayamahal Extension"
   },
   {
     "zone_id": "tdr1g6",
@@ -10770,7 +11336,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.3,
     "severity": "low",
-    "rank": 567
+    "rank": 567,
+    "display_name": "Further Extension"
   },
   {
     "zone_id": "tdr3bs",
@@ -10789,7 +11356,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.2,
     "severity": "low",
-    "rank": 568
+    "rank": 568,
+    "display_name": "Hoodi"
   },
   {
     "zone_id": "tdr4jy",
@@ -10808,7 +11376,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 569
+    "rank": 569,
+    "display_name": "Kempapura"
   },
   {
     "zone_id": "tdr613",
@@ -10827,7 +11396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 570
+    "rank": 570,
+    "display_name": "Seegehalli"
   },
   {
     "zone_id": "tdr1sq",
@@ -10846,7 +11416,8 @@
     "enforcement_rate": 0.9333,
     "predicted_score_6h": 2.9,
     "severity": "low",
-    "rank": 571
+    "rank": 571,
+    "display_name": "Attiguppe Circle"
   },
   {
     "zone_id": "tdr1q2",
@@ -10865,7 +11436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.1,
     "severity": "low",
-    "rank": 572
+    "rank": 572,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr32n",
@@ -10884,7 +11456,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 573
+    "rank": 573,
+    "display_name": "Carmelaram"
   },
   {
     "zone_id": "tdr4tg",
@@ -10903,7 +11476,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.7,
     "severity": "low",
-    "rank": 574
+    "rank": 574,
+    "display_name": "Venkatala"
   },
   {
     "zone_id": "tdr4q5",
@@ -10922,7 +11496,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 10.0,
     "severity": "low",
-    "rank": 575
+    "rank": 575,
+    "display_name": "Arkavathy Layout 8th Block"
   },
   {
     "zone_id": "tdr1xd",
@@ -10941,7 +11516,8 @@
     "enforcement_rate": 0.9444,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 576
+    "rank": 576,
+    "display_name": "Bellanduru"
   },
   {
     "zone_id": "tdr4q6",
@@ -10960,7 +11536,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 2.5,
     "severity": "low",
-    "rank": 577
+    "rank": 577,
+    "display_name": "Jakkur"
   },
   {
     "zone_id": "tdr1r2",
@@ -10979,7 +11556,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 578
+    "rank": 578,
+    "display_name": "Sir M. Visvesvaraya Layout"
   },
   {
     "zone_id": "tdr4nr",
@@ -10998,7 +11576,8 @@
     "enforcement_rate": 0.375,
     "predicted_score_6h": 4.9,
     "severity": "low",
-    "rank": 579
+    "rank": 579,
+    "display_name": "Thanisandra"
   },
   {
     "zone_id": "tdr5pf",
@@ -11017,7 +11596,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 580
+    "rank": 580,
+    "display_name": "Mylanahalli"
   },
   {
     "zone_id": "tdr4q2",
@@ -11036,7 +11616,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 581
+    "rank": 581,
+    "display_name": "Kempapura"
   },
   {
     "zone_id": "tdr1md",
@@ -11055,7 +11636,8 @@
     "enforcement_rate": 0.8462,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 582
+    "rank": 582,
+    "display_name": "Mico Arekere Layout 1st Stage"
   },
   {
     "zone_id": "tdr4nz",
@@ -11074,7 +11656,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 583
+    "rank": 583,
+    "display_name": "Arkavathy Layout 18th Block"
   },
   {
     "zone_id": "tdr1xw",
@@ -11093,7 +11676,8 @@
     "enforcement_rate": 0.9,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 584
+    "rank": 584,
+    "display_name": "Ramesh Nagar"
   },
   {
     "zone_id": "tdr1zp",
@@ -11112,7 +11696,8 @@
     "enforcement_rate": 0.9412,
     "predicted_score_6h": 3.1,
     "severity": "low",
-    "rank": 585
+    "rank": 585,
+    "display_name": "Doctors Layout"
   },
   {
     "zone_id": "tdr4nb",
@@ -11131,7 +11716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.0,
     "severity": "low",
-    "rank": 586
+    "rank": 586,
+    "display_name": "Subbayanapalya"
   },
   {
     "zone_id": "tdr1x3",
@@ -11150,7 +11736,8 @@
     "enforcement_rate": 0.9524,
     "predicted_score_6h": 8.8,
     "severity": "low",
-    "rank": 587
+    "rank": 587,
+    "display_name": "Green Glen Layout"
   },
   {
     "zone_id": "tdr17r",
@@ -11169,7 +11756,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 17.5,
     "severity": "low",
-    "rank": 588
+    "rank": 588,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr1e0",
@@ -11188,7 +11776,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.3,
     "severity": "low",
-    "rank": 589
+    "rank": 589,
+    "display_name": "Nagadevanahalli"
   },
   {
     "zone_id": "tdr1xj",
@@ -11207,7 +11796,8 @@
     "enforcement_rate": 0.9231,
     "predicted_score_6h": 5.7,
     "severity": "low",
-    "rank": 590
+    "rank": 590,
+    "display_name": "Vibhootipura"
   },
   {
     "zone_id": "tdr1ws",
@@ -11226,7 +11816,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.7,
     "severity": "low",
-    "rank": 591
+    "rank": 591,
+    "display_name": "Agaram"
   },
   {
     "zone_id": "tdr1ky",
@@ -11245,7 +11836,8 @@
     "enforcement_rate": 0.6923,
     "predicted_score_6h": 3.4,
     "severity": "low",
-    "rank": 592
+    "rank": 592,
+    "display_name": "Minaz Nagara"
   },
   {
     "zone_id": "tdr4pf",
@@ -11264,7 +11856,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 5.7,
     "severity": "low",
-    "rank": 593
+    "rank": 593,
+    "display_name": "Anandapura"
   },
   {
     "zone_id": "tdr1sc",
@@ -11283,7 +11876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 16.8,
     "severity": "low",
-    "rank": 594
+    "rank": 594,
+    "display_name": "Katriguppe"
   },
   {
     "zone_id": "tdr1pj",
@@ -11302,7 +11896,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 595
+    "rank": 595,
+    "display_name": "Chikkathoguru"
   },
   {
     "zone_id": "tdr47d",
@@ -11321,7 +11916,8 @@
     "enforcement_rate": 0.7143,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 596
+    "rank": 596,
+    "display_name": "Kirloskar Layout"
   },
   {
     "zone_id": "tdr4m5",
@@ -11340,7 +11936,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 4.1,
     "severity": "low",
-    "rank": 597
+    "rank": 597,
+    "display_name": "Thindlu"
   },
   {
     "zone_id": "tdr4p5",
@@ -11359,7 +11956,8 @@
     "enforcement_rate": 0.8889,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 598
+    "rank": 598,
+    "display_name": "Hoysala Nagara East"
   },
   {
     "zone_id": "tdr1yz",
@@ -11378,7 +11976,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.1,
     "severity": "low",
-    "rank": 599
+    "rank": 599,
+    "display_name": "Subbayanapalya"
   },
   {
     "zone_id": "tdr4hv",
@@ -11397,7 +11996,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.1,
     "severity": "low",
-    "rank": 600
+    "rank": 600,
+    "display_name": "Mathikere"
   },
   {
     "zone_id": "tdr45u",
@@ -11416,7 +12016,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 601
+    "rank": 601,
+    "display_name": "Nelagadaranahalli"
   },
   {
     "zone_id": "tdr1ej",
@@ -11435,7 +12036,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 602
+    "rank": 602,
+    "display_name": "3rd Block"
   },
   {
     "zone_id": "tdr4nc",
@@ -11454,7 +12056,8 @@
     "enforcement_rate": 0.5714,
     "predicted_score_6h": 3.9,
     "severity": "low",
-    "rank": 603
+    "rank": 603,
+    "display_name": "Kalyanagar"
   },
   {
     "zone_id": "tdr1jz",
@@ -11473,7 +12076,8 @@
     "enforcement_rate": 0.3333,
     "predicted_score_6h": 5.1,
     "severity": "low",
-    "rank": 604
+    "rank": 604,
+    "display_name": "Hulimavu"
   },
   {
     "zone_id": "tdr47n",
@@ -11492,7 +12096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 15.2,
     "severity": "low",
-    "rank": 605
+    "rank": 605,
+    "display_name": "Achyutha Nagara"
   },
   {
     "zone_id": "tdr4mr",
@@ -11511,7 +12116,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.1,
     "severity": "low",
-    "rank": 606
+    "rank": 606,
+    "display_name": "LIG 3rd Stage"
   },
   {
     "zone_id": "tdr1wn",
@@ -11530,7 +12136,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.8,
     "severity": "low",
-    "rank": 607
+    "rank": 607,
+    "display_name": "Neelasandra"
   },
   {
     "zone_id": "tdr1e9",
@@ -11549,7 +12156,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 15.0,
     "severity": "low",
-    "rank": 608
+    "rank": 608,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr1hm",
@@ -11568,7 +12176,8 @@
     "enforcement_rate": 0.7778,
     "predicted_score_6h": 4.9,
     "severity": "low",
-    "rank": 609
+    "rank": 609,
+    "display_name": "Talagattapura"
   },
   {
     "zone_id": "tdr3c8",
@@ -11587,7 +12196,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.0,
     "severity": "low",
-    "rank": 610
+    "rank": 610,
+    "display_name": "Whitefield"
   },
   {
     "zone_id": "tdr630",
@@ -11606,7 +12216,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 14.4,
     "severity": "low",
-    "rank": 611
+    "rank": 611,
+    "display_name": "Mandur"
   },
   {
     "zone_id": "tdr4j1",
@@ -11625,7 +12236,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 612
+    "rank": 612,
+    "display_name": "Sadashivanagar"
   },
   {
     "zone_id": "tdr4t3",
@@ -11644,7 +12256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 613
+    "rank": 613,
+    "display_name": "Sector B"
   },
   {
     "zone_id": "tdr1ty",
@@ -11663,7 +12276,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 614
+    "rank": 614,
+    "display_name": "Nanjappa Circle"
   },
   {
     "zone_id": "tdr4qs",
@@ -11682,7 +12296,8 @@
     "enforcement_rate": 0.6,
     "predicted_score_6h": 4.7,
     "severity": "low",
-    "rank": 615
+    "rank": 615,
+    "display_name": "Sampigehalli"
   },
   {
     "zone_id": "tdr1u1",
@@ -11701,7 +12316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 616
+    "rank": 616,
+    "display_name": "5th Main Chamrajpet  Junction"
   },
   {
     "zone_id": "tdr3c3",
@@ -11720,7 +12336,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.4,
     "severity": "low",
-    "rank": 617
+    "rank": 617,
+    "display_name": "Sai Layout"
   },
   {
     "zone_id": "tdr4hq",
@@ -11739,7 +12356,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 4.5,
     "severity": "low",
-    "rank": 618
+    "rank": 618,
+    "display_name": "Jalahalli"
   },
   {
     "zone_id": "tdr1gh",
@@ -11758,7 +12376,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.4,
     "severity": "low",
-    "rank": 619
+    "rank": 619,
+    "display_name": "Nada prabhu Kempegowda Nagara"
   },
   {
     "zone_id": "tdr3bc",
@@ -11777,7 +12396,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 620
+    "rank": 620,
+    "display_name": "S.M Krishna Ward"
   },
   {
     "zone_id": "tdr1gn",
@@ -11796,7 +12416,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.7,
     "severity": "low",
-    "rank": 621
+    "rank": 621,
+    "display_name": "Syndicate Bank Layout"
   },
   {
     "zone_id": "tdr1ru",
@@ -11815,7 +12436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.6,
     "severity": "low",
-    "rank": 622
+    "rank": 622,
+    "display_name": "Halanayakanahalli"
   },
   {
     "zone_id": "tdr45t",
@@ -11834,7 +12456,8 @@
     "enforcement_rate": 0.8571,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 623
+    "rank": 623,
+    "display_name": "HMT Layout"
   },
   {
     "zone_id": "tdr1pc",
@@ -11853,7 +12476,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 624
+    "rank": 624,
+    "display_name": "Gattahalli"
   },
   {
     "zone_id": "tdr1eb",
@@ -11872,7 +12496,8 @@
     "enforcement_rate": 0.9,
     "predicted_score_6h": 2.6,
     "severity": "low",
-    "rank": 625
+    "rank": 625,
+    "display_name": "Halagevaderahalli"
   },
   {
     "zone_id": "tdr0zu",
@@ -11891,7 +12516,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 626
+    "rank": 626,
+    "display_name": "Bommasandra"
   },
   {
     "zone_id": "tdr1p6",
@@ -11910,7 +12536,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 2.1,
     "severity": "low",
-    "rank": 627
+    "rank": 627,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr1e2",
@@ -11929,7 +12556,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 628
+    "rank": 628,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr1e8",
@@ -11948,7 +12576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.1,
     "severity": "low",
-    "rank": 629
+    "rank": 629,
+    "display_name": "BDA Jnanabharathi Residential Enclave"
   },
   {
     "zone_id": "tdr1er",
@@ -11967,7 +12596,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 12.5,
     "severity": "low",
-    "rank": 630
+    "rank": 630,
+    "display_name": "Further Extension"
   },
   {
     "zone_id": "tdr32z",
@@ -11986,7 +12616,8 @@
     "enforcement_rate": 0.125,
     "predicted_score_6h": 1.2,
     "severity": "low",
-    "rank": 631
+    "rank": 631,
+    "display_name": "Gunjur"
   },
   {
     "zone_id": "tdr1mu",
@@ -12005,7 +12636,8 @@
     "enforcement_rate": 0.9091,
     "predicted_score_6h": 2.1,
     "severity": "low",
-    "rank": 632
+    "rank": 632,
+    "display_name": "Bileka Halli Junction"
   },
   {
     "zone_id": "tdr4ms",
@@ -12024,7 +12656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.1,
     "severity": "low",
-    "rank": 633
+    "rank": 633,
+    "display_name": "Yashoda Nagar"
   },
   {
     "zone_id": "tdr167",
@@ -12043,7 +12676,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 634
+    "rank": 634,
+    "display_name": "Challaghatta"
   },
   {
     "zone_id": "tdr4k4",
@@ -12062,7 +12696,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.9,
     "severity": "low",
-    "rank": 635
+    "rank": 635,
+    "display_name": "Vishweshwaraiah Enclave"
   },
   {
     "zone_id": "tdr1q1",
@@ -12081,7 +12716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.3,
     "severity": "low",
-    "rank": 636
+    "rank": 636,
+    "display_name": "Arakere"
   },
   {
     "zone_id": "tdr1s8",
@@ -12100,7 +12736,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.2,
     "severity": "low",
-    "rank": 637
+    "rank": 637,
+    "display_name": "Katriguppe Junction"
   },
   {
     "zone_id": "tdr5n8",
@@ -12119,7 +12756,8 @@
     "enforcement_rate": 0.7143,
     "predicted_score_6h": 5.6,
     "severity": "low",
-    "rank": 638
+    "rank": 638,
+    "display_name": "Tarabanahalli"
   },
   {
     "zone_id": "tdr1qj",
@@ -12138,7 +12776,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 5.6,
     "severity": "low",
-    "rank": 639
+    "rank": 639,
+    "display_name": "Madeena Nagar"
   },
   {
     "zone_id": "tdr4n1",
@@ -12157,7 +12796,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 10.8,
     "severity": "low",
-    "rank": 640
+    "rank": 640,
+    "display_name": "Shakthi Nagar"
   },
   {
     "zone_id": "tdr1z9",
@@ -12176,7 +12816,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 2.2,
     "severity": "low",
-    "rank": 641
+    "rank": 641,
+    "display_name": "Maruthi Nagar"
   },
   {
     "zone_id": "tdr1kv",
@@ -12195,7 +12836,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 642
+    "rank": 642,
+    "display_name": "Kumaraswamy Layout 2nd Stage"
   },
   {
     "zone_id": "tdr61p",
@@ -12214,7 +12856,8 @@
     "enforcement_rate": 0.8,
     "predicted_score_6h": 3.5,
     "severity": "low",
-    "rank": 643
+    "rank": 643,
+    "display_name": "Konadasapura"
   },
   {
     "zone_id": "tdr30h",
@@ -12233,7 +12876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.2,
     "severity": "low",
-    "rank": 644
+    "rank": 644,
+    "display_name": "Gattahalli"
   },
   {
     "zone_id": "tdr1wv",
@@ -12252,7 +12896,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 3.3,
     "severity": "low",
-    "rank": 645
+    "rank": 645,
+    "display_name": "Yamalur"
   },
   {
     "zone_id": "tdr380",
@@ -12271,7 +12916,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 3.3,
     "severity": "low",
-    "rank": 646
+    "rank": 646,
+    "display_name": "Panathur"
   },
   {
     "zone_id": "tdr4nv",
@@ -12290,7 +12936,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 647
+    "rank": 647,
+    "display_name": "Nagavara"
   },
   {
     "zone_id": "tdr4w9",
@@ -12309,7 +12956,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 648
+    "rank": 648,
+    "display_name": "Fakir Colony"
   },
   {
     "zone_id": "tdr17v",
@@ -12328,7 +12976,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 649
+    "rank": 649,
+    "display_name": "Concorde Layout"
   },
   {
     "zone_id": "tdr61x",
@@ -12347,7 +12996,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 9.6,
     "severity": "low",
-    "rank": 650
+    "rank": 650,
+    "display_name": "Kattamanallur"
   },
   {
     "zone_id": "tdr4ng",
@@ -12366,7 +13016,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 651
+    "rank": 651,
+    "display_name": "Chelekere"
   },
   {
     "zone_id": "tdr1q6",
@@ -12385,7 +13036,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.5,
     "severity": "low",
-    "rank": 652
+    "rank": 652,
+    "display_name": "Devarachikkanahalli"
   },
   {
     "zone_id": "tdr1jw",
@@ -12404,7 +13056,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.9,
     "severity": "low",
-    "rank": 653
+    "rank": 653,
+    "display_name": "Doddakammanahalli"
   },
   {
     "zone_id": "tdr1xs",
@@ -12423,7 +13076,8 @@
     "enforcement_rate": 0.6,
     "predicted_score_6h": 2.2,
     "severity": "low",
-    "rank": 654
+    "rank": 654,
+    "display_name": "Yamalur"
   },
   {
     "zone_id": "tdr1sd",
@@ -12442,7 +13096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.4,
     "severity": "low",
-    "rank": 655
+    "rank": 655,
+    "display_name": "Itmadu Junction"
   },
   {
     "zone_id": "tdr162",
@@ -12461,7 +13116,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 2.9,
     "severity": "low",
-    "rank": 656
+    "rank": 656,
+    "display_name": "Gerupalya"
   },
   {
     "zone_id": "tdr1pt",
@@ -12480,7 +13136,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 657
+    "rank": 657,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr4mm",
@@ -12499,7 +13156,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 8.0,
     "severity": "low",
-    "rank": 658
+    "rank": 658,
+    "display_name": "Nyayanga Badavane"
   },
   {
     "zone_id": "tdr3bn",
@@ -12518,7 +13176,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 659
+    "rank": 659,
+    "display_name": "Devasandra Industrial Estate"
   },
   {
     "zone_id": "tdr16u",
@@ -12537,7 +13196,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 660
+    "rank": 660,
+    "display_name": "Hemmigepura"
   },
   {
     "zone_id": "tdr1nv",
@@ -12556,7 +13216,8 @@
     "enforcement_rate": 0.8333,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 661
+    "rank": 661,
+    "display_name": "Chikkathoguru"
   },
   {
     "zone_id": "tdr6bp",
@@ -12575,7 +13236,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 662
+    "rank": 662,
+    "display_name": "Mylanahalli"
   },
   {
     "zone_id": "tdr6bk",
@@ -12594,7 +13256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.6,
     "severity": "low",
-    "rank": 663
+    "rank": 663,
+    "display_name": "Singahalli"
   },
   {
     "zone_id": "tdr1su",
@@ -12613,7 +13276,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.5,
     "severity": "low",
-    "rank": 664
+    "rank": 664,
+    "display_name": "Hanumanthanagar"
   },
   {
     "zone_id": "tdr1k0",
@@ -12632,7 +13296,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 7.5,
     "severity": "low",
-    "rank": 665
+    "rank": 665,
+    "display_name": "Ganigarapalya"
   },
   {
     "zone_id": "tdr1zs",
@@ -12651,7 +13316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.8,
     "severity": "low",
-    "rank": 666
+    "rank": 666,
+    "display_name": "MEG Layout"
   },
   {
     "zone_id": "tdr4w5",
@@ -12670,7 +13336,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 667
+    "rank": 667,
+    "display_name": "Venkatala"
   },
   {
     "zone_id": "tdr1fk",
@@ -12689,7 +13356,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 668
+    "rank": 668,
+    "display_name": "Tavarekere"
   },
   {
     "zone_id": "tdr1z7",
@@ -12708,7 +13376,8 @@
     "enforcement_rate": 0.6667,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 669
+    "rank": 669,
+    "display_name": "Kaggadasapura"
   },
   {
     "zone_id": "tdr1zn",
@@ -12727,7 +13396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 670
+    "rank": 670,
+    "display_name": "Kasturi Nagar 2nd Stage"
   },
   {
     "zone_id": "tdr1mk",
@@ -12746,7 +13416,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.4,
     "severity": "low",
-    "rank": 671
+    "rank": 671,
+    "display_name": "15th Cross, 35th Main, JP Nagar"
   },
   {
     "zone_id": "tdr1jd",
@@ -12765,7 +13436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.3,
     "severity": "low",
-    "rank": 672
+    "rank": 672,
+    "display_name": "Doddakammanahalli"
   },
   {
     "zone_id": "tdr1db",
@@ -12784,7 +13456,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 673
+    "rank": 673,
+    "display_name": "2nd Block"
   },
   {
     "zone_id": "tdr62f",
@@ -12803,7 +13476,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 674
+    "rank": 674,
+    "display_name": "Bommenahalli"
   },
   {
     "zone_id": "tdr1jq",
@@ -12822,7 +13496,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.1,
     "severity": "low",
-    "rank": 675
+    "rank": 675,
+    "display_name": "Kothnur"
   },
   {
     "zone_id": "tdr1ks",
@@ -12841,7 +13516,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.1,
     "severity": "low",
-    "rank": 676
+    "rank": 676,
+    "display_name": "Uttarahalli"
   },
   {
     "zone_id": "tdr1qh",
@@ -12860,7 +13536,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 677
+    "rank": 677,
+    "display_name": "Vakil Marina Layout"
   },
   {
     "zone_id": "tdr60d",
@@ -12879,7 +13556,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 678
+    "rank": 678,
+    "display_name": "Medahalli"
   },
   {
     "zone_id": "tdr617",
@@ -12898,7 +13576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 679
+    "rank": 679,
+    "display_name": "Doddabanahalli"
   },
   {
     "zone_id": "tdr4w8",
@@ -12917,7 +13596,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 680
+    "rank": 680,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr4yk",
@@ -12936,7 +13616,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 681
+    "rank": 681,
+    "display_name": "Vidyanagar"
   },
   {
     "zone_id": "tdr4y1",
@@ -12955,7 +13636,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 682
+    "rank": 682,
+    "display_name": "Hunasamaranahalli"
   },
   {
     "zone_id": "tdr4qx",
@@ -12974,7 +13656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 683
+    "rank": 683,
+    "display_name": "Sampigehalli"
   },
   {
     "zone_id": "tdr4m0",
@@ -12993,7 +13676,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 684
+    "rank": 684,
+    "display_name": "Kodigehalli"
   },
   {
     "zone_id": "tdr1u0",
@@ -13012,7 +13696,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 6.4,
     "severity": "low",
-    "rank": 685
+    "rank": 685,
+    "display_name": "Anubhava Nagara"
   },
   {
     "zone_id": "tdr4mt",
@@ -13031,7 +13716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.1,
     "severity": "low",
-    "rank": 686
+    "rank": 686,
+    "display_name": "Yashoda Nagar"
   },
   {
     "zone_id": "tdr3bf",
@@ -13050,7 +13736,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 687
+    "rank": 687,
+    "display_name": "Pattanduru Agrahara"
   },
   {
     "zone_id": "tdr39k",
@@ -13069,7 +13756,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 688
+    "rank": 688,
+    "display_name": "Varthur"
   },
   {
     "zone_id": "tdr4y4",
@@ -13088,7 +13776,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 689
+    "rank": 689,
+    "display_name": "Vidyanagar"
   },
   {
     "zone_id": "tdr1r0",
@@ -13107,7 +13796,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 690
+    "rank": 690,
+    "display_name": "Naganathapura"
   },
   {
     "zone_id": "tdr3bq",
@@ -13126,7 +13816,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.7,
     "severity": "low",
-    "rank": 691
+    "rank": 691,
+    "display_name": "Ayyappanagara"
   },
   {
     "zone_id": "tdr4nj",
@@ -13145,7 +13836,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.7,
     "severity": "low",
-    "rank": 692
+    "rank": 692,
+    "display_name": "Virannapalya"
   },
   {
     "zone_id": "tdr4sb",
@@ -13164,7 +13856,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.6,
     "severity": "low",
-    "rank": 693
+    "rank": 693,
+    "display_name": "Attur"
   },
   {
     "zone_id": "tdr1jn",
@@ -13183,7 +13876,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 694
+    "rank": 694,
+    "display_name": "Brookes Haven Layout"
   },
   {
     "zone_id": "tdr47b",
@@ -13202,7 +13896,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 695
+    "rank": 695,
+    "display_name": "Dasarahalli"
   },
   {
     "zone_id": "tdr1kr",
@@ -13221,7 +13916,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 696
+    "rank": 696,
+    "display_name": "Ittamadu"
   },
   {
     "zone_id": "tdr47r",
@@ -13240,7 +13936,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 697
+    "rank": 697,
+    "display_name": "Achyutha Nagara"
   },
   {
     "zone_id": "tdr1g7",
@@ -13259,7 +13956,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 698
+    "rank": 698,
+    "display_name": "Herohalli"
   },
   {
     "zone_id": "tdr4q9",
@@ -13278,7 +13976,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 5.0,
     "severity": "low",
-    "rank": 699
+    "rank": 699,
+    "display_name": "Arkavathy Layout 11th Block"
   },
   {
     "zone_id": "tdr17z",
@@ -13297,7 +13996,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 700
+    "rank": 700,
+    "display_name": "Halagevaderahalli"
   },
   {
     "zone_id": "tdr465",
@@ -13316,7 +14016,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 701
+    "rank": 701,
+    "display_name": "Adakamaranahalli"
   },
   {
     "zone_id": "tdr1r1",
@@ -13335,7 +14036,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 702
+    "rank": 702,
+    "display_name": "Kudlu"
   },
   {
     "zone_id": "tdr4vv",
@@ -13354,7 +14056,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 703
+    "rank": 703,
+    "display_name": "Betta Halasuru"
   },
   {
     "zone_id": "tdr3b9",
@@ -13373,7 +14076,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 704
+    "rank": 704,
+    "display_name": "Kundalahalli"
   },
   {
     "zone_id": "tdr1ur",
@@ -13392,7 +14096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 705
+    "rank": 705,
+    "display_name": "Mahalakshmi Layout"
   },
   {
     "zone_id": "tdr45f",
@@ -13411,7 +14116,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 706
+    "rank": 706,
+    "display_name": "Parvathi Nagar"
   },
   {
     "zone_id": "tdr17j",
@@ -13430,7 +14136,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.8,
     "severity": "low",
-    "rank": 707
+    "rank": 707,
+    "display_name": "Hemmigepura"
   },
   {
     "zone_id": "tdr4tn",
@@ -13449,7 +14156,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 708
+    "rank": 708,
+    "display_name": "Raja Kempegowda Ward"
   },
   {
     "zone_id": "tdr4ky",
@@ -13468,7 +14176,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 709
+    "rank": 709,
+    "display_name": "AMS Layout"
   },
   {
     "zone_id": "tdr394",
@@ -13487,7 +14196,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.2,
     "severity": "low",
-    "rank": 710
+    "rank": 710,
+    "display_name": "Gunjur"
   },
   {
     "zone_id": "tdr4t6",
@@ -13506,7 +14216,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 711
+    "rank": 711,
+    "display_name": "Puttenahalli"
   },
   {
     "zone_id": "tdr1s4",
@@ -13525,7 +14236,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 712
+    "rank": 712,
+    "display_name": "Bangarappa Nagara"
   },
   {
     "zone_id": "tdr16m",
@@ -13544,7 +14256,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 713
+    "rank": 713,
+    "display_name": "Challaghatta"
   },
   {
     "zone_id": "tdr47q",
@@ -13563,7 +14276,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 714
+    "rank": 714,
+    "display_name": "Achyutha Nagara"
   },
   {
     "zone_id": "tdr1gr",
@@ -13582,7 +14296,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.0,
     "severity": "low",
-    "rank": 715
+    "rank": 715,
+    "display_name": "Syndicate Bank Layout"
   },
   {
     "zone_id": "tdr1gx",
@@ -13601,7 +14316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.0,
     "severity": "low",
-    "rank": 716
+    "rank": 716,
+    "display_name": "Hegganahalli"
   },
   {
     "zone_id": "tdr1ww",
@@ -13620,7 +14336,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.0,
     "severity": "low",
-    "rank": 717
+    "rank": 717,
+    "display_name": "Domlur Water Tank"
   },
   {
     "zone_id": "tdr2b4",
@@ -13639,7 +14356,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 4.0,
     "severity": "low",
-    "rank": 718
+    "rank": 718,
+    "display_name": "Chandapura"
   },
   {
     "zone_id": "tdr4r5",
@@ -13658,7 +14376,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.0,
     "severity": "low",
-    "rank": 719
+    "rank": 719,
+    "display_name": "Sri Krishna Nagar"
   },
   {
     "zone_id": "tdr4mf",
@@ -13677,7 +14396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.8,
     "severity": "low",
-    "rank": 720
+    "rank": 720,
+    "display_name": "Jakkur Layout"
   },
   {
     "zone_id": "tdr1nr",
@@ -13696,7 +14416,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.8,
     "severity": "low",
-    "rank": 721
+    "rank": 721,
+    "display_name": "Beguru"
   },
   {
     "zone_id": "tdr3b5",
@@ -13715,7 +14436,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.6,
     "severity": "low",
-    "rank": 722
+    "rank": 722,
+    "display_name": "Mahadevapura"
   },
   {
     "zone_id": "tdr1jr",
@@ -13734,7 +14456,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 723
+    "rank": 723,
+    "display_name": "Krishna Nagar"
   },
   {
     "zone_id": "tdr1m7",
@@ -13753,7 +14476,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 724
+    "rank": 724,
+    "display_name": "Jagruthi Colony"
   },
   {
     "zone_id": "tdr1kb",
@@ -13772,7 +14496,8 @@
     "enforcement_rate": 0.75,
     "predicted_score_6h": 1.1,
     "severity": "low",
-    "rank": 725
+    "rank": 725,
+    "display_name": "MKS Layout"
   },
   {
     "zone_id": "tdr4mc",
@@ -13791,7 +14516,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 726
+    "rank": 726,
+    "display_name": "Amruthnagar"
   },
   {
     "zone_id": "tdr30j",
@@ -13810,7 +14536,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 727
+    "rank": 727,
+    "display_name": "Gattahalli"
   },
   {
     "zone_id": "tdr4jv",
@@ -13829,7 +14556,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 728
+    "rank": 728,
+    "display_name": "Cholanayakanahalli"
   },
   {
     "zone_id": "tdr1s2",
@@ -13848,7 +14576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 3.2,
     "severity": "low",
-    "rank": 729
+    "rank": 729,
+    "display_name": "Krishnappa Layout"
   },
   {
     "zone_id": "tdr4k1",
@@ -13867,7 +14596,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.8,
     "severity": "low",
-    "rank": 730
+    "rank": 730,
+    "display_name": "Mallasandra"
   },
   {
     "zone_id": "tdr4k3",
@@ -13886,7 +14616,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 1.4,
     "severity": "low",
-    "rank": 731
+    "rank": 731,
+    "display_name": "Kammagondanahalli"
   },
   {
     "zone_id": "tdr1s3",
@@ -13905,7 +14636,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.4,
     "severity": "low",
-    "rank": 732
+    "rank": 732,
+    "display_name": "Hosakerehalli"
   },
   {
     "zone_id": "tdr4wr",
@@ -13924,7 +14656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.5,
     "severity": "low",
-    "rank": 733
+    "rank": 733,
+    "display_name": "Bharathi Nagar"
   },
   {
     "zone_id": "tdr1gm",
@@ -13943,7 +14676,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.5,
     "severity": "low",
-    "rank": 734
+    "rank": 734,
+    "display_name": "Syndicate Bank Layout"
   },
   {
     "zone_id": "tdr1kq",
@@ -13962,7 +14696,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 735
+    "rank": 735,
+    "display_name": "AGS Layout"
   },
   {
     "zone_id": "tdr4jg",
@@ -13981,7 +14716,8 @@
     "enforcement_rate": 0.5,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 736
+    "rank": 736,
+    "display_name": "Adarsh Nagar"
   },
   {
     "zone_id": "tdr451",
@@ -14000,7 +14736,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 737
+    "rank": 737,
+    "display_name": "Andrahalli"
   },
   {
     "zone_id": "tdr45p",
@@ -14019,7 +14756,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 738
+    "rank": 738,
+    "display_name": "Madhavara"
   },
   {
     "zone_id": "tdr4pm",
@@ -14038,7 +14776,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 739
+    "rank": 739,
+    "display_name": "Horamavu"
   },
   {
     "zone_id": "tdr4p2",
@@ -14057,7 +14796,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 740
+    "rank": 740,
+    "display_name": "Dooravaninagar"
   },
   {
     "zone_id": "tdr4w1",
@@ -14076,7 +14816,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 2.4,
     "severity": "low",
-    "rank": 741
+    "rank": 741,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr602",
@@ -14095,7 +14836,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 742
+    "rank": 742,
+    "display_name": "Basavanapura"
   },
   {
     "zone_id": "tdr700",
@@ -14114,7 +14856,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 743
+    "rank": 743,
+    "display_name": "Mylanahalli"
   },
   {
     "zone_id": "tdr16e",
@@ -14133,7 +14876,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 744
+    "rank": 744,
+    "display_name": "Challaghatta"
   },
   {
     "zone_id": "tdr1ed",
@@ -14152,7 +14896,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 745
+    "rank": 745,
+    "display_name": "Jnana Bharathi"
   },
   {
     "zone_id": "tdr45e",
@@ -14171,7 +14916,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 746
+    "rank": 746,
+    "display_name": "Gruhalaxmi Layout"
   },
   {
     "zone_id": "tdr1ku",
@@ -14190,7 +14936,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 747
+    "rank": 747,
+    "display_name": "Kane Muneshwara Ward"
   },
   {
     "zone_id": "tdr1p7",
@@ -14209,7 +14956,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 748
+    "rank": 748,
+    "display_name": "Konappana Agrahara"
   },
   {
     "zone_id": "tdr1q4",
@@ -14228,7 +14976,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 749
+    "rank": 749,
+    "display_name": "Vijaya Bank Layout"
   },
   {
     "zone_id": "tdr1p2",
@@ -14247,7 +14996,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 750
+    "rank": 750,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr4hr",
@@ -14266,7 +15016,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 751
+    "rank": 751,
+    "display_name": "Jalahalli"
   },
   {
     "zone_id": "tdr1pd",
@@ -14285,7 +15036,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 752
+    "rank": 752,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr1nd",
@@ -14304,7 +15056,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 753
+    "rank": 753,
+    "display_name": "Bettadasanpura"
   },
   {
     "zone_id": "tdr1r3",
@@ -14323,7 +15076,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 754
+    "rank": 754,
+    "display_name": "Sir M. Visvesvaraya Layout"
   },
   {
     "zone_id": "tdr1k7",
@@ -14342,7 +15096,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 755
+    "rank": 755,
+    "display_name": "Subramanyapura"
   },
   {
     "zone_id": "tdr1k3",
@@ -14361,7 +15116,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 756
+    "rank": 756,
+    "display_name": "Subramanyapura"
   },
   {
     "zone_id": "tdr1k2",
@@ -14380,7 +15136,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 757
+    "rank": 757,
+    "display_name": "Thalaghattapura"
   },
   {
     "zone_id": "tdr5p6",
@@ -14399,7 +15156,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 758
+    "rank": 758,
+    "display_name": "Yartiganahalli"
   },
   {
     "zone_id": "tdr1e1",
@@ -14418,7 +15176,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 759
+    "rank": 759,
+    "display_name": "1st Block"
   },
   {
     "zone_id": "tdr17u",
@@ -14437,7 +15196,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 760
+    "rank": 760,
+    "display_name": "Bangarappa Nagara"
   },
   {
     "zone_id": "tdr1zd",
@@ -14456,7 +15216,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 761
+    "rank": 761,
+    "display_name": "Abbaiah Reddy Layout"
   },
   {
     "zone_id": "tdr4yu",
@@ -14475,7 +15236,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 762
+    "rank": 762,
+    "display_name": "Maranayakanahalli"
   },
   {
     "zone_id": "tdr4we",
@@ -14494,7 +15256,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 763
+    "rank": 763,
+    "display_name": "Kogilu"
   },
   {
     "zone_id": "tdr331",
@@ -14513,7 +15276,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 764
+    "rank": 764,
+    "display_name": "Dommasandra"
   },
   {
     "zone_id": "tdr38c",
@@ -14532,7 +15296,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 765
+    "rank": 765,
+    "display_name": "Varthur"
   },
   {
     "zone_id": "tdr391",
@@ -14551,7 +15316,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 766
+    "rank": 766,
+    "display_name": "Gunjur"
   },
   {
     "zone_id": "tdr4kd",
@@ -14570,7 +15336,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 767
+    "rank": 767,
+    "display_name": "Kuvempunagara"
   },
   {
     "zone_id": "tdr3c2",
@@ -14589,7 +15356,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 768
+    "rank": 768,
+    "display_name": "Sai Layout"
   },
   {
     "zone_id": "tdr4m1",
@@ -14608,7 +15376,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 769
+    "rank": 769,
+    "display_name": "Thindlu"
   },
   {
     "zone_id": "tdr1wu",
@@ -14627,7 +15396,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.6,
     "severity": "low",
-    "rank": 770
+    "rank": 770,
+    "display_name": "Challaghatta"
   },
   {
     "zone_id": "tdr6by",
@@ -14646,7 +15416,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 1.2,
     "severity": "low",
-    "rank": 771
+    "rank": 771,
+    "display_name": "Singahalli"
   },
   {
     "zone_id": "tdr179",
@@ -14665,7 +15436,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 1.2,
     "severity": "low",
-    "rank": 772
+    "rank": 772,
+    "display_name": "Banashankari 6th Stage"
   },
   {
     "zone_id": "tdr1ps",
@@ -14684,7 +15456,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 773
+    "rank": 773,
+    "display_name": "Electronic City"
   },
   {
     "zone_id": "tdr4t9",
@@ -14703,7 +15476,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 774
+    "rank": 774,
+    "display_name": "Yelahanka Satellite Town"
   },
   {
     "zone_id": "tdr1kj",
@@ -14722,7 +15496,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 775
+    "rank": 775,
+    "display_name": "BHCS Layout"
   },
   {
     "zone_id": "tdr1q5",
@@ -14741,7 +15516,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 776
+    "rank": 776,
+    "display_name": "Vijaya Bank Layout"
   },
   {
     "zone_id": "tdr4k0",
@@ -14760,7 +15536,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 777
+    "rank": 777,
+    "display_name": "Shettihalli"
   },
   {
     "zone_id": "tdr60k",
@@ -14779,7 +15556,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 778
+    "rank": 778,
+    "display_name": "TC Palya"
   },
   {
     "zone_id": "tdr17b",
@@ -14798,7 +15576,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 779
+    "rank": 779,
+    "display_name": "Chikkegowdanpalya"
   },
   {
     "zone_id": "tdr3bv",
@@ -14817,7 +15596,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 780
+    "rank": 780,
+    "display_name": "Hoodi"
   },
   {
     "zone_id": "tdr1jh",
@@ -14836,7 +15616,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 781
+    "rank": 781,
+    "display_name": "Anjanapura 10th Block"
   },
   {
     "zone_id": "tdr32c",
@@ -14855,7 +15636,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 782
+    "rank": 782,
+    "display_name": "Dommasandra"
   },
   {
     "zone_id": "tdr381",
@@ -14874,7 +15656,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 783
+    "rank": 783,
+    "display_name": "Bhoganahalli"
   },
   {
     "zone_id": "tdr1hh",
@@ -14893,7 +15676,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 784
+    "rank": 784,
+    "display_name": "Talagattapura"
   },
   {
     "zone_id": "tdr1gp",
@@ -14912,7 +15696,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 785
+    "rank": 785,
+    "display_name": "Andrahalli"
   },
   {
     "zone_id": "tdr1z3",
@@ -14931,7 +15716,8 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 786
+    "rank": 786,
+    "display_name": "BEML Township"
   },
   {
     "zone_id": "tdr32b",
@@ -14950,7 +15736,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 0.8,
     "severity": "low",
-    "rank": 787
+    "rank": 787,
+    "display_name": "Kommasandra"
   },
   {
     "zone_id": "tdr1nj",
@@ -14969,7 +15756,8 @@
     "enforcement_rate": 0.0,
     "predicted_score_6h": 0.6,
     "severity": "low",
-    "rank": 788
+    "rank": 788,
+    "display_name": "Yelenahalli"
   },
   {
     "zone_id": "tdr3bw",
@@ -14988,6 +15776,7 @@
     "enforcement_rate": 1.0,
     "predicted_score_6h": 0.6,
     "severity": "low",
-    "rank": 789
+    "rank": 789,
+    "display_name": "Hoody Garden"
   }
 ]

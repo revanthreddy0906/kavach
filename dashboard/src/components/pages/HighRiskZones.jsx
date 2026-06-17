@@ -85,7 +85,10 @@ export default function HighRiskZones() {
             <tbody>
               {filtered.map((z, i) => (
                 <tr key={i}>
-                  <td className="data-number" style={{ fontWeight: 600 }}>{z.zone_id}</td>
+                  <td className="data-number" style={{ fontWeight: 600 }}>
+                    {z.display_name || z.zone_id}
+                    <span style={{ fontSize: 10, color: 'var(--text-muted)', marginLeft: 6 }}>{z.zone_id}</span>
+                  </td>
                   <td className="data-number">{Number(z.congestiq_score).toLocaleString()}</td>
                   <td>
                     <span className={`severity-badge ${getSeverity(z.congestiq_score)}`}>

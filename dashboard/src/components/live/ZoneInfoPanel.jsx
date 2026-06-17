@@ -24,7 +24,10 @@ export default function ZoneInfoPanel({ zone, cascadeData, onClose }) {
         </button>
       </div>
 
-      <div className="zone-id">{zone.zone_id}</div>
+      <div className="zone-id">{zone.display_name || zone.zone_id}</div>
+      <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 2, marginBottom: 12 }}>
+       {zone.display_name ? zone.zone_id : ''}
+      </div>          
 
       <div className="zone-detail">
         <span className="detail-label">CongestIQ Score</span>

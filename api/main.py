@@ -199,86 +199,31 @@ MOCK_ENFORCEMENT = [
      "approval_rate": 0.9345, "anomaly_score": 0.2123, "is_anomaly": False, "rank": 15},
 ]
 
-MOCK_COUNTERFACTUAL = [
-    {
-        "scenario": "enforcement_rate_50pct",
-        "enforcement_rate": 0.50,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 105800,
-        "reduction_pct": 15.0,
-        "hours_saved_monthly": 18200,
-        "delivery_hours_saved_monthly": 4550,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 720.2},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 529.6},
-        ]
-    },
-    {
-        "scenario": "enforcement_rate_60pct",
-        "enforcement_rate": 0.60,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 93400,
-        "reduction_pct": 25.0,
-        "hours_saved_monthly": 28400,
-        "delivery_hours_saved_monthly": 7100,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 635.5},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 467.3},
-        ]
-    },
-    {
-        "scenario": "enforcement_rate_70pct",
-        "enforcement_rate": 0.70,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 83600,
-        "reduction_pct": 32.9,
-        "hours_saved_monthly": 38600,
-        "delivery_hours_saved_monthly": 9650,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 568.4},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 417.9},
-        ]
-    },
-    {
-        "scenario": "enforcement_rate_80pct",
-        "enforcement_rate": 0.80,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 73800,
-        "reduction_pct": 40.7,
-        "hours_saved_monthly": 48200,
-        "delivery_hours_saved_monthly": 12050,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 505.2},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 441.8},
-        ]
-    },
-    {
-        "scenario": "enforcement_rate_90pct",
-        "enforcement_rate": 0.90,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 62300,
-        "reduction_pct": 49.9,
-        "hours_saved_monthly": 59800,
-        "delivery_hours_saved_monthly": 14950,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 423.7},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 311.6},
-        ]
-    },
-    {
-        "scenario": "enforcement_rate_100pct",
-        "enforcement_rate": 1.00,
-        "baseline_congestiq": 124500,
-        "simulated_congestiq": 52100,
-        "reduction_pct": 58.2,
-        "hours_saved_monthly": 71200,
-        "delivery_hours_saved_monthly": 17800,
-        "top_zones_impacted": [
-            {"zone_id": "tdr3ub", "baseline": 847.3, "simulated": 354.2},
-            {"zone_id": "tdr3u9", "baseline": 623.1, "simulated": 260.5},
-        ]
-    },
-]
+MOCK_COUNTERFACTUAL = {
+    "scenarios": [
+        {
+            "scenario": "enforcement_rate_90pct",
+            "target_enforcement_rate": 0.90,
+            "baseline_congestiq": 7802207,
+            "simulated_congestiq": 7260788,
+            "reduction_pct": 6.9,
+            "violation_reduction": 0,
+            "zones_affected": 306,
+            "hours_saved_monthly": 34635,
+            "flipkart": {
+                "delivery_hours_saved_monthly": 10912,
+                "monthly_cost_savings_inr": 1964160,
+                "annual_cost_savings_inr": 23569920,
+                "annual_cost_savings_crore": 2.36,
+                "monthly_sla_rescues": 18187,
+                "deliveries_improved_daily": 840
+            },
+            "top_zones_impacted": []
+        }
+    ],
+    "flipkart_corridors": [],
+    "pitch_numbers": {}
+}
 
 MOCK_ARCHETYPES = [
     {"junction_name": "BTP051 - Safina Plaza Junction", "archetype": "Commercial Morning Rush",
@@ -403,32 +348,27 @@ def enforcement():
 
 @app.get("/api/counterfactual")
 def counterfactual(enforcement_rate: Optional[float] = Query(None, ge=0.5, le=1.0)):
-    """Returns what-if simulation results for a given enforcement rate.
-
-    Source: outputs/counterfactual.json — contains scenarios, corridors, pitch numbers.
-    Query params: enforcement_rate (float, 0.5-1.0). Finds the closest matching scenario.
-    If no rate specified, returns full data including corridors and pitch numbers.
-    """
     data = load_json_or_mock("counterfactual.json", MOCK_COUNTERFACTUAL)
 
-    # Handle new nested format: {scenarios: [...], flipkart_corridors: [...], pitch_numbers: {...}}
-    # and old flat list format: [...]
+    # Handle new nested format
     if isinstance(data, dict) and "scenarios" in data:
         scenarios = data["scenarios"]
-        extras = {
-            "flipkart_corridors": data.get("flipkart_corridors", []),
-            "pitch_numbers": data.get("pitch_numbers", {}),
-        }
+        flipkart_corridors = data.get("flipkart_corridors", [])
+        pitch_numbers = data.get("pitch_numbers", {})
     else:
         scenarios = data if isinstance(data, list) else []
-        extras = {}
+        flipkart_corridors = []
+        pitch_numbers = {}
 
+    # If no rate specified, return ALL scenarios + extras for slider
     if enforcement_rate is None:
-        # Return full response with all scenarios + corridors + pitch numbers
-        enforcement_rate = 0.80
+        return {
+            "scenarios": scenarios,
+            "flipkart_corridors": flipkart_corridors,
+            "pitch_numbers": pitch_numbers
+        }
 
     # Find closest matching scenario
-    # Handle both 'enforcement_rate' (mock) and 'target_enforcement_rate' (real data)
     def _get_rate(s):
         rate = s.get("target_enforcement_rate", s.get("enforcement_rate"))
         if isinstance(rate, (int, float)):
@@ -437,10 +377,11 @@ def counterfactual(enforcement_rate: Optional[float] = Query(None, ge=0.5, le=1.
 
     closest = min(scenarios, key=_get_rate)
 
-    # Return scenario + extras
-    result = {k: v for k, v in closest.items() if k not in ("enforcement_rate",)}
-    result.update(extras)
-    return result
+    return {
+        "scenario": closest,
+        "flipkart_corridors": flipkart_corridors,
+        "pitch_numbers": pitch_numbers
+    }
 
 
 def _parse_rate_from_scenario(scenario_name: str) -> float:

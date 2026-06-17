@@ -32,9 +32,9 @@ export default function CounterfactualSlider() {
     loadCounterfactual(rate);
   };
 
-  const reductionPct = useAnimatedCounter(result?.reduction_pct || 0, 800, 1);
-  const hoursSaved = useAnimatedCounter(result?.hours_saved_monthly || 0, 800, 0);
-  const deliveryHours = useAnimatedCounter(result?.delivery_hours_saved_monthly || 0, 800, 0);
+const reductionPct = useAnimatedCounter(result?.scenario?.reduction_pct || 0, 800, 1);
+const hoursSaved = useAnimatedCounter(result?.scenario?.hours_saved_monthly || 0, 800, 0);
+const deliveryHours = useAnimatedCounter(result?.scenario?.flipkart?.delivery_hours_saved_monthly || 0, 800, 0);
 
   return (
     <div className="sim-layout">
@@ -97,7 +97,7 @@ export default function CounterfactualSlider() {
                   Baseline
                 </div>
                 <div className="data-number" style={{ fontSize: 24, color: 'var(--danger)' }}>
-                  {Number(result.baseline_congestiq).toLocaleString()}
+                  {Number(result.scenario.baseline_congestiq).toLocaleString()}
                 </div>
               </div>
               <div style={{ flex: 1 }}>
@@ -105,7 +105,7 @@ export default function CounterfactualSlider() {
                   Simulated
                 </div>
                 <div className="data-number" style={{ fontSize: 24, color: 'var(--success)' }}>
-                  {Number(result.simulated_congestiq).toLocaleString()}
+                  {Number(result.scenario.simulated_congestiq).toLocaleString()}
                 </div>
               </div>
             </div>
@@ -124,18 +124,18 @@ export default function CounterfactualSlider() {
                 <div style={{
                   height: 20, borderRadius: 4,
                   background: 'var(--success)', opacity: 0.7,
-                  width: `${((result.simulated_congestiq / result.baseline_congestiq) * 100).toFixed(1)}%`,
+                  width: `${((result.scenario.simulated_congestiq / result.scenario.baseline_congestiq) * 100).toFixed(1)}%`,
                   transition: 'width 0.5s ease'
                 }} />
               </div>
             </div>
 
             {/* Top impacted zones */}
-            {result.top_zones_impacted && result.top_zones_impacted.length > 0 && (
+            {result.scenario?.top_zones_impacted && result.scenario.top_zones_impacted.length > 0 && (
               <>
                 <h3 style={{ marginTop: 8 }}>Top Impacted Zones</h3>
                 <div className="impact-zones-list">
-                  {result.top_zones_impacted.slice(0, 5).map((zone, i) => (
+                  {result.scenario.top_zones_impacted.slice(0, 5).map((zone, i) => (
                     <div key={i} className="impact-zone-item">
                       <span className="zone-name">{zone.zone_id}</span>
                       <span>

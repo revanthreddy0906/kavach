@@ -61,7 +61,7 @@ export default function OperationsOverview() {
             {topRisk.map((z, i) => (
               <div key={i} className="alert-item">
                 <div>
-                  <span className="alert-station data-number" style={{ fontSize: 13 }}>{z.zone_id}</span>
+                  <span className="alert-station data-number" style={{ fontSize: 13 }}>{z.display_name || z.zone_id}</span>
                   <span className="alert-detail" style={{ marginLeft: 12 }}>{z.primary_violation}</span>
                 </div>
                 <span className={`severity-badge ${z.congestiq_score > 700 ? 'high' : z.congestiq_score > 300 ? 'medium' : 'low'}`}>
