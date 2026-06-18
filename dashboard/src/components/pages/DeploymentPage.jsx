@@ -102,6 +102,22 @@ export default function DeploymentPage() {
               {itineraries.length} units
             </span>
           </div>
+          <div style={{
+            display: 'flex', alignItems: 'flex-start', gap: 10,
+            padding: '12px 14px', marginBottom: 16,
+            background: 'rgba(99, 102, 241, 0.08)',
+            border: '1px solid rgba(99, 102, 241, 0.2)',
+            borderRadius: 8, fontSize: 12, lineHeight: 1.5,
+            color: 'var(--text-secondary)',
+          }}>
+            <span style={{ fontSize: 16, flexShrink: 0, marginTop: 1 }}>&#x2139;</span>
+            <span>
+              <strong style={{ color: 'var(--text-primary)' }}>Feasibility threshold: 45 minutes.</strong>{' '}
+              A transit between zones is considered feasible if the unit can travel from one zone to the next within 45 minutes.
+              Transits exceeding this threshold are flagged — the unit still arrives, but most of its 2-hour patrol block is consumed by driving,
+              reducing effective patrol time at the destination.
+            </span>
+          </div>
 
           <div className="itinerary-list">
             {itineraries.map((unit) => {
