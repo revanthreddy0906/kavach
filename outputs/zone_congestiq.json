@@ -4087,7 +4087,7 @@
     "predicted_score_6h": 6.6,
     "severity": "high",
     "rank": 186,
-    "display_name": "Balaji Layout",
+    "display_name": "Balaji Layout (Koramangala)",
     "primary_station": "Mico Layout",
     "station_enforcement_rate": 0.8694
   },
@@ -5143,7 +5143,7 @@
     "predicted_score_6h": 0.0,
     "severity": "medium",
     "rank": 234,
-    "display_name": "Dollars Colony",
+    "display_name": "Dollars Colony (Koramangala)",
     "primary_station": "J.P. Nagar",
     "station_enforcement_rate": 0.912
   },
@@ -5275,7 +5275,7 @@
     "predicted_score_6h": 0.2,
     "severity": "medium",
     "rank": 240,
-    "display_name": "Teacher's Colony",
+    "display_name": "Teacher's Colony (HSR)",
     "primary_station": "HSR Layout",
     "station_enforcement_rate": 0.8579
   },
@@ -6991,7 +6991,7 @@
     "predicted_score_6h": 0.0,
     "severity": "medium",
     "rank": 318,
-    "display_name": "NGEF Layout",
+    "display_name": "NGEF Layout (Malleshwaram)",
     "primary_station": "Kodigehalli",
     "station_enforcement_rate": 0.5474
   },
@@ -10445,7 +10445,7 @@
     "predicted_score_6h": 0.0,
     "severity": "low",
     "rank": 475,
-    "display_name": "Yamalur",
+    "display_name": "Yamalur (Indiranagar)",
     "primary_station": "Jeevanbheemanagar",
     "station_enforcement_rate": 0.8912
   },
@@ -12579,7 +12579,7 @@
     "predicted_score_6h": 0.0,
     "severity": "low",
     "rank": 572,
-    "display_name": "Beguru",
+    "display_name": "Beguru (BTM)",
     "primary_station": "Hulimavu",
     "station_enforcement_rate": 0.8447
   },
@@ -14185,7 +14185,7 @@
     "predicted_score_6h": 0.0,
     "severity": "low",
     "rank": 645,
-    "display_name": "Yamalur",
+    "display_name": "Yamalur (Indiranagar)",
     "primary_station": "Jeevanbheemanagar",
     "station_enforcement_rate": 0.8912
   },
@@ -15857,7 +15857,7 @@
     "predicted_score_6h": 0.0,
     "severity": "low",
     "rank": 721,
-    "display_name": "Beguru",
+    "display_name": "Beguru (JP)",
     "primary_station": "Hulimavu",
     "station_enforcement_rate": 0.8447
   },
@@ -16935,7 +16935,7 @@
     "predicted_score_6h": 0.0,
     "severity": "low",
     "rank": 770,
-    "display_name": "Challaghatta",
+    "display_name": "Challaghatta (HSR)",
     "primary_station": "HAL Old Airport",
     "station_enforcement_rate": 0.8685
   },
