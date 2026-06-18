@@ -511,7 +511,13 @@ def daily_briefing():
     }
 
     # ── Enforcement Gaps ──
-    anomalies = [s for s in enforcement if s.get("is_anomaly")]
+    # Filter out "No Police Station" — it's a data gap, not a real station
+    anomalies = [
+        s for s in enforcement
+        if s.get("is_anomaly")
+        and "no police" not in s.get("police_station", "").lower()
+        and s.get("police_station", "").strip() != ""
+    ]
     enforcement_gaps = []
     city_avg_rate = 0
     if enforcement:
