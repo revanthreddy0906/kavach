@@ -2,7 +2,7 @@
 ### Parking Congestion Cascade Intelligence Platform
 ### Flipkart Gridlock Hackathon 2.0 — Phase 2
 
-**Report Date:** 16 June 2026  
+**Report Date:** 18 June 2026  
 **Team Lead:** Saarthak Manocha  
 **Repository:** [github.com/SaarthakManocha/kavach](https://github.com/SaarthakManocha/kavach)
 
@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-KAVACH is a data-driven platform that quantifies how illegal parking cascades into city-wide congestion in Bengaluru. We have completed **6 of 7 computational modules**, a **fully functional REST API** with 7 endpoints, and a **cleaned dataset** of 298,277 parking violations across 789 geohash zones.
+KAVACH is a data-driven platform that quantifies how illegal parking cascades into city-wide congestion in Bengaluru. We have completed **6 of 7 computational modules**, a **fully functional REST API** with 7 endpoints, a **fully functional React dashboard** with 18+ components, and a **cleaned dataset** of 298,277 parking violations across 789 geohash zones.
 
 The platform reveals that **79 critical zones** generate the majority of parking-induced congestion, with the worst zone (`tdr1v6`, near Majestic) scoring a CongestIQ of **784,374** — cascading congestion to **109,283 road nodes** within 15–60 minutes. Our patrol optimization engine deploys **30 units across 60 zones** with a predicted **26.6% average congestion reduction**, and our counterfactual simulation shows that achieving **100% enforcement** across all zones would save **3,646 person-hours per month** (**109 Flipkart delivery hours**).
 
@@ -258,16 +258,57 @@ The data shows positive correlation between enforcement rate and violations (hig
 
 ---
 
+### 1.9 Phase 3 — Dashboard Frontend & Features
+
+**Owner:** Revanth/Saarthak | **Status:** ✅ Core Complete, 🔄 Polish in Progress
+
+**What it does:** Provides a comprehensive React-based UI for operational decision-making, featuring real-time heatmaps, cascade animation, patrol planning, counterfactual simulation, and actionable intelligence.
+
+**Pages Implemented (18+ Components):**
+
+| Page | Features | Status |
+|------|----------|--------|
+| **Dashboard** | Heatmap, stat cards (789 zones, 9.9K avg CongestIQ, 85.4% enforcement), severity distribution | ✅ |
+| **Live Map** | Real-time congestion heatmap with zone click-through | ✅ |
+| **High Risk Zones** | Filterable list of critical zones with action cards | ✅ |
+| **Analytics** | Enforcement analysis, trend charts, zone insights | ✅ |
+| **Live Operations** | Spillover event detection, cascade animation, zone selector | ✅ |
+| **Patrol Planning** | Unit deployment by hour, zone coverage, itineraries | ✅ |
+| **Simulation Lab** | Counterfactual enforcement slider, impact visualization | ✅ |
+| **Deployment** | Unit schedules with travel times, route optimization | ✅ |
+| **Weather Sensitivity** | Weather impact on violations, temporal patterns | ✅ |
+| **Archetypes** | Junction behavior clustering (mock data pending Laksh) | ⏳ |
+| **Trends** | Historical violation trends, enforcement comparison | ✅ |
+| **Daily Briefing** | Commissioner's briefing, anomaly alerts, enforcement gaps | ✅ |
+
+**Recent Improvements (Phase 3):**
+- ✅ Reverse-geocoded zone names (commit `5af4a65`)
+- ✅ Zone action cards with full playbooks (commit `76d7934`)
+- ✅ Commissioner's Daily Briefing with anomaly detection (commit `a341596`)
+- ✅ Per-zone enforcement station mapping (commit `c4aa86a`)
+- ✅ Dashboard polish with display name integration (commit `c0dd83f`, *in progress*)
+
+**Known Issues:**
+- **Zone Name Display Bug:** Geohash codes appearing instead of zone names (see Section 2)
+- Dashboard using mock data for some endpoints until Laksh delivers temporal predictions
+
+**Output:** Live dashboard at `localhost:5173` (Vite dev server)
+
+---
+
 ## 2. What Remains
 
-| Component | Owner | Dependency | Notes |
-|-----------|-------|------------|-------|
-| **Module 7 — Temporal Prediction** | Laksh | `violations_clean.pkl` (ready) | LSTM/Prophet model for next-6h violation forecasting. Output: `zone_temporal_predictions.json` |
-| **Module 7 — Junction Archetypes** | Laksh | `violations_clean.pkl` (ready) | K-Means clustering on junction behavior profiles. Output: `junction_archetypes.json` |
-| **Dashboard (Frontend)** | Revanth | API (ready) | React dashboard with heatmap, cascade animation, patrol planner, counterfactual slider |
+| Component | Owner | Status | Notes |
+|-----------|-------|--------|-------|
+| **Dashboard Zone Name Display** | Revanth | 🔄 In Progress | Zone names should display instead of geohash IDs. Latest commit (`c0dd83f`: "Dashboard polish — display names") attempted this but issue persists. Possible causes: API not returning zone names, frontend mapping incomplete, or cache not cleared. |
+| **Module 7 — Temporal Prediction** | Laksh | ⏳ Pending | LSTM/Prophet model for next-6h violation forecasting. Output: `zone_temporal_predictions.json` |
+| **Module 7 — Junction Archetypes** | Laksh | ⏳ Pending | K-Means clustering on junction behavior profiles. Output: `junction_archetypes.json` |
+
+**Current Issues:**
+- **Zone Display Bug (#1):** Dashboard shows geohash codes (e.g., `tdr1v8`, `tdr1v2`) instead of readable neighborhood names. The reverse-geocoding data exists (commit `5af4a65`) but is not properly integrated into the frontend display layer.
 
 **Dependency chain:**
-- The dashboard can start **immediately** — all API endpoints are live
+- The dashboard is **functionally complete** but needs zone name mapping fix
 - Module 7 can start **immediately** — `violations_clean.pkl` is ready
 - Once Laksh delivers `zone_temporal_predictions.json`, we re-run Module 3 (PatrolOpt) for ML-informed patrol plans
 - Once Laksh delivers `junction_archetypes.json`, the `/api/archetypes` endpoint auto-switches from mock to real data
@@ -307,6 +348,16 @@ The data shows positive correlation between enforcement rate and violations (hig
 
 | Commit | Description |
 |--------|-------------|
+| `c0dd83f` | Dashboard polish — display names, richer severity panel (Latest - 18 June) |
+| `c4aa86a` | Per-zone enforcement station mapping + zone action card fix |
+| `76d7934` | Zone Action Card — click any zone for full playbook |
+| `f2df235` | Filter 'No Police Station' from briefing enforcement gaps |
+| `a341596` | Commissioner's Daily Briefing — auto-generated intelligence report |
+| `42763f0` | Phase 3: Weather Sensitivity module + full dashboard page |
+| `f1c26a3` | Phase 2 frontend: Unit itineraries on Deployment page |
+| `29519b3` | Phase 2: PatrolOpt travel times with unit itineraries |
+| `4f0b0e8` | Phase 1: SHAP explanations + Confidence Intervals |
+| `5af4a65` | Reverse-geocode all 789 zones with real neighborhood names (tagged: stable-checkpoint-v1) |
 | `f50ba65` | Add core modules: data cleaning, cascade, CongestIQ, PatrolOpt, counterfactual |
 | `362f7c7` | Add Module 4 + FastAPI backend (Revanth) |
 | `13390cc` | Fix cascade_reach saturation + rewrite counterfactual engine |
@@ -329,6 +380,9 @@ The data shows positive correlation between enforcement rate and violations (hig
 
 6. **94 spillover events prove congestion contagion.** Violations don't stay local — they propagate to neighboring zones through the road network. 37 zones act as "congestion super-spreaders."
 
+7. **Phase 3 dashboard is operationally ready.** The dashboard provides police commissioners with 12+ decision-making views including real-time heatmaps, cascade visualization, patrol optimization, and counterfactual forecasting. Actionable alerts flag anomalies and enable data-driven enforcement strategy. One known issue: zone display names need backend integration (see Section 2).
+
 ---
 
 *Document generated from actual computed outputs. All numbers are reproducible by running the module pipeline.*
+*Last updated: 18 June 2026 — Synced with upstream/main after Phase 3 merge*
