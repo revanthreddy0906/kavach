@@ -3,11 +3,13 @@ import { PageHeader } from '../layout/TopBar';
 import { fetchCounterfactual } from '../../utils/api';
 import StatCard from '../common/StatCard';
 import { useAnimatedCounter } from '../../hooks/useAnimatedCounter';
+import { useZoneNames, resolveZoneName } from '../../utils/zoneNames';
 import { Target, Clock, Truck, TrendingDown } from 'lucide-react';
 
 export default function ImpactPage() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
+  const zoneNameLookup = useZoneNames();
 
   useEffect(() => {
     fetchCounterfactual(0.9).then(d => { setResult(d); setLoading(false); }).catch(() => setLoading(false));
@@ -72,7 +74,7 @@ const deliveryHours = useAnimatedCounter(result?.scenario?.flipkart?.delivery_ho
               <table className="data-table">
                 <thead>
                   <tr>
-                    <th>Zone ID</th>
+                    <th>Zone Name</th>
                     <th>Baseline CIQ</th>
                     <th>Simulated CIQ</th>
                     <th>Reduction</th>
@@ -81,7 +83,10 @@ const deliveryHours = useAnimatedCounter(result?.scenario?.flipkart?.delivery_ho
                 <tbody>
                   {result.scenario.top_zones_impacted.map((zone, i) => (
                     <tr key={i}>
-                      <td className="data-number" style={{ fontWeight: 600 }}>{zone.zone_id}</td>
+                      <td style={{ fontWeight: 600 }}>
+                        {resolveZoneName(zoneNameLookup, zone.zone_id)}
+                        <span style={{ fontSize: 10, color: 'var(--text-muted)', marginLeft: 6 }}>{zone.zone_id}</span>
+                      </td>
                       <td className="data-number">{Number(zone.baseline).toLocaleString()}</td>
                       <td className="data-number" style={{ color: 'var(--success)' }}>{Number(zone.simulated).toLocaleString()}</td>
                       <td>

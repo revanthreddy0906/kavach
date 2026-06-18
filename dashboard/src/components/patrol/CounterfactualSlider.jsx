@@ -1,11 +1,13 @@
 import { useState, useEffect, useCallback } from 'react';
 import { fetchCounterfactual } from '../../utils/api';
 import { useAnimatedCounter } from '../../hooks/useAnimatedCounter';
+import { useZoneNames, resolveZoneName } from '../../utils/zoneNames';
 
 export default function CounterfactualSlider() {
   const [rate, setRate] = useState(0.8);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  const zoneNameLookup = useZoneNames();
 
   const loadCounterfactual = useCallback(async (r) => {
     setLoading(true);
@@ -152,7 +154,7 @@ const deliveryHours = useAnimatedCounter(result?.scenario?.flipkart?.delivery_ho
                 <div className="impact-zones-list">
                   {result.scenario.top_zones_impacted.slice(0, 5).map((zone, i) => (
                     <div key={i} className="impact-zone-item">
-                      <span className="zone-name">{zone.zone_id}</span>
+                      <span className="zone-name">{resolveZoneName(zoneNameLookup, zone.zone_id)}</span>
                       <span>
                         <span style={{ color: 'var(--text-muted)', fontSize: 12, marginRight: 8 }}>
                           {Number(zone.baseline).toLocaleString()} → {Number(zone.simulated).toLocaleString()}

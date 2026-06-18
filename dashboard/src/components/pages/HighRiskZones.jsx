@@ -21,10 +21,13 @@ export default function HighRiskZones() {
 
   const filtered = useMemo(() => {
     let data = [...zones];
-    if (search) data = data.filter(z =>
-      z.zone_id.toLowerCase().includes(search.toLowerCase()) ||
-      (z.primary_violation || '').toLowerCase().includes(search.toLowerCase())
-    );
+    if (search) data = data.filter(z => {
+      const q = search.toLowerCase();
+      return (z.display_name || '').toLowerCase().includes(q) ||
+        z.zone_id.toLowerCase().includes(q) ||
+        (z.primary_violation || '').toLowerCase().includes(q) ||
+        (z.dominant_vehicle || '').toLowerCase().includes(q);
+    });
     data.sort((a, b) => {
       const aVal = a[sortKey] || 0;
       const bVal = b[sortKey] || 0;
@@ -54,7 +57,7 @@ export default function HighRiskZones() {
           <Search size={14} className="search-icon" />
           <input
             className="search-input"
-            placeholder="Search zones or violations..."
+            placeholder="Search by zone name, violation type..."
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
@@ -68,7 +71,7 @@ export default function HighRiskZones() {
             <thead>
               <tr>
                 <th onClick={() => handleSort('zone_id')}>
-                  Zone ID {sortKey === 'zone_id' && <ArrowUpDown size={10} style={{ display: 'inline', marginLeft: 4 }} />}
+                  Zone Name {sortKey === 'zone_id' && <ArrowUpDown size={10} style={{ display: 'inline', marginLeft: 4 }} />}
                 </th>
                 <th onClick={() => handleSort('congestiq_score')}>
                   CongestionIQ {sortKey === 'congestiq_score' && <ArrowUpDown size={10} style={{ display: 'inline', marginLeft: 4 }} />}

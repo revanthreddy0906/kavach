@@ -3,10 +3,10 @@ import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Responsive
 
 const ARCHETYPE_COLORS = {
   'Commercial Morning Rush': '#f59e0b',
-  'Transit Hub Chaos': '#ef4444',
-  'IT Corridor Bottleneck': '#3b82f6',
   'Market Zone Persistent': '#f97316',
-  'Residential Evening Surge': '#10b981',
+  'Metro Evening Surge': '#3b82f6',
+  'Weekend Leisure Hotspot': '#10b981',
+  'Low-Enforcement Corridor': '#ef4444',
 };
 
 const CustomTooltip = ({ active, payload }) => {

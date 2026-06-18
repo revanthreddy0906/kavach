@@ -40,9 +40,9 @@ TOP_ZONES_PER_HOUR = 15       # max zones to staff per hour
 REDUCTION_PER_UNIT = 0.20     # first unit reduces violations by 20%
 DIMINISHING_FACTOR = 0.6      # each additional unit: 60% of previous unit's effect
 
-# Travel time parameters
-PEAK_SPEED_KMH = 15.0         # avg speed in peak hours (km/h)
-OFFPEAK_SPEED_KMH = 25.0      # avg speed in off-peak hours (km/h)
+# Travel time parameters (calibrated against Google Maps routing for Bengaluru)
+PEAK_SPEED_KMH = 20.0         # avg speed in peak hours (km/h) — DULT Bengaluru data
+OFFPEAK_SPEED_KMH = 30.0      # avg speed in off-peak hours (km/h)
 PEAK_HOURS = set(range(7, 11)) | set(range(17, 21))  # 7-10am, 5-8pm
 SHIFT_BLOCK_HOURS = 2         # each patrol block is 2 hours
 EARTH_RADIUS_KM = 6371.0      # for haversine
@@ -69,8 +69,8 @@ def haversine_km(lat1, lng1, lat2, lng2):
 def estimate_travel_time_min(lat1, lng1, lat2, lng2, hour):
     """Estimate travel time in minutes given hour of day and Bengaluru traffic."""
     dist = haversine_km(lat1, lng1, lat2, lng2)
-    # Road distance is ~1.3x haversine in Bengaluru's grid
-    road_dist = dist * 1.3
+    # Road distance is ~1.2x haversine in Bengaluru (arterial network)
+    road_dist = dist * 1.2
     speed = PEAK_SPEED_KMH if hour in PEAK_HOURS else OFFPEAK_SPEED_KMH
     return round(road_dist / speed * 60, 1), round(road_dist, 1)
 
@@ -381,15 +381,27 @@ def build_unit_itineraries(patrol_plan: list, zone_lookup: dict) -> dict:
         unit_distance = 0
 
         for block in shift_blocks:
-            # Each unit gets assigned to the zone ranked by their unit_id position
-            # (round-robin across blocks)
+            # Pick zone for this unit: prefer nearby zones to minimize transit
             zones = block["zones"]
             if not zones:
                 continue
 
-            # Pick zone for this unit: cycle through available zones
-            zone_idx = (unit_id - 1) % len(zones)
-            entry = zones[zone_idx]
+            if prev_lat is not None:
+                # Sort zones by distance from current position, then pick by unit rank
+                zones_with_dist = []
+                for z in zones:
+                    d = haversine_km(prev_lat, prev_lng, z["zone_lat"], z["zone_lng"])
+                    zones_with_dist.append((d, z))
+                zones_with_dist.sort(key=lambda x: x[0])
+
+                # Pick from sorted list by unit index (keeps distribution across zones)
+                zone_idx = (unit_id - 1) % len(zones_with_dist)
+                entry = zones_with_dist[zone_idx][1]
+            else:
+                # First assignment — no previous location, use round-robin
+                zone_idx = (unit_id - 1) % len(zones)
+                entry = zones[zone_idx]
+
             zid = entry["zone_id"]
 
             # Get display name
