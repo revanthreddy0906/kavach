@@ -5,10 +5,10 @@ import ArchetypeChart from '../analytics/ArchetypeChart';
 
 const ARCHETYPE_DESCRIPTIONS = {
   'Commercial Morning Rush': 'High violation density during morning hours (7–10 AM) near commercial zones. Enforcement should focus on pre-peak deployment.',
-  'Transit Hub Chaos': 'Persistent congestion around transit stations with high vehicle mix. Requires dedicated enforcement presence.',
-  'IT Corridor Bottleneck': 'Evening peak violations (5–8 PM) in IT corridors. Predictable patterns enable proactive deployment.',
-  'Market Zone Persistent': 'All-day violations near market areas. Chronic problem requiring structural interventions.',
-  'Residential Evening Surge': 'Evening residential area congestion from commercial spillover. Lower severity, responsive enforcement.',
+  'Market Zone Persistent': 'All-day violations near market areas. Chronic problem requiring structural interventions and continuous patrol.',
+  'Metro Evening Surge': 'Evening peak violations (5–8 PM) near metro corridors. Predictable rush-hour patterns enable proactive deployment.',
+  'Weekend Leisure Hotspot': 'Elevated weekend violations near leisure and shopping areas. High vehicle diversity with distinct weekend-weekday contrast.',
+  'Low-Enforcement Corridor': 'Zones with persistently low enforcement rates despite significant violation volume. Requires staffing review and accountability.',
 };
 
 export default function ArchetypesPage() {
