@@ -138,35 +138,76 @@ export default function DeploymentPage() {
                   {/* Expanded Detail — route steps */}
                   {isExpanded && (
                     <div className="itinerary-detail">
+                      {/* Patrol vs Transit visual bar */}
+                      <div style={{ margin: '0 0 16px', padding: '10px 12px', background: 'rgba(255,255,255,0.03)', borderRadius: 8 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, marginBottom: 6 }}>
+                          <span style={{ color: 'var(--success)' }}>Patrol: {unit.effective_patrol_min} min</span>
+                          <span style={{ color: 'var(--warning)' }}>Transit: {unit.total_transit_min} min</span>
+                        </div>
+                        <div style={{ height: 6, borderRadius: 3, background: 'var(--bg-hover)', overflow: 'hidden', display: 'flex' }}>
+                          <div style={{
+                            width: `${Math.round(unit.effective_patrol_min / (unit.effective_patrol_min + unit.total_transit_min) * 100)}%`,
+                            background: 'var(--success)', borderRadius: '3px 0 0 3px',
+                          }} />
+                          <div style={{
+                            flex: 1,
+                            background: 'var(--warning)', borderRadius: '0 3px 3px 0',
+                          }} />
+                        </div>
+                      </div>
+
                       <div className="route-timeline">
-                        {unit.assignments.map((a, i) => (
-                          <div key={i} className="route-step">
-                            <div className="route-dot-line">
-                              <div className={`route-dot ${i === 0 ? 'start' : ''}`} />
-                              {i < unit.assignments.length - 1 && <div className="route-line" />}
-                            </div>
-                            <div className="route-content">
-                              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2 }}>
-                                <MapPin size={12} style={{ color: 'var(--accent)', flexShrink: 0 }} />
-                                <span style={{ fontWeight: 600, fontSize: 13 }}>{a.zone_name}</span>
-                                <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>{a.block}</span>
-                              </div>
-                              {a.travel_from_prev_min !== null && (
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 20, fontSize: 12 }}>
-                                  {a.feasible ? (
-                                    <CheckCircle size={12} style={{ color: 'var(--success)' }} />
-                                  ) : (
-                                    <XCircle size={12} style={{ color: 'var(--danger)' }} />
-                                  )}
-                                  <span style={{ color: a.feasible ? 'var(--text-secondary)' : 'var(--danger)' }}>
-                                    {a.distance_from_prev_km} km · ~{a.travel_from_prev_min} min
-                                    {!a.feasible && ' (exceeds 45 min)'}
+                        {unit.assignments.map((a, i) => {
+                          const prevZone = i > 0 ? unit.assignments[i - 1].zone_name : null;
+                          return (
+                            <div key={i}>
+                              {/* Travel segment between stops */}
+                              {i > 0 && a.travel_from_prev_min !== null && (
+                                <div style={{
+                                  display: 'flex', alignItems: 'center', gap: 8,
+                                  padding: '4px 0 4px 18px', fontSize: 11,
+                                  color: a.feasible ? 'var(--text-muted)' : 'var(--danger)',
+                                }}>
+                                  <span style={{ fontSize: 13 }}>{a.feasible ? '\u2193' : '\u26a0'}</span>
+                                  <span>
+                                    {a.feasible ? 'Travels' : 'Long transit'} {a.distance_from_prev_km} km in ~{a.travel_from_prev_min} min
+                                    {!a.feasible && (
+                                      <span style={{ fontWeight: 600 }}> (over 45 min limit)</span>
+                                    )}
                                   </span>
                                 </div>
                               )}
+
+                              {/* Stop */}
+                              <div className="route-step">
+                                <div className="route-dot-line">
+                                  <div className={`route-dot ${i === 0 ? 'start' : ''}`} />
+                                  {i < unit.assignments.length - 1 && <div className="route-line" />}
+                                </div>
+                                <div className="route-content">
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                    <MapPin size={12} style={{ color: 'var(--accent)', flexShrink: 0 }} />
+                                    <span style={{ fontWeight: 600, fontSize: 13 }}>{a.zone_name}</span>
+                                    <span style={{
+                                      fontSize: 10, padding: '1px 6px', borderRadius: 4,
+                                      background: 'rgba(99, 102, 241, 0.15)', color: 'var(--accent)',
+                                    }}>{a.block}</span>
+                                  </div>
+                                  {i === 0 && (
+                                    <div style={{ fontSize: 11, color: 'var(--text-muted)', marginLeft: 20, marginTop: 2 }}>
+                                      Shift starts here
+                                    </div>
+                                  )}
+                                  {i === unit.assignments.length - 1 && (
+                                    <div style={{ fontSize: 11, color: 'var(--text-muted)', marginLeft: 20, marginTop: 2 }}>
+                                      Last stop — shift ends at {unit.shift_end}
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     </div>
                   )}
