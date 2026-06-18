@@ -14,7 +14,6 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
   const [popup, setPopup] = useState(null);
   const popupRef = useRef(null);
 
-  // Close popup on outside click
   useEffect(() => {
     const handleClick = (e) => {
       if (popupRef.current && !popupRef.current.contains(e.target)) {
@@ -25,119 +24,44 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
     return () => document.removeEventListener('mousedown', handleClick);
   }, [popup]);
 
-  // Build unit assignment lookup from itineraries: { "hour-zone_id": [unit_info, ...] }
-  const unitLookup = useMemo(() => {
-    const lookup = {};
-    itineraries.forEach(unit => {
+  // Simple: for every unit, record where it is at every hour.
+  // Each assignment block is 2 hours (e.g. 06:00-08:00 = hours 6 and 7).
+  const unitsByZoneHour = useMemo(() => {
+    const map = {};
+    (itineraries || []).forEach(unit => {
       (unit.assignments || []).forEach(a => {
-        const startHour = a.start_hour;
-        for (let h = startHour; h < startHour + 2 && h < 24; h++) {
-          const key = `${h}-${a.zone_id}`;
-          if (!lookup[key]) lookup[key] = [];
-          lookup[key].push({
+        const h0 = a.start_hour;
+        // Unit is present at this zone for 2 hours
+        for (let h = h0; h < h0 + 2 && h < 24; h++) {
+          const key = `${h}|${a.zone_id}`;
+          if (!map[key]) map[key] = [];
+          map[key].push({
             label: unit.unit_label,
-            shift: `${unit.shift_start} – ${unit.shift_end}`,
             block: a.block,
-            travel: a.travel_from_prev_min,
             distance: a.distance_from_prev_km,
             feasible: a.feasible,
           });
         }
       });
     });
-    return lookup;
+    return map;
   }, [itineraries]);
 
-  // Build a global pool of available unit labels from itineraries
-  const allUnitLabels = useMemo(() => {
-    return itineraries.map(u => u.unit_label).sort((a, b) => {
-      const na = parseInt(a.replace(/\D/g, ''));
-      const nb = parseInt(b.replace(/\D/g, ''));
-      return na - nb;
-    });
-  }, [itineraries]);
-
+  // Grid data from ML predictions
   const { hours, zoneIds, gridMap } = useMemo(() => {
     if (!data || data.length === 0) return { hours: [], zoneIds: [], gridMap: {} };
-
     const allZones = [...new Set(data.map(d => d.zone_id))];
     const zoneIds = allZones.slice(0, 15);
     const hours = [...new Set(data.map(d => d.hour))].sort((a, b) => a - b);
-
     const gridMap = {};
-    data.forEach(d => {
-      const key = `${d.hour}-${d.zone_id}`;
-      gridMap[key] = d;
-    });
-
+    data.forEach(d => { gridMap[`${d.hour}|${d.zone_id}`] = d; });
     return { hours, zoneIds, gridMap };
   }, [data]);
-
-  // Build consistent unit assignments: for each cell, decide which units are there.
-  // Uses itinerary data first, then fills remaining demand from unoccupied units.
-  const resolvedUnits = useMemo(() => {
-    const resolved = {};
-
-    hours.forEach(hour => {
-      // Track which units are already committed at this hour (from itineraries)
-      const busyUnits = new Set();
-      // First pass: record all itinerary-matched units at this hour
-      Object.entries(unitLookup).forEach(([key, units]) => {
-        if (key.startsWith(`${hour}-`)) {
-          units.forEach(u => busyUnits.add(u.label));
-        }
-      });
-
-      // For each zone at this hour, resolve units
-      zoneIds.forEach(zoneId => {
-        const key = `${hour}-${zoneId}`;
-        const entry = gridMap[key];
-        const demanded = entry?.units_assigned || 0;
-        if (demanded === 0) return;
-
-        const itinUnits = unitLookup[key] || [];
-
-        if (itinUnits.length >= demanded) {
-          // Itinerary covers demand fully
-          resolved[key] = itinUnits.slice(0, demanded);
-        } else {
-          // Start with itinerary units, fill rest from available pool
-          const assigned = [...itinUnits];
-          const hourStr = String(hour).padStart(2, '0');
-
-          // Find units not busy at this hour
-          for (const label of allUnitLabels) {
-            if (assigned.length >= demanded) break;
-            if (busyUnits.has(label)) continue;
-            if (assigned.some(u => u.label === label)) continue;
-
-            busyUnits.add(label);
-            assigned.push({
-              label,
-              shift: '—',
-              block: `${hourStr}:00-${String(Math.min(hour + 2, 24)).padStart(2, '0')}:00`,
-              travel: null,
-              distance: null,
-              feasible: true,
-            });
-          }
-          resolved[key] = assigned;
-        }
-      });
-    });
-
-    return resolved;
-  }, [hours, zoneIds, gridMap, unitLookup, allUnitLabels]);
 
   const handleCellClick = (e, zoneId, hour, predicted) => {
     if (predicted === 0) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    setPopup({
-      zoneId,
-      hour,
-      x: rect.left + rect.width / 2,
-      y: rect.bottom + 4,
-    });
+    setPopup({ zoneId, hour, x: rect.left + rect.width / 2, y: rect.bottom + 4 });
   };
 
   if (hours.length === 0) {
@@ -149,9 +73,10 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
     );
   }
 
-  const popupKey = popup ? `${popup.hour}-${popup.zoneId}` : null;
-  const popupUnits = popupKey ? (resolvedUnits[popupKey] || []) : [];
-  const popupEntry = popup ? gridMap[popupKey] : null;
+  // Popup data
+  const popupKey = popup ? `${popup.hour}|${popup.zoneId}` : null;
+  const popupEntry = popupKey ? gridMap[popupKey] : null;
+  const popupUnits = popupKey ? (unitsByZoneHour[popupKey] || []) : [];
   const popupName = popup ? resolveZoneName(zoneNameLookup, popup.zoneId) : '';
 
   return (
@@ -201,11 +126,9 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
           <tbody>
             {zoneIds.map((zoneId, zi) => {
               const name = resolveZoneName(zoneNameLookup, zoneId);
-              let coveredHours = 0;
-              let peakUnits = 0;
+              let coveredHours = 0, peakUnits = 0;
               hours.forEach(h => {
-                const entry = gridMap[`${h}-${zoneId}`];
-                const u = entry?.units_assigned || 0;
+                const u = gridMap[`${h}|${zoneId}`]?.units_assigned || 0;
                 if (u > 0) coveredHours++;
                 if (u > peakUnits) peakUnits = u;
               });
@@ -227,22 +150,18 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
                     </div>
                   </td>
                   {hours.map(hour => {
-                    const entry = gridMap[`${hour}-${zoneId}`];
-                    const predicted = entry?.units_assigned || 0;
+                    const predicted = gridMap[`${hour}|${zoneId}`]?.units_assigned || 0;
                     const isNow = hour === currentHour;
                     const isActive = popup?.zoneId === zoneId && popup?.hour === hour;
 
                     return (
-                      <td
-                        key={hour}
+                      <td key={hour}
                         onClick={(e) => handleCellClick(e, zoneId, hour, predicted)}
                         style={{
                           textAlign: 'center', padding: '4px 2px',
-                          background: isActive
-                            ? '#6366f1'
-                            : predicted > 0
-                              ? getCellColor(predicted)
-                              : isNow ? 'rgba(99, 102, 241, 0.05)' : 'transparent',
+                          background: isActive ? '#6366f1'
+                            : predicted > 0 ? getCellColor(predicted)
+                            : isNow ? 'rgba(99, 102, 241, 0.05)' : 'transparent',
                           fontSize: 11, fontWeight: predicted > 0 || isActive ? 700 : 400,
                           color: predicted > 0 || isActive ? '#fff' : 'var(--text-muted)',
                           cursor: predicted > 0 ? 'pointer' : 'default',
@@ -265,25 +184,18 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
         </table>
       </div>
 
-      {/* Unit detail popup */}
+      {/* Popup */}
       {popup && (
-        <div
-          ref={popupRef}
-          style={{
-            position: 'fixed',
-            left: Math.min(popup.x - 140, window.innerWidth - 300),
-            top: popup.y,
-            width: 280,
-            background: '#1a1f2e',
-            border: '1px solid rgba(255,255,255,0.12)',
-            borderRadius: 10,
-            padding: 16,
-            boxShadow: '0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05)',
-            zIndex: 100,
-            animation: 'fadeIn 0.15s ease',
-          }}
-        >
-          {/* Header */}
+        <div ref={popupRef} style={{
+          position: 'fixed',
+          left: Math.min(popup.x - 140, window.innerWidth - 300),
+          top: popup.y, width: 280,
+          background: '#1a1f2e',
+          border: '1px solid rgba(255,255,255,0.12)',
+          borderRadius: 10, padding: 16,
+          boxShadow: '0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05)',
+          zIndex: 100, animation: 'fadeIn 0.15s ease',
+        }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
             <div>
               <div style={{ fontWeight: 700, fontSize: 14 }}>{popupName}</div>
@@ -291,45 +203,40 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
                 {String(popup.hour).padStart(2, '0')}:00 – {String(popup.hour + 1).padStart(2, '0')}:00
               </div>
             </div>
-            <button
-              onClick={() => setPopup(null)}
-              style={{
-                background: 'none', border: 'none', color: 'var(--text-muted)',
-                cursor: 'pointer', fontSize: 16, padding: '0 4px', lineHeight: 1,
-              }}
-            >&times;</button>
+            <button onClick={() => setPopup(null)} style={{
+              background: 'none', border: 'none', color: 'var(--text-muted)',
+              cursor: 'pointer', fontSize: 16, padding: '0 4px', lineHeight: 1,
+            }}>&times;</button>
           </div>
 
-          {/* Stats row */}
           {popupEntry && (
             <div style={{
               display: 'flex', gap: 8, marginBottom: 12, padding: '8px 0',
-              borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)',
+              borderTop: '1px solid rgba(255,255,255,0.08)', borderBottom: '1px solid rgba(255,255,255,0.08)',
             }}>
               <div style={{ flex: 1, textAlign: 'center' }}>
                 <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace" }}>
                   {popupEntry.units_assigned}
                 </div>
-                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Units</div>
+                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Predicted</div>
+              </div>
+              <div style={{ flex: 1, textAlign: 'center' }}>
+                <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", color: popupUnits.length > 0 ? 'var(--success)' : 'var(--text-muted)' }}>
+                  {popupUnits.length}
+                </div>
+                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Routed</div>
               </div>
               <div style={{ flex: 1, textAlign: 'center' }}>
                 <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", color: 'var(--warning)' }}>
                   {popupEntry.predicted_violations}
                 </div>
-                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Predicted</div>
-              </div>
-              <div style={{ flex: 1, textAlign: 'center' }}>
-                <div style={{ fontSize: 18, fontWeight: 700, fontFamily: "'JetBrains Mono', monospace", color: 'var(--success)' }}>
-                  {popupEntry.predicted_reduction_pct}%
-                </div>
-                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Reduction</div>
+                <div style={{ fontSize: 9, color: 'var(--text-muted)', textTransform: 'uppercase' }}>Violations</div>
               </div>
             </div>
           )}
 
-          {/* Unit list */}
           <div style={{ fontSize: 11, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 6, fontWeight: 600 }}>
-            Assigned Units
+            Routed Units ({popupUnits.length})
           </div>
           {popupUnits.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -345,13 +252,10 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
                       fontSize: 10, fontWeight: 700, padding: '2px 6px',
                       borderRadius: 4, fontFamily: "'JetBrains Mono', monospace",
                     }}>{u.label}</span>
-                    <span style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{u.block}</span>
+                    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)' }}>{u.block}</span>
                   </div>
                   {u.distance !== null && (
-                    <span style={{
-                      fontSize: 10,
-                      color: u.feasible ? 'var(--text-muted)' : 'var(--danger)',
-                    }}>
+                    <span style={{ fontSize: 10, color: u.feasible ? 'rgba(255,255,255,0.4)' : 'var(--danger)' }}>
                       {u.distance}km
                     </span>
                   )}
@@ -359,8 +263,8 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
               ))}
             </div>
           ) : (
-            <div style={{ fontSize: 12, color: 'var(--text-muted)', padding: '8px 0', fontStyle: 'italic' }}>
-              No unit assignments at this hour.
+            <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', padding: '8px 0', fontStyle: 'italic' }}>
+              No units routed to this zone at this hour.
             </div>
           )}
         </div>
