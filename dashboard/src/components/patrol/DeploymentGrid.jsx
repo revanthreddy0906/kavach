@@ -93,8 +93,13 @@ export default function DeploymentGrid({ data, itineraries = [] }) {
   return (
     <div className="deployment-grid-wrapper" style={{ position: 'relative' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-        <h3 style={{ margin: 0 }}>24-Hour Deployment Timeline</h3>
-        <div style={{ display: 'flex', gap: 12, fontSize: 11, color: 'var(--text-muted)' }}>
+        <div>
+          <h3 style={{ margin: 0 }}>24-Hour Deployment Timeline</h3>
+          <p style={{ fontSize: 11, color: 'var(--text-muted)', margin: '4px 0 0' }}>
+            Units predicted by LightGBM temporal model · Click cells to view routed unit assignments and coverage gaps
+          </p>
+        </div>
+        <div style={{ display: 'flex', gap: 12, fontSize: 11, color: 'var(--text-muted)', alignItems: 'center' }}>
           <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             <span style={{ width: 10, height: 10, borderRadius: 2, background: 'rgba(59, 130, 246, 0.45)' }} /> 1 unit
           </span>

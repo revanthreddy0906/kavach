@@ -3,7 +3,7 @@ import { PageHeader } from '../layout/TopBar';
 import { fetchPatrolPlan, fetchPatrolItineraries } from '../../utils/api';
 import DeploymentGrid from '../patrol/DeploymentGrid';
 import StatCard from '../common/StatCard';
-import { Truck, Clock, Route, AlertTriangle, MapPin, ChevronDown, ChevronUp, CheckCircle, XCircle } from 'lucide-react';
+import { Truck, Clock, Route, AlertTriangle, MapPin, ChevronDown, ChevronUp, CheckCircle, XCircle, Target } from 'lucide-react';
 
 export default function DeploymentPage() {
   const [planData, setPlanData] = useState([]);
@@ -25,13 +25,34 @@ export default function DeploymentPage() {
   const fleet = itineraryData?.fleet_summary || {};
   const itineraries = itineraryData?.unit_itineraries || [];
 
+  // Compute demand coverage: what % of predicted demand is met by routed units
+  const demandCoverage = (() => {
+    if (!planData.length || !itineraries.length) return null;
+    // Total predicted unit-slots across all plan entries
+    const totalDemand = planData.reduce((s, e) => s + (e.units_assigned || 0), 0);
+    // Total routed unit-slots from itineraries
+    let totalRouted = 0;
+    itineraries.forEach(u => {
+      totalRouted += (u.assignments || []).length;
+    });
+    return totalDemand > 0 ? Math.round((totalRouted / totalDemand) * 100) : 0;
+  })();
+
   return (
     <div>
-      <PageHeader title="Deployment Schedule" description="24-hour patrol unit allocation with travel-time routing and unit itineraries." />
+      <PageHeader title="Deployment Schedule" description="ML-predicted unit demand mapped against routed fleet capacity across 24 hours." />
 
       {/* Fleet Summary KPIs */}
       {fleet.total_units && (
         <div className="stat-cards-row" style={{ marginBottom: 24 }}>
+          <StatCard
+            label="Demand Coverage"
+            value={demandCoverage}
+            suffix="%"
+            icon={Target}
+            accent={demandCoverage >= 70 ? 'var(--success)' : 'var(--warning)'}
+            subtext="Predicted vs routed units"
+          />
           <StatCard
             label="Fleet Efficiency"
             value={fleet.patrol_efficiency_pct}
@@ -51,7 +72,7 @@ export default function DeploymentPage() {
             subtext={`${fleet.avg_distance_km_per_unit} km avg`}
           />
           <StatCard
-            label="Total Fleet Distance"
+            label="Fleet Distance"
             value={fleet.total_distance_km}
             decimals={0}
             suffix=" km"
