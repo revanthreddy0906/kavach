@@ -9,6 +9,9 @@ export const fetchCascade = (zoneId) =>
 export const fetchPatrolPlan = (hour) =>
   fetch(`${API_BASE}/patrol-plan${hour !== undefined ? `?hour=${hour}` : ''}`).then(r => r.json());
 
+export const fetchZoneAction = (zoneId) =>
+  fetch(`${API_BASE}/zone-action/${zoneId}`).then(r => r.json());
+
 export const fetchPatrolItineraries = () =>
   fetch(`${API_BASE}/patrol-itineraries`).then(r => r.json());
 

@@ -301,6 +301,159 @@ def heatmap():
     return load_json_or_mock("zone_congestiq.json", MOCK_HEATMAP)
 
 
+@app.get("/api/zone-action/{zone_id}")
+def zone_action(zone_id: str):
+    """Returns full action card for a single zone — aggregates all modules.
+
+    Combines: zone_congestiq, patrol_plan, weather_sensitivity,
+    enforcement_anomalies, spillover_data into one response.
+    """
+    import math
+
+    # Load all data sources
+    zones = load_json_or_mock("zone_congestiq.json", [])
+    patrol_raw = load_json_or_mock("patrol_plan.json", {})
+    weather = load_json_or_mock("weather_sensitivity.json", {})
+    enforcement = load_json_or_mock("enforcement_anomalies.json", [])
+    spillover = load_json_or_mock("spillover_data.json", {})
+
+    # Find this zone
+    zone = next((z for z in zones if z.get("zone_id") == zone_id), None)
+    if not zone:
+        return {"error": f"Zone {zone_id} not found"}
+
+    # Zone rank
+    zones_sorted = sorted(zones, key=lambda z: z.get("congestiq_score", 0), reverse=True)
+    rank = next((i + 1 for i, z in enumerate(zones_sorted) if z.get("zone_id") == zone_id), None)
+
+    # ── Patrol assignments for this zone ──
+    plan = patrol_raw.get("plan", patrol_raw) if isinstance(patrol_raw, dict) else patrol_raw
+    zone_patrols = [e for e in plan if isinstance(e, dict) and e.get("zone_id") == zone_id] if isinstance(plan, list) else []
+    zone_patrols.sort(key=lambda e: e.get("hour", 0))
+
+    patrol_info = None
+    if zone_patrols:
+        total_units = sum(e.get("units_assigned", 0) for e in zone_patrols)
+        peak_entry = max(zone_patrols, key=lambda e: e.get("units_assigned", 0))
+        hours = [e.get("hour") for e in zone_patrols]
+        patrol_info = {
+            "total_units_across_day": total_units,
+            "peak_hour": peak_entry.get("hour"),
+            "peak_units": peak_entry.get("units_assigned"),
+            "hours_covered": hours,
+            "avg_reduction_pct": round(sum(e.get("predicted_reduction_pct", 0) for e in zone_patrols) / len(zone_patrols), 1),
+            "entries": zone_patrols,
+        }
+
+    # ── Weather sensitivity for this zone ──
+    weather_zones = weather.get("zones", [])
+    weather_info = next((w for w in weather_zones if w.get("zone_id") == zone_id), None)
+
+    # ── Nearest enforcement station ──
+    # Find station with lowest enforcement rate that covers this area
+    # (We use geohash proximity — stations whose violations overlap with this zone)
+    # Simple approach: find the station from enforcement data
+    nearest_station = None
+    zone_lat = zone.get("lat", 0)
+    zone_lng = zone.get("lng", 0)
+
+    # Find stations that are anomalous (for flagging)
+    anomalous_stations = [
+        s for s in enforcement
+        if s.get("is_anomaly")
+        and "no police" not in s.get("police_station", "").lower()
+    ]
+    if anomalous_stations:
+        nearest_station = {
+            "station": anomalous_stations[0].get("police_station"),
+            "enforcement_rate": round(anomalous_stations[0].get("enforcement_rate", 0) * 100, 1),
+            "is_anomaly": True,
+        }
+
+    # ── Spillover ──
+    spillover_events = spillover.get("total_spillover_events", 0)
+    sample_events = spillover.get("sample_events", [])
+    zone_spillovers = [e for e in sample_events if e.get("primary_zone") == zone_id or zone_id in e.get("affected_zones", [])]
+
+    # ── Economic cost ──
+    cost_per_violation = round(45 * (8.4 / 60) * 175)
+    vpd = zone.get("violations_per_day", 0)
+    daily_cost = round(vpd * cost_per_violation)
+
+    # ── Build recommended actions ──
+    actions = []
+
+    # Action 1: Patrol deployment
+    if patrol_info:
+        actions.append({
+            "icon": "truck",
+            "priority": "high",
+            "text": f"Deploy {patrol_info['peak_units']} units at {patrol_info['peak_hour']:02d}:00 (peak hour). {patrol_info['total_units_across_day']} total units recommended across {len(patrol_info['hours_covered'])} hours.",
+        })
+    else:
+        actions.append({
+            "icon": "truck",
+            "priority": "low",
+            "text": "No patrol units currently assigned. Zone may be below priority threshold.",
+        })
+
+    # Action 2: Weather
+    if weather_info and abs(weather_info.get("pct_change", 0)) > 30:
+        if weather_info["pct_change"] > 0:
+            actions.append({
+                "icon": "cloud-rain",
+                "priority": "medium",
+                "text": f"Weather-sensitive: violations surge {weather_info['pct_change']}% on rainy days ({weather_info['rain_vpd']}/day vs {weather_info['dry_vpd']}/day). {weather_info.get('recommendation', '')}",
+            })
+        else:
+            actions.append({
+                "icon": "cloud-rain",
+                "priority": "info",
+                "text": f"Violations drop {abs(weather_info['pct_change'])}% on rainy days. Camera obstruction or route avoidance likely.",
+            })
+
+    # Action 3: Enforcement gap
+    if nearest_station and nearest_station.get("is_anomaly"):
+        actions.append({
+            "icon": "shield-alert",
+            "priority": "medium",
+            "text": f"Nearby station ({nearest_station['station']}) enforcement rate is {nearest_station['enforcement_rate']}%. Flagged for review.",
+        })
+
+    # Action 4: Economic
+    actions.append({
+        "icon": "indian-rupee",
+        "priority": "info",
+        "text": f"Each violation here costs an estimated ₹{cost_per_violation:,}. At {vpd:.1f} violations/day, daily economic impact: ₹{daily_cost:,}.",
+    })
+
+    return {
+        "zone_id": zone_id,
+        "zone_name": zone.get("display_name", zone_id),
+        "lat": zone.get("lat"),
+        "lng": zone.get("lng"),
+        "rank": rank,
+        "total_zones": len(zones),
+        "congestiq_score": zone.get("congestiq_score"),
+        "severity": zone.get("severity"),
+        "violations_per_day": zone.get("violations_per_day"),
+        "primary_violation": zone.get("primary_violation"),
+        "dominant_vehicle": zone.get("dominant_vehicle"),
+        "peak_hour": zone.get("peak_hour"),
+        "cascade_reach": zone.get("cascade_reach"),
+        "enforcement_rate": zone.get("enforcement_rate"),
+        "predicted_score_6h": zone.get("predicted_score_6h"),
+        "patrol": patrol_info,
+        "weather": weather_info,
+        "spillover_count": len(zone_spillovers),
+        "economic": {
+            "cost_per_violation": cost_per_violation,
+            "daily_cost": daily_cost,
+        },
+        "actions": actions,
+    }
+
+
 @app.get("/api/cascade/{zone_id}")
 def cascade(zone_id: str):
     """Returns cascade animation frames for a specific zone.
