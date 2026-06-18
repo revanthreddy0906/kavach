@@ -14,6 +14,7 @@ import DeploymentPage from './components/pages/DeploymentPage';
 import SimulationLab from './components/pages/SimulationLab';
 import ImpactPage from './components/pages/ImpactPage';
 import WeatherPage from './components/pages/WeatherPage';
+import BriefingPage from './components/pages/BriefingPage';
 
 function AppLayout({ children }) {
   return (
@@ -38,6 +39,7 @@ export default function App() {
 
         {/* All app pages — with sidebar layout */}
         <Route path="/dashboard" element={<AppLayout><DashboardPage /></AppLayout>} />
+        <Route path="/briefing" element={<AppLayout><BriefingPage /></AppLayout>} />
 
         <Route path="/operations/overview" element={<AppLayout><OperationsOverview /></AppLayout>} />
         <Route path="/operations/live-map" element={<AppLayout><LiveMapPage /></AppLayout>} />

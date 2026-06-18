@@ -24,3 +24,6 @@ export const fetchArchetypes = () =>
 export const fetchWeatherSensitivity = () =>
   fetch(`${API_BASE}/weather-sensitivity`).then(r => r.json());
 
+export const fetchDailyBriefing = () =>
+  fetch(`${API_BASE}/daily-briefing`).then(r => r.json());
+

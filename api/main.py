@@ -433,6 +433,217 @@ def archetypes():
     return load_json_or_mock("junction_archetypes.json", MOCK_ARCHETYPES)
 
 
+@app.get("/api/daily-briefing")
+def daily_briefing():
+    """Generates Commissioner's Daily Briefing from all module outputs.
+
+    Synthesizes zone_congestiq, patrol_plan, enforcement_anomalies,
+    weather_sensitivity, spillover_data, and counterfactual into a
+    structured natural language report.
+    """
+    from datetime import date
+
+    # Load all data
+    zones = load_json_or_mock("zone_congestiq.json", [])
+    patrol_raw = load_json_or_mock("patrol_plan.json", {})
+    enforcement = load_json_or_mock("enforcement_anomalies.json", [])
+    weather = load_json_or_mock("weather_sensitivity.json", {})
+    spillover = load_json_or_mock("spillover_data.json", {})
+    counterfactual = load_json_or_mock("counterfactual.json", {})
+
+    # Sort zones by CongestIQ
+    zones_sorted = sorted(zones, key=lambda z: z.get("congestiq_score", 0), reverse=True)
+
+    # ── Priority Zones ──
+    top_zones = zones_sorted[:5]
+    priority_alerts = []
+    for z in top_zones:
+        name = z.get("display_name", z.get("zone_id", "Unknown"))
+        ciq = z.get("congestiq_score", 0)
+        peak = z.get("peak_hour", 0)
+        vpd = z.get("violations_per_day", 0)
+        primary = z.get("primary_violation", "PARKING")
+        severity = z.get("severity", "high")
+
+        priority_alerts.append({
+            "zone_id": z.get("zone_id"),
+            "zone_name": name,
+            "congestiq": round(ciq),
+            "severity": severity,
+            "peak_hour": peak,
+            "violations_per_day": round(vpd, 1),
+            "primary_violation": primary,
+            "text": (
+                f"{name} is a {severity}-priority zone with a CongestIQ of "
+                f"{ciq:,.0f}, averaging {vpd:.1f} violations per day. "
+                f"Peak activity at {peak:02d}:00. Primary offence: {primary}."
+            ),
+        })
+
+    # ── Patrol Deployment ──
+    plan = patrol_raw.get("plan", patrol_raw) if isinstance(patrol_raw, dict) else patrol_raw
+    fleet = patrol_raw.get("fleet_summary", {}) if isinstance(patrol_raw, dict) else {}
+
+    total_units = fleet.get("total_units", 30)
+    efficiency = fleet.get("patrol_efficiency_pct", 0)
+    zones_covered = len(set(e.get("zone_id") for e in plan)) if isinstance(plan, list) else 0
+    avg_reduction = 0
+    if isinstance(plan, list) and plan:
+        reductions = [e.get("predicted_reduction_pct", 0) for e in plan if e.get("predicted_reduction_pct")]
+        avg_reduction = sum(reductions) / len(reductions) if reductions else 0
+
+    # Top zone for the next shift block (6-8am)
+    morning_entries = [e for e in plan if isinstance(e, dict) and e.get("hour") in [6, 7]] if isinstance(plan, list) else []
+    morning_entries.sort(key=lambda e: e.get("units_assigned", 0), reverse=True)
+
+    patrol_summary = {
+        "total_units": total_units,
+        "zones_covered": zones_covered,
+        "avg_reduction_pct": round(avg_reduction, 1),
+        "fleet_efficiency_pct": round(efficiency, 1),
+        "morning_priority": morning_entries[0].get("zone_id") if morning_entries else None,
+        "morning_units": morning_entries[0].get("units_assigned", 0) if morning_entries else 0,
+        "text": (
+            f"Patrol deployment: {total_units} units across {zones_covered} zones, "
+            f"achieving an estimated {avg_reduction:.1f}% average congestion reduction. "
+            f"Fleet efficiency: {efficiency:.1f}% (patrol vs transit time)."
+        ),
+    }
+
+    # ── Enforcement Gaps ──
+    anomalies = [s for s in enforcement if s.get("is_anomaly")]
+    enforcement_gaps = []
+    city_avg_rate = 0
+    if enforcement:
+        rates = [s.get("enforcement_rate", 0) for s in enforcement]
+        city_avg_rate = sum(rates) / len(rates) if rates else 0
+
+    for s in sorted(anomalies, key=lambda x: x.get("enforcement_rate", 1))[:3]:
+        station = s.get("police_station", "Unknown")
+        rate = s.get("enforcement_rate", 0)
+        gap_pp = round((city_avg_rate - rate) * 100, 1)
+        total = s.get("total_violations", 0)
+
+        # Get top SHAP reason
+        reasons = s.get("anomaly_reasons", [])
+        top_reason = reasons[0].get("detail", "") if reasons else ""
+
+        enforcement_gaps.append({
+            "station": station,
+            "enforcement_rate": round(rate * 100, 1),
+            "gap_pp": gap_pp,
+            "total_violations": total,
+            "top_reason": top_reason,
+            "text": (
+                f"{station} enforcement rate is {rate*100:.1f}% — "
+                f"{gap_pp:.0f} percentage points below the city average of {city_avg_rate*100:.1f}%. "
+                f"Flagged for review. {top_reason}"
+            ),
+        })
+
+    # ── Weather Alerts ──
+    weather_zones = weather.get("zones", [])
+    weather_surges = [z for z in weather_zones if z.get("sensitivity") == "high_increase"][:3]
+    weather_alerts = []
+    for z in weather_surges:
+        weather_alerts.append({
+            "zone_name": z.get("zone_name"),
+            "pct_change": z.get("pct_change"),
+            "rain_vpd": z.get("rain_vpd"),
+            "dry_vpd": z.get("dry_vpd"),
+            "text": (
+                f"Historical data shows {z.get('zone_name')} violations surge "
+                f"{z.get('pct_change')}% on rainy days ({z.get('rain_vpd')}/day vs "
+                f"{z.get('dry_vpd')}/day on dry days). "
+                f"{z.get('recommendation', 'Pre-position extra patrol during rainfall.')}"
+            ),
+        })
+
+    # ── Spillover & Network ──
+    spillover_total = spillover.get("total_spillover_events", 0)
+    spreader_zones = spillover.get("unique_primary_zones", 0)
+
+    # ── Economic Impact (from counterfactual) ──
+    pitch = counterfactual.get("pitch_numbers", {}).get("at_90pct_enforcement", {})
+    annual_savings = pitch.get("annual_savings_crore", 0)
+    delivery_hours = pitch.get("delivery_hours_monthly", 0)
+    sla_rescues = pitch.get("monthly_sla_rescues", 0)
+
+    # ── Cost per violation estimate ──
+    # Defensible: avg 45 vehicles affected (arterial, peak hour)
+    # Value of time: ₹175/hour (NITI Aayog), avg delay 8.4 min
+    cost_per_violation = round(45 * (8.4 / 60) * 175)
+
+    # ── Build full briefing text ──
+    today = date.today().strftime("%B %d, %Y")
+    briefing_lines = [
+        f"KAVACH Daily Intelligence Briefing — {today}",
+        "",
+        "━━━━ PRIORITY ZONES ━━━━",
+    ]
+    for pa in priority_alerts[:3]:
+        briefing_lines.append(f"▸ {pa['text']}")
+    briefing_lines.append("")
+
+    briefing_lines.append("━━━━ PATROL DEPLOYMENT ━━━━")
+    briefing_lines.append(f"▸ {patrol_summary['text']}")
+    if morning_entries:
+        me = morning_entries[0]
+        zone_name = next((z.get("display_name", me["zone_id"]) for z in zones if z.get("zone_id") == me.get("zone_id")), me.get("zone_id"))
+        briefing_lines.append(
+            f"▸ Morning priority (06:00-08:00): {zone_name} — {me.get('units_assigned', 0)} units recommended."
+        )
+    briefing_lines.append("")
+
+    if enforcement_gaps:
+        briefing_lines.append("━━━━ ENFORCEMENT GAPS ━━━━")
+        for eg in enforcement_gaps:
+            briefing_lines.append(f"▸ {eg['text']}")
+        briefing_lines.append("")
+
+    if weather_alerts:
+        briefing_lines.append("━━━━ WEATHER SENSITIVITY ━━━━")
+        for wa in weather_alerts:
+            briefing_lines.append(f"▸ {wa['text']}")
+        briefing_lines.append("")
+
+    briefing_lines.append("━━━━ NETWORK INTELLIGENCE ━━━━")
+    briefing_lines.append(
+        f"▸ {spillover_total} spillover events detected across the analysis period. "
+        f"{spreader_zones} zones identified as active congestion super-spreaders."
+    )
+    briefing_lines.append(
+        f"▸ Economic impact: Each violation at a major junction costs the city an estimated "
+        f"₹{cost_per_violation:,} in lost productivity (45 vehicles affected, "
+        f"8.4 min avg delay, ₹175/hr value of time)."
+    )
+    if annual_savings:
+        briefing_lines.append(
+            f"▸ At 90% enforcement, KAVACH projects ₹{annual_savings} crore annual savings, "
+            f"{delivery_hours:,.0f} delivery hours recovered monthly, "
+            f"and {sla_rescues:,.0f} SLA-at-risk deliveries rescued per month."
+        )
+
+    return {
+        "date": today,
+        "briefing_text": "\n".join(briefing_lines),
+        "priority_zones": priority_alerts,
+        "patrol_summary": patrol_summary,
+        "enforcement_gaps": enforcement_gaps,
+        "weather_alerts": weather_alerts,
+        "network_stats": {
+            "spillover_events": spillover_total,
+            "super_spreader_zones": spreader_zones,
+        },
+        "economic_impact": {
+            "cost_per_violation_inr": cost_per_violation,
+            "annual_savings_crore": annual_savings,
+            "delivery_hours_monthly": delivery_hours,
+            "sla_rescues_monthly": sla_rescues,
+        },
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api.main:app", host="0.0.0.0", port=8000, reload=True)

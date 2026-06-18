@@ -3,7 +3,7 @@ import {
   LayoutDashboard, Radio, Map, AlertTriangle,
   BarChart3, TrendingUp, Waypoints, ShieldCheck,
   CalendarClock, FlaskConical, Target, Settings,
-  ChevronLeft, ChevronRight, Shield, CloudRain
+  ChevronLeft, ChevronRight, Shield, CloudRain, FileText
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -12,6 +12,7 @@ const NAV_SECTIONS = [
     label: '',
     items: [
       { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+      { to: '/briefing', icon: FileText, label: 'Daily Briefing' },
     ]
   },
   {
